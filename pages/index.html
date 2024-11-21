@@ -5,63 +5,262 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KOSSWISE</title>
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="/assets/library/bootstrap.min.css" />
-    <script src="/assets/library/bootstrap.min.js"></script>
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../assets/js/common.js"></script>
 
-    <!-- common -->
-    <link rel="stylesheet" href="/assets/scss/common.css" />
+    <!-- bootstrap -->
+    <script src="../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/scss/common.css" />
   </head>
   <body>
-    <div class="kw-inner">
-      <div class="p-5">
-        <div class="mb-5">
-          <h2>INFO</h2>
-          <table class="table table-striped">
-            <tbody>
-              <tr>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-inner">
+        <div class="p-5">
+          <div class="mb-5">
+            <h2>INFO</h2>
+            <table class="table table-striped">
+              <tbody>
+                <!-- <tr>
                 <td>
-                  <a href="dashboard/dashboard">Dashboard</a>
+                  <a href="dashboard/dashboard.html">Dashboard</a>
                 </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="search/bd-notifications">Notification</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="mb-5">
-          <h2>반입</h2>
-          <table class="table table-striped">
-            <tbody>
-              <tr>
-                <td>
-                  <a href="/pages/oss-intake/list.html">Oss</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="/Request">Request</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="mb-5">
-          <h2>시스템</h2>
-          <table class="table table-striped">
-            <tbody>
-              <tr>
-                <td>
-                  <a href="/pages/login/login.html">Login</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              </tr> -->
+                <tr>
+                  <td>
+                    <a href="../pages/search/bd-notifications.html"
+                      >Notification</a
+                    >
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-5">
+            <h2>반입</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/oss-intake/list.html">OSS 반입</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/oss-intake/new.html">반입신청</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/oss-repository/search-component.html">
+                      반입 오픈소스 검색
+                    </a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/oss-repository/upload-component.html">
+                      저장소 업로드
+                    </a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-5">
+            <h2>점검</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/request/new.html">요청</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/request/list.html">요청 현황</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/official/list.html">SBOM</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/official/component.html">컴포넌트 내역</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/official/profile.html">고지문</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-5">
+            <h2>검색</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/search/project.html">전체 프로젝트</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/search/component.html">사용된 오픈소스</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/search/vulnerability.html">보안 취약점</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/search/opensorce.html">KnowledgeBase</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mb-5">
+            <h2>부가기능</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/self/list.html">프로젝트 생성</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/official/version-list.html">버전 목록</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/official/compare.html">프로젝트 비교</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-5">
+            <h2>통계</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/statistics/usage.html">OSS 사용 현황</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-5">
+            <h2>게시판</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/board/notice-index.html">공지사항</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/notice-view.html">공지사항 상세</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/notice-insert.html"
+                      >공지사항 등록</a
+                    >
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/faq-index.html">FAQ</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/faq-insert.html">FAQ 등록</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/qna-index.html">QnA</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/qna-view.html">QnA 상세보기</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/data-index.html">자료실</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/data-view.html">자료실 상세보기</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="../pages/board/data-insert.html">자료실 등록</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mb-5">
+            <h2>시스템</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="../pages/login/login.html">Login</a>
+                    <span class="badge text-bg-primary ms-4">완료</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
+      <div id="footer"></div>
     </div>
   </body>
 </html>

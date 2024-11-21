@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">검색</a></li>
+                <li class="breadcrumb-item active">KnowledgeBase</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">KnowledgeBase</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <div class="row g-7">
+                      <div class="col-6">
+                        <label class="form-label">컴포넌트 명칭 입력 </label>
+                        <div class="kw-form-search">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="입력"
+                          />
+                          <button>검색</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-table kw-list-table-faq">
+                    <div class="kw-list-table-scroll">
+                      <table class="table">
+                        <colgroup>
+                          <col style="width: 680px" />
+                          <col style="width: 330px" />
+                          <col style="width: 650px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="kw-list-table-title">
+                                컴포넌트 명칭
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                컴포넌트 버전
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                홈페이지
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="" class="kw-list-table-faq-title"
+                                ><p>logpresso/CVE-2021-44228-Scanner</p></a
+                              >
+                            </td>
+                            <td>
+                              <div class="badge text-bg-primary">
+                                상세버전(60)
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href=""
+                                class="d-inline-flex align-items-center gap-3"
+                                target="_blank"
+                              >
+                                <i class="ico-new-windows"></i>
+                                https://github.com/corretto/hotpatch-for-apache-log4j2
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="kw-list-table-faq-contents__tr">
+                            <td colspan="3">
+                              <div class="kw-list-table-faq-contents">
+                                <div class="kw-list-table-faq-contents__inner">
+                                  <dl>
+                                    <dt>Description</dt>
+                                    <dd>
+                                      Apache Commons IO is vulnerable to
+                                      excessive resource consumption in its
+                                      'XmlStreamReader' component. A remote
+                                      attacker able to supply the application
+                                      with specially crafted XML content could
+                                      cause a denial-of-service (DoS). View BDSA
+                                      record
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="" class="kw-list-table-faq-title"
+                                ><p>logpresso/CVE-2021-44228-Scanner</p></a
+                              >
+                            </td>
+                            <td>
+                              <div class="badge text-bg-primary">
+                                상세버전(60)
+                              </div>
+                            </td>
+                            <td>
+                              <a
+                                href=""
+                                class="d-inline-flex align-items-center gap-3"
+                                target="_blank"
+                              >
+                                <i class="ico-new-windows"></i>
+                                https://github.com/corretto/hotpatch-for-apache-log4j2
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="kw-list-table-faq-contents__tr">
+                            <td colspan="3">
+                              <div class="kw-list-table-faq-contents">
+                                <div class="kw-list-table-faq-contents__inner">
+                                  <dl>
+                                    <dt>Description</dt>
+                                    <dd>
+                                      Apache Commons IO is vulnerable to
+                                      excessive resource consumption in its
+                                      'XmlStreamReader' component. A remote
+                                      attacker able to supply the application
+                                      with specially crafted XML content could
+                                      cause a denial-of-service (DoS). View BDSA
+                                      record
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+        컴포넌트 버전 목록
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h4>컴포넌트 버전 목록</h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4">
+              <strong>cve-search/cve-search</strong>
+            </div>
+            <div class="kw-list p-0">
+              <div class="kw-list-head mb-4">
+                <div class="kw-list-head-start">Result : 120건</div>
+                <div class="kw-list-head-center"></div>
+                <div class="kw-list-head-end"></div>
+              </div>
+              <div class="kw-list-table">
+                <div class="kw-list-table-scroll">
+                  <table class="table text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>컴포넌트 버전</th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            라이선스 종류
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            출시일
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            취약점
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            홈페이지
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>v5.1.0</td>
+                        <td>GNU Affero General Public License v3.0</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            https://github.com/corretto/hotpatch-for-apache-log4j2
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>v5.1.0</td>
+                        <td>GNU Affero General Public License v3.0</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            https://github.com/corretto/hotpatch-for-apache-log4j2
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>v5.1.0</td>
+                        <td>GNU Affero General Public License v3.0</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            https://github.com/corretto/hotpatch-for-apache-log4j2
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>v5.1.0</td>
+                        <td>GNU Affero General Public License v3.0</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            https://github.com/corretto/hotpatch-for-apache-log4j2
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kw-list-foot">
+                <div class="kw-list-foot-start"></div>
+                <div class="kw-list-foot-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item-first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item-prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item-next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item-last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="kw-list-foot-end">
+                  <div>
+                    <select class="form-select">
+                      <option selected>10개씩 보기</option>
+                      <option value="1">10개씩 보기</option>
+                      <option value="2">20개씩 보기</option>
+                      <option value="3">30개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+            <button type="button" class="btn btn-primary">생성</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

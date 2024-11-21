@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">부가기능</a></li>
+                <li class="breadcrumb-item active">프로젝트 비교</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">프로젝트 비교</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body pt-10 px-5 pb-4">
+                <div class="row g-7">
+                  <div class="col-6">
+                    <div class="card card--line">
+                      <div class="card-header">
+                        <h5>변경사항</h5>
+                      </div>
+                      <div class="card-body p-6">
+                        <div class="row gap-7">
+                          <div class="col-12">
+                            <label class="form-label">
+                              프로젝트<span class="text-danger">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="프로젝트 명칭 검색"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">
+                              버전<span class="text-danger">*</span>
+                            </label>
+                            <select class="form-select">
+                              <option selected>버전 선택</option>
+                              <option value="1">버전 선택</option>
+                              <option value="2">버전 선택</option>
+                              <option value="3">버전 선택</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card card--line">
+                      <div class="card-header">
+                        <h5>기준 프로젝트</h5>
+                      </div>
+                      <div class="card-body p-6">
+                        <div class="row gap-7">
+                          <div class="col-12">
+                            <label class="form-label">
+                              프로젝트<span class="text-danger">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="프로젝트 명칭 검색"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">
+                              버전<span class="text-danger">*</span>
+                            </label>
+                            <select class="form-select">
+                              <option selected>버전 선택</option>
+                              <option value="1">버전 선택</option>
+                              <option value="2">버전 선택</option>
+                              <option value="3">버전 선택</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kw-list-foot mt-5">
+                  <div class="kw-list-foot-start"></div>
+                  <div class="kw-list-foot-center"></div>
+                  <div class="kw-d-foot-end">
+                    <div class="kw-button">
+                      <button type="button" class="btn btn-primary">
+                        비교하기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head">
+                    <div class="kw-list-head-start">
+                      <small class="text-danger">
+                        ※ 비교되는 프로젝트에서 버전까지 동일한 컴포넌트 내역은
+                        제외되며, 차이 점이 발견된 컴포넌트만 내역에 표출됩니다.
+                      </small>
+                    </div>
+                    <div class="kw-list-head-center"></div>
+                    <div class="kw-list-head-end"></div>
+                  </div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="kw-list-table-title">
+                                컴포넌트
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                버전
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                비교
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                라이선스
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Apache Commons Lang</td>
+                            <td>1.10.0</td>
+                            <td>
+                              <span class="badge text-bg-dark">
+                                컴포넌트 삭제 됨
+                              </span>
+                            </td>
+                            <td>BSD 3-clause "New" or "Revised" License</td>
+                          </tr>
+                          <tr>
+                            <td>Apache Commons Lang</td>
+                            <td>1.10.0</td>
+                            <td>
+                              <span class="badge text-bg-dark">
+                                컴포넌트 삭제 됨
+                              </span>
+                            </td>
+                            <td>BSD 3-clause "New" or "Revised" License</td>
+                          </tr>
+                          <tr>
+                            <td>Apache Commons Lang</td>
+                            <td>1.10.0</td>
+                            <td>
+                              <span class="badge text-bg-dark">
+                                컴포넌트 삭제 됨
+                              </span>
+                            </td>
+                            <td>BSD 3-clause "New" or "Revised" License</td>
+                          </tr>
+                          <tr>
+                            <td>Apache Commons Lang</td>
+                            <td>1.10.0</td>
+                            <td>
+                              <span class="badge text-bg-dark">
+                                컴포넌트 삭제 됨
+                              </span>
+                            </td>
+                            <td>BSD 3-clause "New" or "Revised" License</td>
+                          </tr>
+                          <tr>
+                            <td>Apache Commons Lang</td>
+                            <td>1.10.0</td>
+                            <td>
+                              <span class="badge text-bg-dark">
+                                컴포넌트 삭제 됨
+                              </span>
+                            </td>
+                            <td>BSD 3-clause "New" or "Revised" License</td>
+                          </tr>
+                          <tr>
+                            <td>Apache Commons Lang</td>
+                            <td>1.10.0</td>
+                            <td>
+                              <span class="badge text-bg-dark">
+                                컴포넌트 삭제 됨
+                              </span>
+                            </td>
+                            <td>BSD 3-clause "New" or "Revised" License</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

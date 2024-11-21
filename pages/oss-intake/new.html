@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">반입</a></li>
+                <li class="breadcrumb-item active">OSS 반입</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">OSS 반입</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div
+                  class="kw-searchform kw-searchform--open kw-searchform--write"
+                >
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                          반입 신청 내역
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                          반입 오픈소스 검색
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        <form class="row">
+                          <div class="col-3">
+                            <label class="form-label">
+                              제목<span class="text-danger">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="제목 입력"
+                            />
+                          </div>
+                          <div class="col-3">
+                            <label class="form-label">
+                              반입 신청자<span class="text-danger">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="임시001(솔루션사업팀)"
+                              readonly
+                            />
+                          </div>
+                          <div class="col-3">
+                            <label class="form-label">
+                              승인 담당자<span class="text-danger">*</span>
+                            </label>
+                            <div class="d-flex gap-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                value="담당자 지정"
+                                readonly
+                              />
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                disabled
+                              >
+                                담당자 검색
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <label class="form-label"> 패키지 매니저 </label>
+                            <div
+                              class="d-flex align-items-center gap-3"
+                              style="height: 42px"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault1"
+                                >
+                                  Gradle
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault2"
+                                >
+                                  Maven
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      ></div>
+                    </div>
+                  </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5>빌드 스크립트<span class="text-danger">*</span></h5>
+              </div>
+              <div class="card-body py-7 px-6">
+                <div class="mb-7">
+                  <textarea
+                    class="form-control"
+                    placeholder="스크립트 입력"
+                    style="height: 300px"
+                  ></textarea>
+                </div>
+                <div class="kw-list-foot">
+                  <div class="kw-list-foot-start">
+                    <h6>Result : 1,300건</h6>
+                  </div>
+                  <div class="kw-list-foot-center">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item page-item-first">
+                          <a class="page-link" href="#">처음</a>
+                        </li>
+                        <li class="page-item page-item-prev">
+                          <a class="page-link" href="#">이전</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item page-item-next">
+                          <a class="page-link" href="#">다음</a>
+                        </li>
+                        <li class="page-item page-item-last">
+                          <a class="page-link" href="#">마지막</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="kw-list-foot-end">
+                    <div class="kw-button">
+                      <button type="button" class="btn btn-secondary">
+                        목록
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        입력 값 초기화
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        신청하기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

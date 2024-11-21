@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">통계</a></li>
+                <li class="breadcrumb-item active">OSS 사용 현황</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">OSS 사용 현황</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                          Top Components
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                          Top Licenses
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        <form class="row">
+                          <div class="col-6">
+                            <label class="form-label">날짜범위</label>
+                            <div class="d-flex align-items-center gap-3">
+                              <div class="kw-daterange">
+                                <input type="date" class="form-control" />
+                                ~
+                                <input type="date" class="form-control" />
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault1"
+                                >
+                                  1주
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault2"
+                                >
+                                  1개월
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault3"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault3"
+                                >
+                                  1년
+                                </label>
+                              </div>
+                              <button type="button" class="btn btn-primary">
+                                날짜 초기화
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <label class="form-label">&nbsp;</label>
+                            <div
+                              class="d-flex align-items-center justify-content-end gap-3"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                style="min-width: 120px"
+                              >
+                                조회
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head">
+                    <div class="kw-list-head-start"></div>
+                    <div class="kw-list-head-center"></div>
+                    <div class="kw-list-head-end">
+                      <div class="kw-button">
+                        <button type="button" class="btn btn-secondary">
+                          엑셀 다운로드
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <colgroup>
+                          <col style="width: 520px" />
+                          <col style="width: 1152px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>컴포넌트 명</th>
+                            <th>사용 통계</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                2241
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>component_name</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-5">
+                                <div class="progress" role="progressbar">
+                                  <div
+                                    class="progress-bar"
+                                    style="width: 25%"
+                                  ></div>
+                                </div>
+                                23
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

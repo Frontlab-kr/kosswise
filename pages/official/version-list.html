@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">부가기능</a></li>
+                <li class="breadcrumb-item"><a href="#">프로젝트 생성</a></li>
+                <li class="breadcrumb-item active">버전 목록</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">버전 목록</h1>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="mb-9">
+                    <div class="row">
+                      <div class="col-6">
+                        <label class="form-label">버전 검색</label>
+                        <div class="d-flex w-100">
+                          <div class="kw-form-search w-100">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="입력해주세요"
+                            />
+                            <button>검색</button>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-primary ms-6"
+                            style="min-width: 120px"
+                          >
+                            필터 <i class="ico-plus-white"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary ms-8"
+                            style="min-width: 120px"
+                          >
+                            버전 생성
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table">
+                      <div class="kw-list-table-scroll">
+                        <table class="table text-nowrap">
+                          <colgroup>
+                            <col style="width: 80px" />
+                            <col style="width: 324px" />
+                            <col style="width: 186px" />
+                            <col style="width: 186px" />
+                            <col style="width: 186px" />
+                            <col style="width: 186px" />
+                            <col style="width: 510px" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>정책</th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  스캔된 버전 명칭
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">
+                                        오른쪽
+                                      </button>
+                                      <hr />
+                                      <button class="kw-align-asc">
+                                        오름차순
+                                      </button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  보안위험
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">
+                                        오른쪽
+                                      </button>
+                                      <hr />
+                                      <button class="kw-align-asc">
+                                        오름차순
+                                      </button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  라이센스 위험
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">
+                                        오른쪽
+                                      </button>
+                                      <hr />
+                                      <button class="kw-align-asc">
+                                        오름차순
+                                      </button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  운영 위험
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">
+                                        오른쪽
+                                      </button>
+                                      <hr />
+                                      <button class="kw-align-asc">
+                                        오름차순
+                                      </button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  마지막 갱신일
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">
+                                        오른쪽
+                                      </button>
+                                      <hr />
+                                      <button class="kw-align-asc">
+                                        오름차순
+                                      </button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  마지막 스캔일
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">
+                                        오른쪽
+                                      </button>
+                                      <hr />
+                                      <button class="kw-align-asc">
+                                        오름차순
+                                      </button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fs-0">
+                                <i class="ico-no"></i>
+                              </td>
+                              <td>
+                                <a href="">01</a>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-inline-flex gap-1">
+                                  <span class="badge bg-high">0</span>
+                                  <span class="badge bg-medium">0</span>
+                                  <span class="badge bg-low">1</span>
+                                </div>
+                              </td>
+                              <td>
+                                <a href="">2024-11-04</a>
+                              </td>
+                              <td>
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <a href="">2024-11-04</a>
+                                  <div class="dropdown">
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="ico-more"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"
+                                          >프로젝트 삭제</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kw-list-foot">
+                      <div class="kw-list-foot-start">
+                        <h6>Result : 1,300건</h6>
+                      </div>
+                      <div class="kw-list-foot-center">
+                        <nav>
+                          <ul class="pagination">
+                            <li class="page-item page-item-first">
+                              <a class="page-link" href="#">처음</a>
+                            </li>
+                            <li class="page-item page-item-prev">
+                              <a class="page-link" href="#">이전</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item page-item-next">
+                              <a class="page-link" href="#">다음</a>
+                            </li>
+                            <li class="page-item page-item-last">
+                              <a class="page-link" href="#">마지막</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="kw-list-foot-end">
+                        <div>
+                          <select class="form-select">
+                            <option selected>10개씩 보기</option>
+                            <option value="1">10개씩 보기</option>
+                            <option value="2">20개씩 보기</option>
+                            <option value="3">30개씩 보기</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kw-list-foot mt-6">
+                      <div class="kw-list-foot-start"></div>
+                      <div class="kw-list-foot-center"></div>
+                      <div class="kw-list-foot-end">
+                        <div>
+                          <div class="kw-button justify-content-end">
+                            <button type="button" class="btn btn-primary">
+                              프로젝트 목록으로
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

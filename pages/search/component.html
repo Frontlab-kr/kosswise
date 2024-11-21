@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">검색</a></li>
+                <li class="breadcrumb-item active">사용된 오픈소스</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">사용된 오픈소스</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <div class="row g-7 mb-4">
+                      <div class="col-4">
+                        <label class="form-label">컴포넌트 명칭 입력</label>
+                        <select class="form-select">
+                          <option selected>전체</option>
+                          <option value="1">전체</option>
+                          <option value="2">전체</option>
+                          <option value="3">전체</option>
+                        </select>
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">컴포넌트 명칭 입력</label>
+                        <select class="form-select">
+                          <option selected>전체</option>
+                          <option value="1">전체</option>
+                          <option value="2">전체</option>
+                          <option value="3">전체</option>
+                        </select>
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">버전 검색</label>
+                        <select class="form-select">
+                          <option selected>전체</option>
+                          <option value="1">전체</option>
+                          <option value="2">전체</option>
+                          <option value="3">전체</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head">
+                    <div class="kw-list-head-start"></div>
+                    <div class="kw-list-head-center"></div>
+                    <div class="kw-list-head-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>정렬</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <colgroup>
+                          <col style="width: 448px" />
+                          <col style="width: 244px" />
+                          <col style="width: 328px" />
+                          <col style="width: 292px" />
+                          <col style="width: 360px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="kw-list-table-title">
+                                프로젝트 명
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                사용된 프로젝트
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                보안위험
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                라이선스 위험
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                운영위험
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages fs-0"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">Apache Log4J API ▶ 2.23.1</a>
+                            </td>
+                            <td class="text-primary">
+                              <div
+                                class="d-inline-flex align-items-center gap-2"
+                              >
+                                <i class="ico-pages"></i> 1
+                              </div>
+                            </td>
+                            <td class="text-danger">보안 위험 없음</td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical">0</span>
+                                <span class="badge bg-high">0</span>
+                                <span class="badge bg-medium">0</span>
+                                <span class="badge bg-low">1</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+        사용중인 프로젝트
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h4>사용중인 프로젝트</h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4">
+              <strong>ACE - Ajax.org Cloud9 Editor</strong>
+            </div>
+            <div class="kw-list p-0">
+              <div class="kw-list-table">
+                <div class="kw-list-table-scroll">
+                  <table class="table text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>프로젝트 명칭/버전</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="">BDSA-2024-7393 ▶ 78</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">BDSA-2024-7393 ▶ 78</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">BDSA-2024-7393 ▶ 78</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">BDSA-2024-7393 ▶ 78</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">BDSA-2024-7393 ▶ 78</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kw-list-foot">
+                <div class="kw-list-foot-start"></div>
+                <div class="kw-list-foot-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item-first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item-prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item-next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item-last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="kw-list-foot-end">
+                  <div>
+                    <select class="form-select">
+                      <option selected>10개씩 보기</option>
+                      <option value="1">10개씩 보기</option>
+                      <option value="2">20개씩 보기</option>
+                      <option value="3">30개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+            <button type="button" class="btn btn-primary">생성</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

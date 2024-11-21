@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">게시판</a></li>
+                <li class="breadcrumb-item"><a href="#">QnA </a></li>
+                <li class="breadcrumb-item active">QnA 상세보기</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">QnA 상세보기</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-view">
+                  <div class="kw-view-title">
+                    반입 시 기본적으로 제공하는 컴포넌트가 있나요?
+                  </div>
+                  <div class="kw-view-contents">
+                    <div class="row g-7 mb-5">
+                      <div class="col-12">
+                        <label class="form-label">내용</label>
+                        <div>
+                          프로젝트 비교는 상단 메뉴의 '비교하기' 탭에서 손쉽게
+                          이용할 수 있습니다.<br />
+                          해당 탭을 클릭하면 여러 프로젝트의 주요 정보가 한
+                          화면에 나열되어 있어, 성능, 비용, 기능 등을 직관적으로
+                          비교할 수 있습니다.<br />
+                          원하는 항목을 선택해 세부 사항을 확인하고, 나에게 가장
+                          적합한 프로젝트를 찾아보세요.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label">작성자</label>
+                        <div>관리자 (협력사그룹)</div>
+                      </div>
+                    </div>
+                    <div class="kw-list-foot">
+                      <div class="kw-list-foot-start"></div>
+                      <div class="kw-list-foot-center"></div>
+                      <div class="kw-d-foot-end">
+                        <div class="kw-button">
+                          <button type="button" class="btn btn-secondary">
+                            목록으로
+                          </button>
+                          <button type="button" class="btn btn-secondary">
+                            삭제
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            수정
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-view">
+                  <div class="kw-view-contents">
+                    <div class="row g-7 mb-5">
+                      <div class="col-12">
+                        <label class="form-label">답변</label>
+                        <textarea
+                          class="form-control"
+                          placeholder="답변 입력"
+                          style="height: 110px"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="kw-list-foot">
+                      <div class="kw-list-foot-start"></div>
+                      <div class="kw-list-foot-center"></div>
+                      <div class="kw-d-foot-end">
+                        <div class="kw-button">
+                          <button type="button" class="btn btn-primary">
+                            답변 하기
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row g-7">
+                      <div class="col-12">
+                        <label class="form-label"></label>
+                        <div class="kw-view-comment">
+                          <div class="kw-view-comment-item">
+                            <div class="kw-view-comment-item__name">
+                              임시001(솔루션사업팀)
+                              <span>2024-10-23 08:25</span>
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="펜슬 댓글"
+                              readonly
+                            />
+                          </div>
+                          <div class="kw-view-comment-item">
+                            <div class="kw-view-comment-item__name">
+                              임시001(솔루션사업팀)
+                              <span>2024-10-23 08:25</span>
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="펜슬 댓글"
+                              readonly
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

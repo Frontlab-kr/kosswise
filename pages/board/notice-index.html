@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">게시판</a></li>
+                <li class="breadcrumb-item active">공지사항</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">공지사항</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <form class="row">
+                      <div class="col-6">
+                        <label class="form-label">검색</label>
+                        <div class="kw-form-search">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="검색어를 입력해주세요"
+                          />
+                          <button>검색</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head">
+                    <div class="kw-list-head-start"></div>
+                    <div class="kw-list-head-center"></div>
+                    <div class="kw-list-head-end">
+                      <div class="kw-button">
+                        <button type="button" class="btn btn-primary">
+                          등록
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <colgroup>
+                          <col style="width: 740px" />
+                          <col style="width: 200px" />
+                          <col style="width: 300px" />
+                          <col style="width: 300px" />
+                          <col style="width: 140px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>제목</th>
+                            <th class="text-center">게시자</th>
+                            <th class="text-center">등록일</th>
+                            <th class="text-center">마지막 갱신일</th>
+                            <th class="text-center">상태</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="">[공지] Kosswise 서버 점검 기간</a>
+                            </td>
+                            <td class="text-center">관리자</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">kosswise 권한 관리 방법</a>
+                            </td>
+                            <td class="text-center">관리자</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">BlackDuck 사용가이드</a>
+                            </td>
+                            <td class="text-center">관리자</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">kosswise 3.0 버전 출시</a>
+                            </td>
+                            <td class="text-center">관리자</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">2024 오픈소스 컨퍼런스 공지</a>
+                            </td>
+                            <td class="text-center">관리자</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center">2024-09-20</td>
+                            <td class="text-center"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

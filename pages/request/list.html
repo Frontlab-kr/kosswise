@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">점검</a></li>
+                <li class="breadcrumb-item active">요청 현황</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">요청 현황</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <form class="row g-7">
+                      <div class="col-4">
+                        <label class="form-label">상태</label>
+                        <select class="form-select">
+                          <option selected>전체</option>
+                          <option value="1">전체</option>
+                          <option value="2">전체</option>
+                          <option value="3">전체</option>
+                        </select>
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">제품명</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="전체"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">날짜범위</label>
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="kw-daterange w-100">
+                            <input type="date" class="form-control w-100" />
+                            ~
+                            <input type="date" class="form-control w-100" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">담당조직</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="전체"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">요청자</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="전체"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <label class="form-label">검토자</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="전체"
+                        />
+                      </div>
+                    </form>
+                    <div class="kw-list-foot mt-7">
+                      <div class="kw-list-foot-start"></div>
+                      <div class="kw-list-foot-center"></div>
+                      <div class="kw-list-foot-end">
+                        <div class="kw-button">
+                          <button type="button" class="btn btn-secondary">
+                            삭제
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-table">
+                    <table class="table text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              상태
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              제품명
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              제품 버전명
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              제품 버전명
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              프로젝트 수
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              담당조직
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              요청자
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              검토자
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              승인일
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

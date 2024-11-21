@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">반입</a></li>
+                <li class="breadcrumb-item active">OSS 저장소</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">OSS 저장소</h1>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                          반입 신청 내역
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                          반입 오픈소스 검색
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03"
+                          type="button"
+                          role="tab"
+                        >
+                          저장소 업로드
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        <form class="row">
+                          <div class="col-4">
+                            <label class="form-label">키워드 입력</label>
+                            <div class="kw-form-search">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="입력"
+                              />
+                              <button>검색</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="kw-list-table-title">
+                                컴포넌트
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                그룹
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                버전
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                포맷(패키지)
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                저장소
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href=""> hibernate-commons-annotations </a>
+                            </td>
+                            <td>org.apache.commons</td>
+                            <td>3.12.0</td>
+                            <td>maven2</td>
+                            <td>jihyeon</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
