@@ -50,9 +50,9 @@ html {
       display: flex;
       align-items: center;
       gap: 12px;
+      padding-top:10px;
       .btn {
         min-width: 120px;
-
         margin: 0;
       }
     }
@@ -136,6 +136,16 @@ html {
           color: #fff;
         }
       }
+      &.dropdown-toggle {
+        &:after {
+          display:none;
+        }
+      }
+    }
+    &-dark {
+      background: var(--Gray-300, #676e76);
+      border-color: var(--Gray-300, #676e76);
+      color: #fff;
     }
     &-sm {
       padding: 4px;
@@ -216,6 +226,12 @@ html {
     }
   }
   .badge {
+    &.min {
+      min-width:32px;
+    }
+    &.medium {
+      font-size:15px;
+    }
     &.text-bg-dark {
       background: var(--Gray-300, #676e76) !important;
     }
@@ -225,11 +241,11 @@ html {
       color: #fff;
     }
     &.bg-high {
-      background: var(--major-medium, #c09e94);
+      background: var(--critical-high, #ba7d66);      
       color: #fff;
     }
     &.bg-medium {
-      background: var(--critical-high, #ba7d66);
+      background: var(--major-medium, #c09e94);
       color: #fff;
     }
     &.bg-low {

@@ -2,6 +2,7 @@
 @import './bootstrap-5.3.3/bootstrap.scss';
 @import './override';
 @import './icons';
+@import './style';
 
 //
 $pointColor: #ff7a00;
@@ -433,8 +434,23 @@ $pointColor: #ff7a00;
             font-weight: 500;
             line-height: 21.234px;
           }
+        }     
+        .dropdown {
+          text-align: right;
+          &-toggle {
+            border:0;
+            &::after {
+            display: none;
+            }
+          }
         }
       }
+      &--write {
+        position: fixed;z-index: 99;
+        left:0;right:0;bottom:0;padding:30px 130px;
+        background-color: #fff;
+        border-top:solid 1px var(--Gray-100, #e5e7ea);
+      }   
     }
   }
   &-breadcrumb {
@@ -500,6 +516,15 @@ $pointColor: #ff7a00;
     &-button {
       .btn {
         min-width: 76px;
+      }
+    }
+    &.justify-content-start {
+      gap:12px;
+      h1 {
+        margin-right:0;
+      }
+      .btn {
+        min-width:120px;
       }
     }
   }
@@ -910,6 +935,9 @@ $pointColor: #ff7a00;
     &-table ~ .kw-list-foot {
       margin-top: 16px;
     }
+    .btn-sm {
+      padding:4px 12px;
+    } 
 
     .table {
       position: relative;
@@ -1194,6 +1222,9 @@ $pointColor: #ff7a00;
     gap: 12px;
     .btn {
       min-width: 120px;
+      &-sm {
+        min-width:92px;
+      }
     }
   }
   &-tabs {
@@ -1353,6 +1384,7 @@ $pointColor: #ff7a00;
     }
   }
   &-tree {
+    height:500px;
     ol {
       margin: 0 0 0 20px;
       padding: 0;
@@ -1410,6 +1442,12 @@ $pointColor: #ff7a00;
           height: 150px;
           margin: 0 auto 30px;
           background: url(../images/icon/modal-logout.svg) no-repeat 50% 50%;
+        }
+        &.created::before {
+          background-image: url(../images/icon/modal-creaded.svg) 
+        }
+        &.deleted::before {
+          background-image: url(../images/icon/modal-deleted.svg) 
         }
       }
       &__button {
