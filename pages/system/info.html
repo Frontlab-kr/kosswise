@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">ADMIN</a></li>
+                <li class="breadcrumb-item">사용자 관리</li>
+                <li class="breadcrumb-item active">권한 정보</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">권한 정보</h1>
+            </div>
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                          사용자 관리
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                          부서 관리
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03"
+                          type="button"
+                          role="tab"
+                        >
+                          권한 그룹관리
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab04"
+                          type="button"
+                          role="tab"
+                        >
+                          권한 정보
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      사용자 관리
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      부서 관리
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab03"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      권한 그룹관리
+                      </div>
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab04"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        <div class="kw-list p-0">
+                          <div class="kw-list-table">
+                            <div class="kw-list-table-scroll">
+                              <table class="table text-nowrap">
+                                <thead>
+                                  <tr>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        그룹 명칭
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">왼쪽</button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">왼쪽</button>
+                                            <button class="kw-align-center">가운데</button>
+                                            <button class="kw-align-end">오른쪽</button>
+                                            <hr />
+                                            <button class="kw-align-asc">오름차순</button>
+                                            <button class="kw-align-desc">내림차순</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        설명
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">왼쪽</button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">왼쪽</button>
+                                            <button class="kw-align-center">가운데</button>
+                                            <button class="kw-align-end">오른쪽</button>
+                                            <hr />
+                                            <button class="kw-align-asc">오름차순</button>
+                                            <button class="kw-align-desc">내림차순</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <a href="" class="text-secondary">시스템 관리자</a>
+                                    </td>
+                                    <td>요청, SBOM, OSS의 프로젝트에 대한 생성, 수정, 삭제 권한</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="" class="text-secondary">게시판 관리자</a>
+                                    </td>
+                                    <td>공지사항, FAQ, QNA, 자료실의 게시물에 대한 생성,수정,삭제 권한</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="" class="text-secondary">프로젝트 관리자</a>
+                                    </td>
+                                    <td>사용자관리, 라이센스 정책 관리, 블랙덕 Configuration 및 각종 연동설정을 관리하는 권한</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

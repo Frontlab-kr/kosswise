@@ -37,10 +37,466 @@
             <div class="kw-head">
               <h1 class="me-auto">메뉴 관리</h1>
             </div>
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open mh-100">
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs small" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                        BASE
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                        SKT
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03"
+                          type="button"
+                          role="tab"
+                        >
+                        TTA
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03"
+                          type="button"
+                          role="tab"
+                        >
+                        SDS
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        <div class="card">
+                          <div class="card-header px-0 pt-0">
+                            <div class="kw-list-head">
+                              <div class="kw-list-head-start">
+                                <h5>그룹 목록</h5>
+                              </div>
+                              <div class="kw-list-head-center"></div>
+                              <div class="kw-list-head-end">
+                                <div class="kw-button">
+                                  <button type="button" class="btn btn-secondary">적용</button>
+                                  <button type="button" class="btn btn-primary">그룹 코드 추가</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <div class="kw-list px-0">
+                              <div class="kw-list-head">
+                                <div class="kw-list-head-start"></div>
+                                <div class="kw-list-head-center"></div>
+                                <div class="kw-list-head-end"></div>
+                              </div>
+                              <div class="kw-list-table">
+                                <div class="kw-list-table-scroll mh-100">
+                                  <table class="table text-nowrap">
+                                    <colgroup>
+                                      <col style="width: 60px" />
+                                      <col style="width: 100px" />
+                                      <col style="width: 150px" />
+                                      <col />
+                                      <col style="width: 100px" />
+                                      <col style="width: 150px" />
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th>선택</th>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            ID
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">왼쪽</button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">왼쪽</button>
+                                                <button class="kw-align-center">가운데</button>
+                                                <button class="kw-align-end">오른쪽</button>
+                                                <hr />
+                                                <button class="kw-align-asc">오름차순</button>
+                                                <button class="kw-align-desc">내림차순</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            이름
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">왼쪽</button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">왼쪽</button>
+                                                <button class="kw-align-center">가운데</button>
+                                                <button class="kw-align-end">오른쪽</button>
+                                                <hr />
+                                                <button class="kw-align-asc">오름차순</button>
+                                                <button class="kw-align-desc">내림차순</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            설명
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">왼쪽</button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">왼쪽</button>
+                                                <button class="kw-align-center">가운데</button>
+                                                <button class="kw-align-end">오른쪽</button>
+                                                <hr />
+                                                <button class="kw-align-asc">오름차순</button>
+                                                <button class="kw-align-desc">내림차순</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            상태
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">왼쪽</button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">왼쪽</button>
+                                                <button class="kw-align-center">가운데</button>
+                                                <button class="kw-align-end">오른쪽</button>
+                                                <hr />
+                                                <button class="kw-align-asc">오름차순</button>
+                                                <button class="kw-align-desc">내림차순</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                        <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <input class="form-check-input" type="radio" name="radio01" id="radio01" />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div class="d-flex gap-2 form-switch">
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex align-items-center gap-6">
+                                            <i class="ico ico--write"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary">하위 메뉴 추가</button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="kw-list-foot">
+                                <div class="kw-list-foot-start">
+                                  <h6>Result : 1,300건</h6>
+                                </div>
+                                <div class="kw-list-foot-center"></div>
+                                <div class="kw-list-foot-end"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      SKT
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab03"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      TTA
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab03"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      SDS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-7">
+              <div class="card-header">
+                <h5>하위 메뉴</h5>
+              </div>
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head"></div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <colgroup>
+                          <col style="width: 150px" />
+                          <col style="width: 150px" />
+                          <col style="width: 20%" />
+                          <col />
+                          <col style="width: 20%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>이름</th>
+                            <th>URL</th>
+                            <th>설명</th>
+                            <th>상태</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="5">
+                              <div class="text-light d-flex justify-content-center py-16">데이터가 없습니다</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
     </div>
+
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+      대메뉴 추가
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal02"
+      >
+      하위 메뉴 추가
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 576px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h5>대메뉴 추가</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row gap-7">
+              <div class="col-12">
+                <label class="form-label">
+                  이름 <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="메뉴 이름 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">
+                  ID <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="메뉴 ID 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">설명</label>
+                <textarea
+                  class="form-control"
+                  placeholder="메뉴 설명을 입력해주세요"
+                  style="height: 90px"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+            닫기
+            </button>
+            <button type="button" class="btn btn-primary">저장</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal02" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 576px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h5>하위 메뉴 추가</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row gap-7">
+              <div class="col-12">
+                <label class="form-label">
+                  부모ID <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="부모 ID 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">
+                  이름 <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="메뉴 이름 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">
+                  ID <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="메뉴 ID 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">
+                  URL <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="메뉴 URL을 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">아이콘</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="아이콘 텍스트를 입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">설명</label>
+                <textarea
+                  class="form-control"
+                  placeholder="메뉴 설명을 입력해주세요"
+                  style="height: 90px"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+            닫기
+            </button>
+            <button type="button" class="btn btn-primary">저장</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

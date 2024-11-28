@@ -27,20 +27,357 @@
                   <a href="#"><i class="ico-home"></i></a>
                 </li>
                 <li class="breadcrumb-item"><a href="#">ADMIN</a></li>
-                <li class="breadcrumb-item active">사용자 관리</li>
+                <li class="breadcrumb-item active">사용자 등록</li>
               </ol>
             </nav>
           </div>
         </div>
         <div class="kw-contents">
           <div class="kw-inner">
-            <div class="kw-head">
-              <h1 class="me-auto">사용자 관리</h1>
+            <div class="kw-head justify-content-start">
+              <h1>사용자 등록</h1>
+            </div>
+            <div class="card card-division mb-8">
+              <div class="kw-searchform kw-searchform--open">
+                <div class="row g-0">
+                  <div class="col-6">
+                    <div class="card h-100">
+                      <div class="card-header">
+                        <h5>기본 정보</h5>
+                      </div>
+                      <div class="card-body card-left mb-0">
+                        <form class="row g-7">
+                          <div class="col-12">
+                            <label class="form-label">
+                              사용자 ID <span class="text-danger">*</span>
+                            </label>
+                            <div class="d-flex gap-3">
+                              <input type="text" class="form-control" placeholder="아이디를 입력해주세요" />
+                              <div>
+                                <button type="button" class="btn btn-primary">ID 중복 검사</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">
+                              비밀번호 <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="비밀번호를 입력해주세요" />
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">
+                              비밀번호 확인 <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="비밀번호를 확인해주세요" />
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">
+                              사용자 이름 <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="이름을 입력해주세요" />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-header d-flex justify-content-between">
+                      <h5>추가 정보</h5>
+                    </div>
+                    <div class="card-body card-right mb-0">
+                      <form class="row g-7">
+                        <div class="col-12">
+                          <label class="form-label">부서</label>
+                          <div class="d-flex gap-3">
+                            <input type="text" class="form-control" placeholder="부서명을 입력해주세요" />
+                            <div>
+                              <button type="button" class="btn btn-primary">부서 검색</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">Email</label>
+                          <input type="text" class="form-control" placeholder="Email을 입력해주세요" />
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">연락처</label>
+                          <input type="text" class="form-control" placeholder="연락처를 입력해주세요" />
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">권한 그룹</label>
+                          <div class="d-flex gap-8">
+                            <div class="fields d-flex gap-3 flex-wrap">
+                              <div class="form-check">
+                                <label class="form-check-label">시스템 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">게시판 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">프로젝트 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">프로젝트 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">프로젝트 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">시스템 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">게시판 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">프로젝트 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">프로젝트 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label">프로젝트 관리자</label>
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-6">
+                    <div class="card">
+                      <div class="card-header"></div>
+                      <div class="card-body card-left">
+                        <form class="row g-7">
+                          <div class="col-12">
+                            <label class="form-label">
+                              유효기간 <span class="text-danger">*</span>
+                            </label>
+                            <div class="d-flex align-items-center gap-5">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault1"
+                                >
+                                  무기한 사용
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault2"
+                                >
+                                  기간 지정
+                                </label>
+                              </div>
+                              <div class="kw-daterange">
+                                <input type="date" class="form-control" />
+                                ~
+                                <input type="date" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-header d-flex justify-content-between"></div>
+                    <div class="card-body card-right mb-0">
+                      <form class="row g-7">
+                        <div class="col-12">
+                          <label class="form-label">
+                            상태 <span class="text-danger">*</span>
+                          </label>
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault01"
+                            />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kw-list-foot p-6 pt-0">
+                <div class="kw-list-foot-start"></div>
+                <div class="kw-list-foot-center"></div>
+                <div class="kw-d-foot-end">
+                  <div class="kw-button">
+                    <button type="button" class="btn btn-secondary">취소</button>
+                    <button type="button" class="btn btn-secondary">입력 값 초기화</button>
+                    <button type="button" class="btn btn-primary">등록하기</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
     </div>
+
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+      부서 검색
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 842px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              부서 검색
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kw-list p-0">
+              <div class="kw-list-table">
+                <div class="kw-list-head">
+                  <div class="mb-9 w-100">
+                    <div class="row">
+                      <div class="col-12">
+                        <label class="form-label">검색</label>
+                        <div class="d-flex gap-3">
+                          <input type="text" class="form-control" placeholder="부서명을 입력해주세요" />
+                          <div>
+                            <button type="button" class="btn btn-primary">Search</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kw-list-table-scroll">
+                  <table class="table text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>선택</th>
+                        <th>부서명</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" />
+                          </div>
+                        </td>
+                        <td>KMST</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kw-list-foot">
+                <div class="kw-list-foot-start">
+                  <h6>Result : 1,300건</h6>
+                </div>
+                <div class="kw-list-foot-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item-first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item-prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item-next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item-last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="kw-list-foot-end"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+            <button type="button" class="btn btn-primary">저장</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
