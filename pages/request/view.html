@@ -89,15 +89,15 @@
                           </div>
                           <div class="col-4">
                             <label class="form-label">제품 버전</label>
-                            <input type="text" class="form-control border-none" placeholder="제품 버전" value="01" disabled>
+                            <span class="form-control value">01</span>
                           </div>
                           <div class="col-4">
                             <label class="form-label">하위 서비스명</label>
-                            <input type="text" class="form-control" placeholder="내용을 입력해주세요">
+                            <span class="form-control value">하위 서비스명</span>
                           </div>
                           <div class="col-4">
                             <label class="form-label">출시 예정일</label>
-                            <input type="text" class="form-control" placeholder="" value="2024-11-13">
+                            <span class="form-control value">2024-11-13</span>
                           </div>
                           <div class="col-4">
                             <label class="form-label">이전 버전 점검 이력</label>
@@ -105,7 +105,7 @@
                           </div>
                           <div class="col-12">
                             <label class="form-label">세부 요청 사항</label>
-                            <textarea class="form-control" placeholder="" style="height: 268px">오픈 소스 점검 요청합니다</textarea>
+                            <textarea class="form-control" placeholder="" style="height: 240px">오픈 소스 점검 요청합니다</textarea>
                           </div>
                         </form>
                       </div>
@@ -495,8 +495,8 @@
                               </div>
                             </div>
                             <div class="kw-button justify-content-end mt-3">
-                              <button class="btn btn-primary btn-sm">추가</button>
-                              <button class="btn btn-secondary btn-sm">취소</button>
+                              <button class="btn btn-primary btn-m">추가</button>
+                              <button class="btn btn-secondary btn-m" onclick="$(this).closest('.kw-view-comment--write_show').toggleClass('d-none').prev().show();">취소</button>
                             </div>
                           </div>
                         </div>
