@@ -1,3 +1,18 @@
+:root {
+  --Gray-50 : #f7f7f9;
+  --Gray-100 : #e5e7ea;
+  --Gray-200 : #9ca1ad;
+  --Gray-300 : #676e76;
+  --Gray-400 : #596066;
+  --Gray-500 : #383f45;
+  --Line : #f5f6fa;
+  --Bg : #f6f7f9;
+  --blocker-critical : #91524b;
+  --critical-high : #ba7d66;
+  --major-medium : #c09e94;
+  --major-low : #a6a6a6;
+}
+
 .kw,
 html {
   .fs-0 {
@@ -57,6 +72,7 @@ html {
       }
     }
     &-body {
+      padding-bottom:12px;
       .kw-tabs {
         padding: 0;
         .nav-tabs {
@@ -72,8 +88,10 @@ html {
   }
   .card {
     &-header {
-      padding: 15px 22px 9px;
+      line-height: 1em;
+      padding: 14px 24px;
       background-color: #fff;
+      border-radius:8px 8px 0 0;
       border-bottom: 1px solid var(--Gray-100, #e5e7ea);
       h5 {
         display: flex;
@@ -106,29 +124,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 12px;
     border-radius: 4px;
-    padding: 10px 22px;
-    font-size: 14px;
+    padding: 10px 16px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 142.857% */
     white-space: noWrap;
-    &-secondary {
-      color: #fff;
-      &:hover {
-        color: #fff;
-      }
-    }
     &-primary {
-      background: #6a9c89;
-      border-color: #6a9c89;
-      color: #fff;
-      &:hover {
-        background: #6a9c89;
-        border-color: #6a9c89;
-        color: #fff;
-      }
+      color: #fff !important;
+      --bs-btn-hover-bg: #557d6e;
+      --bs-btn-hover-border-color :#557d6e;
+      --bs-btn-active-bg: #405e52;
+      --bs-btn-active-border-color :#405e52;
       &-dark {
         background: var(--Link, #385752);
         color: #fff;
@@ -142,15 +151,26 @@ html {
         }
       }
     }
+    &-secondary {
+      color: #fff !important;
+    }
     &-dark {
       background: var(--Gray-300, #676e76);
       border-color: var(--Gray-300, #676e76);
       color: #fff;
     }
     &-sm {
-      padding: 4px;
+      padding: 1px 8px;
       font-size: 12px;
       font-weight: 500;
+      gap:8px;
+      font-weight:500;
+    }
+    &-m {
+      padding: 5px 8px;
+      font-size: 14px;
+      font-weight: 500;
+      font-weight:500;
     }
     &-lg {
       padding: 19px;
@@ -167,6 +187,10 @@ html {
       border-color: var(--Gray-200, #9ca1ad);
       background: var(--Gray-200, #9ca1ad);
       color: #fff;
+    }
+    [class*=ico] {
+      margin-right:-4px;
+      & + & {margin-right:0;}
     }
   }
   .pagination {
@@ -226,9 +250,7 @@ html {
     }
   }
   .badge {
-    &.min {
-      min-width:32px;
-    }
+    min-width:32px;
     &.medium {
       font-size:15px;
     }
@@ -253,14 +275,16 @@ html {
       color: #fff;
     }
   }
+  .form-label {
+    font-weight:500;
+  }
   .form-control {
     height: 42px;
     padding-right: 10px;
     color: var(--Gray-400, #596066);
     font-family: Pretendard;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 500;
     line-height: 25px; /* 166.667% */
     &[type='date'] {
       appearance: none;
@@ -268,19 +292,24 @@ html {
         background: url(../images/icon/Calendar.svg) no-repeat 50% 50%;
       }
     }
+    &.value {
+      border:0;
+      background-color: transparent;
+      padding-left:0;
+    }
   }
   .form-select {
     display: flex;
     align-items: center;
     min-width: 160px;
     height: 42px;
-    padding: 0 16px 0 22px;
+    padding: 0 24px 0 16px;
     border-radius: 4px;
-    border: 1.062px solid #ebebeb;
+    border: 1px solid var(--Gray-100);
     background: url(../images/icon/select.svg) no-repeat calc(100% - 8px) 50%;
     color: #596066;
     font-family: Pretendard;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: 21px; /* 140% */
@@ -300,6 +329,11 @@ html {
       font-style: normal;
       font-weight: 500;
       line-height: 21px; /* 140% */
+    }
+    &-input {
+      width:20px;
+      height:20px;
+      border-color:#9CA1AD;
     }
   }
 }

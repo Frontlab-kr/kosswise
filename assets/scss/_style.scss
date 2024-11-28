@@ -23,14 +23,14 @@
         }
       }
       &-layer {
-        position:absolute;left:calc(100% + 8px);top:100%;
+        position:absolute;left:calc(100% + 8px);top:calc(100% + 5px);
         bottom:auto;right:auto;transform: translateY(-50%);
         width:auto;height:auto;
         padding:14px 20px;
-        font-size:12px;font-weight:500;
+        font-size:15px;font-weight:500;
         white-space: nowrap;
         border-radius:8px;
-        p {margin:0;}
+        z-index:10;
       }
     }
   }
@@ -55,14 +55,9 @@
   display:flex;
   flex-wrap: wrap;
   .btn {
-    &-close {
-      width:.5em;
-      height:.5em;
-      margin-left:8px;
-      opacity:1;
-      background:#fff; 
-      -webkit-mask:var(--bs-btn-close-bg);
-      -webkit-mask-size:100%;
+    &-sm {
+      font-size:15px;
+      padding:3px 8px;
     }
   }
 }
@@ -73,6 +68,7 @@
       padding:0;
       &--open {
         max-height:1000px;
+        padding-bottom:40px;
       }
     }
     .card {
@@ -94,12 +90,13 @@
             padding-right:12px;
           }
           h5 {
-            color: var(--Gray-400, #596066);
-            font-family: Pretendard;
-            font-size: 16px;
-            padding:32px 0;
+            color: var(--Gray-400);
+            font-size:16px;
+            font-weight:700;
+            padding:24px 0;
             border-top:solid 1px var(--Gray-100, #e5e7ea);
             margin-top:54px;
+            margin-bottom:0;
           }
         }
       }
@@ -275,6 +272,9 @@
     border-radius:4px;
     padding:0 !important;
     border:0 !important;
+    &:hover {
+      background-color: var(--Gray-100);
+    }
     & + .btn-icon {
       margin-left:4px;
     }
@@ -288,6 +288,9 @@
     &.large {
       width:24px;height:24px;
       background-color: transparent;
+    }
+    [class*=ico] {
+      margin-right:0 !important;
     }
   }
   &.comment-cnt {
@@ -417,12 +420,13 @@
     &[disabled] {
       background-color: transparent;
       font-weight:700;
+      padding-left:0;
     }
   }
 }
 
 .dropdown {
-  &-toggle {
+  &-toggle:not([class*=btn-]) {
     border:0;
     background-color:transparent;
     &:after {
