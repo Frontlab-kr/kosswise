@@ -39,6 +39,252 @@
             <div class="kw-head">
               <h1 class="me-auto">정책 위반 내역 선 조치</h1>
             </div>
+
+
+            
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open mh-100">
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                          컴포넌트
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                          보고서
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03"
+                          type="button"
+                          role="tab"
+                        >
+                          선조치
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      컴포넌트
+                      </div>
+
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      </div>
+                   
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab03"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                      
+                        <form class="row">
+                          <div class="col-4">
+                            <label class="form-label">조치 완료 예정일</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col-8">
+                            <label class="form-label">간략 메모</label>
+                            <div class="row">
+                              <div class="col-8">
+                                <input type="text" class="form-control" placeholder="간략 메모를 입력해주세요"/>
+                              </div>
+                              <div class="col-4">
+                                <div class="kw-button">
+                                  <button type="button" class="btn btn-primary">조치 계획서 생성하기</button>
+                                </div>
+                              </div>
+                            </div>                            
+                          </div>
+                        </form>
+                      </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-header">
+                <h5 class="text-body">BJ_C-CPP_Test_BusyBox (Ver. v136)</h5>
+              </div>
+              <div class="card-body py-3 px-6">
+                <div class="row sbom-version">
+                  <div class="col-4">
+                    <dl>
+                      <dt>스캔</dt>
+                      <dd>2024-10-02-09:29</dd>
+                    </dl>
+                  </div>
+                  <div class="col-4">
+                    <dl>
+                      <dt>상태</dt>
+                      <dd>최신상태</dd>
+                    </dl>
+                  </div>
+                  <div class="col-4">
+                    <dl>
+                      <dt>최근 업데이트</dt>
+                      <dd>2024-10-02-09:29</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-8">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <thead>
+                          <tr>
+                            <th>조치 계획서 파일명</th>
+                            <th>파일 형식</th>
+                            <th>간략 메모 내용</th>
+                            <th>작성자</th>
+                            <th>조치 완료 예정일</th>
+                            <th>조치 계획서 생성일</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="6">
+                              <div class="kw-list-table__none">
+                                <p>문서가 존재하지 않습니다</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start"><h6>Result : 1,300건</h6></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head">
+                    <div class="kw-list-head-start w-50">
+                      <div class="kw-form-search w-50">
+                        <input type="text" class="form-control" placeholder="컴포넌트 검색">
+                        <button>검색</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <thead>
+                          <tr>
+                            <th>정책</th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  컴포넌트
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  관련소스
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                            <th>식별 타입</th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  매칭률
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                            <th>사용유형 </th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  라이선스 종류
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  보안 위험
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  운영 위험
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                            <th>
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  의견
+                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="10">
+                              <div class="kw-list-table__none">
+                                <p>문서가 존재하지 않습니다</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="kw-list-foot mt-4">
+                      <div class="kw-list-foot-start"><h6>Result : 1,300건</h6></div>
+                      <div class="kw-list-foot-center"></div>
+                      <div class="kw-d-foot-end">
+                        <div class="kw-button">
+                          <button type="button" class="btn btn-primary">컴포넌트 목록으로</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

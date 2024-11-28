@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+p<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -38,568 +38,318 @@
               <h1 class="me-auto">고지문</h1>
             </div>
 
-            <div class="card mb-8">
+            <div class="card">
               <div class="card-body">
                 <div class="kw-searchform kw-searchform--open">
-                  <div class="kw-searchform-inner">
-                    <form class="row">
-                      <div class="col-4">
-                        <label class="form-label">프로젝트 명칭 검색</label>
-                        <div class="kw-form-search">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="검색"
-                          />
-                          <button>검색</button>
+                  <form class="row">
+                    <div class="col-6">
+                      <label class="form-label">프로젝트 명칭 검색</label>
+                      <div class="kw-form-search">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="검색"
+                        />
+                        <button>검색</button>
+                      </div>
+                    </div>
+                  </form>
+                  <p class="mt-4 mb-0 text-danger"><small>※ 공식적으로 SBOM점검이 완료되고 보고서가 생성된 프로젝트에 대해 고지문 내역을 제공합니다.</small></p>
+                  <p class="mt-2 mb-0 text-danger"><small>※ 프로젝트가 조회되지 않는 경우 '점검 결과 > 프로젝트 버전 목록 > 컴포넌트 내역 >보고서 Tab' 화면에서 '보고서 생성' 내역을 확인 바랍니다.</small></p>
+                  
+                  <div class="kw-list px-0">
+                    <div class="kw-list-table">
+                      <div class="kw-list-table-scroll">
+                        <table class="table text-nowrap">
+                          <thead>
+                            <tr>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  프로젝트
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">왼쪽</button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">오른쪽</button>
+                                      <hr />
+                                      <button class="kw-align-asc">오름차순</button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  프로젝트 버전
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">왼쪽</button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">오른쪽</button>
+                                      <hr />
+                                      <button class="kw-align-asc">오름차순</button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  OSS 보고서 파일
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">왼쪽</button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">오른쪽</button>
+                                      <hr />
+                                      <button class="kw-align-asc">오름차순</button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="kw-list-table-title">
+                                  BD 파일 형식
+                                  <div class="kw-align">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <div class="kw-align-layer">
+                                      <button class="kw-align-start">왼쪽</button>
+                                      <button class="kw-align-center">
+                                        가운데
+                                      </button>
+                                      <button class="kw-align-end">오른쪽</button>
+                                      <hr />
+                                      <button class="kw-align-asc">오름차순</button>
+                                      <button class="kw-align-desc">
+                                        내림차순
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>BJ_Test_20240607</td>
+                              <td>Nexus3Inspection VERSION_LICENSE</td>
+                              <td>
+                                <button class="btn btn-primary btn-sm align-items-end"><i class="ico ico--share"></i><span>VERSION_LICENSE</span></button>
+                              </td>
+                              <td>HTML</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kw-list-foot">
+                      <div class="kw-list-foot-start">
+                        <h6>Result : 1,300건</h6>
+                      </div>
+                      <div class="kw-list-foot-center">
+                        <nav>
+                          <ul class="pagination">
+                            <li class="page-item page-item-first">
+                              <a class="page-link" href="#">처음</a>
+                            </li>
+                            <li class="page-item page-item-prev">
+                              <a class="page-link" href="#">이전</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item page-item-next">
+                              <a class="page-link" href="#">다음</a>
+                            </li>
+                            <li class="page-item page-item-last">
+                              <a class="page-link" href="#">마지막</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="kw-list-foot-end">
+                        <div>
+                          <select class="form-select">
+                            <option selected>10개씩 보기</option>
+                            <option value="1">10개씩 보기</option>
+                            <option value="2">20개씩 보기</option>
+                            <option value="3">30개씩 보기</option>
+                          </select>
                         </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-body">
-                <div class="kw-list">
-                  <div class="kw-list-table">
-                    <table class="table text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제목
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제출차수
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              승인 담당자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청일
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              상태
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제목
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제출차수
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              승인 담당자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청일
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              상태
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                  <hr />
-                                  <button class="kw-align-asc">오름차순</button>
-                                  <button class="kw-align-desc">
-                                    내림차순
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (협력사그룹)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">예외 반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (협력사그룹)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">예외 반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>2</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>2</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="kw-list-foot">
-                    <div class="kw-list-foot-start">
-                      <h6>Result : 1,300건</h6>
-                    </div>
-                    <div class="kw-list-foot-center">
-                      <nav>
-                        <ul class="pagination">
-                          <li class="page-item page-item-first">
-                            <a class="page-link" href="#">처음</a>
-                          </li>
-                          <li class="page-item page-item-prev">
-                            <a class="page-link" href="#">이전</a>
-                          </li>
-                          <li class="page-item active">
-                            <a class="page-link" href="#">1</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">4</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">5</a>
-                          </li>
-                          <li class="page-item page-item-next">
-                            <a class="page-link" href="#">다음</a>
-                          </li>
-                          <li class="page-item page-item-last">
-                            <a class="page-link" href="#">마지막</a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                    <div class="kw-list-foot-end">
-                      <div>
-                        <select class="form-select">
-                          <option selected>10개씩 보기</option>
-                          <option value="1">10개씩 보기</option>
-                          <option value="2">20개씩 보기</option>
-                          <option value="3">30개씩 보기</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
     </div>
+
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+      Open Source Software Notice
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              Open Source Software Notice
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kw-list p-0">
+              <div class="mb-7"><strong>Product: kosswise_official_2nd ALL</strong></div>
+              <div class="mb-7"><strong>Components</strong></div>
+              <div class="kw-list-table">
+                <div class="kw-list-table-scroll">
+                  <table class="table text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>License</th>
+                        <th>Component Link</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td><a href="">https://github.com/jonschlinkert/word-wrap</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kw-list-foot">
+                <div class="kw-list-foot-start">
+                  <h6>Result : 1,300건</h6>
+                </div>
+                <div class="kw-list-foot-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item-first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item-prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item-next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item-last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="kw-list-foot-end">
+                  <div>
+                    <select class="form-select">
+                      <option selected>10개씩 보기</option>
+                      <option value="1">10개씩 보기</option>
+                      <option value="2">20개씩 보기</option>
+                      <option value="3">30개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <div>
+              <button type="button" class="btn btn-primary">Text 고지문 보기</button>
+            </div>
+            <div class="d-flex gap-3">
+              <button type="button" class="btn btn-primary">HTML 다운로드</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
   </body>
 </html>

@@ -7,10 +7,10 @@
 
     <!-- 퍼블임시js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/../../assets/js/common.js"></script>
+    <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
-    <script src="/../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="../../assets/scss/common.css" />
@@ -44,7 +44,7 @@
             <div class="card mb-8">
               <div class="card-body">
                 <div class="kw-searchform kw-searchform--open">
-                  <div class="kw-searchform-inner">
+                  <div class="kw-searchform-inner mb-5">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
                         <button
@@ -72,7 +72,7 @@
                         <button
                           class="nav-link"
                           data-bs-toggle="tab"
-                          data-bs-target="#tab02"
+                          data-bs-target="#tab03"
                           type="button"
                           role="tab"
                         >
@@ -87,250 +87,85 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                        <form class="row g-7">
-                          <div class="col-3">
-                            <label class="form-label">제품 / 프로젝트 명</label>
-                            <select class="form-select">
-                              <option selected>전체</option>
-                              <option value="1">전체</option>
-                              <option value="2">전체</option>
-                              <option value="3">전체</option>
-                            </select>
-                          </div>
-                          <div class="col-3">
-                            <label class="form-label">&nbsp;</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="전체"
-                            />
-                          </div>
-                          <div class="col-3">
-                            <label class="form-label">Black Duck 그룹</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="전체"
-                            />
-                          </div>
-                          <div class="col-3">
-                            <label class="form-label">배포형태</label>
-                            <select class="form-select">
-                              <option selected>전체</option>
-                              <option value="1">전체</option>
-                              <option value="2">전체</option>
-                              <option value="3">전체</option>
-                            </select>
-                          </div>
-                          <div class="col-3">
-                            <label class="form-label">서비스명</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="전체"
-                            />
-                          </div>
-                          <div class="col-3">
-                            <label class="form-label">담당조직</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="전체"
-                            />
-                          </div>
-                          <div class="col-3">
-                            <label class="form-label">담당자</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="전체"
-                            />
-                          </div>
-                          <div class="col-3"></div>
-                          <div class="col-3">
-                            <label class="form-label"> 라이선스 위험</label>
-                            <div
-                              class="d-flex align-items-center gap-3"
-                              style="height: 42px"
-                            >
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault1"
-                                >
-                                  High
-                                </label>
+                        <div class="sbom row gap-0">
+                          <div class="col">
+                            <div class="sbom-component">
+                              <div class="sbom-component-header">
+                                <h5>라이센스 위험</h5>
+                                <div class="dropdown">
+                                  <button class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="ico ico--tooltip"></i> <span class="text-underline">기준 확인하기</span></button>
+                                  <div class="dropdown-menu type-text">                                    
+                                    <ul class="text-light mb-0" style="white-space: nowrap;">
+                                      <li><small>High (상용 구매 / 전체 소스 공개 요구)</small></li>
+                                      <li><small>Medium (넓은 소스 공개 범위 요구)</small></li>
+                                      <li><small>Low (소스 공개 요구)</small></li>
+                                      <li><small>None (고지 요구)</small></li>
+                                    </ul>
+                                    <!-- <table class="table table-simple" style="width:650px">
+                                      <colgroup>
+                                        <col>
+                                        <col style="width:150px">
+                                        <col style="width:150px">
+                                        <col style="width:100px">
+                                      </colgroup>
+                                      <thead>
+                                        <tr>
+                                          <th>제품명</th>
+                                          <th>요청자</th>
+                                          <th>서비스</th>
+                                          <th>배포형태</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>똑독 모바일 01</td>
+                                          <td>관리자</td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                    </table> -->
+                                  </div>
+                                </div>
                               </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault2"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault2"
-                                >
-                                  Medium
-                                </label>
+                              <div class="sbom-component-body mt-8">
+                                <div style="height:100px">그래프 자리</div>
                               </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault3"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault3"
-                                >
-                                  Low
-                                </label>
+                              <div class="sbom-component-foot mt-7">
+                                <div class="tooltip-text"><i class="ico ico--tooltip"></i> 아래 테이블의 라이선스 이름을 클릭하여 주요 의무 사항을 확인하세요.</div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="sbom-component">
+                              <div class="sbom-component-header">
+                                <h5>보안 위험</h5>
+                              </div>
+                              <div class="sbom-component-body mt-8">
+                                <div style="height:100px">그래프 자리</div>
+                              </div>
+                              <div class="sbom-component-foot mt-7">
+                                <div class="tooltip-text"><i class="ico ico--tooltip"></i> 아래 테이블의 라이선스 이름을 클릭하여 주요 의무 사항을 확인하세요.</div>
                               </div>
                             </div>
                           </div>
-                          <div class="col-3">
-                            <label class="form-label">보안 위험</label>
-                            <div
-                              class="d-flex align-items-center gap-3"
-                              style="height: 42px"
-                            >
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault1"
-                                >
-                                  Critical
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault2"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault2"
-                                >
-                                  High
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault3"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault3"
-                                >
-                                  Medium
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="flexCheckboxDefault"
-                                  id="flexCheckboxDefault4"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexCheckboxDefault4"
-                                >
-                                  Low
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <label class="form-label">등록일</label>
-                            <div class="d-flex align-items-center gap-3">
-                              <div class="kw-daterange">
-                                <input type="date" class="form-control" />
-                                ~
-                                <input type="date" class="form-control" />
-                              </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault1"
-                                >
-                                  1주
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault2"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault2"
-                                >
-                                  1개월
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault3"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault3"
-                                >
-                                  1년
-                                </label>
-                              </div>
-                              <button type="button" class="btn btn-primary">
-                                날짜 초기화
-                              </button>
-                            </div>
-                          </div>
-                        </form>
+                        </div>
                       </div>
+
                       <div
                         class="tab-pane fade"
                         id="tab02"
                         role="tabpanel"
                         tabindex="0"
-                      ></div>
+                      >보고서</div>
+                      
+                      <div
+                      class="tab-pane fade"
+                      id="tab03"
+                      role="tabpanel"
+                      tabindex="0"
+                    >선조치</div>
                     </div>
                   </div>
                   <button class="kw-searchform-toggle">닫기</button>
@@ -338,430 +173,360 @@
               </div>
             </div>
 
+            <div class="card mb-8">
+              <div class="kw-searchform kw-searchform--open p-0 pb-5">
+                <div class="card-header"><h5>배포형태 Ver.1</h5></div>
+                <div class="card-body py-3 px-6">
+                  <div class="row sbom-version">
+                    <div class="col-3">
+                      <dl>
+                        <dt>스캔</dt>
+                        <dd>-</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>상태</dt>
+                        <dd>최신상태</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>최근 업데이트</dt>
+                        <dd>2024-10-02-09:29</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>거버넌스 단계</dt>
+                        <dd>SBOM 승인 요청</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>사용된 제품 목록</dt>
+                        <dd>배포형태(1)</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>프로젝트 담당 조직</dt>
+                        <dd>협력사 그룹</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>프로젝트 담당자</dt>
+                        <dd>관리자</dd>
+                      </dl>
+                    </div>
+                    <div class="col-3">
+                      <dl>
+                        <dt>프로젝트 구성원</dt>
+                        <dd>지현</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <button class="kw-searchform-toggle">닫기</button>
+              </div>
+            </div>
+
             <div class="card">
               <div class="card-body">
                 <div class="kw-list">
                   <div class="kw-list-table">
-                    <table class="table text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제목
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                    <div class="kw-list-head mb-4">
+                      <div class="kw-list-head-start d-flex gap-3 w-100">
+                        <div class="kw-form-search w-25">
+                          <input type="text" class="form-control" placeholder="컴포넌트 검색">
+                          <button>검색</button>
+                        </div>
+                        <div class="btns d-flex gap-2">
+                          <button type="button" class="btn btn-primary">
+                            필터 <i class="ico-plus-white"></i>
+                          </button>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle gap-3" data-bs-toggle="dropdown" aria-expanded="false">필드선택<i class="ico ico--dropdown"></i></button>
+                            <ul class="dropdown-menu type-filter">
+                              <li>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label">Filter</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label">Filter</label>
+                                </div>
+                              </li>
+                              <li class="hasbtn">
+                                <button class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">OK</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="dropdown btn-group">
+                          <button class="btn btn-primary dropdown-toggle gap-3" data-bs-toggle="dropdown" aria-expanded="false">Ignored<i class="ico ico--dropdown"></i></button>
+                          <button class="btn btn-primary"><i class="ico ico--x_secondary"></i></button>
+                          <ul class="dropdown-menu type-filter" style="width:230px;">
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Ignored</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Not Ignored</label>
+                              </div>
+                            </li>
+                            <li class="hasbtn">
+                              <button class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">OK</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table text-nowrap">
+                        <thead>
+                          <tr>
+                            <th>정책</th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  컴포넌트
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제출차수
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  관련소스
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  식별 타입
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              승인 담당자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  사용유형
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청일
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  라이선스 종류
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              상태
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  보안 위험
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제목
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                <div class="d-inline-flex align-items-center gap-1">
+                                  운영 위험
+                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                </div>
+                                <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">오름차순</button>
+                                    <button class="kw-align-desc">내림차순</button>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              제출차수
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
+                            </th>
+                            <th>의견</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href="">20241015_gdg_test 01 [20241015_gdg_test 01]</a>
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td><span class="text-secondary">Apache License 2.0</span></td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-flex gap-7">
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button class="btn btn-icon small position-relative">
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"><span class="visually-hidden">New comment</span></span>
                                   </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <span>(1)</span>
+                                </div>
+                                <div class="dropdown">
+                                  <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul class="dropdown-menu type-list" data-popper-placement="bottom-end">
+                                    <li>
+                                      <button class="btn btn-text">Ignore</button>
+                                    </li>
+                                  </ul>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="ico ico--forbidden large"></i>
+                            </td>
+                            <td>
+                              <a href="">20241015_gdg_test 01 [20241015_gdg_test 01]</a>
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td><span class="text-secondary">Apache License 2.0</span></td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-flex gap-7">
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button class="btn btn-icon small position-relative">
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"><span class="visually-hidden">New comment</span></span>
                                   </button>
-                                  <button class="kw-align-end">오른쪽</button>
+                                  <span>(1)</span>
+                                </div>
+                                <div class="dropdown">
+                                  <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul class="dropdown-menu type-list" data-popper-placement="bottom-end">
+                                    <li>
+                                      <button class="btn btn-text">Ignore</button>
+                                    </li>
+                                  </ul>
                                 </div>
                               </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              승인 담당자
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              신청일
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="kw-list-table-title">
-                              상태
-                              <div class="kw-align">
-                                <button class="kw-align-start">왼쪽</button>
-                                <div class="kw-align-layer">
-                                  <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">
-                                    가운데
-                                  </button>
-                                  <button class="kw-align-end">오른쪽</button>
-                                </div>
-                              </div>
-                            </div>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (협력사그룹)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">예외 반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (협력사그룹)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">예외 반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>
-                            협력사그룹, 김형준(협력사그룹), 관리자(협력사그룹)
-                          </td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>2</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>2</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>1</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                          <td>
-                            <a href="" class="text-success"
-                              >INTAKE_정책 컴포넌트 반입 확인</a
-                            >
-                          </td>
-                          <td>0</td>
-                          <td>관리자 (KMST)</td>
-                          <td>관리자 (KMST)</td>
-                          <td>2024-08-30</td>
-                          <td class="text-warning">반입 요청</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div class="kw-list-foot">
                     <div class="kw-list-foot-start">
@@ -818,6 +583,542 @@
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+      관련 소스 정보
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal02"
+      >
+      라이선스 정책
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal03"
+      >
+      컴포넌트 의견
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              관련 소스 정보
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kw-list p-0">
+              <div class="kw-list-table">
+                <div class="kw-list-head">
+                  
+                </div>
+                <div class="kw-list-table-scroll">
+                  <table class="table text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div class="kw-list-table-title">
+                            경로
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            컴포넌트 이름
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            식별타입
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            라이선스
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            사용 유형
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="" class="d-inline-flex align-items-center gap-3" target="_blank">
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a href="" class="d-inline-flex align-items-center gap-3" target="_blank">
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kw-list-foot">
+                <div class="kw-list-foot-start">
+                  <h6>Result : 1,300건</h6>
+                </div>
+                <div class="kw-list-foot-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item-first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item-prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item-next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item-last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="kw-list-foot-end">
+                  <div>
+                    <select class="form-select">
+                      <option selected>10개씩 보기</option>
+                      <option value="1">10개씩 보기</option>
+                      <option value="2">20개씩 보기</option>
+                      <option value="3">30개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal02" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              라이선스 정책
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card card--line mb-7">
+              <div class="card-header">
+                <h5 class="text-black">BSD 2-clause "Simplified" License</h5>
+              </div>
+              <div class="card-body license">
+                <div class="license-terms">
+                  <div class="license-terms-overview mb-7">
+                    <strong>BSD 2-clause "Simplified" License</strong>
+                    <span>BSD 2-clause "Simplified" License</span>
+                  </div>
+                  <div class="license-terms-status">
+                    <dl>
+                      <dt>Status</dt>
+                      <dd>UNREVIEWED</dd>
+                    </dl>
+                    <dl>
+                      <dt>Family</dt>
+                      <dd>Permissive</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card card--line mb-7">
+              <div class="row mx-0">
+                <div class="col-4 px-0">
+                  <div class="card license-accordion">
+                    <div class="card-header">
+                      <h5>Required</h5>
+                    </div>
+                    <div class="card-body px-6">
+                      <div class="accordion" id="accordion1">
+                        <div class="accordion-item primary">
+                          <div class="accordion-header" id="accordion1-h1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-c1" aria-expanded="false" aria-controls="collapseOne">
+                              Include Copyright
+                            </button>
+                          </div>
+                          <div id="accordion1-c1" class="accordion-collapse collapse" aria-labelledby="accordion1-h1" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item primary">
+                          <div class="accordion-header" id="accordion1-h2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-c2" aria-expanded="false" aria-controls="collapseOne">
+                              Include LicenseeCopyright
+                            </button>
+                          </div>
+                          <div id="accordion1-c2" class="accordion-collapse collapse" aria-labelledby="accordion1-h2" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 px-0">
+                  <div class="card license-accordion">
+                    <div class="card-header">
+                      <h5>Forbidden</h5>
+                    </div>
+                    <div class="card-body px-6">
+                      <div class="accordion" id="accordion2">
+                        <div class="accordion-item critical">
+                          <div class="accordion-header" id="accordion2-h1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-c1" aria-expanded="false" aria-controls="collapseOne">
+                              Hold Liable
+                            </button>
+                          </div>
+                          <div id="accordion2-c1" class="accordion-collapse collapse" aria-labelledby="accordion2-h1" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item critical">
+                          <div class="accordion-header" id="accordion2-h2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-c2" aria-expanded="false" aria-controls="collapseOne">
+                              Place AdditionalRestrictions
+                            </button>
+                          </div>
+                          <div id="accordion2-c2" class="accordion-collapse collapse" aria-labelledby="accordion2-h2" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 px-0">
+                  <div class="card license-accordion">
+                    <div class="card-header">
+                      <h5>Required</h5>
+                    </div>
+                    <div class="card-body px-6">
+                      <div class="accordion" id="accordion3">
+                        <div class="accordion-item secondary">
+                          <div class="accordion-header" id="accordion3-h1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c1" aria-expanded="false" aria-controls="collapseOne">
+                              Disclose Source
+                            </button>
+                          </div>
+                          <div id="accordion3-c1" class="accordion-collapse collapse" aria-labelledby="accordion3-h1" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item secondary">
+                          <div class="accordion-header" id="accordion3-h2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c2" aria-expanded="false" aria-controls="collapseOne">
+                              Modify
+                            </button>
+                          </div>
+                          <div id="accordion3-c2" class="accordion-collapse collapse" aria-labelledby="accordion3-h2" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item secondary">
+                          <div class="accordion-header" id="accordion3-h3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c3" aria-expanded="false" aria-controls="collapseOne">
+                              Distribute
+                            </button>
+                          </div>
+                          <div id="accordion3-c3" class="accordion-collapse collapse" aria-labelledby="accordion3-h3" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item secondary">
+                          <div class="accordion-header" id="accordion3-h4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c4" aria-expanded="false" aria-controls="collapseOne">
+                              Place Warranty
+                            </button>
+                          </div>
+                          <div id="accordion3-c4" class="accordion-collapse collapse" aria-labelledby="accordion3-h4" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item secondary">
+                          <div class="accordion-header" id="accordion3-h5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c5" aria-expanded="false" aria-controls="collapseOne">
+                              Commercial Use
+                            </button>
+                          </div>
+                          <div id="accordion3-c5" class="accordion-collapse collapse" aria-labelledby="accordion3-h5" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="license-copyright px-6">
+              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use in source and binary forms, with or withoutmodification, are permitted provided that the following conditions aremet: * Redistributions of source code must retain the above copyrightnotice, this list of conditions and the following disclaimer.* Redistributions in binary form must reproduce the abovecopyright notice, this list of conditions and the following disclaimerin the documentation and/or other materials provided with thedistribution THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOTLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FORA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHTOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOTLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANYTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USEOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal03" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 842px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              컴포넌트 의견
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="component-chat">
+              <h5 class="component-chat__name">antlr 2.7.7</h5>
+              <div class="component-chat__list">
+                <div class="chat__other">
+                  <span class="writer">협력사</span>
+                  <div class="text">
+                    <p>소프트웨어/버전명 수정 해야할거 같습니다<br>
+                    배포형태(1) -> 배포형태(5)로 부탁드립니다 아니면 더 좋은 방향 있으면 의견 남겨주세요~</p>
+                  </div>
+                  <span class="datetime">2024-10-28 / 15:13</span>
+                </div>
+                <div class="chat__me">
+                  <div class="dropdown">
+                    <button class="btn-icon small dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="ico ico--dots"></i></button>
+                    <ul class="dropdown-menu type-list">
+                      <li><button class="btn btn-text active">수정</button></li>
+                      <li><button class="btn btn-text">삭제</button></li>
+                    </ul>
+                  </div>
+                  <span class="writer">임시 001</span>
+                  <div class="text"><p>소프트웨어/버전명 수정 해야할거 같습니다</p></div>
+                  <span class="datetime">2024-10-28 / 15:13</span>
+                </div>
+                <div class="chat__other">
+                  <span class="writer">협력사</span>
+                  <div class="text">
+                    <p>소프트웨어/버전명 수정 해야할거 같습니다<br>
+                      배포형태(1) -> 배포형태(5)로 부탁드립니다</p>
+                  </div>
+                  <span class="datetime">2024-10-28 / 15:13</span>
+                </div>
+              </div>
+            </div>
+            <div style="position: relative">
+              <p
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 20;
+                  background: rgba(0, 0, 0, 0.4);
+                  color: #fff;
+                  font-size: 20px;
+                  margin: 0;">
+                에디터 영역
+              </p>
+
+              <div class="mt-10" style="position: relative; z-index: 10">
+                <img
+                  src="../../assets/images/img01.png"
+                  alt=""
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">의견 작성</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
