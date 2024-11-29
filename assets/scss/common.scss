@@ -39,7 +39,10 @@ $pointColor: #ff7a00;
   min-height: 100vh;
   background: var(--BackGround, #f6f7f9);
   &-inner {
-    padding: 0 100px;
+    padding: 0 5%;
+    @media screen and (max-width: 1600px) {
+      padding: 0 2%;
+    }
   }
   h1 {
     margin: 0;
@@ -73,6 +76,9 @@ $pointColor: #ff7a00;
       align-items: center;
       gap: 50px;
       border-bottom: 1px solid var(--Gray-200, #9ca1ad);
+      @media screen and (max-width: 1600px) {
+        gap: 25px;
+      }
       &-brand {
         margin-right: 20px;
         a {
@@ -100,6 +106,7 @@ $pointColor: #ff7a00;
           font-weight: 700;
           line-height: normal;
           letter-spacing: 0.257px;
+          white-space: noWrap;
         }
         &:hover {
           > a {
@@ -123,15 +130,18 @@ $pointColor: #ff7a00;
         }
         &-2depth {
           position: absolute;
-          bottom: 0px;
+          bottom: -1px;
           min-width: 232px;
           padding: 4px;
           border-radius: 0px 0px 4px 4px;
-          border: 1px solid $pointColor;
+          //border: 1px solid $pointColor;
           background: #fff;
           transform: translateY(100%);
           opacity: 0;
           visibility: hidden;
+          /* 드롭다운 그림자 */
+          box-shadow: -4px 6px 13.2px 0px rgba(0, 0, 0, 0.2);
+
           a {
             display: flex;
             align-items: center;
@@ -155,6 +165,10 @@ $pointColor: #ff7a00;
           &-2depth {
             opacity: 1;
             visibility: visible;
+          }
+        }
+        @media screen and (max-width: 1600px) {
+          > a {
           }
         }
       }
@@ -194,14 +208,14 @@ $pointColor: #ff7a00;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          min-width: 140px;
+          min-width: 106px;
           height: 100%;
           padding: 0;
           background: none;
           border: none;
           color: var(--Gray-500, #383f45);
           font-family: Pretendard;
-          font-size: 14px;
+          font-size: 16px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -224,7 +238,7 @@ $pointColor: #ff7a00;
           min-width: 230px;
           padding: 4px;
           border-radius: 0px 0px 4px 4px;
-          border: 1px solid $pointColor;
+          //border: 1px solid $pointColor;
           background: var(--White, #fff);
           box-shadow: -7px 5px 14.7px 0px rgba(165, 165, 165, 0.2);
         }
