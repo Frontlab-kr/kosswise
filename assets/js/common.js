@@ -10,6 +10,13 @@ $(document).ready(function () {
   //검색폼
   $('.kw-searchform-toggle').on('click', function () {
     $(this).parents('.kw-searchform').toggleClass('kw-searchform--open');
+    if ($(this).parents('.kw-searchform').hasClass('kw-searchform--open')) {
+    } else {
+      $(this).parents('.kw-searchform').addClass('kw-searchform--tooltip');
+      setTimeout(() => {
+        $(this).parents('.kw-searchform').removeClass('kw-searchform--tooltip');
+      }, 3000);
+    }
   });
 
   //align

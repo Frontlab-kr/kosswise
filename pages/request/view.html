@@ -38,11 +38,29 @@
               <h1>요청 상세보기</h1>
               <div class="kw-button">
                 <button type="button" class="btn btn-primary">보고서</button>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">요청 완료<i class="ico ico--dropdown"></i></button>
-                  <ul class="dropdown-menu type-list">
-                    <li><button class="btn btn-text">select</button></li>
-                    <li><button class="btn btn-text">select</button></li>
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-success dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    요청 완료
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -70,21 +88,34 @@
                           <div class="col-4">
                             <label class="form-label">서비스명</label>
                             <div class="position-relative">
-                              <input type="text" class="form-control" placeholder="" value="프로젝트 명">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                value="프로젝트 명"
+                              />
                               <div class="icon-btns">
-                                <button type="button" class="btn btn-icon"><i class="ico ico--write"></i></button>
+                                <button type="button" class="btn btn-icon">
+                                  <i class="ico ico--write"></i>
+                                </button>
                               </div>
                             </div>
                           </div>
                           <div class="col-4">
                             <label class="form-label">배포형태</label>
                             <div class="position-relative">
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" />
                               <div class="icon-btns d-flex">
-                                <button type="button" class="btn btn-icon"><i class="ico ico--check"></i></button>
-                                <button type="button" class="btn btn-icon"><i class="ico ico--x"></i></button>
-                                <button type="button" class="btn btn-icon"><i class="ico ico--inquiry"></i></button>
-                              </div>                              
+                                <button type="button" class="btn btn-icon">
+                                  <i class="ico ico--check"></i>
+                                </button>
+                                <button type="button" class="btn btn-icon">
+                                  <i class="ico ico--x"></i>
+                                </button>
+                                <button type="button" class="btn btn-icon">
+                                  <i class="ico ico--inquiry"></i>
+                                </button>
+                              </div>
                             </div>
                           </div>
                           <div class="col-4">
@@ -93,19 +124,34 @@
                           </div>
                           <div class="col-4">
                             <label class="form-label">하위 서비스명</label>
-                            <span class="form-control value">하위 서비스명</span>
+                            <span class="form-control value"
+                              >하위 서비스명</span
+                            >
                           </div>
                           <div class="col-4">
                             <label class="form-label">출시 예정일</label>
                             <span class="form-control value">2024-11-13</span>
                           </div>
                           <div class="col-4">
-                            <label class="form-label">이전 버전 점검 이력</label>
-                            <input type="text" class="form-control" placeholder="" value="점검이력">
+                            <label class="form-label"
+                              >이전 버전 점검 이력</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder=""
+                              value="점검이력"
+                            />
                           </div>
                           <div class="col-12">
                             <label class="form-label">세부 요청 사항</label>
-                            <textarea class="form-control" placeholder="" style="height: 240px">오픈 소스 점검 요청합니다</textarea>
+                            <textarea
+                              class="form-control"
+                              placeholder=""
+                              style="height: 240px"
+                            >
+오픈 소스 점검 요청합니다</textarea
+                            >
                           </div>
                         </form>
                       </div>
@@ -119,46 +165,83 @@
                       <div class="row g-7">
                         <div class="col-12">
                           <label class="form-label">요청자</label>
-                          <input type="text" class="form-control" placeholder="" value="관리자(협력사그룹)">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            value="관리자(협력사그룹)"
+                          />
                         </div>
                         <div class="col-12">
                           <label class="form-label">검토자</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="" value="관리자(협력사그룹)">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder=""
+                              value="관리자(협력사그룹)"
+                            />
                             <div class="icon-btns">
-                              <button type="button" class="btn btn-icon"><i class="ico ico--write"></i></button>
+                              <button type="button" class="btn btn-icon">
+                                <i class="ico ico--write"></i>
+                              </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-12">
                           <label class="form-label">참조자</label>
                           <div class="position-relative">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" />
                             <div class="icon-btns d-flex">
-                              <button type="button" class="btn btn-icon"><i class="ico ico--check"></i></button>
-                              <button type="button" class="btn btn-icon"><i class="ico ico--x"></i></button>
-                              <button type="button" class="btn btn-icon"><i class="ico ico--inquiry"></i></button>
-                            </div>                              
+                              <button type="button" class="btn btn-icon">
+                                <i class="ico ico--check"></i>
+                              </button>
+                              <button type="button" class="btn btn-icon">
+                                <i class="ico ico--x"></i>
+                              </button>
+                              <button type="button" class="btn btn-icon">
+                                <i class="ico ico--inquiry"></i>
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      
+
                       <h5>처리 일시</h5>
                       <div class="row g-7">
                         <div class="col-12">
                           <label class="form-label">요청 일시</label>
-                          <input type="text" class="form-control" placeholder="" value="2024-10-22" readonly>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            value="2024-10-22"
+                            readonly
+                          />
                         </div>
                         <div class="col-12">
                           <label class="form-label">승인 일시</label>
-                          <input type="text" class="form-control" placeholder="" readonly>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            readonly
+                          />
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
                 <button class="kw-searchform-toggle">닫기</button>
+              </div>
+              <div class="kw-searchform-tooltip">
+                <dl>
+                  <dt>더보기</dt>
+                  <dd>
+                    다시 열어<br />
+                    검색하실 수 있습니다!
+                  </dd>
+                </dl>
               </div>
             </div>
 
@@ -170,13 +253,15 @@
                   </div>
                   <div class="kw-list-head-end">
                     <div class="kw-button">
-                      <button type="button" class="btn btn-primary">추가</button>
+                      <button type="button" class="btn btn-primary">
+                        추가
+                      </button>
                     </div>
                   </div>
                 </div>
                 <div class="kw-list-table">
                   <div class="kw-list-table-scroll">
-                    <table class="table text-nowrap">
+                    <table class="table">
                       <thead>
                         <tr>
                           <th>점검이력</th>
@@ -187,7 +272,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -200,7 +287,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -213,7 +302,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -226,7 +317,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -239,7 +332,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -252,7 +347,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -265,7 +362,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -278,7 +377,9 @@
                                 <button class="kw-align-start">왼쪽</button>
                                 <div class="kw-align-layer">
                                   <button class="kw-align-start">왼쪽</button>
-                                  <button class="kw-align-center">가운데</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
                                   <button class="kw-align-end">오른쪽</button>
                                 </div>
                               </div>
@@ -294,7 +395,9 @@
                             </div>
                           </td>
                           <td>
-                            <a href="" class="text-secondary">20241015_gdg_test 01 [20241015_gdg_test 01]</a>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
                           </td>
                           <td>0 Round</td>
                           <td>OFFICIAL</td>
@@ -304,20 +407,35 @@
                           <td>창영,...</td>
                           <td>
                             <div class="d-flex gap-8">
-                              <div class="fields d-inline-flex gap-2">                                  
+                              <div class="fields d-inline-flex gap-2">
                                 <div class="form-check-reverse">
-                                  <input class="form-check-input" type="checkbox">
-                                  <label class="form-check-label">License</label>
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
                                 </div>
                                 <div class="form-check-reverse">
-                                  <input class="form-check-input" type="checkbox">
-                                  <label class="form-check-label">Security</label>
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
                                 </div>
                               </div>
-                              <button class="btn btn-icon small"><i class="ico ico--write"></i></button>
-                              <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
                             </div>
                           </td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -394,8 +512,12 @@
                   <div class="kw-list-foot-center"></div>
                   <div class="kw-d-foot-end">
                     <div class="kw-button">
-                      <button type="button" class="btn btn-secondary">삭제</button>
-                      <button type="button" class="btn btn-primary">목록으로</button>
+                      <button type="button" class="btn btn-secondary">
+                        삭제
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        목록으로
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -414,7 +536,7 @@
                         type="button"
                         role="tab"
                       >
-                      댓글
+                        댓글
                       </button>
                     </li>
                     <li class="nav-item">
@@ -425,10 +547,10 @@
                         type="button"
                         role="tab"
                       >
-                      이력
+                        이력
                       </button>
                     </li>
-                  </ul>                  
+                  </ul>
                   <div class="kw-searchform-button">
                     <select class="form-select">
                       <option selected>최근 항목 먼저</option>
@@ -448,24 +570,51 @@
                             <span>2024-10-23 08:25</span>
                           </div>
                           <div class="dropdown">
-                            <button class="btn-icon small dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="ico ico--dots"></i></button>
+                            <button
+                              class="btn-icon small dropdown-toggle"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="ico ico--dots"></i>
+                            </button>
                             <ul class="dropdown-menu type-list">
-                              <li><button class="btn btn-text active">수정</button></li>
-                              <li><button class="btn btn-text">삭제</button></li>
+                              <li>
+                                <button class="btn btn-text active">
+                                  수정
+                                </button>
+                              </li>
+                              <li>
+                                <button class="btn btn-text">삭제</button>
+                              </li>
                             </ul>
                           </div>
-                          <input type="text" class="form-control" value="펜슬 댓글" readonly="">
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="펜슬 댓글"
+                            readonly=""
+                          />
                         </div>
                         <div class="kw-view-comment-item">
                           <div class="kw-view-comment-item__name">
                             임시001(솔루션사업팀)
                             <span>2024-10-23 08:25</span>
                           </div>
-                          <input type="text" class="form-control" value="펜슬 댓글" readonly="">
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="펜슬 댓글"
+                            readonly=""
+                          />
                         </div>
 
                         <div class="kw-view-comment--write">
-                          <input class="form-control" readonly placeholder="댓글추가..." onclick="$(this).hide().next().toggleClass('d-none');">
+                          <input
+                            class="form-control"
+                            readonly
+                            placeholder="댓글추가..."
+                            onclick="$(this).hide().next().toggleClass('d-none');"
+                          />
                           <div class="kw-view-comment--write_show d-none">
                             <div style="position: relative">
                               <p
@@ -482,7 +631,9 @@
                                   background: rgba(0, 0, 0, 0.4);
                                   color: #fff;
                                   font-size: 20px;
-                                  margin: 0;">
+                                  margin: 0;
+                                "
+                              >
                                 에디터 영역
                               </p>
 
@@ -495,8 +646,15 @@
                               </div>
                             </div>
                             <div class="kw-button justify-content-end mt-3">
-                              <button class="btn btn-primary btn-m">추가</button>
-                              <button class="btn btn-secondary btn-m" onclick="$(this).closest('.kw-view-comment--write_show').toggleClass('d-none').prev().show();">취소</button>
+                              <button class="btn btn-primary btn-m">
+                                추가
+                              </button>
+                              <button
+                                class="btn btn-secondary btn-m"
+                                onclick="$(this).closest('.kw-view-comment--write_show').toggleClass('d-none').prev().show();"
+                              >
+                                취소
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -508,18 +666,16 @@
                       role="tabpanel"
                       tabindex="0"
                     >
-                    이력
+                      이력
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-            
           </div>
         </div>
       </div>
-      
+
       <div id="footer"></div>
     </div>
 
@@ -540,7 +696,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      배포 형태 검색
+        배포 형태 검색
       </button>
       <br />
       <button
@@ -549,7 +705,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
-      서비스 검색
+        서비스 검색
       </button>
     </div>
     <!--// Modal list -->
@@ -561,7 +717,7 @@
         style="max-width: 789px"
       >
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header modal-header--lg">
             <div class="modal-title">배포 형태 검색</div>
             <button
               type="button"
@@ -570,45 +726,58 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body pb-0">
-            <div class="kw-list p-0">
-              <div class="modal-search mb-8">
-                <form class="row w-100">
-                  <div class="col-6">
-                    <select class="form-select">
-                      <option selected>선택하세요</option>
-                      <option value="1">전체</option>
-                      <option value="2">전체</option>
-                      <option value="3">전체</option>
-                    </select>
-                  </div>
-                  <div class="col-6">
-                    <div class="kw-form-search w-100">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="검색하세요"
-                      />
-                      <button>검색</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="kw-list-table">                
-                <div class="kw-list-head"> 
+          <div class="modal-body">
+            <div class="modal-search mb-8">
+              <form class="row g-3">
+                <div class="col-6">
+                  <select class="form-select">
+                    <option selected>선택하세요</option>
+                    <option value="1">전체</option>
+                    <option value="2">전체</option>
+                    <option value="3">전체</option>
+                  </select>
                 </div>
+                <div class="col-6">
+                  <div class="kw-form-search w-100">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="검색하세요"
+                    />
+                    <button>검색</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="kw-list p-0">
+              <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
                     <thead>
                       <tr>
-                        <th class="text-center">배포 형태</th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            배포 형태
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>
                           <div class="kw-list-table__none">
-                            <p class="text-black-50">등록된 배포형태가 없습니다</p>
+                            <p>등록된 배포형태가 없습니다</p>
                           </div>
                         </td>
                       </tr>
@@ -616,38 +785,35 @@
                   </table>
                 </div>
               </div>
-              <div class="kw-list-foot">
-                <div class="kw-list-foot-start">
-                  <h6>Result : 1,300건</h6>
-                </div>
-                <div class="kw-list-foot-center"></div>
-                <div class="kw-list-foot-end"></div>
-              </div>
             </div>
-
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-            <button type="button" class="btn btn-primary">저장</button>
+          <div class="modal-footer justify-content-between">
+            <div class="fs-15 fw-medium text-color-gray-300">
+              Result : 1,300건
+            </div>
+            <div class="d-flex gap-3">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                닫기
+              </button>
+              <button type="button" class="btn btn-primary">저장</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="modal02" tabindex="-1">
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
         style="max-width: 789px"
       >
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">배포 형태 검색</div>
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">서비스 검색</div>
             <button
               type="button"
               class="btn-close"
@@ -655,47 +821,92 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body pb-0">
-            <div class="kw-list p-0">
-              <div class="modal-search mb-8">
-                <form class="row w-100">
-                  <div class="col-6">
-                    <select class="form-select">
-                      <option selected>선택하세요</option>
-                      <option value="1">전체</option>
-                      <option value="2">전체</option>
-                      <option value="3">전체</option>
-                    </select>
-                  </div>
-                  <div class="col-6">
-                    <div class="kw-form-search w-100">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="서비스 명으로 검색하세요"
-                      />
-                      <button>검색</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="kw-list-table">                
-                <div class="kw-list-head"> 
+          <div class="modal-body">
+            <div class="modal-search mb-8">
+              <form class="row g-3">
+                <div class="col-6">
+                  <select class="form-select">
+                    <option selected>선택하세요</option>
+                    <option value="1">전체</option>
+                    <option value="2">전체</option>
+                    <option value="3">전체</option>
+                  </select>
                 </div>
+                <div class="col-6">
+                  <div class="kw-form-search w-100">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="서비스 명으로 검색하세요"
+                    />
+                    <button>검색</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="kw-list p-0">
+              <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
                     <thead>
                       <tr>
-                        <th class="text-center">등급</th>
-                        <th class="text-center">서비스명</th>
-                        <th class="text-center">하위 서비스명</th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            등급
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            서비스명
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            하위 서비스명
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td colspan="3">
                           <div class="kw-list-table__none">
-                            <p class="text-black-50">등록된 배포형태가 없습니다</p>
+                            <p class="text-black-50">
+                              등록된 배포형태가 없습니다
+                            </p>
                           </div>
                         </td>
                       </tr>
@@ -703,29 +914,25 @@
                   </table>
                 </div>
               </div>
-              <div class="kw-list-foot">
-                <div class="kw-list-foot-start">
-                  <h6>Result : 1,300건</h6>
-                </div>
-                <div class="kw-list-foot-center"></div>
-                <div class="kw-list-foot-end"></div>
-              </div>
             </div>
-
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-            <button type="button" class="btn btn-primary">저장</button>
+          <div class="modal-footer justify-content-between">
+            <div class="fs-15 fw-medium text-color-gray-300">
+              Result : 1,300건
+            </div>
+            <div class="d-flex gap-3">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                닫기
+              </button>
+              <button type="button" class="btn btn-primary">저장</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

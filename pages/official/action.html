@@ -40,10 +40,7 @@
               <h1 class="me-auto">정책 위반 내역 선 조치</h1>
             </div>
 
-
-            
-
-            <div class="card mb-8">
+            <div class="card mb-7">
               <div class="card-body">
                 <div class="kw-searchform kw-searchform--open mh-100">
                   <div class="kw-searchform-inner">
@@ -89,7 +86,7 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      컴포넌트
+                        컴포넌트
                       </div>
 
                       <div
@@ -97,64 +94,79 @@
                         id="tab02"
                         role="tabpanel"
                         tabindex="0"
-                      >
-                      </div>
-                   
+                      ></div>
+
                       <div
                         class="tab-pane fade show active"
                         id="tab03"
                         role="tabpanel"
                         tabindex="0"
                       >
-                      
-                        <form class="row">
+                        <form class="row g-3">
                           <div class="col-4">
                             <label class="form-label">조치 완료 예정일</label>
                             <input type="date" class="form-control" />
                           </div>
                           <div class="col-8">
                             <label class="form-label">간략 메모</label>
-                            <div class="row">
-                              <div class="col-8">
-                                <input type="text" class="form-control" placeholder="간략 메모를 입력해주세요"/>
+                            <div class="row g-3">
+                              <div class="col-9">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="간략 메모를 입력해주세요"
+                                />
                               </div>
-                              <div class="col-4">
+                              <div class="col-3">
                                 <div class="kw-button">
-                                  <button type="button" class="btn btn-primary">조치 계획서 생성하기</button>
+                                  <button type="button" class="btn btn-primary">
+                                    조치 계획서 생성하기
+                                  </button>
                                 </div>
                               </div>
-                            </div>                            
+                            </div>
                           </div>
                         </form>
                       </div>
-                        
                     </div>
                   </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+                <div class="kw-searchform-tooltip">
+                  <dl>
+                    <dt>더보기</dt>
+                    <dd>
+                      다시 열어<br />
+                      검색하실 수 있습니다!
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
 
-            <div class="card mb-8">
-              <div class="card-header">
+            <div class="card mb-7 px-6">
+              <div class="card-header px-0">
                 <h5 class="text-body">BJ_C-CPP_Test_BusyBox (Ver. v136)</h5>
               </div>
-              <div class="card-body py-3 px-6">
-                <div class="row sbom-version">
+              <div class="card-body p-0">
+                <div class="row g-0 py-6">
                   <div class="col-4">
-                    <dl>
-                      <dt>스캔</dt>
-                      <dd>2024-10-02-09:29</dd>
+                    <dl class="m-0 px-6 border-end">
+                      <dt class="fs-15 fw-medium text-color-gray-400">스캔</dt>
+                      <dd class="fs-17">2024-10-02-09:29</dd>
                     </dl>
                   </div>
                   <div class="col-4">
-                    <dl>
-                      <dt>상태</dt>
+                    <dl class="m-0 px-6 border-end">
+                      <dt class="fs-15 fw-medium text-color-gray-400">상태</dt>
                       <dd>최신상태</dd>
                     </dl>
                   </div>
                   <div class="col-4">
-                    <dl>
-                      <dt>최근 업데이트</dt>
+                    <dl class="m-0 px-6">
+                      <dt class="fs-15 fw-medium text-color-gray-400">
+                        최근 업데이트
+                      </dt>
                       <dd>2024-10-02-09:29</dd>
                     </dl>
                   </div>
@@ -167,15 +179,141 @@
                 <div class="kw-list">
                   <div class="kw-list-table">
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <thead>
                           <tr>
-                            <th>조치 계획서 파일명</th>
-                            <th>파일 형식</th>
-                            <th>간략 메모 내용</th>
-                            <th>작성자</th>
-                            <th>조치 완료 예정일</th>
-                            <th>조치 계획서 생성일</th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                조치 계획서 파일명
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                파일 형식
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                간략 메모 내용
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                작성자
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                조치 완료 예정일
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                조치 계획서 생성일
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
@@ -191,7 +329,9 @@
                     </div>
                   </div>
                   <div class="kw-list-foot">
-                    <div class="kw-list-foot-start"><h6>Result : 1,300건</h6></div>
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,59 +343,91 @@
                   <div class="kw-list-head">
                     <div class="kw-list-head-start w-50">
                       <div class="kw-form-search w-50">
-                        <input type="text" class="form-control" placeholder="컴포넌트 검색">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="컴포넌트 검색"
+                        />
                         <button>검색</button>
                       </div>
                     </div>
                   </div>
                   <div class="kw-list-table">
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <thead>
                           <tr>
                             <th>정책</th>
                             <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  컴포넌트
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                컴포넌트
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
                               </div>
                             </th>
                             <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  관련소스
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                관련소스
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
                               </div>
                             </th>
                             <th>식별 타입</th>
                             <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  매칭률
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                매칭률
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
                               </div>
                             </th>
-                            <th>사용유형 </th>
+                            <th>사용유형</th>
                             <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  라이선스 종류
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
-                              </div>
-                            </th>
-                            <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  보안 위험
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
-                              </div>
-                            </th>
-                            <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  운영 위험
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                라이선스 종류
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
                               </div>
                             </th>
                             <th>
-                                <div class="d-inline-flex align-items-center gap-1">
-                                  의견
-                                <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                보안 위험
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
+                              </div>
+                            </th>
+                            <th>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                운영 위험
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
+                              </div>
+                            </th>
+                            <th>
+                              <div
+                                class="d-inline-flex align-items-center gap-1"
+                              >
+                                의견
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--sort"></i>
+                                </button>
                               </div>
                             </th>
                           </tr>
@@ -272,11 +444,15 @@
                       </table>
                     </div>
                     <div class="kw-list-foot mt-4">
-                      <div class="kw-list-foot-start"><h6>Result : 1,300건</h6></div>
+                      <div class="kw-list-foot-start">
+                        <h6>Result : 1,300건</h6>
+                      </div>
                       <div class="kw-list-foot-center"></div>
                       <div class="kw-d-foot-end">
                         <div class="kw-button">
-                          <button type="button" class="btn btn-primary">컴포넌트 목록으로</button>
+                          <button type="button" class="btn btn-primary">
+                            컴포넌트 목록으로
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -284,7 +460,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

@@ -535,7 +535,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      Dependency Tree for Apache Commons Compress 1.21
+      Black Duck Security Advisory
       </button>
     </div>
     <!--// Modal list -->
@@ -547,9 +547,9 @@
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header modal-header--lg">
             <div class="modal-title">
-              Dependency Tree for Apache Commons Compress 1.21
+              Black Duck Security Advisory
             </div>
             <button
               type="button"
@@ -559,7 +559,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="card card--line mb-12">
+            <div class="card card--line mb-7">
               <div class="card-header">
                 <h5 class="text-black">Apache Commons Codec Base32 Decoding Invalid String Causing Tunneling Weakness</h5>
               </div>
@@ -585,7 +585,7 @@
                 <h5>Description</h5>
               </div>
               <div class="card-body p-6">                
-                <p class="mb-0 text-body">Apache Commons contains a flaw that is due to the Base32 codec decoding invalid strings instead of rejecting them. This may allow a remote attacker to tunnel additional information via a base 32 string that seems valid.</p>
+                <p class="m-0 text-color-gray-400">Apache Commons contains a flaw that is due to the Base32 codec decoding invalid strings instead of rejecting them. This may allow a remote attacker to tunnel additional information via a base 32 string that seems valid.</p>
               </div>
             </div>
             <div class="card card--line mb-7">
@@ -593,7 +593,7 @@
                 <h5>How to fix it</h5>
               </div>
               <div class="card-body p-6">                
-                <div class="text-light">
+                <div class="text-color-gray-400">
                   Fix Available<br>
                   Fixed in version <span class="text-danger">1.13-rc1</span> by <span class="text-danger">this</span> commit.<br>
                   No Workaround

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item active">승인 대기</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <div>
+                <h1>승인 대기</h1>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body p-0">
+                <div class="kw-list">
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="kw-list-table-title">
+                                구분
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                제품명
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                요청자
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                관계 부서
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                요청일
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="5">
+                              <div
+                                class="text-light d-flex justify-content-center py-16"
+                              >
+                                데이터가 없습니다
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center"></div>
+                    <div class="kw-list-foot-end"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

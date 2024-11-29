@@ -42,10 +42,12 @@
               <div class="col-4">
                 <div class="card h-100">
                   <div class="card-header"><h5>인원정보</h5></div>
-                  <div class="card-body py-8 px-6">
-                    <form class="row g-6">
+                  <div class="card-body py-6 px-6">
+                    <form class="row g-7">
                       <div class="col-12">
-                        <label class="form-label">요청자<span class="text-danger">*</span></label>
+                        <label class="form-label"
+                          >요청자<span class="text-danger">*</span></label
+                        >
                         <div class="d-flex gap-3">
                           <input
                             type="text"
@@ -54,7 +56,9 @@
                             required
                           />
                           <div class="kw-button">
-                            <button type="button" class="btn btn-primary">담당자 검색</button>
+                            <button type="button" class="btn btn-primary">
+                              담당자 검색
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -64,12 +68,19 @@
                           <textarea
                             class="form-control"
                             placeholder="오픈 소스 점검과 개발에 관여하는 참조자 이름"
-                            style="height: 154px"
+                            style="height: 140px"
                             readonly
                           ></textarea>
                           <div class="kw-button flex-column gap-2">
-                            <button type="button" class="btn w-100 btn-primary">참조자 추가</button>
-                            <button type="button" class="btn w-100 btn-secondary">초기화</button>
+                            <button type="button" class="btn w-100 btn-primary">
+                              참조자 추가
+                            </button>
+                            <button
+                              type="button"
+                              class="btn w-100 btn-secondary"
+                            >
+                              초기화
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -80,13 +91,15 @@
               <div class="col-8">
                 <div class="card h-100">
                   <div class="card-header"><h5>제품 정보</h5></div>
-                  <div class="card-body py-8 px-6">
+                  <div class="card-body py-6 px-6">
                     <form
-                      class="row g-6 needs-validation was-validated"
+                      class="row g-7 needs-validation was-validated"
                       novalidate
                     >
                       <div class="col-6">
-                        <label class="form-label">제품명<span class="text-danger">*</span></label>
+                        <label class="form-label"
+                          >제품명<span class="text-danger">*</span></label
+                        >
                         <input
                           type="text"
                           class="form-control"
@@ -110,7 +123,9 @@
                         <div class="d-flex gap-3">
                           <input type="text" class="form-control" readonly />
                           <div class="kw-button">
-                            <button type="button" class="btn btn-primary">담당자 검색</button>
+                            <button type="button" class="btn btn-primary">
+                              담당자 검색
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -124,7 +139,9 @@
                             readonly
                           />
                           <div class="kw-button">
-                            <button type="button" class="btn btn-primary">배포형태 검색</button>
+                            <button type="button" class="btn btn-primary">
+                              배포형태 검색
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -145,31 +162,36 @@
                 </div>
               </div>
             </div>
-            <div class="row mt-8">
+            <div class="row mt-13">
               <div class="col-12">
                 <div class="card h-100">
                   <div class="card-body p-0">
                     <div class="kw-list">
                       <div class="kw-list-head align-items-start">
                         <div class="kw-list-head-start">
-                          <strong class="text-body">오픈소스 점검 정보 (Black Duck 분석 프로젝트 정보)</strong>
+                          <strong class="text-body"
+                            >오픈소스 점검 정보 (Black Duck 분석 프로젝트
+                            정보)</strong
+                          >
                           <div class="mt-3">
                             <small class="text-danger">
-                            ※ 프로젝트 추가는 지금 하지 않아도 되며, 요청을 저장하거나 생성한 후에도 가능합니다.
+                              ※ 프로젝트 추가는 지금 하지 않아도 되며, 요청을
+                              저장하거나 생성한 후에도 가능합니다.
                             </small>
                           </div>
                         </div>
                         <div class="kw-list-head-center"></div>
                         <div class="kw-list-head-end">
                           <div class="kw-button">
-                            <button type="button" class="btn btn-primary">추가</button>
+                            <button type="button" class="btn btn-primary">
+                              추가
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <div class="mt-2">
-                      </div>
+                      <div class="mt-2"></div>
                       <div class="kw-list-table kw-list-table-scroll">
-                        <table class="table text-nowrap">
+                        <table class="table">
                           <thead>
                             <tr>
                               <th>Black Duck Project</th>
@@ -205,11 +227,11 @@
                 </div>
               </div>
             </div>
-            <div class="row mt-8">
+            <div class="row mt-13">
               <div class="col-12">
                 <div class="card h-100">
                   <div class="card-header"><h5>세부 요청 사항</h5></div>
-                  <div class="card-body py-8 px-6">
+                  <div class="card-body py-6 px-6">
                     <form class="row g-6">
                       <div class="col-12">
                         <label class="form-label"> 첨부 파일 </label>
@@ -240,7 +262,9 @@
                               background: rgba(0, 0, 0, 0.4);
                               color: #fff;
                               font-size: 20px;
-                              margin: 0;">
+                              margin: 0;
+                            "
+                          >
                             에디터 영역
                           </p>
 
@@ -259,9 +283,15 @@
                       <div class="kw-list-foot-center"></div>
                       <div class="kw-d-foot-end">
                         <div class="kw-button">
-                          <button type="button" class="btn btn-secondary">임시저장</button>
-                          <button type="button" class="btn btn-primary">요청</button>
-                          <button type="button" class="btn btn-primary">취소</button>
+                          <button type="button" class="btn btn-secondary">
+                            임시저장
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            요청
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            취소
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -376,7 +406,7 @@
                       </div>
                       <ol>
                         <li>
-                          <div class="kw-tree-text">
+                          <div class="kw-tree-text active">
                             <button class="kw-tree-collapse">열기</button>
                             <label>
                               <input class="form-check-input" type="checkbox" />
@@ -412,7 +442,7 @@
                                       <strong>솔루션 사업팀</strong>
                                     </label>
                                   </div>
-                                  <ol>
+                                  <ol class="fold">
                                     <li>
                                       <div class="kw-tree-text">
                                         <button class="kw-tree-collapse">
@@ -470,12 +500,70 @@
                     </li>
                   </ol>
                 </div>
-                <div class="mt-4 btns-checked-grp gap-3">
+                <div class="kw-btn-filter mt-4">
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span><span class="ico ico--x white small"></span>
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span><span class="ico ico--x white small"></span>
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
                   </button>
                 </div>
               </div>
@@ -507,93 +595,129 @@
                     </div>
                   </div>
                 </form>
-                <div class="kw-list p-0 mt-10">
+                <div class="kw-list p-0 mt-7">
                   <div class="kw-list-table">
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
+                        <colgroup>
+                          <col style="width: 40px" />
+                          <col style="width: 70px" />
+                          <col style="width: 90px" />
+                          <col style="width: 220px" />
+                          <col style="width: 70px" />
+                          <col style="width: 250px" />
+                        </colgroup>
                         <thead>
                           <tr>
-                            <th>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" />
-                              </div>
+                            <th class="text-center">
+                              <input class="form-check-input" type="checkbox" />
                             </th>
-                            <th>                              
+                            <th>
                               <div class="kw-list-table-title">
                                 아이디
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
-                            <th>                              
+                            <th>
                               <div class="kw-list-table-title">
                                 이름
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
-                            <th>                              
+                            <th>
                               <div class="kw-list-table-title">
                                 이메일
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
-                            <th>                              
+                            <th>
                               <div class="kw-list-table-title">
                                 부서
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
-                            <th>                              
+                            <th>
                               <div class="kw-list-table-title">
                                 역할
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -602,47 +726,210 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" />
-                              </div>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
                             </td>
                             <td>yumpm</td>
                             <td>임시001</td>
                             <td>kash4763@naver.com</td>
                             <td>KMST</td>
-                            <td>OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의 슈퍼관</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>yumpm</td>
+                            <td>임시001</td>
+                            <td>kash4763@naver.com</td>
+                            <td>KMST</td>
+                            <td>
+                              OSS관리 포털 시스템의 슈퍼관OSS관리 포털 시스템의
+                              슈퍼관
+                            </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </div>
-                <div class="mt-4 btns-checked-grp gap-3">
+                <div class="kw-btn-filter mt-4">
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span><span class="ico ico--x white small"></span>
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span><span class="ico ico--x white small"></span>
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
                   </button>
-                </div>
-                <div class="kw-list-foot mt-4">
-                  <div class="kw-list-foot-start">
-                    <h6>Result : 1,300건</h6>
-                  </div>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span
+                    ><span class="ico ico--x white small"></span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-            <button type="button" class="btn btn-primary">저장</button>
+          <div class="modal-footer justify-content-between">
+            <div class="fs-15 fw-medium text-color-gray-300">
+              Result : 1,300건
+            </div>
+            <div class="d-flex gap-3">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                닫기
+              </button>
+              <button type="button" class="btn btn-primary">저장</button>
+            </div>
           </div>
         </div>
       </div>
@@ -654,16 +941,19 @@
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header modal-header--lg">
             <div class="modal-title">
               오픈소스 점검 정보 (Black Duck 분석 프로젝트) 추가
               <div class="kw-align">
                 <button></button>
                 <div class="kw-align-layer">
                   <p class="text-danger mb-0">
-                    ※ Kosswise에서 제품명으로 만들어진 통합 프로젝트는 선택이 불가능 합니다.<br><br>
-                    ※ Black Duck에서 새로 스캔한 데이터는 약 1~5분 후 반영됩니다.<br>
-                    조회 되지 않을 시 잠시 후 다시 확인해 주세요.</p>
+                    ※ Kosswise에서 제품명으로 만들어진 통합 프로젝트는 선택이
+                    불가능 합니다.<br /><br />
+                    ※ Black Duck에서 새로 스캔한 데이터는 약 1~5분 후
+                    반영됩니다.<br />
+                    조회 되지 않을 시 잠시 후 다시 확인해 주세요.
+                  </p>
                 </div>
               </div>
             </div>
@@ -675,9 +965,11 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="kw-list p-0 mt-10">
-              <div class="modal-search justify-content-start mb-8 gap-3">
-                <div class="row w-75">
+            <div class="kw-list p-0">
+              <div
+                class="d-flex align-items-center justify-content-start mb-8 gap-3"
+              >
+                <div class="row g-3 w-75">
                   <div class="col-6">
                     <select class="form-select">
                       <option selected="">프로젝트 명</option>
@@ -687,55 +979,64 @@
                     </select>
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" placeholder="프로젝트 또는 버전명 입력">
-                  </div>
-                </div>
-                <div class="kw-button">
-                  <button type="button" class="btn btn-primary">검색</button>
-                </div>
-              </div>              
-              <div class="modal-search justify-content-start mb-8 gap-3">
-                <div class="row w-75">
-                  <div class="col-4">
-                    <select class="form-select">
-                      <option selected="">제품명</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <input type="text" class="form-control" placeholder="제품명 입력">
-                  </div>
-                  <div class="col-4">
-                    <input type="text" class="form-control" placeholder="버전명 입력">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="프로젝트 또는 버전명 입력"
+                    />
                   </div>
                 </div>
                 <div class="kw-button">
                   <button type="button" class="btn btn-primary">검색</button>
                 </div>
               </div>
-              <div class="kw-list-table">                
-                <div class="kw-list-head">
-                  
+              <div
+                class="d-flex align-items-center justify-content-start mb-8 gap-3"
+              >
+                <div class="row g-3 w-75">
+                  <div class="col-4">
+                    <select class="form-select">
+                      <option selected="">제품명</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="제품명 입력"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="버전명 입력"
+                    />
+                  </div>
                 </div>
+                <div class="kw-button">
+                  <button type="button" class="btn btn-primary">검색</button>
+                </div>
+              </div>
+              <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
                     <thead>
                       <tr>
-                        <th>선택</th>
+                        <th class="text-center">선택</th>
                         <th>프로젝트 명칭</th>
                         <th>버전 명칭</th>
                         <th>BD Group Name</th>
                         <th>오픈소스 수</th>
                         <th>마지막 스캔일</th>
                         <th>마지막 갱신일</th>
-                        <th>점검이력</th>
+                        <th class="text-center">점검이력</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" />
-                          </div>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
                         </td>
                         <td>BJ_AOSP_Test_matchConfi...</td>
                         <td>1</td>
@@ -743,10 +1044,106 @@
                         <td>96</td>
                         <td>2024-06-25</td>
                         <td>2024-06-25</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" />
-                          </div>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
+                        </td>
+                        <td>BJ_AOSP_Test_matchConfi...</td>
+                        <td>1</td>
+                        <td>Black Duck Project Groups</td>
+                        <td>96</td>
+                        <td>2024-06-25</td>
+                        <td>2024-06-25</td>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" />
                         </td>
                       </tr>
                     </tbody>
@@ -802,7 +1199,6 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div class="modal-footer">
             <button

@@ -42,7 +42,7 @@
               <div class="card-body">
                 <div class="kw-searchform kw-searchform--open">
                   <div class="kw-searchform-inner">
-                    <div class="row g-7 mb-4">
+                    <div class="row g-7">
                       <div class="col-4">
                         <label class="form-label">컴포넌트 명칭 입력</label>
                         <select class="form-select">
@@ -53,7 +53,7 @@
                         </select>
                       </div>
                       <div class="col-4">
-                        <label class="form-label">컴포넌트 명칭 입력</label>
+                        <label class="form-label">범위</label>
                         <select class="form-select">
                           <option selected>전체</option>
                           <option value="1">전체</option>
@@ -72,6 +72,16 @@
                       </div>
                     </div>
                   </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+                <div class="kw-searchform-tooltip">
+                  <dl>
+                    <dt>더보기</dt>
+                    <dd>
+                      다시 열어<br />
+                      검색하실 수 있습니다!
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -83,10 +93,32 @@
                     <div class="kw-list-head-start"></div>
                     <div class="kw-list-head-center"></div>
                     <div class="kw-list-head-end">
-                      <div>
-                        <select class="form-select">
-                          <option selected>정렬</option>
-                        </select>
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn btn-success dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          정렬
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -100,7 +132,7 @@
                       </dl>
                     </div>
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <colgroup>
                           <col style="width: 448px" />
                           <col style="width: 244px" />
@@ -601,7 +633,7 @@
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header modal-header--lg">
             <div class="modal-title">
               <h4>사용중인 프로젝트</h4>
             </div>
@@ -619,10 +651,25 @@
             <div class="kw-list p-0">
               <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
                     <thead>
                       <tr>
-                        <th>프로젝트 명칭/버전</th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            프로젝트 명칭/버전
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
                       </tr>
                     </thead>
                     <tbody>

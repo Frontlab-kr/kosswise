@@ -93,12 +93,36 @@
                               <div class="sbom-component-header">
                                 <h5>라이센스 위험</h5>
                                 <div class="dropdown">
-                                  <button class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="ico ico--tooltip"></i> <span class="text-underline">기준 확인하기</span></button>
-                                  <div class="dropdown-menu type-text">                                    
-                                    <ul class="text-light mb-0" style="white-space: nowrap;">
-                                      <li><small>High (상용 구매 / 전체 소스 공개 요구)</small></li>
-                                      <li><small>Medium (넓은 소스 공개 범위 요구)</small></li>
-                                      <li><small>Low (소스 공개 요구)</small></li>
+                                  <button
+                                    class="btn btn-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    <i class="ico ico--tooltip"></i>
+                                    <span class="text-underline"
+                                      >기준 확인하기</span
+                                    >
+                                  </button>
+                                  <div class="dropdown-menu type-text">
+                                    <ul
+                                      class="text-light mb-0"
+                                      style="white-space: nowrap"
+                                    >
+                                      <li>
+                                        <small
+                                          >High (상용 구매 / 전체 소스 공개
+                                          요구)</small
+                                        >
+                                      </li>
+                                      <li>
+                                        <small
+                                          >Medium (넓은 소스 공개 범위
+                                          요구)</small
+                                        >
+                                      </li>
+                                      <li>
+                                        <small>Low (소스 공개 요구)</small>
+                                      </li>
                                       <li><small>None (고지 요구)</small></li>
                                     </ul>
                                     <!-- <table class="table table-simple" style="width:650px">
@@ -129,12 +153,15 @@
                                 </div>
                               </div>
                               <div class="sbom-component-body mt-8">
-                                <div style="height:100px">그래프 자리</div>
+                                <div style="height: 100px">그래프 자리</div>
                               </div>
                               <div class="sbom-component-foot mt-7">
-                                <div class="tooltip-text"><i class="ico ico--tooltip"></i> 아래 테이블의 라이선스 이름을 클릭하여 주요 의무 사항을 확인하세요.</div>
+                                <div class="tooltip-text">
+                                  <i class="ico ico--tooltip"></i> 아래 테이블의
+                                  라이선스 이름을 클릭하여 주요 의무 사항을
+                                  확인하세요.
+                                </div>
                               </div>
-
                             </div>
                           </div>
                           <div class="col">
@@ -143,10 +170,14 @@
                                 <h5>보안 위험</h5>
                               </div>
                               <div class="sbom-component-body mt-8">
-                                <div style="height:100px">그래프 자리</div>
+                                <div style="height: 100px">그래프 자리</div>
                               </div>
                               <div class="sbom-component-foot mt-7">
-                                <div class="tooltip-text"><i class="ico ico--tooltip"></i> 아래 테이블의 라이선스 이름을 클릭하여 주요 의무 사항을 확인하세요.</div>
+                                <div class="tooltip-text">
+                                  <i class="ico ico--tooltip"></i> 아래 테이블의
+                                  라이선스 이름을 클릭하여 주요 의무 사항을
+                                  확인하세요.
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -158,17 +189,30 @@
                         id="tab02"
                         role="tabpanel"
                         tabindex="0"
-                      >보고서</div>
-                      
+                      >
+                        보고서
+                      </div>
+
                       <div
-                      class="tab-pane fade"
-                      id="tab03"
-                      role="tabpanel"
-                      tabindex="0"
-                    >선조치</div>
+                        class="tab-pane fade"
+                        id="tab03"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        선조치
+                      </div>
                     </div>
                   </div>
                   <button class="kw-searchform-toggle">닫기</button>
+                </div>
+                <div class="kw-searchform-tooltip">
+                  <dl>
+                    <dt>더보기</dt>
+                    <dd>
+                      다시 열어<br />
+                      검색하실 수 있습니다!
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -230,6 +274,15 @@
                 </div>
                 <button class="kw-searchform-toggle">닫기</button>
               </div>
+              <div class="kw-searchform-tooltip">
+                <dl>
+                  <dt>더보기</dt>
+                  <dd>
+                    다시 열어<br />
+                    검색하실 수 있습니다!
+                  </dd>
+                </dl>
+              </div>
             </div>
 
             <div class="card">
@@ -239,7 +292,11 @@
                     <div class="kw-list-head mb-4">
                       <div class="kw-list-head-start d-flex gap-3 w-100">
                         <div class="kw-form-search w-25">
-                          <input type="text" class="form-control" placeholder="컴포넌트 검색">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="컴포넌트 검색"
+                          />
                           <button>검색</button>
                         </div>
                         <div class="btns d-flex gap-2">
@@ -247,183 +304,294 @@
                             필터 <i class="ico-plus-white"></i>
                           </button>
                           <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle gap-3" data-bs-toggle="dropdown" aria-expanded="false">필드선택<i class="ico ico--dropdown"></i></button>
+                            <button
+                              class="btn btn-primary dropdown-toggle gap-3"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              필드선택<i class="ico ico--dropdown"></i>
+                            </button>
                             <ul class="dropdown-menu type-filter">
                               <li>
                                 <div class="form-check">
-                                  <input class="form-check-input" type="checkbox">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
                                   <label class="form-check-label">Filter</label>
                                 </div>
                               </li>
                               <li>
                                 <div class="form-check">
-                                  <input class="form-check-input" type="checkbox">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
                                   <label class="form-check-label">Filter</label>
                                 </div>
                               </li>
                               <li class="hasbtn">
-                                <button class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">OK</button>
+                                <button
+                                  class="btn btn-primary dropdown-toggle w-100"
+                                  data-bs-toggle="dropdown"
+                                >
+                                  OK
+                                </button>
                               </li>
                             </ul>
                           </div>
                         </div>
                         <div class="dropdown btn-group">
-                          <button class="btn btn-primary dropdown-toggle gap-3" data-bs-toggle="dropdown" aria-expanded="false">Ignored<i class="ico ico--dropdown"></i></button>
-                          <button class="btn btn-primary"><i class="ico ico--x_secondary"></i></button>
-                          <ul class="dropdown-menu type-filter" style="width:230px;">
+                          <button
+                            class="btn btn-primary dropdown-toggle gap-3"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Ignored<i class="ico ico--dropdown"></i>
+                          </button>
+                          <button class="btn btn-primary">
+                            <i class="ico ico--x_secondary"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu type-filter"
+                            style="width: 230px"
+                          >
                             <li>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                />
                                 <label class="form-check-label">Ignored</label>
                               </div>
                             </li>
                             <li>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Not Ignored</label>
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                />
+                                <label class="form-check-label"
+                                  >Not Ignored</label
+                                >
                               </div>
                             </li>
                             <li class="hasbtn">
-                              <button class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">OK</button>
+                              <button
+                                class="btn btn-primary dropdown-toggle w-100"
+                                data-bs-toggle="dropdown"
+                              >
+                                OK
+                              </button>
                             </li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <thead>
                           <tr>
                             <th>정책</th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   컴포넌트
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   관련소스
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   식별 타입
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   사용유형
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   라이선스 종류
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   보안 위험
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </th>
                             <th>
                               <div class="kw-list-table-title">
-                                <div class="d-inline-flex align-items-center gap-1">
+                                <div
+                                  class="d-inline-flex align-items-center gap-1"
+                                >
                                   운영 위험
-                                  <button class="btn btn-icon small"><i class="ico ico--sort"></i></button>
+                                  <button class="btn btn-icon small">
+                                    <i class="ico ico--sort"></i>
+                                  </button>
                                 </div>
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -437,12 +605,18 @@
                               <i class="ico ico--complete"></i>
                             </td>
                             <td>
-                              <a href="">20241015_gdg_test 01 [20241015_gdg_test 01]</a>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
                             </td>
                             <td>0 Component</td>
                             <td>OFFICIAL</td>
                             <td>DYNAMICALLY_LINKED</td>
-                            <td><span class="text-secondary">Apache License 2.0</span></td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
                             <td>
                               <div class="d-inline-flex gap-1">
                                 <span class="badge bg-critical min">1</span>
@@ -459,19 +633,35 @@
                             <td>
                               <div class="d-flex gap-7">
                                 <div class="d-flex gap-1 align-items-center">
-                                  <button class="btn btn-icon small position-relative">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
                                     <i class="ico ico--chat"></i>
-                                    <span class="new"><span class="visually-hidden">New comment</span></span>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
                                   </button>
                                   <span>(1)</span>
                                 </div>
                                 <div class="dropdown">
-                                  <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle"
+                                  >
                                     <i class="ico-more"></i>
                                   </button>
-                                  <ul class="dropdown-menu type-list" data-popper-placement="bottom-end">
+                                  <ul
+                                    class="dropdown-menu type-list"
+                                    data-popper-placement="bottom-end"
+                                  >
                                     <li>
-                                      <button class="btn btn-text">Ignore</button>
+                                      <button class="btn btn-text">
+                                        Ignore
+                                      </button>
                                     </li>
                                   </ul>
                                 </div>
@@ -483,12 +673,18 @@
                               <i class="ico ico--forbidden large"></i>
                             </td>
                             <td>
-                              <a href="">20241015_gdg_test 01 [20241015_gdg_test 01]</a>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
                             </td>
                             <td>0 Component</td>
                             <td>OFFICIAL</td>
                             <td>DYNAMICALLY_LINKED</td>
-                            <td><span class="text-secondary">Apache License 2.0</span></td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
                             <td>
                               <div class="d-inline-flex gap-1">
                                 <span class="badge bg-critical min">1</span>
@@ -505,19 +701,35 @@
                             <td>
                               <div class="d-flex gap-7">
                                 <div class="d-flex gap-1 align-items-center">
-                                  <button class="btn btn-icon small position-relative">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
                                     <i class="ico ico--chat"></i>
-                                    <span class="new"><span class="visually-hidden">New comment</span></span>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
                                   </button>
                                   <span>(1)</span>
                                 </div>
                                 <div class="dropdown">
-                                  <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle"
+                                  >
                                     <i class="ico-more"></i>
                                   </button>
-                                  <ul class="dropdown-menu type-list" data-popper-placement="bottom-end">
+                                  <ul
+                                    class="dropdown-menu type-list"
+                                    data-popper-placement="bottom-end"
+                                  >
                                     <li>
-                                      <button class="btn btn-text">Ignore</button>
+                                      <button class="btn btn-text">
+                                        Ignore
+                                      </button>
                                     </li>
                                   </ul>
                                 </div>
@@ -602,7 +814,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      관련 소스 정보
+        관련 소스 정보
       </button>
       <br />
       <button
@@ -611,7 +823,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
-      라이선스 정책
+        라이선스 정책
       </button>
       <br />
       <button
@@ -620,7 +832,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal03"
       >
-      컴포넌트 의견
+        컴포넌트 의견
       </button>
     </div>
     <!--// Modal list -->
@@ -632,10 +844,8 @@
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">
-              관련 소스 정보
-            </div>
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">관련 소스 정보</div>
             <button
               type="button"
               class="btn-close"
@@ -646,11 +856,8 @@
           <div class="modal-body">
             <div class="kw-list p-0">
               <div class="kw-list-table">
-                <div class="kw-list-head">
-                  
-                </div>
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
                     <thead>
                       <tr>
                         <th>
@@ -738,13 +945,196 @@
                     <tbody>
                       <tr>
                         <td>
-                          <a href="" class="d-inline-flex align-items-center gap-3" target="_blank">
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
                             <i class="ico-new-windows"></i>
                             BJ_AOSP_Test_matchConfi...
                           </a>
                         </td>
                         <td>
-                          <a href="" class="d-inline-flex align-items-center gap-3" target="_blank">
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>97</td>
+                        <td>BSD 3-clause "New" or "Revised" License</td>
+                        <td>DYNAMICALLY_LINKED</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
+                            <i class="ico-new-windows"></i>
+                            BJ_AOSP_Test_matchConfi...
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href=""
+                            class="d-inline-flex align-items-center gap-3"
+                            target="_blank"
+                          >
                             <i class="ico-new-windows"></i>
                             BJ_AOSP_Test_matchConfi...
                           </a>
@@ -819,17 +1209,15 @@
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="modal02" tabindex="-1">
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">
-              라이선스 정책
-            </div>
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">라이선스 정책</div>
             <button
               type="button"
               class="btn-close"
@@ -861,7 +1249,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="card card--line mb-7">
               <div class="row mx-0">
                 <div class="col-4 px-0">
@@ -869,34 +1257,59 @@
                     <div class="card-header">
                       <h5>Required</h5>
                     </div>
-                    <div class="card-body px-6">
+                    <div class="card-body">
                       <div class="accordion" id="accordion1">
                         <div class="accordion-item primary">
                           <div class="accordion-header" id="accordion1-h1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-c1" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion1-c1"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Include Copyright
                             </button>
                           </div>
-                          <div id="accordion1-c1" class="accordion-collapse collapse" aria-labelledby="accordion1-h1" data-bs-parent="#accordion1">
+                          <div
+                            id="accordion1-c1"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion1-h1"
+                            data-bs-parent="#accordion1"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item primary">
                           <div class="accordion-header" id="accordion1-h2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-c2" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion1-c2"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Include LicenseeCopyright
                             </button>
                           </div>
-                          <div id="accordion1-c2" class="accordion-collapse collapse" aria-labelledby="accordion1-h2" data-bs-parent="#accordion1">
+                          <div
+                            id="accordion1-c2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion1-h2"
+                            data-bs-parent="#accordion1"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -905,34 +1318,59 @@
                     <div class="card-header">
                       <h5>Forbidden</h5>
                     </div>
-                    <div class="card-body px-6">
+                    <div class="card-body">
                       <div class="accordion" id="accordion2">
                         <div class="accordion-item critical">
                           <div class="accordion-header" id="accordion2-h1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-c1" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion2-c1"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Hold Liable
                             </button>
                           </div>
-                          <div id="accordion2-c1" class="accordion-collapse collapse" aria-labelledby="accordion2-h1" data-bs-parent="#accordion2">
+                          <div
+                            id="accordion2-c1"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion2-h1"
+                            data-bs-parent="#accordion2"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item critical">
                           <div class="accordion-header" id="accordion2-h2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-c2" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion2-c2"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Place AdditionalRestrictions
                             </button>
                           </div>
-                          <div id="accordion2-c2" class="accordion-collapse collapse" aria-labelledby="accordion2-h2" data-bs-parent="#accordion2">
+                          <div
+                            id="accordion2-c2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion2-h2"
+                            data-bs-parent="#accordion2"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -941,65 +1379,130 @@
                     <div class="card-header">
                       <h5>Required</h5>
                     </div>
-                    <div class="card-body px-6">
+                    <div class="card-body">
                       <div class="accordion" id="accordion3">
                         <div class="accordion-item secondary">
                           <div class="accordion-header" id="accordion3-h1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c1" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion3-c1"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Disclose Source
                             </button>
                           </div>
-                          <div id="accordion3-c1" class="accordion-collapse collapse" aria-labelledby="accordion3-h1" data-bs-parent="#accordion3">
+                          <div
+                            id="accordion3-c1"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion3-h1"
+                            data-bs-parent="#accordion3"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item secondary">
                           <div class="accordion-header" id="accordion3-h2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c2" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion3-c2"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Modify
                             </button>
                           </div>
-                          <div id="accordion3-c2" class="accordion-collapse collapse" aria-labelledby="accordion3-h2" data-bs-parent="#accordion3">
+                          <div
+                            id="accordion3-c2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion3-h2"
+                            data-bs-parent="#accordion3"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item secondary">
                           <div class="accordion-header" id="accordion3-h3">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c3" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion3-c3"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Distribute
                             </button>
                           </div>
-                          <div id="accordion3-c3" class="accordion-collapse collapse" aria-labelledby="accordion3-h3" data-bs-parent="#accordion3">
+                          <div
+                            id="accordion3-c3"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion3-h3"
+                            data-bs-parent="#accordion3"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item secondary">
                           <div class="accordion-header" id="accordion3-h4">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c4" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion3-c4"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Place Warranty
                             </button>
                           </div>
-                          <div id="accordion3-c4" class="accordion-collapse collapse" aria-labelledby="accordion3-h4" data-bs-parent="#accordion3">
+                          <div
+                            id="accordion3-c4"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion3-h4"
+                            data-bs-parent="#accordion3"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item secondary">
                           <div class="accordion-header" id="accordion3-h5">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-c5" aria-expanded="false" aria-controls="collapseOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion3-c5"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
                               Commercial Use
                             </button>
                           </div>
-                          <div id="accordion3-c5" class="accordion-collapse collapse" aria-labelledby="accordion3-h5" data-bs-parent="#accordion3">
+                          <div
+                            id="accordion3-c5"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="accordion3-h5"
+                            data-bs-parent="#accordion3"
+                          >
                             <div class="accordion-body">
-                              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use
+                              Copyright (c) 2011 Andy Balholm. All rights
+                              reserved. Redistribution and use
                             </div>
                           </div>
                         </div>
@@ -1010,10 +1513,29 @@
               </div>
             </div>
 
-            <div class="license-copyright px-6">
-              Copyright (c) 2011 Andy Balholm. All rights reserved. Redistribution and use in source and binary forms, with or withoutmodification, are permitted provided that the following conditions aremet: * Redistributions of source code must retain the above copyrightnotice, this list of conditions and the following disclaimer.* Redistributions in binary form must reproduce the abovecopyright notice, this list of conditions and the following disclaimerin the documentation and/or other materials provided with thedistribution THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOTLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FORA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHTOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOTLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANYTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USEOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+            <div class="fs-17 text-color-gray-400">
+              Copyright (c) 2011 Andy Balholm. All rights reserved.
+              Redistribution and use in source and binary forms, with or
+              withoutmodification, are permitted provided that the following
+              conditions aremet: * Redistributions of source code must retain
+              the above copyrightnotice, this list of conditions and the
+              following disclaimer.* Redistributions in binary form must
+              reproduce the abovecopyright notice, this list of conditions and
+              the following disclaimerin the documentation and/or other
+              materials provided with thedistribution THIS SOFTWARE IS PROVIDED
+              BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS"AS IS" AND ANY EXPRESS
+              OR IMPLIED WARRANTIES, INCLUDING, BUT NOTLIMITED TO, THE IMPLIED
+              WARRANTIES OF MERCHANTABILITY AND FITNESS FORA PARTICULAR PURPOSE
+              ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHTOWNER OR
+              CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+              SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+              NOTLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+              OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+              AND ON ANYTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+              LIABILITY, OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+              ANY WAY OUT OF THE USEOF THIS SOFTWARE, EVEN IF ADVISED OF THE
+              POSSIBILITY OF SUCH DAMAGE
             </div>
-
           </div>
           <div class="modal-footer">
             <button
@@ -1027,7 +1549,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="modal03" tabindex="-1">
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
@@ -1035,9 +1557,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              컴포넌트 의견
-            </div>
+            <div class="modal-title">컴포넌트 의견</div>
             <button
               type="button"
               class="btn-close"
@@ -1052,28 +1572,82 @@
                 <div class="chat__other">
                   <span class="writer">협력사</span>
                   <div class="text">
-                    <p>소프트웨어/버전명 수정 해야할거 같습니다<br>
-                    배포형태(1) -> 배포형태(5)로 부탁드립니다 아니면 더 좋은 방향 있으면 의견 남겨주세요~</p>
+                    <p>
+                      소프트웨어/버전명 수정 해야할거 같습니다<br />
+                      배포형태(1) -> 배포형태(5)로 부탁드립니다 아니면 더 좋은
+                      방향 있으면 의견 남겨주세요~
+                    </p>
                   </div>
                   <span class="datetime">2024-10-28 / 15:13</span>
                 </div>
                 <div class="chat__me">
                   <div class="dropdown">
-                    <button class="btn-icon small dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="ico ico--dots"></i></button>
+                    <button
+                      class="btn-icon small dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="ico ico--dots"></i>
+                    </button>
                     <ul class="dropdown-menu type-list">
                       <li><button class="btn btn-text active">수정</button></li>
                       <li><button class="btn btn-text">삭제</button></li>
                     </ul>
                   </div>
                   <span class="writer">임시 001</span>
-                  <div class="text"><p>소프트웨어/버전명 수정 해야할거 같습니다</p></div>
+                  <div class="text">
+                    <p>네 그걸로 수정하겠습니다</p>
+                  </div>
                   <span class="datetime">2024-10-28 / 15:13</span>
                 </div>
                 <div class="chat__other">
                   <span class="writer">협력사</span>
                   <div class="text">
-                    <p>소프트웨어/버전명 수정 해야할거 같습니다<br>
-                      배포형태(1) -> 배포형태(5)로 부탁드립니다</p>
+                    <p>
+                      소프트웨어/버전명 수정 해야할거 같습니다<br />
+                      배포형태(1) -> 배포형태(5)로 부탁드립니다
+                    </p>
+                  </div>
+                  <span class="datetime">2024-10-28 / 15:13</span>
+                </div>
+                <div class="chat__other">
+                  <span class="writer">협력사</span>
+                  <div class="text">
+                    <p>
+                      소프트웨어/버전명 수정 해야할거 같습니다<br />
+                      배포형태(1) -> 배포형태(5)로 부탁드립니다 아니면 더 좋은
+                      방향 있으면 의견 남겨주세요~
+                    </p>
+                  </div>
+                  <span class="datetime">2024-10-28 / 15:13</span>
+                </div>
+                <div class="chat__me">
+                  <div class="dropdown">
+                    <button
+                      class="btn-icon small dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="ico ico--dots"></i>
+                    </button>
+                    <ul class="dropdown-menu type-list">
+                      <li><button class="btn btn-text active">수정</button></li>
+                      <li><button class="btn btn-text">삭제</button></li>
+                    </ul>
+                  </div>
+                  <span class="writer">임시 001</span>
+                  <div class="text">
+                    <p>네 그걸로 수정하겠습니다</p>
+                  </div>
+                  <span class="datetime">2024-10-28 / 15:13</span>
+                </div>
+                <div class="chat__other">
+                  <span class="writer">협력사</span>
+                  <div class="text">
+                    <p>
+                      소프트웨어/버전명 수정 해야할거 같습니다<br />
+                      배포형태(1) -> 배포형태(5)로 부탁드립니다
+                    </p>
                   </div>
                   <span class="datetime">2024-10-28 / 15:13</span>
                 </div>
@@ -1094,7 +1668,9 @@
                   background: rgba(0, 0, 0, 0.4);
                   color: #fff;
                   font-size: 20px;
-                  margin: 0;">
+                  margin: 0;
+                "
+              >
                 에디터 영역
               </p>
 

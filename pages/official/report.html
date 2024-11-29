@@ -40,11 +40,10 @@
             <div class="kw-head">
               <h1 class="me-auto">보고서 목록</h1>
             </div>
-            
 
             <div class="card mb-8">
               <div class="card-body">
-                <div class="kw-searchform kw-searchform--open mh-100">
+                <div class="kw-searchform kw-searchform--open">
                   <div class="kw-searchform-inner">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
@@ -88,7 +87,7 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      컴포넌트
+                        컴포넌트
                       </div>
 
                       <div
@@ -97,7 +96,6 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      
                         <form class="row">
                           <div class="col-12">
                             <label class="form-label">all</label>
@@ -117,53 +115,64 @@
                                     ~
                                     <input type="date" class="form-control" />
                                   </div>
-                                  <span class="form-label">날짜범위</span>
-                                  <div class="form-check">
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      name="flexRadioDefault"
-                                      id="flexRadioDefault1"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="flexRadioDefault1"
+                                  <div class="d-flex align-items-center gap-3">
+                                    <span class="form-label m-0">날짜범위</span>
+                                    <div
+                                      class="d-flex align-items-center gap-7"
                                     >
-                                      1주
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      name="flexRadioDefault"
-                                      id="flexRadioDefault2"
-                                      checked
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="flexRadioDefault2"
-                                    >
-                                      1개월
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      name="flexRadioDefault"
-                                      id="flexRadioDefault3"
-                                      checked
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="flexRadioDefault3"
-                                    >
-                                      1년
-                                    </label>
-                                  </div>
-                                  <div class="kw-button">
-                                    <button type="button" class="btn btn-primary">날짜 초기화</button>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="flexRadioDefault"
+                                          id="flexRadioDefault1"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="flexRadioDefault1"
+                                        >
+                                          1주
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="flexRadioDefault"
+                                          id="flexRadioDefault2"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="flexRadioDefault2"
+                                        >
+                                          1개월
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="flexRadioDefault"
+                                          id="flexRadioDefault3"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="flexRadioDefault3"
+                                        >
+                                          1년
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="kw-button">
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                      >
+                                        날짜 초기화
+                                      </button>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -171,25 +180,36 @@
                           </div>
                         </form>
                       </div>
-                   
+
                       <div
                         class="tab-pane fade"
                         id="tab03"
                         role="tabpanel"
                         tabindex="0"
                       >
-                      선조치
+                        선조치
                       </div>
-                        
                     </div>
                   </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+                <div class="kw-searchform-tooltip">
+                  <dl>
+                    <dt>더보기</dt>
+                    <dd>
+                      다시 열어<br />
+                      검색하실 수 있습니다!
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
 
             <div class="card mb-8">
               <div class="card-header">
-                <h5 class="text-secondary">generate_report_project (Ver. 01)</h5>
+                <h5 class="text-secondary">
+                  generate_report_project (Ver. 01)
+                </h5>
               </div>
               <div class="card-body py-3 px-6">
                 <div class="row sbom-version">
@@ -215,7 +235,6 @@
               </div>
             </div>
 
-
             <div class="card">
               <div class="card-body">
                 <div class="kw-list">
@@ -224,44 +243,88 @@
                       <div class="kw-list-head-start"></div>
                       <div class="kw-list-head-end d-flex gap-3">
                         <div class="dropdown">
-                          <button class="btn btn-primary dropdown-toggle gap-2" data-bs-toggle="dropdown" aria-expanded="false"><span>오픈소스 점검 결과 출력</span> <i class="ico ico--dropdown"></i></button>
+                          <button
+                            class="btn btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <span>오픈소스 점검 결과 출력</span>
+                          </button>
                           <ul class="dropdown-menu type-list">
-                            <li><button class="btn btn-text active">오픈소스 고지문</button></li>
-                            <li><button class="btn btn-text">SBOM 문서</button></li>
-                            <li><button class="btn btn-text">Black Duck 오픈소스 세부 정보</button></li>
-                            <li><button class="btn btn-text">Black Duck 보안 취약점 세부 정보</button></li>
+                            <li>
+                              <button class="btn btn-text active">
+                                오픈소스 고지문
+                              </button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">SBOM 문서</button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">
+                                Black Duck 오픈소스 세부 정보
+                              </button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">
+                                Black Duck 보안 취약점 세부 정보
+                              </button>
+                            </li>
                           </ul>
                         </div>
                         <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle gap-2" data-bs-toggle="dropdown" aria-expanded="false"><span>변환 보고서 생성하기</span> <i class="ico ico--dropdown"></i></button>
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <span>변환 보고서 생성하기</span>
+                          </button>
                           <ul class="dropdown-menu type-list">
-                            <li><button class="btn btn-text active">지현</button></li>
-                            <li><button class="btn btn-text">CYCLONEDX_EXCEL</button></li>
-                            <li><button class="btn btn-text">SPOT_EXCEL</button></li>
-                            <li><button class="btn btn-text">NIS_PDF</button></li>
-                            <li><button class="btn btn-text">NIS_EXCEL</button></li>
-                            <li><button class="btn btn-text">TTA</button></li>                            
+                            <li>
+                              <button class="btn btn-text active">지현</button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">
+                                CYCLONEDX_EXCEL
+                              </button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">SPOT_EXCEL</button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">NIS_PDF</button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">NIS_EXCEL</button>
+                            </li>
+                            <li><button class="btn btn-text">TTA</button></li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <thead>
                           <tr>
                             <th></th>
                             <th>
                               <div class="kw-list-table-title">
-                                  파일명
+                                파일명
                                 <div class="kw-align">
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -273,11 +336,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -289,11 +358,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -305,11 +380,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -317,6 +398,23 @@
                             <th>
                               <div class="kw-list-table-title">
                                 상태
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
                             <th></th>
@@ -325,8 +423,10 @@
                         <tbody>
                           <tr>
                             <td>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" />
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
                               </div>
                             </td>
                             <td>
@@ -335,8 +435,181 @@
                             <td>HTML</td>
                             <td>Notices File</td>
                             <td>2024-10-30 16:46</td>
-                            <td><span class="badge bg-primary">생성완료</span></td>
-                            <td><button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button></td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="">hibernate-commons-annotations</a>
+                            </td>
+                            <td>HTML</td>
+                            <td>Notices File</td>
+                            <td>2024-10-30 16:46</td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="">hibernate-commons-annotations</a>
+                            </td>
+                            <td>HTML</td>
+                            <td>Notices File</td>
+                            <td>2024-10-30 16:46</td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="">hibernate-commons-annotations</a>
+                            </td>
+                            <td>HTML</td>
+                            <td>Notices File</td>
+                            <td>2024-10-30 16:46</td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="">hibernate-commons-annotations</a>
+                            </td>
+                            <td>HTML</td>
+                            <td>Notices File</td>
+                            <td>2024-10-30 16:46</td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="">hibernate-commons-annotations</a>
+                            </td>
+                            <td>HTML</td>
+                            <td>Notices File</td>
+                            <td>2024-10-30 16:46</td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <i class="ico-new-windows"></i>
+                              </div>
+                            </td>
+                            <td>
+                              <a href="">hibernate-commons-annotations</a>
+                            </td>
+                            <td>HTML</td>
+                            <td>Notices File</td>
+                            <td>2024-10-30 16:46</td>
+                            <td>
+                              <span class="badge bg-primary">생성완료</span>
+                            </td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
@@ -392,7 +665,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -412,74 +684,74 @@
     >
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      Create Notices File Report
+        Create Notices File Report
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
-      Create Version Details Report
+        Create Version Details Report
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal03"
       >
-      Create Vulnerability Report
+        Create Vulnerability Report
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal04"
       >
-      Create SBOM Report
+        Create SBOM Report
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal05"
       >
-      Open Source Software Notice
+        Open Source Software Notice
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal06"
       >
-      메시지
+        메시지
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal07"
       >
-      NIS_EXCEL 보고서 생성하기
+        NIS_EXCEL 보고서 생성하기
       </button>
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal08"
       >
-      보고서 삭제
+        보고서 삭제
       </button>
     </div>
     <!--// Modal list -->
@@ -492,9 +764,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              Create Notices File Report
-            </div>
+            <div class="modal-title">Create Notices File Report</div>
             <button
               type="button"
               class="btn-close"
@@ -503,29 +773,46 @@
             ></button>
           </div>
           <div class="modal-body">
-            <p class="text-body">Choose the format you'd like the notices file exported to.</p>
-            <form class="row gap-7">
+            <p class="m-0 mb-3 fs-16 text-color-gray-400">
+              Choose the format you'd like the notices file exported to.
+            </p>
+            <form class="row gap-4">
               <div class="col-12">
-                <label class="form-label">Report Format<span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Report Format<span class="text-danger">*</span></label
+                >
                 <select class="form-select">
                   <option selected>HTML</option>
                 </select>
-                <div class="form-check mt-8">
-                  <input class="form-check-input" type="checkbox">                  
-                  <label class="form-check-label text-fs-l">Include Subprojects</label>
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label text-fs-l"
+                    >Include Subprojects</label
+                  >
                 </div>
               </div>
               <div class="col-12">
                 <span class="form-label">Categories</span>
-                <p class="text-body text-fs-s mt-2">Include the following data in the notices file:</p>
-                <div style="padding-left:40px;">
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Origin Copyright Text</label>
-                    <p class="text-body text-fs-s mb-0">Copyright texts discovered by component origins. Only available if components with origins are present in the project.</p>
-                  </div>
+                <p class="m-0 mt-3 text-body text-fs-s">
+                  Include the following data in the notices file:
+                </p>
+
+                <div class="form-check mt-3 ms-10">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label text-fs-l"
+                    >Origin Copyright Text</label
+                  >
+                  <p class="text-body text-fs-s m-0 mt-2">
+                    Copyright texts discovered by component origins. Only
+                    available if components with origins are present in the
+                    project.
+                  </p>
                 </div>
-                <p class="text-body mt-7 mb-0">Depending on the size of your project, generating the notices file could take some time.</p>
+
+                <p class="m-0 mt-3 fs-16 text-color-gray-400">
+                  Depending on the size of your project, generating the notices
+                  file could take some time.
+                </p>
               </div>
             </form>
           </div>
@@ -540,7 +827,7 @@
             <button type="button" class="btn btn-primary">생성</button>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <div class="modal fade" id="modal02" tabindex="-1">
@@ -550,9 +837,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              Create Version Details Report
-            </div>
+            <div class="modal-title">Create Version Details Report</div>
             <button
               type="button"
               class="btn-close"
@@ -561,65 +846,89 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox">                  
-                  <label class="form-check-label text-fs-l">Include Subprojects</label>
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label text-fs-l"
+                    >Include Subprojects</label
+                  >
                 </div>
               </div>
               <div class="col-12">
-                <p class="text-body">Choose the categories you would like included with this report.</p>
-                <div class="px-7">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
+                <p class="m-0 mt-1 fs-16 text-color-gray-400">
+                  Choose the categories you would like included with this
+                  report.
+                </p>
+                <ul class="kw-list-check ms-7 mt-2">
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Components</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Component Custom Fields</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">License Conflicts</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">License Terms</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Project Version Custom Fields</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Component Custom Fields</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >License Conflicts</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >License Terms</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Project Version Custom Fields</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Scans</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Source</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Upgrade Recommendations</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Version Details</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Vulnerabilities</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Vulnerability Matches</label>
-                  </div>
-                </div>
-                <p class="text-body mt-10 mb-0">Depending on the size of your project, the report could take some time to generate. Once complete, a download link will be available on the Reports tab.</p>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Upgrade Recommendations</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Version Details</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Vulnerabilities</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Vulnerability Matches</label
+                    >
+                  </li>
+                </ul>
+                <p class="m-0 mt-5 fs-16 text-color-gray-400">
+                  Depending on the size of your project, the report could take
+                  some time to generate. Once complete, a download link will be
+                  available on the Reports tab.
+                </p>
               </div>
             </form>
-
           </div>
           <div class="modal-footer">
             <button
@@ -632,7 +941,7 @@
             <button type="button" class="btn btn-primary">생성</button>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <div class="modal fade" id="modal03" tabindex="-1">
@@ -642,9 +951,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              Create Vulnerability Report
-            </div>
+            <div class="modal-title">Create Vulnerability Report</div>
             <button
               type="button"
               class="btn-close"
@@ -653,63 +960,73 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-3">
+            <form class="row gap-4">
               <div class="col-12">
-                <label class="form-label">Report Type<span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Report Type<span class="text-danger">*</span></label
+                >
                 <select class="form-select">
                   <option selected>Vulnerability Remediation</option>
                 </select>
               </div>
               <div class="col-12">
-                <label class="form-label">Report Format<span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Report Format<span class="text-danger">*</span></label
+                >
                 <select class="form-select">
                   <option selected>JSON</option>
                 </select>
               </div>
               <div class="col-12">
                 <label class="form-label">Start Date</label>
-                <input type="date" class="form-control">
+                <input type="date" class="form-control" />
               </div>
               <div class="col-12">
                 <label class="form-label">End Date</label>
-                <input type="date" class="form-control">
+                <input type="date" class="form-control" />
               </div>
               <div class="col-12">
                 <p class="form-label text-fs mt-4 mb-3">Remediation Type</p>
-                <div class="px-7">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
+                <ul class="kw-list-check ms-7 mt-2">
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Duplicate</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Ignored</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Mitigated</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Needs Review</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Needs Review</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">New</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label text-fs-l">Patched</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Remediation Complete</label>
-                  </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label text-fs-l">Remediation Required</label>
-                  </div>
-                </div>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Remediation Complete</label
+                    >
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label text-fs-l"
+                      >Remediation Required</label
+                    >
+                  </li>
+                </ul>
               </div>
             </form>
           </div>
@@ -724,7 +1041,7 @@
             <button type="button" class="btn btn-primary">생성</button>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <div class="modal fade" id="modal04" tabindex="-1">
@@ -734,9 +1051,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              Create SBOM Report
-            </div>
+            <div class="modal-title">Create SBOM Report</div>
             <button
               type="button"
               class="btn-close"
@@ -745,7 +1060,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <label class="form-label">SBOM Type</label>
                 <select class="form-select">
@@ -758,12 +1073,13 @@
                   <option selected>JSON</option>
                 </select>
                 <div class="form-check mt-3">
-                  <input class="form-check-input" type="checkbox" checked>
-                  <label class="form-check-label text-fs-l">Include Subprojects</label>
+                  <input class="form-check-input" type="checkbox" checked />
+                  <label class="form-check-label text-fs-l"
+                    >Include Subprojects</label
+                  >
                 </div>
               </div>
             </form>
-
           </div>
           <div class="modal-footer">
             <button
@@ -776,7 +1092,7 @@
             <button type="button" class="btn btn-primary">생성</button>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <div class="modal fade" id="modal05" tabindex="-1">
@@ -785,10 +1101,8 @@
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">
-              Open Source Software Notice
-            </div>
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">Open Source Software Notice</div>
             <button
               type="button"
               class="btn-close"
@@ -798,80 +1112,155 @@
           </div>
           <div class="modal-body">
             <div class="kw-list p-0">
-              <div class="mb-7"><strong>Product: kosswise_official_2nd ALL</strong></div>
-              <div class="mb-7"><strong>Components</strong></div>
+              <div class="mb-7">
+                <strong class="fs-16"
+                  >Product: kosswise_official_2nd ALL</strong
+                >
+              </div>
+              <div class="mb-7">
+                <strong class="fs-16">Components</strong>
+              </div>
               <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
+                    <colgroup>
+                      <col style="width: 340px" />
+                      <col style="width: 260px" />
+                      <col style="width: 480px" />
+                    </colgroup>
                     <thead>
                       <tr>
-                        <th>
-                          <div class="kw-list-table-title">
-                            Name
-                            <div class="kw-align">
-                              <button class="kw-align-start">왼쪽</button>
-                              <div class="kw-align-layer">
-                                <button class="kw-align-start">왼쪽</button>
-                                <button class="kw-align-center">
-                                  가운데
-                                </button>
-                                <button class="kw-align-end">오른쪽</button>
-                                <hr />
-                                <button class="kw-align-asc">오름차순</button>
-                                <button class="kw-align-desc">
-                                  내림차순
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </th>
-                        <th>
-                          <div class="kw-list-table-title">
-                            License
-                            <div class="kw-align">
-                              <button class="kw-align-start">왼쪽</button>
-                              <div class="kw-align-layer">
-                                <button class="kw-align-start">왼쪽</button>
-                                <button class="kw-align-center">
-                                  가운데
-                                </button>
-                                <button class="kw-align-end">오른쪽</button>
-                                <hr />
-                                <button class="kw-align-asc">오름차순</button>
-                                <button class="kw-align-desc">
-                                  내림차순
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </th>
-                        <th>
-                          <div class="kw-list-table-title">
-                            Component Link
-                            <div class="kw-align">
-                              <button class="kw-align-start">왼쪽</button>
-                              <div class="kw-align-layer">
-                                <button class="kw-align-start">왼쪽</button>
-                                <button class="kw-align-center">
-                                  가운데
-                                </button>
-                                <button class="kw-align-end">오른쪽</button>
-                                <hr />
-                                <button class="kw-align-asc">오름차순</button>
-                                <button class="kw-align-desc">
-                                  내림차순
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </th>
+                        <th>Name</th>
+                        <th>License</th>
+                        <th>Component Link</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>@aashutoshrathi/word-wrap</td>
                         <td>MIT License</td>
-                        <td><a href="">https://github.com/jonschlinkert/word-wrap</a></td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>@aashutoshrathi/word-wrap</td>
+                        <td>MIT License</td>
+                        <td>
+                          <a href=""
+                            >https://github.com/jonschlinkert/word-wrap</a
+                          >
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -926,8 +1315,7 @@
                 </div>
               </div>
             </div>
-            
-            <div class="card card--line mt-8">
+            <div class="card card--line mt-6">
               <div class="card-header">
                 <h5 class="text-black">Copyright Data</h5>
               </div>
@@ -938,10 +1326,14 @@
           </div>
           <div class="modal-footer justify-content-between">
             <div>
-              <button type="button" class="btn btn-primary">Text 고지문 보기</button>
+              <button type="button" class="btn btn-primary">
+                Text 고지문 보기
+              </button>
             </div>
             <div class="d-flex gap-3">
-              <button type="button" class="btn btn-primary">HTML 다운로드</button>
+              <button type="button" class="btn btn-primary">
+                HTML 다운로드
+              </button>
               <button
                 type="button"
                 class="btn btn-secondary"
@@ -952,7 +1344,7 @@
             </div>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <div class="modal fade" id="modal06" tabindex="-1">
@@ -962,18 +1354,24 @@
       >
         <div class="modal-content">
           <div class="modal-body">
-            <div class="kw-modal-logout">
-              <div class="kw-modal-logout__text created">
-                <p>CYCLONEDX_EXCEL 보고서를 바로 생성하시겠습니까?</p>
-                <p class="text-body fw-medium">'예'를 클릭하시면 가장 최신의 블랙덕 보고서로 생성됩니다.<br>
-                최신 블랙덕 보고서가 없다면 자동 생성 됩니다.</p>
-                <p class="text-danger fw-medium">아니오를 누르면 직접 블랙덕 보고서를 선택해서 만들 수 있습니다.</p>
-              </div>
-              <div class="kw-modal-logout__button">
+            <div class="pt-8 pb-8 text-center">
+              <i class="ico-doc-plus"></i>
+              <p class="m-0 mt-6 mb-3 fs-16">
+                <strong>CYCLONEDX_EXCEL 보고서를 바로 생성하시겠습니까?</strong>
+              </p>
+              <p class="m-0 mb-3 fs-16 text-color-gray-400">
+                '예'를 클릭하시면 가장 최신의 블랙덕 보고서로 생성됩니다.<br />
+                최신 블랙덕 보고서가 없다면 자동 생성 됩니다.
+              </p>
+              <p class="m-0 mb-3 fs-16 text-danger">
+                아니오를 누르면 직접 블랙덕 보고서를 선택해서 만들 수 있습니다.
+              </p>
+              <div class="d-flex justify-content-center gap-3 mt-7 mb-4">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-dismiss="modal"
+                  style="min-width: 120px"
                 >
                   예
                 </button>
@@ -981,6 +1379,7 @@
                   type="button"
                   class="btn btn-secondary"
                   data-bs-dismiss="modal"
+                  style="min-width: 120px"
                 >
                   아니오
                 </button>
@@ -998,9 +1397,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              NIS_EXCEL 보고서 생성하기
-            </div>
+            <div class="modal-title">NIS_EXCEL 보고서 생성하기</div>
             <button
               type="button"
               class="btn-close"
@@ -1012,13 +1409,18 @@
             <div class="kw-list p-0">
               <div class="kw-list-table">
                 <div class="kw-list-head">
-                  <span class="text-light">Version Detail</span>
+                  <span class="text-color-gray-300">Version Detail</span>
                 </div>
                 <div class="kw-list-table-scroll mt-4">
-                  <table class="table text-nowrap">
+                  <table class="table">
+                    <colgroup>
+                      <col style="width: 60px" />
+                      <col style="width: 500px" />
+                      <col style="width: 300px" />
+                    </colgroup>
                     <thead>
                       <tr>
-                        <th>선택</th>
+                        <th class="text-center">선택</th>
                         <th>
                           <div class="kw-list-table-title">
                             파일명
@@ -1055,10 +1457,8 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" />
-                          </div>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
                         </td>
                         <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
                         <td>2024. 11. 5. 오후 3:59:52</td>
@@ -1072,13 +1472,18 @@
             <div class="kw-list p-0 mt-7">
               <div class="kw-list-table">
                 <div class="kw-list-head">
-                  <span class="text-light">Version Detail</span>
+                  <span class="text-color-gray-300">Version Detail</span>
                 </div>
                 <div class="kw-list-table-scroll mt-4">
-                  <table class="table text-nowrap">
+                  <table class="table">
+                    <colgroup>
+                      <col style="width: 60px" />
+                      <col style="width: 500px" />
+                      <col style="width: 300px" />
+                    </colgroup>
                     <thead>
                       <tr>
-                        <th>선택</th>
+                        <th class="text-center">선택</th>
                         <th>
                           <div class="kw-list-table-title">
                             파일명
@@ -1115,10 +1520,85 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" />
-                          </div>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
+                        </td>
+                        <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
+                        <td>2024. 11. 5. 오후 3:59:52</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="radio" />
                         </td>
                         <td>똑독 모바일-test01_SPDX_22_2024-11-05_070419</td>
                         <td>2024. 11. 5. 오후 3:59:52</td>
@@ -1128,7 +1608,6 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div class="modal-footer">
             <button
@@ -1141,7 +1620,7 @@
             <button type="button" class="btn btn-primary">생성</button>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <div class="modal fade" id="modal08" tabindex="-1">
@@ -1151,15 +1630,18 @@
       >
         <div class="modal-content">
           <div class="modal-body">
-            <div class="kw-modal-logout">
-              <div class="kw-modal-logout__text deleted">
-                해당 보고서를 삭제하시겠습니까?
-              </div>
-              <div class="kw-modal-logout__button">
+            <div class="pt-12 pb-12 text-center">
+              <i class="ico-trash"></i>
+              <p class="m-0 mt-6 mb-3 fs-16">
+                <strong>해당 보고서를 삭제하시겠습니까?</strong>
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-7 mb-4">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-dismiss="modal"
+                  style="min-width: 120px"
                 >
                   예
                 </button>
@@ -1167,6 +1649,7 @@
                   type="button"
                   class="btn btn-secondary"
                   data-bs-dismiss="modal"
+                  style="min-width: 120px"
                 >
                   아니오
                 </button>
@@ -1176,6 +1659,5 @@
         </div>
       </div>
     </div>
-
   </body>
 </html>

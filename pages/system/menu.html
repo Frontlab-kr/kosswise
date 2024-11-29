@@ -35,113 +35,138 @@
         <div class="kw-contents">
           <div class="kw-inner">
             <div class="kw-head">
-              <h1 class="me-auto">메뉴 관리</h1>
+              <div>
+                <h1>메뉴 관리</h1>
+                <div class="mt-4">
+                  <small class="text-danger"
+                    >※ 정렬은 ID 순으로 정렬 됩니다.</small
+                  >
+                </div>
+              </div>
             </div>
-            <div class="card mb-8">
+            <div class="card mb-7">
               <div class="card-body">
-                <div class="kw-searchform kw-searchform--open mh-100">
+                <div class="kw-searchform kw-searchform--open mh-100 p-6">
                   <div class="kw-searchform-inner">
                     <ul class="nav nav-tabs small" role="tablist">
                       <li class="nav-item">
                         <button
                           class="nav-link active"
+                          style="min-width: auto"
                           data-bs-toggle="tab"
                           data-bs-target="#tab01"
                           type="button"
                           role="tab"
                         >
-                        BASE
+                          BASE
                         </button>
                       </li>
                       <li class="nav-item">
                         <button
                           class="nav-link"
+                          style="min-width: auto"
                           data-bs-toggle="tab"
                           data-bs-target="#tab02"
                           type="button"
                           role="tab"
                         >
-                        SKT
+                          SKT
                         </button>
                       </li>
                       <li class="nav-item">
                         <button
                           class="nav-link"
+                          style="min-width: auto"
                           data-bs-toggle="tab"
                           data-bs-target="#tab03"
                           type="button"
                           role="tab"
                         >
-                        TTA
+                          TTA
                         </button>
                       </li>
                       <li class="nav-item">
                         <button
                           class="nav-link"
+                          style="min-width: auto"
                           data-bs-toggle="tab"
                           data-bs-target="#tab03"
                           type="button"
                           role="tab"
                         >
-                        SDS
+                          SDS
                         </button>
                       </li>
                     </ul>
-                    <div class="tab-content">
+                    <div class="tab-content p-0">
                       <div
                         class="tab-pane fade show active"
                         id="tab01"
                         role="tabpanel"
                         tabindex="0"
                       >
-                        <div class="card">
-                          <div class="card-header px-0 pt-0">
+                        <div class="card card--line border-0 mt-2">
+                          <div class="card-header px-0">
                             <div class="kw-list-head">
                               <div class="kw-list-head-start">
-                                <h5>그룹 목록</h5>
+                                <h5>대메뉴</h5>
                               </div>
                               <div class="kw-list-head-center"></div>
                               <div class="kw-list-head-end">
                                 <div class="kw-button">
-                                  <button type="button" class="btn btn-secondary">적용</button>
-                                  <button type="button" class="btn btn-primary">그룹 코드 추가</button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                  >
+                                    적용
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    대매뉴 등록
+                                  </button>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card-body">
-                            <div class="kw-list px-0">
-                              <div class="kw-list-head">
-                                <div class="kw-list-head-start"></div>
-                                <div class="kw-list-head-center"></div>
-                                <div class="kw-list-head-end"></div>
-                              </div>
+                          <div class="card-body p-0 pt-7">
+                            <div class="kw-list p-0">
                               <div class="kw-list-table">
                                 <div class="kw-list-table-scroll mh-100">
-                                  <table class="table text-nowrap">
+                                  <table class="table">
                                     <colgroup>
-                                      <col style="width: 60px" />
-                                      <col style="width: 100px" />
-                                      <col style="width: 150px" />
-                                      <col />
-                                      <col style="width: 100px" />
-                                      <col style="width: 150px" />
+                                      <col style="width: 56px" />
+                                      <col style="width: 140px" />
+                                      <col style="width: 230px" />
+                                      <col style="width: 890px" />
+                                      <col style="width: 130px" />
+                                      <col style="width: 220px" />
                                     </colgroup>
                                     <thead>
                                       <tr>
-                                        <th>선택</th>
+                                        <th class="text-center">선택</th>
                                         <th>
                                           <div class="kw-list-table-title">
                                             ID
                                             <div class="kw-align">
-                                              <button class="kw-align-start">왼쪽</button>
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
                                               <div class="kw-align-layer">
-                                                <button class="kw-align-start">왼쪽</button>
-                                                <button class="kw-align-center">가운데</button>
-                                                <button class="kw-align-end">오른쪽</button>
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
                                                 <hr />
-                                                <button class="kw-align-asc">오름차순</button>
-                                                <button class="kw-align-desc">내림차순</button>
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -150,14 +175,26 @@
                                           <div class="kw-list-table-title">
                                             이름
                                             <div class="kw-align">
-                                              <button class="kw-align-start">왼쪽</button>
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
                                               <div class="kw-align-layer">
-                                                <button class="kw-align-start">왼쪽</button>
-                                                <button class="kw-align-center">가운데</button>
-                                                <button class="kw-align-end">오른쪽</button>
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
                                                 <hr />
-                                                <button class="kw-align-asc">오름차순</button>
-                                                <button class="kw-align-desc">내림차순</button>
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -166,14 +203,26 @@
                                           <div class="kw-list-table-title">
                                             설명
                                             <div class="kw-align">
-                                              <button class="kw-align-start">왼쪽</button>
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
                                               <div class="kw-align-layer">
-                                                <button class="kw-align-start">왼쪽</button>
-                                                <button class="kw-align-center">가운데</button>
-                                                <button class="kw-align-end">오른쪽</button>
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
                                                 <hr />
-                                                <button class="kw-align-asc">오름차순</button>
-                                                <button class="kw-align-desc">내림차순</button>
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -182,14 +231,26 @@
                                           <div class="kw-list-table-title">
                                             상태
                                             <div class="kw-align">
-                                              <button class="kw-align-start">왼쪽</button>
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
                                               <div class="kw-align-layer">
-                                                <button class="kw-align-start">왼쪽</button>
-                                                <button class="kw-align-center">가운데</button>
-                                                <button class="kw-align-end">오른쪽</button>
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
                                                 <hr />
-                                                <button class="kw-align-asc">오름차순</button>
-                                                <button class="kw-align-desc">내림차순</button>
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -199,14 +260,21 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio01" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
                                         </td>
                                         <td>100</td>
                                         <td>Info</td>
                                         <td>대 메뉴의 설명이 노출됩니다.</td>
                                         <td>
-                                          <div class="d-flex gap-2 form-switch">
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
                                             <input
                                               class="form-check-input"
                                               type="checkbox"
@@ -216,9 +284,358 @@
                                           </div>
                                         </td>
                                         <td>
-                                          <div class="d-flex align-items-center gap-6">
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
                                             <i class="ico ico--write"></i>
-                                            <button type="button" class="btn btn-sm btn-secondary">하위 메뉴 추가</button>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
+                                        </td>
+                                        <td>100</td>
+                                        <td>Info</td>
+                                        <td>대 메뉴의 설명이 노출됩니다.</td>
+                                        <td>
+                                          <div
+                                            class="d-flex justify-content-center gap-2 form-switch"
+                                          >
+                                            <input
+                                              class="form-check-input"
+                                              type="checkbox"
+                                              role="switch"
+                                              id="flexSwitchCheckDefault01"
+                                            />
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-6"
+                                          >
+                                            <i class="ico ico--write"></i>
+                                            <button
+                                              type="button"
+                                              class="btn btn-md btn-secondary"
+                                            >
+                                              하위 메뉴 추가
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
@@ -243,7 +660,7 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      SKT
+                        SKT
                       </div>
                       <div
                         class="tab-pane fade"
@@ -251,7 +668,7 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      TTA
+                        TTA
                       </div>
                       <div
                         class="tab-pane fade"
@@ -259,23 +676,22 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      SDS
+                        SDS
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card mb-7">
-              <div class="card-header">
+            <div class="card px-6">
+              <div class="card-header px-0">
                 <h5>하위 메뉴</h5>
               </div>
-              <div class="card-body">
-                <div class="kw-list">
-                  <div class="kw-list-head"></div>
+              <div class="card-body px-0 pt-7 pb-6">
+                <div class="kw-list p-0">
                   <div class="kw-list-table">
                     <div class="kw-list-table-scroll">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <colgroup>
                           <col style="width: 150px" />
                           <col style="width: 150px" />
@@ -295,14 +711,17 @@
                         <tbody>
                           <tr>
                             <td colspan="5">
-                              <div class="text-light d-flex justify-content-center py-16">데이터가 없습니다</div>
+                              <div
+                                class="text-light d-flex justify-content-center py-16"
+                              >
+                                데이터가 없습니다
+                              </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-                  <div class="kw-list-foot"></div>
                 </div>
               </div>
             </div>
@@ -329,7 +748,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      대메뉴 추가
+        대메뉴 추가
       </button>
       <br />
       <button
@@ -338,7 +757,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
-      하위 메뉴 추가
+        하위 메뉴 추가
       </button>
     </div>
     <!--// Modal list -->
@@ -351,9 +770,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              <h5>대메뉴 추가</h5>
-            </div>
+            <div class="modal-title">대메뉴 추가</div>
             <button
               type="button"
               class="btn-close"
@@ -362,7 +779,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <label class="form-label">
                   이름 <span class="text-danger">*</span>
@@ -399,14 +816,14 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-            닫기
+              닫기
             </button>
             <button type="button" class="btn btn-primary">저장</button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="modal02" tabindex="-1">
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
@@ -414,9 +831,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              <h5>하위 메뉴 추가</h5>
-            </div>
+            <div class="modal-title">하위 메뉴 추가</div>
             <button
               type="button"
               class="btn-close"
@@ -425,7 +840,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <label class="form-label">
                   부모ID <span class="text-danger">*</span>
@@ -490,13 +905,12 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-            닫기
+              닫기
             </button>
             <button type="button" class="btn btn-primary">저장</button>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

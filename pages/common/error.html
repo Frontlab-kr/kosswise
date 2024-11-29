@@ -16,6 +16,77 @@
     <link rel="stylesheet" href="../../assets/scss/common.css" />
   </head>
   <body>
-    <div class="kw">에러페이지</div>
+    <div class="kw-error">
+      <div class="kw-error__inner">
+        <i class="ico-exclamation-danger"></i>
+        <strong> 500 Error page </strong>
+        <p>
+          현재 시스템 점검으로 인하여 페이지 접속이 원활하지 않습니다.<br />
+          서비스 이용에 불편을 드려 죄송합니다.
+        </p>
+      </div>
+    </div>
+    <style>
+      html,
+      body {
+        overflow: hidden;
+      }
+    </style>
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+        아이디 입력 안내
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 480px"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="pt-8 pb-8 text-center">
+              <i class="ico-exclamation"></i>
+              <p class="m-0 mt-6 mb-3 fs-16">
+                <strong> 사용자 아이디를 입력하세요 </strong>
+              </p>
+              <div class="d-flex justify-content-center gap-3 mt-7 mb-4">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                  style="min-width: 120px"
+                >
+                  예
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  style="min-width: 120px"
+                >
+                  아니오
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

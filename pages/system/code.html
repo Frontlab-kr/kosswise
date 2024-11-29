@@ -40,7 +40,7 @@
             </div>
             <div class="card mb-8">
               <div class="card-body">
-                <div class="kw-searchform kw-searchform--open mh-100">
+                <div class="kw-searchform kw-searchform--open mh-100 p-6">
                   <div class="kw-searchform-inner">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
@@ -77,14 +77,14 @@
                         </button>
                       </li>
                     </ul>
-                    <div class="tab-content">
+                    <div class="tab-content p-0">
                       <div
                         class="tab-pane fade"
                         id="tab01"
                         role="tabpanel"
                         tabindex="0"
                       >
-                      BlackDuck
+                        BlackDuck
                       </div>
                       <div
                         class="tab-pane fade"
@@ -92,7 +92,7 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                      SMTP
+                        SMTP
                       </div>
                       <div
                         class="tab-pane fade show active"
@@ -100,51 +100,53 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                        <div class="card">
-                          <div class="card-header px-0 pt-0">
-                            <div class="kw-list-head">
-                              <div class="kw-list-head-start">
-                                <h5>그룹 목록</h5>
-                              </div>
-                              <div class="kw-list-head-center"></div>
-                              <div class="kw-list-head-end">
-                                <div class="kw-button">
-                                  <button type="button" class="btn btn-primary">그룹 코드 추가</button>
-                                </div>
-                              </div>
-                            </div>
+                        <div class="card card--line border-0 mt-2">
+                          <div
+                            class="card-header d-flex align-items-center justify-content-between px-0"
+                          >
+                            <h5>그룹 목록</h5>
+                            <button type="button" class="btn btn-primary">
+                              그룹 코드 추가
+                            </button>
                           </div>
-                          <div class="card-body">
-                            <div class="kw-list px-0">
-                              <div class="kw-list-head">
-                                <div class="kw-list-head-start"></div>
-                                <div class="kw-list-head-center"></div>
-                                <div class="kw-list-head-end"></div>
-                              </div>
+                          <div class="card-body pt-7">
+                            <div class="kw-list p-0">
                               <div class="kw-list-table">
                                 <div class="kw-list-table-scroll mh-100">
-                                  <table class="table text-nowrap">
+                                  <table class="table">
                                     <colgroup>
-                                      <col style="width: 50px" />
-                                      <col style="width: 30%" />
-                                      <col />
-                                      <col style="width: 150px" />
+                                      <col style="width: 60px" />
+                                      <col style="width: 500px" />
+                                      <col style="width: 900px" />
+                                      <col style="width: 200px" />
                                     </colgroup>
                                     <thead>
                                       <tr>
-                                        <th>선택</th>
+                                        <th class="text-center">선택</th>
                                         <th>
                                           <div class="kw-list-table-title">
                                             그룹 코드
                                             <div class="kw-align">
-                                              <button class="kw-align-start">왼쪽</button>
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
                                               <div class="kw-align-layer">
-                                                <button class="kw-align-start">왼쪽</button>
-                                                <button class="kw-align-center">가운데</button>
-                                                <button class="kw-align-end">오른쪽</button>
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
                                                 <hr />
-                                                <button class="kw-align-asc">오름차순</button>
-                                                <button class="kw-align-desc">내림차순</button>
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -153,14 +155,26 @@
                                           <div class="kw-list-table-title">
                                             설명
                                             <div class="kw-align">
-                                              <button class="kw-align-start">왼쪽</button>
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
                                               <div class="kw-align-layer">
-                                                <button class="kw-align-start">왼쪽</button>
-                                                <button class="kw-align-center">가운데</button>
-                                                <button class="kw-align-end">오른쪽</button>
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
                                                 <hr />
-                                                <button class="kw-align-asc">오름차순</button>
-                                                <button class="kw-align-desc">내림차순</button>
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -170,114 +184,234 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio01" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio01"
+                                          />
                                         </td>
                                         <td>BLACKDUCK_SETTING</td>
                                         <td>블랙덕 설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio02" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio02"
+                                          />
                                         </td>
                                         <td>AES_256_SETTING</td>
                                         <td>AES256 압호화 설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio03" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio03"
+                                          />
                                         </td>
                                         <td>PROJECT_GROUP_SETTING</td>
                                         <td>프로젝트 그룹설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio04" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio04"
+                                          />
                                         </td>
                                         <td>MAIL_SETTING</td>
                                         <td>메일 설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio05" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio05"
+                                          />
                                         </td>
                                         <td>PORTAL_SETTING</td>
                                         <td>포털 설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio06" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio06"
+                                          />
                                         </td>
                                         <td>REPORT_SETTING</td>
                                         <td>레포트 설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio07" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio07"
+                                          />
                                         </td>
                                         <td>PORTAL_LICENSE</td>
                                         <td>포털 라이선스</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <input class="form-check-input" type="radio" name="radio01" id="radio08" />
+                                        <td class="text-center">
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="radio01"
+                                            id="radio08"
+                                          />
                                         </td>
                                         <td>INTAKE_SETTING</td>
                                         <td>OSS 반입 설정</td>
                                         <td>
-                                          <div class="d-flex gap-8">
-                                            <button class="btn-icon small"><i class="ico ico--plus"></i></button>
-                                            <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                            <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                                          <div
+                                            class="d-flex align-items-center justify-content-center gap-10"
+                                          >
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--plus"></i>
+                                            </button>
+                                            <button class="btn-icon small">
+                                              <i class="ico ico--write"></i>
+                                            </button>
+                                            <button class="btn btn-icon small">
+                                              <i
+                                                class="ico ico--x_secondary"
+                                              ></i>
+                                            </button>
                                           </div>
                                         </td>
                                       </tr>
@@ -301,26 +435,21 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-7">
-              <div class="card-header">
+            <div class="card px-6">
+              <div class="card-header px-0">
                 <h5>코드 목록</h5>
               </div>
-              <div class="card-body">
-                <div class="kw-list">
-                  <div class="kw-list-head">
-                    <div class="kw-list-head-start"></div>
-                    <div class="kw-list-head-center"></div>
-                    <div class="kw-list-head-end"></div>
-                  </div>
+              <div class="card-body p-0 pt-7 pb-6">
+                <div class="kw-list p-0">
                   <div class="kw-list-table">
                     <div class="kw-list-table-scroll mh-100">
-                      <table class="table text-nowrap">
+                      <table class="table">
                         <colgroup>
-                          <col style="width: 20%" />
-                          <col style="width: 20%" />
-                          <col />
+                          <col style="width: 360px" />
+                          <col style="width: 400px" />
+                          <col style="width: 600px" />
                           <col style="width: 150px" />
-                          <col style="width: 100px" />
+                          <col style="width: 140px" />
                         </colgroup>
                         <thead>
                           <tr>
@@ -331,11 +460,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -347,11 +482,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -363,11 +504,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -379,11 +526,17 @@
                                   <button class="kw-align-start">왼쪽</button>
                                   <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <button class="kw-align-center">가운데</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
                                     <button class="kw-align-end">오른쪽</button>
                                     <hr />
-                                    <button class="kw-align-asc">오름차순</button>
-                                    <button class="kw-align-desc">내림차순</button>
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -397,10 +550,16 @@
                             <td>1</td>
                             <td>OSPM(Open Source Program Manager) 계정 ID</td>
                             <td>1</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -409,10 +568,16 @@
                             <td>Y</td>
                             <td>공식 검증 프로세스 간소화 여부</td>
                             <td>2</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -421,10 +586,16 @@
                             <td>BASE</td>
                             <td>고객사분기 코드를 위한 값</td>
                             <td>3</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -433,10 +604,16 @@
                             <td>kosswise.com:12015</td>
                             <td>포털 URL</td>
                             <td>4</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -445,10 +622,16 @@
                             <td>1</td>
                             <td>점검 요청의 승인자 ID</td>
                             <td>5</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -457,22 +640,36 @@
                             <td>30</td>
                             <td>허용되는 파일 사이즈(MB)</td>
                             <td>6</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
                           <tr>
                             <td>FILE_EXTENTION</td>
-                            <td>doc,docx,xls,xlsx,jpeg,jpg,png,zip,csv,pdf,txt,jar</td>
+                            <td>
+                              doc,docx,xls,xlsx,jpeg,jpg,png,zip,csv,pdf,txt,jar
+                            </td>
                             <td>허용되는 파일 확장자</td>
                             <td>7</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -481,10 +678,16 @@
                             <td>1</td>
                             <td>허용되지 않은 파일 이름</td>
                             <td>8</td>
-                            <td class="text-center">
-                              <div class="d-flex gap-8">
-                                <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                <button class="btn btn-icon small"><i class="ico ico--x_secondary"></i></button>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-10"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button class="btn btn-icon small">
+                                  <i class="ico ico--x_secondary"></i>
+                                </button>
                               </div>
                             </td>
                           </tr>
@@ -525,7 +728,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      그룹 코드 추가
+        그룹 코드 추가
       </button>
       <br />
       <button
@@ -534,7 +737,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
-      그룹 하위 코드 추가
+        그룹 하위 코드 추가
       </button>
     </div>
     <!--// Modal list -->
@@ -547,9 +750,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              <h5>그룹 코드 추가</h5>
-            </div>
+            <div class="modal-title">그룹 코드 추가</div>
             <button
               type="button"
               class="btn-close"
@@ -558,7 +759,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <label class="form-label">
                   그룹 코드 <span class="text-danger">*</span>
@@ -587,14 +788,14 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-            닫기
+              닫기
             </button>
             <button type="button" class="btn btn-primary">저장</button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="modal02" tabindex="-1">
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
@@ -602,9 +803,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              <h5>그룹 하위 코드 추가</h5>
-            </div>
+            <div class="modal-title">그룹 하위 코드 추가</div>
             <button
               type="button"
               class="btn-close"
@@ -613,7 +812,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <label class="form-label">
                   코드 그룹 <span class="text-danger">*</span>
@@ -674,13 +873,12 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-            닫기
+              닫기
             </button>
             <button type="button" class="btn btn-primary">저장</button>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

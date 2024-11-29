@@ -38,196 +38,247 @@
               <h1 class="me-auto">스케줄링 관리</h1>
             </div>
             <div class="card">
-              <div class="card-body">
-                <div class="kw-searchform kw-searchform--open">
-                  <p class="text-danger mb-0">
-                    ※ 애플리케이션 내부 스케줄 관리 화면입니다.<br />
-                    ※ 편집 버튼을 통해 스케줄의 정보를 수정할 수 있습니다.<br />
-                    ※ 수행 이력 버튼을 통해 해당 스케줄의 수행 내역을 확인할 수 있습니다.
-                  </p>
-                  <div class="kw-list px-0 pb-0">
-                    <div class="kw-list-table">
-                      <div class="kw-list-table-scroll">
-                        <table class="table text-nowrap">
-                          <colgroup>
-                            <col style="width: 50px" />
-                            <col style="width: 25%" />
-                            <col style="width: 150px" />
-                            <col />
-                            <col style="width: 100px" />
-                            <col style="width: 150px" />
-                            <col style="width: 150px" />
-                          </colgroup>
-                          <thead>
-                            <tr>
-                              <th>스케줄 ID</th>
-                              <th>
-                                <div class="kw-list-table-title">
-                                  스케줄 코드
-                                  <div class="kw-align">
+              <div class="card-body p-6">
+                <small class="text-danger">
+                  ※ 애플리케이션 내부 스케줄 관리 화면입니다.<br />
+                  ※ 편집 버튼을 통해 스케줄의 정보를 수정할 수 있습니다.<br />
+                  ※ 수행 이력 버튼을 통해 해당 스케줄의 수행 내역을 확인할 수
+                  있습니다.
+                </small>
+                <div class="kw-list px-0 pb-0">
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table">
+                        <colgroup>
+                          <col style="width: 90px" />
+                          <col style="width: 374px" />
+                          <col style="width: 145px" />
+                          <col style="width: 485px" />
+                          <col style="width: 145px" />
+                          <col style="width: 205px" />
+                          <col style="width: 230px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>스케줄 ID</th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                스케줄 코드
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <div class="kw-align-layer">
-                                      <button class="kw-align-start">왼쪽</button>
-                                      <button class="kw-align-center">가운데</button>
-                                      <button class="kw-align-end">오른쪽</button>
-                                      <hr />
-                                      <button class="kw-align-asc">오름차순</button>
-                                      <button class="kw-align-desc">내림차순</button>
-                                    </div>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
-                              </th>
-                              <th>
-                                <div class="kw-list-table-title">
-                                  수행 주기
-                                  <div class="kw-align">
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                수행 주기
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <div class="kw-align-layer">
-                                      <button class="kw-align-start">왼쪽</button>
-                                      <button class="kw-align-center">가운데</button>
-                                      <button class="kw-align-end">오른쪽</button>
-                                      <hr />
-                                      <button class="kw-align-asc">오름차순</button>
-                                      <button class="kw-align-desc">내림차순</button>
-                                    </div>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
-                              </th>
-                              <th>
-                                <div class="kw-list-table-title">
-                                  설명
-                                  <div class="kw-align">
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                설명
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <div class="kw-align-layer">
-                                      <button class="kw-align-start">왼쪽</button>
-                                      <button class="kw-align-center">가운데</button>
-                                      <button class="kw-align-end">오른쪽</button>
-                                      <hr />
-                                      <button class="kw-align-asc">오름차순</button>
-                                      <button class="kw-align-desc">내림차순</button>
-                                    </div>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
-                              </th>
-                              <th>
-                                <div class="kw-list-table-title">
-                                  활성화 여부
-                                  <div class="kw-align">
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                활성화 여부
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <div class="kw-align-layer">
-                                      <button class="kw-align-start">왼쪽</button>
-                                      <button class="kw-align-center">가운데</button>
-                                      <button class="kw-align-end">오른쪽</button>
-                                      <hr />
-                                      <button class="kw-align-asc">오름차순</button>
-                                      <button class="kw-align-desc">내림차순</button>
-                                    </div>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
-                              </th>
-                              <th>
-                                <div class="kw-list-table-title">
-                                  마지막 수정
-                                  <div class="kw-align">
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                마지막 수정
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
                                     <button class="kw-align-start">왼쪽</button>
-                                    <div class="kw-align-layer">
-                                      <button class="kw-align-start">왼쪽</button>
-                                      <button class="kw-align-center">가운데</button>
-                                      <button class="kw-align-end">오른쪽</button>
-                                      <hr />
-                                      <button class="kw-align-asc">오름차순</button>
-                                      <button class="kw-align-desc">내림차순</button>
-                                    </div>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
                                   </div>
                                 </div>
-                              </th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>2</td>
-                              <td>SKT_DEVSECOPS_JOB_SCHEDULE</td>
-                              <td>0 0 */4 * * ?</td>
-                              <td>SKT DevSecOps 프로젝트 동기화 스케줄</td>
-                              <td>
-                                <div class="d-flex gap-1 align-items-center">
-                                  <i class="ico ico--inactive small"></i>
-                                  <span class="text-danger">비활성</span>
-                                </div>
-                              </td>
-                              <td>2024-09-20</td>
-                              <td>
-                                <div class="d-flex gap-6">
-                                  <button class="btn-icon small"><i class="ico ico--play"></i></button>
-                                  <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                  <button type="button" class="btn btn-sm btn-secondary">수행이력</button>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>SKT_DEVSECOPS_JOB_SCHEDULE</td>
-                              <td>0 0 */4 * * ?</td>
-                              <td>SKT DevSecOps 프로젝트 동기화 스케줄</td>
-                              <td>
-                                <div class="d-flex gap-1 align-items-center">
-                                  <i class="ico ico--active small"></i>
-                                  <span class="text-primary">활성</span>
-                                </div>
-                              </td>
-                              <td>2024-09-20</td>
-                              <td>
-                                <div class="d-flex gap-6">
-                                  <button class="btn-icon small"><i class="ico ico--play"></i></button>
-                                  <button class="btn-icon small"><i class="ico ico--write"></i></button>
-                                  <button type="button" class="btn btn-sm btn-secondary">수행이력</button>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                              </div>
+                            </th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2</td>
+                            <td>SKT_DEVSECOPS_JOB_SCHEDULE</td>
+                            <td>0 0 */4 * * ?</td>
+                            <td>SKT DevSecOps 프로젝트 동기화 스케줄</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-1">
+                                <i class="ico ico--inactive small"></i>
+                                <span class="text-danger">비활성</span>
+                              </div>
+                            </td>
+                            <td>2024-09-20</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-6"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--play"></i>
+                                </button>
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-md btn-secondary"
+                                >
+                                  수행이력
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>SKT_DEVSECOPS_JOB_SCHEDULE</td>
+                            <td>0 0 */4 * * ?</td>
+                            <td>SKT DevSecOps 프로젝트 동기화 스케줄</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-1">
+                                <i class="ico ico--active small"></i>
+                                <span class="text-primary">활성</span>
+                              </div>
+                            </td>
+                            <td>2024-09-20</td>
+                            <td>
+                              <div
+                                class="d-flex align-items-center justify-content-center gap-6"
+                              >
+                                <button class="btn-icon small">
+                                  <i class="ico ico--play"></i>
+                                </button>
+                                <button class="btn-icon small">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-md btn-secondary"
+                                >
+                                  수행이력
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    <div class="kw-list-foot">
-                      <div class="kw-list-foot-start">
-                        <h6>Result : 1,300건</h6>
-                      </div>
-                      <div class="kw-list-foot-center">
-                        <nav>
-                          <ul class="pagination">
-                            <li class="page-item page-item-first">
-                              <a class="page-link" href="#">처음</a>
-                            </li>
-                            <li class="page-item page-item-prev">
-                              <a class="page-link" href="#">이전</a>
-                            </li>
-                            <li class="page-item active">
-                              <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">3</a>
-                            </li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">4</a>
-                            </li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">5</a>
-                            </li>
-                            <li class="page-item page-item-next">
-                              <a class="page-link" href="#">다음</a>
-                            </li>
-                            <li class="page-item page-item-last">
-                              <a class="page-link" href="#">마지막</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                      <div class="kw-list-foot-end"></div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
                     </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end"></div>
                   </div>
                 </div>
               </div>
@@ -255,7 +306,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
-      스케줄 편집
+        스케줄 편집
       </button>
       <br />
       <button
@@ -264,7 +315,7 @@
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
-      수행 이력
+        수행 이력
       </button>
     </div>
 
@@ -276,9 +327,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              <h5>스케줄 편집</h5>
-            </div>
+            <div class="modal-title">스케줄 편집</div>
             <button
               type="button"
               class="btn-close"
@@ -287,12 +336,14 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="mb-6 text-danger small">
-                ※ 편집 모달을 통해 스케줄을 일부 수정할 수 있습니다.<br />
-                ※ 수행 주기는 크론 표현 식(Cron Expression)으로 작성해야 합니다.<br />
-                ※ 활성화 여부에 따라 스케줄을 ‘일시 정지' 또는 ‘재개’할 수 있습니다.
+            <div class="mb-6 text-danger">
+              ※ 편집 모달을 통해 스케줄을 일부 수정할 수 있습니다.<br />
+              ※ 수행 주기는 크론 표현 식(Cron Expression)으로 작성해야
+              합니다.<br />
+              ※ 활성화 여부에 따라 스케줄을 ‘일시 정지' 또는 ‘재개’할 수
+              있습니다.
             </div>
-            <form class="row gap-7">
+            <form class="row gap-4">
               <div class="col-12">
                 <label class="form-label">
                   수행 주기 <span class="text-danger">*</span>
@@ -319,7 +370,7 @@
                 <label class="form-label">
                   활성화 여부 <span class="text-danger">*</span>
                 </label>
-                <div class="form-check form-switch">
+                <div class="form-check form-switch mt-2">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -351,9 +402,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title">
-              <h5>수행 이력</h5>
-            </div>
+            <div class="modal-title">수행 이력</div>
             <button
               type="button"
               class="btn-close"
@@ -362,14 +411,21 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="mb-6 text-danger small">
+            <div class="mb-6 text-danger">
               ※ 해당 스케줄의 수행 이력을 표시합니다.<br />
               ※ 수행 상태는 진행중, 수행완료, 수행실패 3가지로 표시합니다.
             </div>
             <div class="kw-list p-0">
               <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
+                    <colgroup>
+                      <col style="width: 94px" />
+                      <col style="width: 148px" />
+                      <col style="width: 216px" />
+                      <col style="width: 216px" />
+                      <col style="width: 120px" />
+                    </colgroup>
                     <thead>
                       <tr>
                         <th>
@@ -458,7 +514,7 @@
                       <tr>
                         <td>145</td>
                         <td>
-                          <div class="d-flex align-items-center gap-2">
+                          <div class="d-flex align-items-center gap-1">
                             <span class="text-danger">수행실패</span>
                             <i class="ico ico--fail small"></i>
                           </div>
@@ -470,7 +526,91 @@
                       <tr>
                         <td>145</td>
                         <td>
-                          <div class="d-flex align-items-center gap-2">
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="text-primary">수행완료</span>
+                            <i class="ico ico--complete small"></i>
+                          </div>
+                        </td>
+                        <td>2024-10-30 09:23</td>
+                        <td>2024-10-30 09:23</td>
+                        <td>0.177</td>
+                      </tr>
+                      <tr>
+                        <td>145</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
                             <span class="text-primary">수행완료</span>
                             <i class="ico ico--complete small"></i>
                           </div>
@@ -482,11 +622,6 @@
                     </tbody>
                   </table>
                 </div>
-              </div>
-              <div class="kw-list-foot">
-                <div class="kw-list-foot-start"></div>
-                <div class="kw-list-foot-center"></div>
-                <div class="kw-list-foot-end"></div>
               </div>
             </div>
           </div>
@@ -502,6 +637,5 @@
         </div>
       </div>
     </div>
-
   </body>
 </html>

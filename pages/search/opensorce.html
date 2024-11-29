@@ -56,6 +56,16 @@
                       </div>
                     </div>
                   </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+                <div class="kw-searchform-tooltip">
+                  <dl>
+                    <dt>더보기</dt>
+                    <dd>
+                      다시 열어<br />
+                      검색하실 수 있습니다!
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -314,10 +324,8 @@
         style="max-width: 1138px"
       >
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">
-              <h4>컴포넌트 버전 목록</h4>
-            </div>
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">컴포넌트 버전 목록</div>
             <button
               type="button"
               class="btn-close"
@@ -330,17 +338,32 @@
               <strong>cve-search/cve-search</strong>
             </div>
             <div class="kw-list p-0">
-              <div class="kw-list-head mb-4">
-                <div class="kw-list-head-start">Result : 120건</div>
-                <div class="kw-list-head-center"></div>
-                <div class="kw-list-head-end"></div>
-              </div>
               <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
-                  <table class="table text-nowrap">
+                  <table class="table">
+                    <colgroup>
+                      <col style="width: 680px" />
+                      <col style="width: 330px" />
+                      <col style="width: 650px" />
+                    </colgroup>
                     <thead>
                       <tr>
-                        <th>컴포넌트 버전</th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            컴포넌트 버전
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
                         <th>
                           <div class="kw-list-table-title">
                             라이선스 종류
@@ -477,7 +500,9 @@
                 </div>
               </div>
               <div class="kw-list-foot">
-                <div class="kw-list-foot-start"></div>
+                <div class="kw-list-foot-start">
+                  <h6>Result : 120건</h6>
+                </div>
                 <div class="kw-list-foot-center">
                   <nav>
                     <ul class="pagination">
