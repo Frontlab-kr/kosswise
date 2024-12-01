@@ -66,15 +66,15 @@
               </div>
             </div>
 
-            <div class="card card-division mb-8">
-              <div class="kw-searchform kw-searchform--open">
+            <div class="card mb-7">
+              <div class="kw-searchform kw-searchform--open p-0 px-6 pb-6">
                 <div class="row g-0">
                   <div class="col-8">
-                    <div class="card">
-                      <div class="card-header">
+                    <div class="card card--line border-0">
+                      <div class="card-header px-0">
                         <h5>제품 정보</h5>
                       </div>
-                      <div class="card-body card-left">
+                      <div class="card-body my-4 py-2 pe-9 border-end">
                         <form class="row g-7">
                           <div class="col-4">
                             <label class="form-label">제품명</label>
@@ -87,7 +87,7 @@
                           </div>
                           <div class="col-4">
                             <label class="form-label">서비스명</label>
-                            <div class="position-relative">
+                            <div class="kw-input-form-type01">
                               <input
                                 type="text"
                                 class="form-control"
@@ -95,7 +95,7 @@
                                 value="프로젝트 명"
                               />
                               <div class="icon-btns">
-                                <button type="button" class="btn btn-icon">
+                                <button type="button">
                                   <i class="ico ico--write"></i>
                                 </button>
                               </div>
@@ -103,16 +103,16 @@
                           </div>
                           <div class="col-4">
                             <label class="form-label">배포형태</label>
-                            <div class="position-relative">
+                            <div class="kw-input-form-type02">
                               <input type="text" class="form-control" />
-                              <div class="icon-btns d-flex">
-                                <button type="button" class="btn btn-icon">
+                              <div class="kw-input-form-type02__button">
+                                <button type="button">
                                   <i class="ico ico--check"></i>
                                 </button>
-                                <button type="button" class="btn btn-icon">
+                                <button type="button">
                                   <i class="ico ico--x"></i>
                                 </button>
-                                <button type="button" class="btn btn-icon">
+                                <button type="button">
                                   <i class="ico ico--inquiry"></i>
                                 </button>
                               </div>
@@ -120,17 +120,19 @@
                           </div>
                           <div class="col-4">
                             <label class="form-label">제품 버전</label>
-                            <span class="form-control value">01</span>
+                            <div class="py-2 fs-17 text-color-gray-300">01</div>
                           </div>
                           <div class="col-4">
                             <label class="form-label">하위 서비스명</label>
-                            <span class="form-control value"
-                              >하위 서비스명</span
-                            >
+                            <div class="py-2 fs-17 text-color-gray-300">
+                              내용을 입력해주세요
+                            </div>
                           </div>
                           <div class="col-4">
                             <label class="form-label">출시 예정일</label>
-                            <span class="form-control value">2024-11-13</span>
+                            <div class="pt-2 fs-17 text-color-gray-300">
+                              2024-11-13
+                            </div>
                           </div>
                           <div class="col-4">
                             <label class="form-label"
@@ -158,75 +160,79 @@
                     </div>
                   </div>
                   <div class="col-4">
-                    <div class="card-header">
-                      <h5>인원 정보</h5>
-                    </div>
-                    <div class="card-body card-right">
-                      <div class="row g-7">
-                        <div class="col-12">
-                          <label class="form-label">요청자</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder=""
-                            value="관리자(협력사그룹)"
-                          />
-                        </div>
-                        <div class="col-12">
-                          <label class="form-label">검토자</label>
-                          <div class="position-relative">
+                    <div class="card card--line border-0">
+                      <div class="card-header px-9">
+                        <h5>인원 정보</h5>
+                      </div>
+                      <div class="card-body my-4 py-3 ps-9">
+                        <div class="row g-7">
+                          <div class="col-12">
+                            <label class="form-label">요청자</label>
                             <input
                               type="text"
                               class="form-control"
                               placeholder=""
                               value="관리자(협력사그룹)"
                             />
-                            <div class="icon-btns">
-                              <button type="button" class="btn btn-icon">
-                                <i class="ico ico--write"></i>
-                              </button>
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">검토자</label>
+                            <div class="kw-input-form-type01">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                value="프로젝트 명"
+                              />
+                              <div class="icon-btns">
+                                <button type="button">
+                                  <i class="ico ico--write"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">참조자</label>
+                            <div class="kw-input-form-type02">
+                              <input type="text" class="form-control" />
+                              <div class="kw-input-form-type02__button">
+                                <button type="button">
+                                  <i class="ico ico--check"></i>
+                                </button>
+                                <button type="button">
+                                  <i class="ico ico--x"></i>
+                                </button>
+                                <button type="button">
+                                  <i class="ico ico--inquiry"></i>
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-12">
-                          <label class="form-label">참조자</label>
-                          <div class="position-relative">
-                            <input type="text" class="form-control" />
-                            <div class="icon-btns d-flex">
-                              <button type="button" class="btn btn-icon">
-                                <i class="ico ico--check"></i>
-                              </button>
-                              <button type="button" class="btn btn-icon">
-                                <i class="ico ico--x"></i>
-                              </button>
-                              <button type="button" class="btn btn-icon">
-                                <i class="ico ico--inquiry"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
-                      <h5>처리 일시</h5>
-                      <div class="row g-7">
-                        <div class="col-12">
-                          <label class="form-label">요청 일시</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder=""
-                            value="2024-10-22"
-                            readonly
-                          />
+                        <div class="border-top mt-5 py-6">
+                          <h5 class="fs-16 text-color-gray-300">처리 일시</h5>
                         </div>
-                        <div class="col-12">
-                          <label class="form-label">승인 일시</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder=""
-                            readonly
-                          />
+                        <div class="row g-7">
+                          <div class="col-12">
+                            <label class="form-label">요청 일시</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder=""
+                              value="2024-10-22"
+                              readonly
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label">승인 일시</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder=""
+                              readonly
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -245,11 +251,13 @@
               </div>
             </div>
 
-            <div class="card mb-8">
+            <div class="card mb-7">
               <div class="kw-list">
                 <div class="kw-list-head">
                   <div class="kw-list-head-start">
-                    <h6>오픈소스 점검 정보 (Black Duck 분석 프로젝트 정보)</h6>
+                    <small class="fw-medium text-color-gray-300"
+                      >오픈소스 점검 정보 (Black Duck 분석 프로젝트 정보)</small
+                    >
                   </div>
                   <div class="kw-list-head-end">
                     <div class="kw-button">
@@ -389,10 +397,8 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" />
-                            </div>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
                           </td>
                           <td>
                             <a href="" class="text-secondary"
@@ -407,7 +413,329 @@
                           <td>창영,...</td>
                           <td>
                             <div class="d-flex gap-8">
-                              <div class="fields d-inline-flex gap-2">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >License</label
+                                  >
+                                </div>
+                                <div class="form-check-reverse">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Security</label
+                                  >
+                                </div>
+                              </div>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--write"></i>
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico ico--x_secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" />
+                          </td>
+                          <td>
+                            <a href="" class="text-secondary"
+                              >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                            >
+                          </td>
+                          <td>0 Round</td>
+                          <td>OFFICIAL</td>
+                          <td>관리자</td>
+                          <td>INTERNAL</td>
+                          <td>관리자</td>
+                          <td>창영,...</td>
+                          <td>
+                            <div class="d-flex gap-8">
+                              <div class="d-inline-flex gap-2">
                                 <div class="form-check-reverse">
                                   <input
                                     class="form-check-input"
@@ -491,7 +819,7 @@
               </div>
             </div>
 
-            <div class="card mb-8">
+            <div class="card mb-7">
               <div class="card-header"><h5>첨부 파일</h5></div>
               <div class="card-body py-8 px-6">
                 <form class="row g-6">
@@ -524,7 +852,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card mb-15">
               <div class="card-body">
                 <div class="kw-searchform kw-searchform--open">
                   <ul class="nav nav-tabs" role="tablist">
@@ -563,102 +891,114 @@
                       role="tabpanel"
                       tabindex="0"
                     >
-                      <div class="kw-view-comment">
+                      <div class="kw-view-comment m-0">
                         <div class="kw-view-comment-item">
-                          <div class="kw-view-comment-item__name">
-                            임시001(솔루션사업팀)
-                            <span>2024-10-23 08:25</span>
-                          </div>
-                          <div class="dropdown">
-                            <button
-                              class="btn-icon small dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="ico ico--dots"></i>
-                            </button>
-                            <ul class="dropdown-menu type-list">
-                              <li>
-                                <button class="btn btn-text active">
-                                  수정
-                                </button>
-                              </li>
-                              <li>
-                                <button class="btn btn-text">삭제</button>
-                              </li>
-                            </ul>
-                          </div>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="펜슬 댓글"
-                            readonly=""
-                          />
-                        </div>
-                        <div class="kw-view-comment-item">
-                          <div class="kw-view-comment-item__name">
-                            임시001(솔루션사업팀)
-                            <span>2024-10-23 08:25</span>
-                          </div>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="펜슬 댓글"
-                            readonly=""
-                          />
-                        </div>
-
-                        <div class="kw-view-comment--write">
-                          <input
-                            class="form-control"
-                            readonly
-                            placeholder="댓글추가..."
-                            onclick="$(this).hide().next().toggleClass('d-none');"
-                          />
-                          <div class="kw-view-comment--write_show d-none">
-                            <div style="position: relative">
-                              <p
-                                style="
-                                  display: flex;
-                                  align-items: center;
-                                  justify-content: center;
-                                  position: absolute;
-                                  top: 0;
-                                  right: 0;
-                                  bottom: 0;
-                                  left: 0;
-                                  z-index: 20;
-                                  background: rgba(0, 0, 0, 0.4);
-                                  color: #fff;
-                                  font-size: 20px;
-                                  margin: 0;
-                                "
-                              >
-                                에디터 영역
-                              </p>
-
-                              <div style="position: relative; z-index: 10">
-                                <img
-                                  src="../../assets/images/img01.png"
-                                  alt=""
-                                  style="width: 100%"
-                                />
-                              </div>
+                          <div class="kw-view-comment-item-head">
+                            <div class="kw-view-comment-item__name">
+                              임시001(솔루션사업팀)
+                              <span>2024-10-23 08:25</span>
                             </div>
-                            <div class="kw-button justify-content-end mt-3">
-                              <button class="btn btn-primary btn-m">
-                                추가
-                              </button>
+                            <div class="dropdown">
                               <button
-                                class="btn btn-secondary btn-m"
-                                onclick="$(this).closest('.kw-view-comment--write_show').toggleClass('d-none').prev().show();"
+                                class="btn-icon small dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                               >
-                                취소
+                                <i class="ico ico--dots"></i>
                               </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <button class="btn btn-text active">
+                                    수정
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="btn btn-text">삭제</button>
+                                </li>
+                              </ul>
                             </div>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="펜슬 댓글"
+                            readonly=""
+                          />
+                        </div>
+                        <div class="kw-view-comment-item">
+                          <div class="kw-view-comment-item-head">
+                            <div class="kw-view-comment-item__name">
+                              임시001(솔루션사업팀)
+                              <span>2024-10-23 08:25</span>
+                            </div>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="펜슬 댓글"
+                            readonly=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="kw-view-comment-write">
+                        <input
+                          class="form-control"
+                          readonly
+                          placeholder="댓글추가..."
+                          onclick="$('.kw-view-comment-write').addClass('active');"
+                        />
+                        <div class="kw-view-comment-write-form">
+                          <div style="position: relative">
+                            <p
+                              style="
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                z-index: 20;
+                                background: rgba(0, 0, 0, 0.4);
+                                color: #fff;
+                                font-size: 20px;
+                                margin: 0;
+                              "
+                            >
+                              에디터 영역
+                            </p>
+
+                            <div style="position: relative; z-index: 10">
+                              <img
+                                src="../../assets/images/img01.png"
+                                alt=""
+                                style="width: 100%"
+                              />
+                            </div>
+                          </div>
+                          <div class="kw-view-comment-write-form__button">
+                            <button class="btn btn-primary btn-m">추가</button>
+                            <button
+                              class="btn btn-secondary btn-m"
+                              onclick="$('.kw-view-comment-write').removeClass('active');"
+                            >
+                              취소
+                            </button>
                           </div>
                         </div>
                       </div>
+                      <script>
+                        $(document).on('click', function (event) {
+                          if (
+                            !$(event.target).closest('.kw-view-comment-write')
+                              .length
+                          ) {
+                            $('.kw-view-comment-write').removeClass('active');
+                          }
+                        });
+                      </script>
                     </div>
                     <div
                       class="tab-pane fade"
@@ -692,7 +1032,7 @@
     >
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
@@ -701,7 +1041,7 @@
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >

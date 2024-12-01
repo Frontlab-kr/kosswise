@@ -35,6 +35,10 @@ $pointColor: #ff7a00;
 .text-color-gray-400 {
   color: var(--Gray-400, #596066) !important;
 }
+.text-color-gray-500 {
+  color: var(--Gray-500, #383f45) !important;
+}
+
 .kw {
   min-height: 100vh;
   background: var(--BackGround, #f6f7f9);
@@ -155,9 +159,15 @@ $pointColor: #ff7a00;
             font-weight: 500;
             line-height: normal;
             white-space: noWrap;
-            transition: all 0.2s ease;
+            transition: all 0.1s ease;
             &:hover {
               background: #f5f6fa;
+              color: var(--blcak, #000);
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
             }
           }
         }
@@ -477,7 +487,7 @@ $pointColor: #ff7a00;
           }
         }
       }
-      &--write {
+      &-write {
         position: fixed;
         z-index: 99;
         left: 0;
@@ -486,6 +496,23 @@ $pointColor: #ff7a00;
         padding: 30px 130px;
         background-color: #fff;
         border-top: solid 1px var(--Gray-100, #e5e7ea);
+        &-form {
+          max-height: 0;
+          overflow: hidden;
+          transition: all 0.8s ease;
+          &__button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 12px;
+            gap: 12px;
+          }
+        }
+        &.active & {
+          &-form {
+            max-height: 600px;
+          }
+        }
       }
     }
   }
@@ -659,12 +686,54 @@ $pointColor: #ff7a00;
       }
     }
   }
+  &-input-form-type01 {
+    position: relative;
+    .form-control {
+      padding-right: 60px;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 6px;
+      right: 13px;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      background: var(--Gray-100, #e5e7ea);
+      border: 0;
+    }
+  }
+  &-input-form-type02 {
+    position: relative;
+    .form-control {
+      padding-right: 60px;
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      margin-top: 6px;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        background: var(--Gray-100, #e5e7ea);
+        border: 0;
+      }
+    }
+  }
   &-searchform {
     position: relative;
     padding: 24px 24px 24px 24px;
     max-height: 47px;
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: all 1.2s ease;
     &-state {
       display: inline-block;
       ul {
@@ -798,7 +867,7 @@ $pointColor: #ff7a00;
     }
     &--open,
     &--expend {
-      max-height: 400px;
+      max-height: 1000px;
     }
     &--open &,
     &--expend & {
@@ -848,6 +917,23 @@ $pointColor: #ff7a00;
       border: none;
       font-size: 0;
     }
+  }
+  &-text-info {
+    display: flex;
+    width: 520px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--Gray-50, #f7f7f9);
+    color: var(--Gray-300, #676e76);
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 200% */
   }
   &-align {
     position: relative;
@@ -1130,6 +1216,23 @@ $pointColor: #ff7a00;
           }
         }
       }
+      &:not(.kw-list-table-faq) {
+        .table {
+          .btn-md {
+            //min-width: 76px;
+            min-width: auto;
+            height: 28px;
+            padding: 0 12px;
+            color: #fff;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
     }
     &-table ~ .kw-list-foot {
       margin-top: 16px;
@@ -1207,19 +1310,6 @@ $pointColor: #ff7a00;
               font-size: 0;
               line-height: 0;
             }
-          }
-          .btn-md {
-            //min-width: 76px;
-            min-width: auto;
-            height: 28px;
-            padding: 0 12px;
-            color: #fff;
-            text-align: center;
-            font-family: Pretendard;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
           }
         }
         tr {
@@ -1404,6 +1494,12 @@ $pointColor: #ff7a00;
             padding: 20px 0 10px 0;
             border-bottom: 1px solid #e5e7ea;
             text-decoration: none;
+            &:hover {
+              p,
+              span {
+                color: #6a9c89;
+              }
+            }
           }
           p {
             margin: 0 30px 0 0;
@@ -1544,41 +1640,42 @@ $pointColor: #ff7a00;
     }
   }
   &-overall {
-    padding: 20px 46px 34px;
+    padding: 20px 0px 34px;
     &-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       float: left;
       width: 50%;
       min-height: 76px;
-      margin: 0 0 18px 0;
+      margin: 0 0 35px 0;
       &--all {
         width: 100%;
+        margin: 0 0 25px 0;
       }
       p {
         margin: 0;
         color: var(--Gray-300, #676e76);
         text-align: center;
         font-family: Pretendard;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
-        line-height: 24px; /* 150% */
+        line-height: 28px; /* 155.556% */
       }
       &-state {
         display: inline-block;
-        width: 40px;
-        height: 3px;
+        width: 46px;
+        height: 4px;
         border-radius: 7px;
       }
       strong {
         color: var(--Gray-400, #596066);
         text-align: center;
         font-family: Pretendard;
-        font-size: 15px;
+        font-size: 17px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1641,6 +1738,7 @@ $pointColor: #ff7a00;
         height: 42px;
         padding: 0 8px;
         border-radius: 4px;
+        transition: all 0.2s ease;
         cursor: pointer;
         strong {
           color: var(--Black, #000);

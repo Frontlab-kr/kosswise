@@ -12,6 +12,13 @@
     <!-- bootstrap -->
     <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- apexchart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.css"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="../../assets/scss/common.css" />
   </head>
@@ -41,10 +48,10 @@
               <h1 class="me-auto">컴포넌트 내역</h1>
             </div>
 
-            <div class="card mb-8">
+            <div class="card mb-7">
               <div class="card-body">
                 <div class="kw-searchform kw-searchform--open">
-                  <div class="kw-searchform-inner mb-5">
+                  <div class="kw-searchform-inner">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
                         <button
@@ -87,96 +94,360 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                        <div class="sbom row gap-0">
-                          <div class="col">
-                            <div class="sbom-component">
-                              <div class="sbom-component-header">
-                                <h5>라이센스 위험</h5>
-                                <div class="dropdown">
-                                  <button
-                                    class="btn btn-link dropdown-toggle"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
+                        <div class="row gap-0">
+                          <div class="col-6">
+                            <div class="d-flex align-items-center">
+                              <strong class="text-color-gray-300"
+                                >라이센스 위험</strong
+                              >
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-link dropdown-toggle gap-1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ico ico--tooltip"></i>
+                                  <span
+                                    class="text-decoration-underline text-color-gray-300 fs-12"
+                                    >기준 확인하기</span
                                   >
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <small
+                                      >High (상용 구매 / 전체 소스 공개
+                                      요구)</small
+                                    >
+                                  </li>
+                                  <li>
+                                    <small
+                                      >Medium (넓은 소스 공개 범위 요구)</small
+                                    >
+                                  </li>
+                                  <li>
+                                    <small>Low (소스 공개 요구)</small>
+                                  </li>
+                                  <li><small>None (고지 요구)</small></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              style="min-height: 300px"
+                              class="p-6 border-end"
+                            >
+                              <div id="chart01"></div>
+                              <script>
+                                var options = {
+                                  series: [
+                                    {
+                                      data: [
+                                        {
+                                          x: 'High',
+                                          y: 2,
+                                          fillColor: '#C16A59',
+                                        },
+                                        {
+                                          x: 'Medium',
+                                          y: 0,
+                                          fillColor: '#C87C6A',
+                                        },
+                                        {
+                                          x: 'Low',
+                                          y: 19,
+                                          fillColor: '#D3D3D3',
+                                        },
+                                        {
+                                          x: 'None',
+                                          y: 89,
+                                          fillColor: '#E6E6E6',
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                  chart: {
+                                    type: 'bar',
+                                    height: 350,
+                                    stacked: false,
+                                    toolbar: {
+                                      show: false,
+                                    },
+                                  },
+                                  plotOptions: {
+                                    bar: {
+                                      horizontal: true,
+                                      barHeight: '50%',
+                                      borderRadius: 4,
+                                    },
+                                  },
+                                  dataLabels: {
+                                    enabled: true,
+                                    formatter: function (val) {
+                                      return val + '건';
+                                    },
+                                    style: {
+                                      fontSize: '12px',
+                                      colors: ['#596066'],
+                                    },
+                                    offsetX: 10,
+                                  },
+                                  xaxis: {
+                                    categories: [
+                                      'High',
+                                      'Medium',
+                                      'Low',
+                                      'None',
+                                    ],
+                                    labels: {
+                                      style: {
+                                        fontSize: '14px',
+                                      },
+                                    },
+                                  },
+                                  yaxis: {
+                                    labels: {
+                                      style: {
+                                        fontSize: '14px',
+                                      },
+                                    },
+                                  },
+                                  grid: {
+                                    show: true,
+                                  },
+                                  states: {
+                                    hover: {
+                                      filter: {
+                                        type: 'none', // 마우스 오버 시 색상 변경 없음
+                                      },
+                                    },
+                                  },
+                                };
+
+                                var chart = new ApexCharts(
+                                  document.querySelector('#chart01'),
+                                  options
+                                );
+                                chart.render();
+                              </script>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-link dropdown-toggle gap-1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <div class="kw-text-info">
                                     <i class="ico ico--tooltip"></i>
-                                    <span class="text-underline"
-                                      >기준 확인하기</span
-                                    >
-                                  </button>
-                                  <div class="dropdown-menu type-text">
-                                    <ul
-                                      class="text-light mb-0"
-                                      style="white-space: nowrap"
-                                    >
-                                      <li>
-                                        <small
-                                          >High (상용 구매 / 전체 소스 공개
-                                          요구)</small
-                                        >
-                                      </li>
-                                      <li>
-                                        <small
-                                          >Medium (넓은 소스 공개 범위
-                                          요구)</small
-                                        >
-                                      </li>
-                                      <li>
-                                        <small>Low (소스 공개 요구)</small>
-                                      </li>
-                                      <li><small>None (고지 요구)</small></li>
-                                    </ul>
-                                    <!-- <table class="table table-simple" style="width:650px">
-                                      <colgroup>
-                                        <col>
-                                        <col style="width:150px">
-                                        <col style="width:150px">
-                                        <col style="width:100px">
-                                      </colgroup>
-                                      <thead>
-                                        <tr>
-                                          <th>제품명</th>
-                                          <th>요청자</th>
-                                          <th>서비스</th>
-                                          <th>배포형태</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>똑독 모바일 01</td>
-                                          <td>관리자</td>
-                                          <td></td>
-                                          <td></td>
-                                        </tr>
-                                      </tbody>
-                                    </table> -->
+                                    아래 테이블의 라이선스 이름을 클릭하여 주요
+                                    의무 사항을 확인하세요.
                                   </div>
-                                </div>
-                              </div>
-                              <div class="sbom-component-body mt-8">
-                                <div style="height: 100px">그래프 자리</div>
-                              </div>
-                              <div class="sbom-component-foot mt-7">
-                                <div class="tooltip-text">
-                                  <i class="ico ico--tooltip"></i> 아래 테이블의
-                                  라이선스 이름을 클릭하여 주요 의무 사항을
-                                  확인하세요.
+                                </button>
+                                <div class="dropdown-menu p-6">
+                                  <table
+                                    class="table table-sm"
+                                    style="width: 650px"
+                                  >
+                                    <colgroup>
+                                      <col />
+                                      <col style="width: 150px" />
+                                      <col style="width: 150px" />
+                                      <col style="width: 100px" />
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th>제품명</th>
+                                        <th>요청자</th>
+                                        <th>서비스</th>
+                                        <th>배포형태</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>똑독 모바일 01</td>
+                                        <td>관리자</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="col">
-                            <div class="sbom-component">
-                              <div class="sbom-component-header">
-                                <h5>보안 위험</h5>
+                          <div class="col-6">
+                            <div class="d-flex align-items-center">
+                              <strong class="text-color-gray-300"
+                                >라이센스 위험</strong
+                              >
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-link dropdown-toggle gap-1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ico ico--tooltip"></i>
+                                  <span
+                                    class="text-decoration-underline text-color-gray-300 fs-12"
+                                    >기준 확인하기</span
+                                  >
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <small
+                                      >High (상용 구매 / 전체 소스 공개
+                                      요구)</small
+                                    >
+                                  </li>
+                                  <li>
+                                    <small
+                                      >Medium (넓은 소스 공개 범위 요구)</small
+                                    >
+                                  </li>
+                                  <li>
+                                    <small>Low (소스 공개 요구)</small>
+                                  </li>
+                                  <li><small>None (고지 요구)</small></li>
+                                </ul>
                               </div>
-                              <div class="sbom-component-body mt-8">
-                                <div style="height: 100px">그래프 자리</div>
-                              </div>
-                              <div class="sbom-component-foot mt-7">
-                                <div class="tooltip-text">
-                                  <i class="ico ico--tooltip"></i> 아래 테이블의
-                                  라이선스 이름을 클릭하여 주요 의무 사항을
-                                  확인하세요.
+                            </div>
+                            <div style="min-height: 300px" class="p-6">
+                              <div id="chart02"></div>
+                              <script>
+                                var options = {
+                                  series: [
+                                    {
+                                      data: [
+                                        {
+                                          x: 'High',
+                                          y: 2,
+                                          fillColor: '#C16A59',
+                                        },
+                                        {
+                                          x: 'Medium',
+                                          y: 0,
+                                          fillColor: '#C87C6A',
+                                        },
+                                        {
+                                          x: 'Low',
+                                          y: 19,
+                                          fillColor: '#D3D3D3',
+                                        },
+                                        {
+                                          x: 'None',
+                                          y: 89,
+                                          fillColor: '#E6E6E6',
+                                        },
+                                      ],
+                                    },
+                                  ],
+                                  chart: {
+                                    type: 'bar',
+                                    height: 350,
+                                    stacked: false,
+                                    toolbar: {
+                                      show: false,
+                                    },
+                                  },
+                                  plotOptions: {
+                                    bar: {
+                                      horizontal: true,
+                                      barHeight: '50%',
+                                      borderRadius: 4,
+                                    },
+                                  },
+                                  dataLabels: {
+                                    enabled: true,
+                                    formatter: function (val) {
+                                      return val + '건';
+                                    },
+                                    style: {
+                                      fontSize: '12px',
+                                      colors: ['#596066'],
+                                    },
+                                    offsetX: 10,
+                                  },
+                                  xaxis: {
+                                    categories: [
+                                      'High',
+                                      'Medium',
+                                      'Low',
+                                      'None',
+                                    ],
+                                    labels: {
+                                      style: {
+                                        fontSize: '14px',
+                                      },
+                                    },
+                                  },
+                                  yaxis: {
+                                    labels: {
+                                      style: {
+                                        fontSize: '14px',
+                                      },
+                                    },
+                                  },
+                                  grid: {
+                                    show: true,
+                                  },
+                                  states: {
+                                    hover: {
+                                      filter: {
+                                        type: 'none', // 마우스 오버 시 색상 변경 없음
+                                      },
+                                    },
+                                  },
+                                };
+
+                                var chart = new ApexCharts(
+                                  document.querySelector('#chart02'),
+                                  options
+                                );
+                                chart.render();
+                              </script>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-link dropdown-toggle gap-1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <div class="kw-text-info">
+                                    <i class="ico ico--tooltip"></i>
+                                    아래 테이블의 라이선스 이름을 클릭하여 주요
+                                    의무 사항을 확인하세요.
+                                  </div>
+                                </button>
+                                <div class="dropdown-menu p-6">
+                                  <table
+                                    class="table table-sm"
+                                    style="width: 650px"
+                                  >
+                                    <colgroup>
+                                      <col />
+                                      <col style="width: 150px" />
+                                      <col style="width: 150px" />
+                                      <col style="width: 100px" />
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th>제품명</th>
+                                        <th>요청자</th>
+                                        <th>서비스</th>
+                                        <th>배포형태</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>똑독 모바일 01</td>
+                                        <td>관리자</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
                               </div>
                             </div>
@@ -217,62 +488,108 @@
               </div>
             </div>
 
-            <div class="card mb-8">
-              <div class="kw-searchform kw-searchform--open p-0 pb-5">
-                <div class="card-header"><h5>배포형태 Ver.1</h5></div>
-                <div class="card-body py-3 px-6">
-                  <div class="row sbom-version">
-                    <div class="col-3">
-                      <dl>
-                        <dt>스캔</dt>
-                        <dd>-</dd>
-                      </dl>
+            <div class="card mb-7 px-6">
+              <div class="kw-searchform kw-searchform--open p-0 pb-7">
+                <div class="kw-searchform-inner">
+                  <div class="card-header px-0">
+                    <h5 class="text-secondary">배포형태 Ver.1</h5>
+                  </div>
+                  <div class="card-body p-0 pt-3">
+                    <div class="row g-0 py-4">
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            스캔
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">
+                            2024-10-02-09:29
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            상태
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">최신상태</dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            최근 업데이트
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">
+                            2024-10-02-09:29
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            거버넌스 단계
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">
+                            SBOM 승인 요청
+                          </dd>
+                        </dl>
+                      </div>
                     </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>상태</dt>
-                        <dd>최신상태</dd>
-                      </dl>
-                    </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>최근 업데이트</dt>
-                        <dd>2024-10-02-09:29</dd>
-                      </dl>
-                    </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>거버넌스 단계</dt>
-                        <dd>SBOM 승인 요청</dd>
-                      </dl>
-                    </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>사용된 제품 목록</dt>
-                        <dd>배포형태(1)</dd>
-                      </dl>
-                    </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>프로젝트 담당 조직</dt>
-                        <dd>협력사 그룹</dd>
-                      </dl>
-                    </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>프로젝트 담당자</dt>
-                        <dd>관리자</dd>
-                      </dl>
-                    </div>
-                    <div class="col-3">
-                      <dl>
-                        <dt>프로젝트 구성원</dt>
-                        <dd>지현</dd>
-                      </dl>
+                    <div class="row g-0 py-4 border-top">
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            사용된 제품 목록
+                          </dt>
+                          <dd class="fs-17">배포형태(1)</dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            프로젝트 담당 조직
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">
+                            협력사 그룹
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            프로젝트 담당자
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">관리자</dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6">
+                          <dt
+                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                          >
+                            프로젝트 구성원
+                          </dt>
+                          <dd class="mb-0 p-0 fs-17 fw-semibold">지현</dd>
+                        </dl>
+                      </div>
                     </div>
                   </div>
+                  <button class="kw-searchform-toggle">닫기</button>
                 </div>
-                <button class="kw-searchform-toggle">닫기</button>
               </div>
               <div class="kw-searchform-tooltip">
                 <dl>
@@ -299,8 +616,12 @@
                           />
                           <button>검색</button>
                         </div>
-                        <div class="btns d-flex gap-2">
-                          <button type="button" class="btn btn-primary">
+                        <div class="btns d-flex gap-3">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            style="min-width: 88px"
+                          >
                             필터 <i class="ico-plus-white"></i>
                           </button>
                           <div class="dropdown">
@@ -309,16 +630,18 @@
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
-                              필드선택<i class="ico ico--dropdown"></i>
+                              필드선택
                             </button>
-                            <ul class="dropdown-menu type-filter">
+                            <ul class="dropdown-menu">
                               <li>
                                 <div class="form-check">
                                   <input
                                     class="form-check-input"
                                     type="checkbox"
                                   />
-                                  <label class="form-check-label">Filter</label>
+                                  <label class="form-check-label"
+                                    >Ignored</label
+                                  >
                                 </div>
                               </li>
                               <li>
@@ -327,64 +650,60 @@
                                     class="form-check-input"
                                     type="checkbox"
                                   />
-                                  <label class="form-check-label">Filter</label>
+                                  <label class="form-check-label"
+                                    >Not Ignored</label
+                                  >
                                 </div>
                               </li>
                               <li class="hasbtn">
-                                <button
-                                  class="btn btn-primary dropdown-toggle w-100"
-                                  data-bs-toggle="dropdown"
-                                >
+                                <button class="btn btn-primary w-100">
                                   OK
                                 </button>
                               </li>
                             </ul>
                           </div>
-                        </div>
-                        <div class="dropdown btn-group">
-                          <button
-                            class="btn btn-primary dropdown-toggle gap-3"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            Ignored<i class="ico ico--dropdown"></i>
-                          </button>
-                          <button class="btn btn-primary">
-                            <i class="ico ico--x_secondary"></i>
-                          </button>
-                          <ul
-                            class="dropdown-menu type-filter"
-                            style="width: 230px"
-                          >
-                            <li>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                />
-                                <label class="form-check-label">Ignored</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                />
-                                <label class="form-check-label"
-                                  >Not Ignored</label
-                                >
-                              </div>
-                            </li>
-                            <li class="hasbtn">
-                              <button
-                                class="btn btn-primary dropdown-toggle w-100"
-                                data-bs-toggle="dropdown"
-                              >
-                                OK
-                              </button>
-                            </li>
-                          </ul>
+
+                          <div class="btn-group btn-group-primary">
+                            <button
+                              class="btn btn-primary dropdown-toggle gap-3"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              필드선택
+                            </button>
+                            <button class="btn-group-delete">
+                              <i class="ico ico-delete"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Ignored</label
+                                  >
+                                </div>
+                              </li>
+                              <li>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                  />
+                                  <label class="form-check-label"
+                                    >Not Ignored</label
+                                  >
+                                </div>
+                              </li>
+                              <li class="hasbtn">
+                                <button class="btn btn-primary w-100">
+                                  OK
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -392,7 +711,7 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <th>정책</th>
+                            <th class="text-center">정책</th>
                             <th>
                               <div class="kw-list-table-title">
                                 <div
@@ -601,7 +920,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>
+                            <td class="text-center">
                               <i class="ico ico--complete"></i>
                             </td>
                             <td>
@@ -631,7 +950,9 @@
                               </div>
                             </td>
                             <td>
-                              <div class="d-flex gap-7">
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
                                     class="btn btn-icon small position-relative"
@@ -643,23 +964,23 @@
                                       ></span
                                     >
                                   </button>
-                                  <span>(1)</span>
+                                  <small class="text-color-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
                                     type="button"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    class="dropdown-toggle"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
                                   >
                                     <i class="ico-more"></i>
                                   </button>
                                   <ul
-                                    class="dropdown-menu type-list"
+                                    class="dropdown-menu"
                                     data-popper-placement="bottom-end"
                                   >
                                     <li>
-                                      <button class="btn btn-text">
+                                      <button class="btn btn-text w-100">
                                         Ignore
                                       </button>
                                     </li>
@@ -669,8 +990,8 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
-                              <i class="ico ico--forbidden large"></i>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -699,7 +1020,9 @@
                               </div>
                             </td>
                             <td>
-                              <div class="d-flex gap-7">
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
                                     class="btn btn-icon small position-relative"
@@ -711,23 +1034,443 @@
                                       ></span
                                     >
                                   </button>
-                                  <span>(1)</span>
+                                  <small class="text-color-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
                                     type="button"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
-                                    class="dropdown-toggle"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
                                   >
                                     <i class="ico-more"></i>
                                   </button>
                                   <ul
-                                    class="dropdown-menu type-list"
+                                    class="dropdown-menu"
                                     data-popper-placement="bottom-end"
                                   >
                                     <li>
-                                      <button class="btn btn-text">
+                                      <button class="btn btn-text w-100">
+                                        Ignore
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
+                                  </button>
+                                  <small class="text-color-gray-400">(1)</small>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
+                                  >
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    data-popper-placement="bottom-end"
+                                  >
+                                    <li>
+                                      <button class="btn btn-text w-100">
+                                        Ignore
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
+                                  </button>
+                                  <small class="text-color-gray-400">(1)</small>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
+                                  >
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    data-popper-placement="bottom-end"
+                                  >
+                                    <li>
+                                      <button class="btn btn-text w-100">
+                                        Ignore
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
+                                  </button>
+                                  <small class="text-color-gray-400">(1)</small>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
+                                  >
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    data-popper-placement="bottom-end"
+                                  >
+                                    <li>
+                                      <button class="btn btn-text w-100">
+                                        Ignore
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
+                                  </button>
+                                  <small class="text-color-gray-400">(1)</small>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
+                                  >
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    data-popper-placement="bottom-end"
+                                  >
+                                    <li>
+                                      <button class="btn btn-text w-100">
+                                        Ignore
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
+                                  </button>
+                                  <small class="text-color-gray-400">(1)</small>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
+                                  >
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    data-popper-placement="bottom-end"
+                                  >
+                                    <li>
+                                      <button class="btn btn-text w-100">
+                                        Ignore
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <i class="ico ico--complete"></i>
+                            </td>
+                            <td>
+                              <a href=""
+                                >20241015_gdg_test 01 [20241015_gdg_test 01]</a
+                              >
+                            </td>
+                            <td>0 Component</td>
+                            <td>OFFICIAL</td>
+                            <td>DYNAMICALLY_LINKED</td>
+                            <td>
+                              <span class="text-secondary"
+                                >Apache License 2.0</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-critical min">1</span>
+                                <span class="badge bg-high min">2</span>
+                                <span class="badge bg-high min">0</span>
+                                <span class="badge bg-low min">0</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-inline-flex gap-1">
+                                <span class="badge bg-high medium">High</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="d-inline-flex align-items-center justify-content-between w-100"
+                              >
+                                <div class="d-flex gap-1 align-items-center">
+                                  <button
+                                    class="btn btn-icon small position-relative"
+                                  >
+                                    <i class="ico ico--chat"></i>
+                                    <span class="new"
+                                      ><span class="visually-hidden"
+                                        >New comment</span
+                                      ></span
+                                    >
+                                  </button>
+                                  <small class="text-color-gray-400">(1)</small>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    class="dropdown-toggle dropdown-toggle-ico-hide"
+                                  >
+                                    <i class="ico-more"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    data-popper-placement="bottom-end"
+                                  >
+                                    <li>
+                                      <button class="btn btn-text w-100">
                                         Ignore
                                       </button>
                                     </li>
@@ -810,7 +1553,7 @@
     >
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
@@ -819,7 +1562,7 @@
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal02"
       >
@@ -828,7 +1571,7 @@
       <br />
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal03"
       >
@@ -1228,23 +1971,37 @@
           <div class="modal-body">
             <div class="card card--line mb-7">
               <div class="card-header">
-                <h5 class="text-black">BSD 2-clause "Simplified" License</h5>
+                <h5>BSD 2-clause "Simplified" License</h5>
               </div>
               <div class="card-body license">
                 <div class="license-terms">
-                  <div class="license-terms-overview mb-7">
+                  <div class="mb-3">
                     <strong>BSD 2-clause "Simplified" License</strong>
-                    <span>BSD 2-clause "Simplified" License</span>
+                    <span class="ms-2 fs-15 text-color-gray-300"
+                      >BSD 2-clause "Simplified" License</span
+                    >
                   </div>
-                  <div class="license-terms-status">
-                    <dl>
-                      <dt>Status</dt>
-                      <dd>UNREVIEWED</dd>
-                    </dl>
-                    <dl>
-                      <dt>Family</dt>
-                      <dd>Permissive</dd>
-                    </dl>
+                  <div class="row g-0 py-4">
+                    <div class="col-6">
+                      <dl class="m-0 pe-6 border-end">
+                        <dt
+                          class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                        >
+                          Status
+                        </dt>
+                        <dd class="mb-0 p-0 fs-17 fw-semibold">UNREVIEWED</dd>
+                      </dl>
+                    </div>
+                    <div class="col-6">
+                      <dl class="m-0 px-6">
+                        <dt
+                          class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                        >
+                          Family
+                        </dt>
+                        <dd class="mb-0 p-0 fs-17 fw-semibold">Permissive</dd>
+                      </dl>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1259,7 +2016,7 @@
                     </div>
                     <div class="card-body">
                       <div class="accordion" id="accordion1">
-                        <div class="accordion-item primary">
+                        <div class="accordion-item accordion-item--primary">
                           <div class="accordion-header" id="accordion1-h1">
                             <button
                               class="accordion-button collapsed"
@@ -1276,7 +2033,6 @@
                             id="accordion1-c1"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion1-h1"
-                            data-bs-parent="#accordion1"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1284,7 +2040,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item primary">
+                        <div class="accordion-item accordion-item--primary">
                           <div class="accordion-header" id="accordion1-h2">
                             <button
                               class="accordion-button collapsed"
@@ -1301,7 +2057,6 @@
                             id="accordion1-c2"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion1-h2"
-                            data-bs-parent="#accordion1"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1320,7 +2075,7 @@
                     </div>
                     <div class="card-body">
                       <div class="accordion" id="accordion2">
-                        <div class="accordion-item critical">
+                        <div class="accordion-item accordion-item--danger">
                           <div class="accordion-header" id="accordion2-h1">
                             <button
                               class="accordion-button collapsed"
@@ -1337,7 +2092,6 @@
                             id="accordion2-c1"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion2-h1"
-                            data-bs-parent="#accordion2"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1345,7 +2099,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item critical">
+                        <div class="accordion-item accordion-item--danger">
                           <div class="accordion-header" id="accordion2-h2">
                             <button
                               class="accordion-button collapsed"
@@ -1362,7 +2116,6 @@
                             id="accordion2-c2"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion2-h2"
-                            data-bs-parent="#accordion2"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1381,7 +2134,7 @@
                     </div>
                     <div class="card-body">
                       <div class="accordion" id="accordion3">
-                        <div class="accordion-item secondary">
+                        <div class="accordion-item accordion-item--secondary">
                           <div class="accordion-header" id="accordion3-h1">
                             <button
                               class="accordion-button collapsed"
@@ -1398,7 +2151,6 @@
                             id="accordion3-c1"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion3-h1"
-                            data-bs-parent="#accordion3"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1406,7 +2158,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item secondary">
+                        <div class="accordion-item accordion-item--secondary">
                           <div class="accordion-header" id="accordion3-h2">
                             <button
                               class="accordion-button collapsed"
@@ -1423,7 +2175,6 @@
                             id="accordion3-c2"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion3-h2"
-                            data-bs-parent="#accordion3"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1431,7 +2182,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item secondary">
+                        <div class="accordion-item accordion-item--secondary">
                           <div class="accordion-header" id="accordion3-h3">
                             <button
                               class="accordion-button collapsed"
@@ -1448,7 +2199,6 @@
                             id="accordion3-c3"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion3-h3"
-                            data-bs-parent="#accordion3"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1456,7 +2206,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item secondary">
+                        <div class="accordion-item accordion-item--secondary">
                           <div class="accordion-header" id="accordion3-h4">
                             <button
                               class="accordion-button collapsed"
@@ -1473,7 +2223,6 @@
                             id="accordion3-c4"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion3-h4"
-                            data-bs-parent="#accordion3"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1481,7 +2230,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item secondary">
+                        <div class="accordion-item accordion-item--secondary">
                           <div class="accordion-header" id="accordion3-h5">
                             <button
                               class="accordion-button collapsed"
@@ -1498,7 +2247,6 @@
                             id="accordion3-c5"
                             class="accordion-collapse collapse"
                             aria-labelledby="accordion3-h5"
-                            data-bs-parent="#accordion3"
                           >
                             <div class="accordion-body">
                               Copyright (c) 2011 Andy Balholm. All rights
@@ -1513,7 +2261,7 @@
               </div>
             </div>
 
-            <div class="fs-17 text-color-gray-400">
+            <div class="px-6 fs-17 text-color-gray-400">
               Copyright (c) 2011 Andy Balholm. All rights reserved.
               Redistribution and use in source and binary forms, with or
               withoutmodification, are permitted provided that the following
@@ -1589,7 +2337,7 @@
                     >
                       <i class="ico ico--dots"></i>
                     </button>
-                    <ul class="dropdown-menu type-list">
+                    <ul class="dropdown-menu">
                       <li><button class="btn btn-text active">수정</button></li>
                       <li><button class="btn btn-text">삭제</button></li>
                     </ul>
@@ -1630,7 +2378,7 @@
                     >
                       <i class="ico ico--dots"></i>
                     </button>
-                    <ul class="dropdown-menu type-list">
+                    <ul class="dropdown-menu">
                       <li><button class="btn btn-text active">수정</button></li>
                       <li><button class="btn btn-text">삭제</button></li>
                     </ul>

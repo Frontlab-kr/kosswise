@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- apexchart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">SBOM</a></li>
+                <li class="breadcrumb-item">
+                  <a href="#">컴포넌트 내역</a>
+                </li>
+                <li class="breadcrumb-item active">컴포넌트 버전 상세</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head">
+              <h1 class="me-auto">컴포넌트 버전 상세</h1>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab01"
+                          type="button"
+                          role="tab"
+                        >
+                          Security
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab02"
+                          type="button"
+                          role="tab"
+                        >
+                          Copyrights
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab03"
+                          type="button"
+                          role="tab"
+                        >
+                          Details
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab04"
+                          type="button"
+                          role="tab"
+                        >
+                          Settings
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        Security
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        Copyrights
+                      </div>
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab03"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        <div class="row g-7">
+                          <div class="col-4 h-100">
+                            <div class="h-100 border rounded px-6">
+                              <div class="py-6 border-bottom">
+                                <label
+                                  class="form-label d-flex align-items-center gap-1"
+                                  ><i class="ico-certification"></i>
+                                  Vulnerabilities</label
+                                >
+                                <div class="text-color-gray-400 fs-17">
+                                  <strong class="text-black">0</strong>
+                                </div>
+                              </div>
+                              <div class="py-6 border-bottom">
+                                <label class="form-label">Licenses</label>
+                                <div class="text-color-gray-400 fs-17">
+                                  MIT License
+                                </div>
+                              </div>
+                              <div class="py-6 border-bottom">
+                                <label class="form-label">Notes</label>
+                                <div class="text-black fs-17">No Notes</div>
+                              </div>
+                              <div class="py-6 border-bottom">
+                                <label class="form-label"
+                                  >Component Links</label
+                                >
+                                <div class="text-color-gray-400 fs-17">
+                                  <a href=""
+                                    >https://packagist.org/packages/webdevifti/admindash</a
+                                  >
+                                </div>
+                              </div>
+                              <div class="py-6">
+                                <label class="form-label">Tags</label>
+                                <div class="text-color-gray-400 fs-17">
+                                  <div class="badge text-bg-primary">
+                                    analysis
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="border rounded">
+                              <div class="row g-0 py-4">
+                                <div class="col-4">
+                                  <dl class="m-0 px-6 border-end">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      packagist.org
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      admindash > v1.0.0
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <div class="col-2">
+                                  <dl class="m-0 px-6 border-end">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      Versions : 1
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      <span class="badge text-bg-secondary">
+                                        unknown
+                                      </span>
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <div class="col-6">
+                                  <dl class="m-0 px-6">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      Description
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      A Laravel package for admin dashboard
+                                      views
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </div>
+                              <div class="row g-0 py-4 border-top">
+                                <div class="col-3">
+                                  <dl class="m-0 px-6 border-end">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      Released
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      2023-12-31
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <div class="col-3">
+                                  <dl class="m-0 px-6 border-end">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      Newer Versions
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      0
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <div class="col-3">
+                                  <dl class="m-0 px-6">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      Approval Status
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      UNREVIEWED
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <div class="col-3">
+                                  <dl class="m-0 px-6">
+                                    <dt
+                                      class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
+                                    >
+                                      Updated
+                                    </dt>
+                                    <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                      -
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="kw-list p-0 mt-7">
+                              <div class="kw-list-table">
+                                <div class="kw-list-table-tooltip">
+                                  <dl>
+                                    <dt>가로 스크롤</dt>
+                                    <dd>
+                                      더 많은 정보를 보시려면 화면을 가로 스크롤
+                                      해주세요!
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <div class="kw-list-table-scroll">
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            Project
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
+                                                <hr />
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            Released
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
+                                                <hr />
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                        <th>
+                                          <div class="kw-list-table-title">
+                                            Phase
+                                            <div class="kw-align">
+                                              <button class="kw-align-start">
+                                                왼쪽
+                                              </button>
+                                              <div class="kw-align-layer">
+                                                <button class="kw-align-start">
+                                                  왼쪽
+                                                </button>
+                                                <button class="kw-align-center">
+                                                  가운데
+                                                </button>
+                                                <button class="kw-align-end">
+                                                  오른쪽
+                                                </button>
+                                                <hr />
+                                                <button class="kw-align-asc">
+                                                  오름차순
+                                                </button>
+                                                <button class="kw-align-desc">
+                                                  내림차순
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <a href=""
+                                            >FCC Default Detect Version</a
+                                          >
+                                        </td>
+                                        <td>-</td>
+                                        <td>In Development</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="kw-list-foot">
+                                <div class="kw-list-foot-start">
+                                  <h6>Result : 1,300건</h6>
+                                </div>
+                                <div class="kw-list-foot-center">
+                                  <nav>
+                                    <ul class="pagination">
+                                      <li class="page-item page-item-first">
+                                        <a class="page-link" href="#">처음</a>
+                                      </li>
+                                      <li class="page-item page-item-prev">
+                                        <a class="page-link" href="#">이전</a>
+                                      </li>
+                                      <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                      </li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                      </li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                      </li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                      </li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                      </li>
+                                      <li class="page-item page-item-next">
+                                        <a class="page-link" href="#">다음</a>
+                                      </li>
+                                      <li class="page-item page-item-last">
+                                        <a class="page-link" href="#">마지막</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                                <div class="kw-list-foot-end">
+                                  <div>
+                                    <select class="form-select">
+                                      <option selected>10개씩 보기</option>
+                                      <option value="1">10개씩 보기</option>
+                                      <option value="2">20개씩 보기</option>
+                                      <option value="3">30개씩 보기</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="tab-pane fade"
+                        id="tab04"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        Settings
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
