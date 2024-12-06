@@ -1123,6 +1123,32 @@ $pointColor: #ff7a00;
       }
     }
   }
+  &-tab {
+    &-button {
+      display: flex;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          .btn {
+            border-radius: 4px;
+            background: var(--major-low, #a6a6a6);
+            border-color: var(--major-low, #a6a6a6);
+            &.active {
+              background: var(--Green-300, #6a9c89);
+              border-color: var(--Green-300, #6a9c89);
+            }
+          }
+        }
+      }
+    }
+  }
   &-list {
     position: relative;
     padding: 24px;

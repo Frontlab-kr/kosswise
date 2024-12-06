@@ -18894,6 +18894,30 @@ html .form-switch .form-check-label {
   font-weight: 500;
   line-height: normal;
 }
+.kw-tab-button {
+  display: flex;
+}
+.kw-tab-button ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.kw-tab-button ul li {
+  margin: 0;
+  padding: 0;
+}
+.kw-tab-button ul li .btn {
+  border-radius: 4px;
+  background: var(--major-low, #a6a6a6);
+  border-color: var(--major-low, #a6a6a6);
+}
+.kw-tab-button ul li .btn.active {
+  background: var(--Green-300, #6a9c89);
+  border-color: var(--Green-300, #6a9c89);
+}
 .kw-list {
   position: relative;
   padding: 24px;

@@ -320,60 +320,156 @@
                       <div class="card-header px-0">
                         <div class="d-flex align-items-center gap-3">
                           <h5 class="text-black">업그레이드 권장사항</h5>
-                          <button class="btn btn-primary btn-sm">
-                            Direct Dependency
-                          </button>
-                          <button class="btn btn-primary btn-sm" disabled>
-                            Component Version
-                          </button>
+
+                          <div class="kw-tab-button">
+                            <ul role="tablist">
+                              <li role="presentation">
+                                <button
+                                  class="btn btn-primary btn-sm active"
+                                  id="home-tab"
+                                  data-bs-toggle="tab"
+                                  data-bs-target="#home"
+                                  type="button"
+                                  role="tab"
+                                  aria-controls="home"
+                                  aria-selected="true"
+                                >
+                                  Direct Dependency
+                                </button>
+                              </li>
+                              <li role="presentation">
+                                <button
+                                  class="btn btn-primary btn-sm"
+                                  id="profile-tab"
+                                  data-bs-toggle="tab"
+                                  data-bs-target="#profile"
+                                  type="button"
+                                  role="tab"
+                                  aria-controls="profile"
+                                  aria-selected="false"
+                                >
+                                  Component Version
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                      <div class="card-body py-6">
-                        <div class="row g-7">
-                          <div class="col">
-                            <div
-                              class="border rounded p-6 text-center w-100 h-100"
-                            >
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-3 mb-3 fs-12"
-                              >
-                                <i class="ico-tooltip"></i
-                                ><span
-                                  >취약점이 해결된 가장
-                                  <span class="text-danger">근접한 버전</span>
-                                  정보입니다</span
+
+                      <div class="tab-content" id="myTabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="home"
+                          role="tabpanel"
+                          aria-labelledby="home-tab"
+                        >
+                          <div class="card-body py-6">
+                            <div class="row g-7">
+                              <div class="col">
+                                <div
+                                  class="border rounded p-6 text-center w-100 h-100"
                                 >
+                                  <div
+                                    class="d-flex align-items-center justify-content-center gap-3 mb-3 fs-12"
+                                  >
+                                    <i class="ico-exclamation"></i
+                                    ><span
+                                      >취약점이 해결된 가장
+                                      <span class="text-danger"
+                                        >근접한 버전</span
+                                      >
+                                      정보입니다</span
+                                    >
+                                  </div>
+                                  <div class="text-primary fs-15 mb-2">
+                                    Spring Framework 5.3.39
+                                  </div>
+                                  <div
+                                    class="d-flex gap-1 justify-content-center"
+                                  >
+                                    <span class="badge bg-critical min">0</span>
+                                    <span class="badge bg-high min">0</span>
+                                    <span class="badge bg-medium min">0</span>
+                                    <span class="badge bg-low min">1</span>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="text-primary fs-15 mb-2">
-                                Spring Framework 5.3.39
-                              </div>
-                              <div class="d-flex gap-1 justify-content-center">
-                                <span class="badge bg-critical min">0</span>
-                                <span class="badge bg-high min">0</span>
-                                <span class="badge bg-medium min">0</span>
-                                <span class="badge bg-low min">1</span>
+                              <div class="col">
+                                <div
+                                  class="border rounded p-6 text-center w-100 h-100"
+                                >
+                                  <div
+                                    class="d-flex align-items-center justify-content-center gap-3 mb-3 fs-12"
+                                  >
+                                    <i class="ico-exclamation"></i>
+                                    <span
+                                      >취약점이 해결된 가장
+                                      <span class="text-danger">최신 버전</span>
+                                      정보입니다</span
+                                    >
+                                  </div>
+                                  <div class="text-primary fs-15 mb-1">
+                                    Spring Framework 5.3.39
+                                  </div>
+                                  <div class="fs-14 text-gray-400">
+                                    Has no known vulnerabilities
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="col">
-                            <div
-                              class="border rounded p-6 text-center w-100 h-100"
-                            >
-                              <div
-                                class="d-flex align-items-center justify-content-center gap-3 mb-3 fs-12"
-                              >
-                                <i class="ico-exclamation"></i>
-                                <span
-                                  >취약점이 해결된 가장
-                                  <span class="text-danger">최신 버전</span>
-                                  정보입니다</span
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="profile"
+                          role="tabpanel"
+                          aria-labelledby="profile-tab"
+                        >
+                          <div class="card-body py-6">
+                            <div class="row g-7">
+                              <div class="col">
+                                <div
+                                  class="border rounded p-6 text-center w-100 h-100"
                                 >
+                                  <div
+                                    class="d-flex align-items-center justify-content-center gap-3 mb-3 fs-12"
+                                  >
+                                    <i class="ico-exclamation"></i>
+                                    <span
+                                      >취약점이 해결된 가장
+                                      <span class="text-danger">최신 버전</span>
+                                      정보입니다</span
+                                    >
+                                  </div>
+                                  <div class="text-primary fs-15 mb-1">
+                                    Spring Framework 5.3.39
+                                  </div>
+                                  <div class="fs-14 text-gray-400">
+                                    Has no known vulnerabilities
+                                  </div>
+                                </div>
                               </div>
-                              <div class="text-primary fs-15 mb-1">
-                                Spring Framework 5.3.39
-                              </div>
-                              <div class="fs-14 text-gray-400">
-                                Has no known vulnerabilities
+                              <div class="col">
+                                <div
+                                  class="border rounded p-6 text-center w-100 h-100"
+                                >
+                                  <div
+                                    class="d-flex align-items-center justify-content-center gap-3 mb-3 fs-12"
+                                  >
+                                    <i class="ico-exclamation"></i>
+                                    <span
+                                      >취약점이 해결된 가장
+                                      <span class="text-danger">최신 버전</span>
+                                      정보입니다</span
+                                    >
+                                  </div>
+                                  <div class="text-primary fs-15 mb-1">
+                                    Spring Framework 5.3.39
+                                  </div>
+                                  <div class="fs-14 text-gray-400">
+                                    Has no known vulnerabilities
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
