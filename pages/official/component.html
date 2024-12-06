@@ -6,18 +6,14 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
     <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- apexchart -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.css"
-    />
+    <script src="../../assets/js/apexcharts.min.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="../../assets/scss/common.css" />
@@ -94,48 +90,27 @@
                         role="tabpanel"
                         tabindex="0"
                       >
-                        <div class="row gap-0">
+                        <div class="row g-0">
                           <div class="col-6">
                             <div class="d-flex align-items-center">
-                              <strong class="text-color-gray-300"
+                              <strong class="text-gray-300"
                                 >라이센스 위험</strong
                               >
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-link dropdown-toggle gap-1"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ico ico--tooltip"></i>
-                                  <span
-                                    class="text-decoration-underline text-color-gray-300 fs-12"
-                                    >기준 확인하기</span
-                                  >
-                                </button>
 
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <small
-                                      >High (상용 구매 / 전체 소스 공개
-                                      요구)</small
-                                    >
-                                  </li>
-                                  <li>
-                                    <small
-                                      >Medium (넓은 소스 공개 범위 요구)</small
-                                    >
-                                  </li>
-                                  <li>
-                                    <small>Low (소스 공개 요구)</small>
-                                  </li>
-                                  <li><small>None (고지 요구)</small></li>
-                                </ul>
+                              <div
+                                class="d-flex align-items gap-1 ms-3"
+                                data-bs-toggle="tooltip"
+                                data-bs-html="true"
+                                data-bs-title="<ul class='m-0 p-0 ps-3 fs-14 text-gray-300 text-start'><li>High (상용 구매 / 전체 소스 공개 요구)</li><li>Medium (넓은 소스 공개 범위 요구)</li><li>Low (소스 공개 요구)</li><li>None (고지 요구)</li></ul>"
+                              >
+                                <i class="ico-exclamation"></i>
+                                <span
+                                  class="text-decoration-underline text-gray-300 fs-12"
+                                  >기준 확인하기</span
+                                >
                               </div>
                             </div>
-                            <div
-                              style="min-height: 300px"
-                              class="p-6 border-end"
-                            >
+                            <div class="px-6 border-end">
                               <div id="chart01"></div>
                               <script>
                                 var options = {
@@ -173,11 +148,16 @@
                                       show: false,
                                     },
                                   },
+
                                   plotOptions: {
                                     bar: {
                                       horizontal: true,
-                                      barHeight: '50%',
-                                      borderRadius: 4,
+                                      borderRadius: 8,
+                                      borderRadiusApplication: 'end',
+                                      columnWidth: '40px', // 막대 너비 조정 (퍼센트값 또는 픽셀값 사용 가능)
+                                      dataLabels: {
+                                        position: 'top', // top, center, bottom
+                                      },
                                     },
                                   },
                                   dataLabels: {
@@ -189,7 +169,7 @@
                                       fontSize: '12px',
                                       colors: ['#596066'],
                                     },
-                                    offsetX: 10,
+                                    offsetX: 40,
                                   },
                                   xaxis: {
                                     categories: [
@@ -199,9 +179,11 @@
                                       'None',
                                     ],
                                     labels: {
-                                      style: {
-                                        fontSize: '14px',
-                                      },
+                                      show: false, // X축 값 숨기기
+                                    },
+
+                                    axisTicks: {
+                                      show: false, // X축 틱 숨기기
                                     },
                                   },
                                   yaxis: {
@@ -210,9 +192,22 @@
                                         fontSize: '14px',
                                       },
                                     },
+                                    axisBorder: {
+                                      show: false, // X축 경계선 숨기기
+                                    },
                                   },
                                   grid: {
-                                    show: true,
+                                    show: true, // 전체 그리드 표시
+                                    xaxis: {
+                                      lines: {
+                                        show: false, // 가로축 선 숨기기
+                                      },
+                                    },
+                                    yaxis: {
+                                      lines: {
+                                        show: false, // 세로축 선 숨기기
+                                      },
+                                    },
                                   },
                                   states: {
                                     hover: {
@@ -231,88 +226,20 @@
                               </script>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-link dropdown-toggle gap-1"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <div class="kw-text-info">
-                                    <i class="ico ico--tooltip"></i>
-                                    아래 테이블의 라이선스 이름을 클릭하여 주요
-                                    의무 사항을 확인하세요.
-                                  </div>
-                                </button>
-                                <div class="dropdown-menu p-6">
-                                  <table
-                                    class="table table-sm"
-                                    style="width: 650px"
-                                  >
-                                    <colgroup>
-                                      <col />
-                                      <col style="width: 150px" />
-                                      <col style="width: 150px" />
-                                      <col style="width: 100px" />
-                                    </colgroup>
-                                    <thead>
-                                      <tr>
-                                        <th>제품명</th>
-                                        <th>요청자</th>
-                                        <th>서비스</th>
-                                        <th>배포형태</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>똑독 모바일 01</td>
-                                        <td>관리자</td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                              <div class="kw-text-info">
+                                <i class="ico-exclamation"></i>
+                                아래 테이블의 라이선스 이름을 클릭하여 주요 의무
+                                사항을 확인하세요.
                               </div>
                             </div>
                           </div>
                           <div class="col-6">
-                            <div class="d-flex align-items-center">
-                              <strong class="text-color-gray-300"
+                            <div class="d-flex align-items-center px-6">
+                              <strong class="text-gray-300"
                                 >라이센스 위험</strong
                               >
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-link dropdown-toggle gap-1"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ico ico--tooltip"></i>
-                                  <span
-                                    class="text-decoration-underline text-color-gray-300 fs-12"
-                                    >기준 확인하기</span
-                                  >
-                                </button>
-
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <small
-                                      >High (상용 구매 / 전체 소스 공개
-                                      요구)</small
-                                    >
-                                  </li>
-                                  <li>
-                                    <small
-                                      >Medium (넓은 소스 공개 범위 요구)</small
-                                    >
-                                  </li>
-                                  <li>
-                                    <small>Low (소스 공개 요구)</small>
-                                  </li>
-                                  <li><small>None (고지 요구)</small></li>
-                                </ul>
-                              </div>
                             </div>
-                            <div style="min-height: 300px" class="p-6">
+                            <div class="px-6">
                               <div id="chart02"></div>
                               <script>
                                 var options = {
@@ -350,11 +277,16 @@
                                       show: false,
                                     },
                                   },
+
                                   plotOptions: {
                                     bar: {
                                       horizontal: true,
-                                      barHeight: '50%',
-                                      borderRadius: 4,
+                                      borderRadius: 8,
+                                      borderRadiusApplication: 'end',
+                                      columnWidth: '40px', // 막대 너비 조정 (퍼센트값 또는 픽셀값 사용 가능)
+                                      dataLabels: {
+                                        position: 'top', // top, center, bottom
+                                      },
                                     },
                                   },
                                   dataLabels: {
@@ -366,7 +298,7 @@
                                       fontSize: '12px',
                                       colors: ['#596066'],
                                     },
-                                    offsetX: 10,
+                                    offsetX: 40,
                                   },
                                   xaxis: {
                                     categories: [
@@ -376,9 +308,11 @@
                                       'None',
                                     ],
                                     labels: {
-                                      style: {
-                                        fontSize: '14px',
-                                      },
+                                      show: false, // X축 값 숨기기
+                                    },
+
+                                    axisTicks: {
+                                      show: false, // X축 틱 숨기기
                                     },
                                   },
                                   yaxis: {
@@ -387,9 +321,22 @@
                                         fontSize: '14px',
                                       },
                                     },
+                                    axisBorder: {
+                                      show: false, // X축 경계선 숨기기
+                                    },
                                   },
                                   grid: {
-                                    show: true,
+                                    show: true, // 전체 그리드 표시
+                                    xaxis: {
+                                      lines: {
+                                        show: false, // 가로축 선 숨기기
+                                      },
+                                    },
+                                    yaxis: {
+                                      lines: {
+                                        show: false, // 세로축 선 숨기기
+                                      },
+                                    },
                                   },
                                   states: {
                                     hover: {
@@ -408,47 +355,10 @@
                               </script>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-link dropdown-toggle gap-1"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <div class="kw-text-info">
-                                    <i class="ico ico--tooltip"></i>
-                                    아래 테이블의 라이선스 이름을 클릭하여 주요
-                                    의무 사항을 확인하세요.
-                                  </div>
-                                </button>
-                                <div class="dropdown-menu p-6">
-                                  <table
-                                    class="table table-sm"
-                                    style="width: 650px"
-                                  >
-                                    <colgroup>
-                                      <col />
-                                      <col style="width: 150px" />
-                                      <col style="width: 150px" />
-                                      <col style="width: 100px" />
-                                    </colgroup>
-                                    <thead>
-                                      <tr>
-                                        <th>제품명</th>
-                                        <th>요청자</th>
-                                        <th>서비스</th>
-                                        <th>배포형태</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>똑독 모바일 01</td>
-                                        <td>관리자</td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                              <div class="kw-text-info">
+                                <i class="ico-exclamation"></i>
+                                아래 테이블의 라이선스 이름을 클릭하여 주요 의무
+                                사항을 확인하세요.
                               </div>
                             </div>
                           </div>
@@ -498,9 +408,7 @@
                     <div class="row g-0 py-4">
                       <div class="col-3">
                         <dl class="m-0 px-6 border-end">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             스캔
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">
@@ -510,9 +418,7 @@
                       </div>
                       <div class="col-3">
                         <dl class="m-0 px-6 border-end">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             상태
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">최신상태</dd>
@@ -520,9 +426,7 @@
                       </div>
                       <div class="col-3">
                         <dl class="m-0 px-6 border-end">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             최근 업데이트
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">
@@ -532,9 +436,7 @@
                       </div>
                       <div class="col-3">
                         <dl class="m-0 px-6">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             거버넌스 단계
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">
@@ -546,19 +448,42 @@
                     <div class="row g-0 py-4 border-top">
                       <div class="col-3">
                         <dl class="m-0 px-6 border-end">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             사용된 제품 목록
                           </dt>
-                          <dd class="fs-17">배포형태(1)</dd>
+                          <dd class="fs-17"><a href="">배포형태(1)</a></dd>
+
+                          <div class="hide" style="display: none">
+                            <table class="table table-sm" style="width: 650px">
+                              <colgroup>
+                                <col />
+                                <col style="width: 150px" />
+                                <col style="width: 150px" />
+                                <col style="width: 100px" />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>제품명</th>
+                                  <th>요청자</th>
+                                  <th>서비스</th>
+                                  <th>배포형태</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>똑독 모바일 01</td>
+                                  <td>관리자</td>
+                                  <td></td>
+                                  <td></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </dl>
                       </div>
                       <div class="col-3">
                         <dl class="m-0 px-6 border-end">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             프로젝트 담당 조직
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">
@@ -568,9 +493,7 @@
                       </div>
                       <div class="col-3">
                         <dl class="m-0 px-6 border-end">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             프로젝트 담당자
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">관리자</dd>
@@ -578,9 +501,7 @@
                       </div>
                       <div class="col-3">
                         <dl class="m-0 px-6">
-                          <dt
-                            class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                          >
+                          <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             프로젝트 구성원
                           </dt>
                           <dd class="mb-0 p-0 fs-17 fw-semibold">지현</dd>
@@ -672,7 +593,7 @@
                               필드선택
                             </button>
                             <button class="btn-group-delete">
-                              <i class="ico ico-delete"></i>
+                              <i class="ico-delete"></i>
                             </button>
                             <ul class="dropdown-menu">
                               <li>
@@ -719,7 +640,7 @@
                                 >
                                   컴포넌트
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -748,7 +669,7 @@
                                 >
                                   관련소스
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -777,7 +698,7 @@
                                 >
                                   식별 타입
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -806,7 +727,7 @@
                                 >
                                   사용유형
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -835,7 +756,7 @@
                                 >
                                   라이선스 종류
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -864,7 +785,7 @@
                                 >
                                   보안 위험
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -893,7 +814,7 @@
                                 >
                                   운영 위험
                                   <button class="btn btn-icon small">
-                                    <i class="ico ico--sort"></i>
+                                    <i class="ico-sort"></i>
                                   </button>
                                 </div>
                                 <div class="kw-align">
@@ -921,7 +842,7 @@
                         <tbody>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -957,14 +878,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -991,7 +912,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1027,14 +948,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1061,7 +982,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1097,14 +1018,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1131,7 +1052,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1167,14 +1088,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1201,7 +1122,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1237,14 +1158,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1271,7 +1192,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1307,14 +1228,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1341,7 +1262,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1377,14 +1298,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1411,7 +1332,7 @@
                           </tr>
                           <tr>
                             <td class="text-center">
-                              <i class="ico ico--complete"></i>
+                              <i class="ico-complete"></i>
                             </td>
                             <td>
                               <a href=""
@@ -1447,14 +1368,14 @@
                                   <button
                                     class="btn btn-icon small position-relative"
                                   >
-                                    <i class="ico ico--chat"></i>
+                                    <i class="ico-chat"></i>
                                     <span class="new"
                                       ><span class="visually-hidden"
                                         >New comment</span
                                       ></span
                                     >
                                   </button>
-                                  <small class="text-color-gray-400">(1)</small>
+                                  <small class="text-gray-400">(1)</small>
                                 </div>
                                 <div class="dropdown">
                                   <button
@@ -1973,35 +1894,29 @@
               <div class="card-header">
                 <h5>BSD 2-clause "Simplified" License</h5>
               </div>
-              <div class="card-body license">
-                <div class="license-terms">
-                  <div class="mb-3">
-                    <strong>BSD 2-clause "Simplified" License</strong>
-                    <span class="ms-2 fs-15 text-color-gray-300"
-                      >BSD 2-clause "Simplified" License</span
-                    >
+              <div class="card-body p-6">
+                <div class="mb-3">
+                  <strong>BSD 2-clause "Simplified" License</strong>
+                  <span class="ms-2 fs-15 text-gray-300"
+                    >BSD 2-clause "Simplified" License</span
+                  >
+                </div>
+                <div class="row g-0 py-4">
+                  <div class="col-6">
+                    <dl class="m-0 pe-6 border-end">
+                      <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
+                        Status
+                      </dt>
+                      <dd class="mb-0 p-0 fs-17 fw-semibold">UNREVIEWED</dd>
+                    </dl>
                   </div>
-                  <div class="row g-0 py-4">
-                    <div class="col-6">
-                      <dl class="m-0 pe-6 border-end">
-                        <dt
-                          class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                        >
-                          Status
-                        </dt>
-                        <dd class="mb-0 p-0 fs-17 fw-semibold">UNREVIEWED</dd>
-                      </dl>
-                    </div>
-                    <div class="col-6">
-                      <dl class="m-0 px-6">
-                        <dt
-                          class="mb-0 p-0 fs-15 fw-medium text-color-gray-400"
-                        >
-                          Family
-                        </dt>
-                        <dd class="mb-0 p-0 fs-17 fw-semibold">Permissive</dd>
-                      </dl>
-                    </div>
+                  <div class="col-6">
+                    <dl class="m-0 px-6">
+                      <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
+                        Family
+                      </dt>
+                      <dd class="mb-0 p-0 fs-17 fw-semibold">Permissive</dd>
+                    </dl>
                   </div>
                 </div>
               </div>
@@ -2261,7 +2176,7 @@
               </div>
             </div>
 
-            <div class="px-6 fs-17 text-color-gray-400">
+            <div class="px-6 fs-17 text-gray-400">
               Copyright (c) 2011 Andy Balholm. All rights reserved.
               Redistribution and use in source and binary forms, with or
               withoutmodification, are permitted provided that the following
@@ -2314,9 +2229,9 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="component-chat">
-              <h5 class="component-chat__name">antlr 2.7.7</h5>
-              <div class="component-chat__list">
+            <div class="kw-chat">
+              <h5 class="kw-chat__name">antlr 2.7.7</h5>
+              <div class="kw-chat__list">
                 <div class="chat__other">
                   <span class="writer">협력사</span>
                   <div class="text">
@@ -2335,10 +2250,10 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <i class="ico ico--dots"></i>
+                      <i class="ico-dots"></i>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><button class="btn btn-text active">수정</button></li>
+                      <li><button class="btn btn-text">수정</button></li>
                       <li><button class="btn btn-text">삭제</button></li>
                     </ul>
                   </div>
@@ -2376,10 +2291,10 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <i class="ico ico--dots"></i>
+                      <i class="ico-dots"></i>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><button class="btn btn-text active">수정</button></li>
+                      <li><button class="btn btn-text">수정</button></li>
                       <li><button class="btn btn-text">삭제</button></li>
                     </ul>
                   </div>

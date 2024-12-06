@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -37,6 +37,21 @@
             <div class="kw-head">
               <h1 class="me-auto">고지문</h1>
             </div>
+            <div class="mb-8">
+              <p class="mt-4 mb-0 text-danger">
+                <small
+                  >※ 공식적으로 SBOM점검이 완료되고 보고서가 생성된 프로젝트에
+                  대해 고지문 내역을 제공합니다.</small
+                >
+              </p>
+              <p class="mt-2 mb-0 text-danger">
+                <small
+                  >※ 프로젝트가 조회되지 않는 경우 '점검 결과 > 프로젝트 버전
+                  목록 > 컴포넌트 내역 >보고서 Tab' 화면에서 '보고서 생성'
+                  내역을 확인 바랍니다.</small
+                >
+              </p>
+            </div>
 
             <div class="card">
               <div class="card-body">
@@ -54,19 +69,6 @@
                       </div>
                     </div>
                   </form>
-                  <p class="mt-4 mb-0 text-danger">
-                    <small
-                      >※ 공식적으로 SBOM점검이 완료되고 보고서가 생성된
-                      프로젝트에 대해 고지문 내역을 제공합니다.</small
-                    >
-                  </p>
-                  <p class="mt-2 mb-0 text-danger">
-                    <small
-                      >※ 프로젝트가 조회되지 않는 경우 '점검 결과 > 프로젝트
-                      버전 목록 > 컴포넌트 내역 >보고서 Tab' 화면에서 '보고서
-                      생성' 내역을 확인 바랍니다.</small
-                    >
-                  </p>
 
                   <div class="kw-list px-0">
                     <div class="kw-list-table">
@@ -186,7 +188,7 @@
                               <td>Nexus3Inspection VERSION_LICENSE</td>
                               <td>
                                 <button class="btn btn-md btn-primary">
-                                  <i class="ico ico--share"></i
+                                  <i class="ico-share"></i
                                   ><span>VERSION_LICENSE</span>
                                 </button>
                               </td>
@@ -267,7 +269,7 @@
     >
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >

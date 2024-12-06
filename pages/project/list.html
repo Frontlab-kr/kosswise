@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -39,10 +39,550 @@
             <div class="kw-head">
               <h1 class="me-auto">Project Group Management</h1>
             </div>
+            <div class="row g-7">
+              <div class="col-4">
+                <div class="card h-100">
+                  <div class="card-header">
+                    <h5 class="text-black">Black Duck Project Groups</h5>
+                  </div>
+                  <div class="card-body"></div>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-black">Groups & Projects</h5>
+                  </div>
+                  <div class="card-body p-4 px-6">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <dl class="m-0 pe-6 border-end">
+                          <dt class="m-0 mb-1 p-0">
+                            <span class="fs-15 fw-medium text-gray-300"
+                              >Description</span
+                            >
+                          </dt>
+                          <dd class="m-0 p-0">
+                            <span class="fs-16 fw-semibold"
+                              >No description</span
+                            >
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt class="m-0 mb-1 p-0">
+                            <span class="fs-15 fw-medium text-gray-300"
+                              >Content</span
+                            >
+                          </dt>
+                          <dd class="m-0 p-0">
+                            <span class="fs-16 fw-semibold"
+                              >2 Subgroups | 375 Projects</span
+                            >
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6 border-end">
+                          <dt class="m-0 mb-1 p-0">
+                            <span class="fs-15 fw-medium text-gray-300"
+                              >Created</span
+                            >
+                          </dt>
+                          <dd class="m-0 p-0">
+                            <span class="fs-16 fw-semibold">Jun 4, 2024</span>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="col-3">
+                        <dl class="m-0 px-6">
+                          <dt class="m-0 mb-1 p-0">
+                            <span class="fs-15 fw-medium text-gray-300"
+                              >Updated</span
+                            >
+                          </dt>
+                          <dd class="m-0 p-0">
+                            <span class="fs-16 fw-semibold">Jun 4, 2024</span>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-7">
+                  <div class="card-body p-6">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="d-flex align-items-center">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Add Group
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <button class="btn btn-text">Create New</button>
+                            </li>
+                            <li>
+                              <button class="btn btn-text">
+                                Move existing
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="form-check ms-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="checkbox01"
+                          />
+                          <label
+                            class="form-check-label fs-15 text-gray-300"
+                            for="checkbox01"
+                          >
+                            Select All Projects
+                          </label>
+                        </div>
+                        <button class="btn btn-primary ms-4">
+                          Move Selected<i class="ico-move"></i>
+                        </button>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="checkbox02"
+                          />
+                          <label
+                            class="form-check-label fs-15 text-gray-300"
+                            for="checkbox02"
+                          >
+                            Show All Descendants
+                          </label>
+                        </div>
+                        <select class="form-select ms-5">
+                          <option selected>Sort by</option>
+                          <option value="1">Sort by</option>
+                          <option value="2">Sort by</option>
+                          <option value="3">Sort by</option>
+                        </select>
+                        <button type="button" class="btn btn-primary ms-3">
+                          필터 <i class="ico-filter"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kw-list p-0 mt-5">
+                      <div class="kw-list-table">
+                        <div class="kw-list-table-tooltip">
+                          <dl>
+                            <dt>가로 스크롤</dt>
+                            <dd>
+                              더 많은 정보를 보시려면 화면을 가로 스크롤
+                              해주세요!
+                            </dd>
+                          </dl>
+                        </div>
+                        <div class="kw-list-table-scroll">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Version
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Used count
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    License
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Released
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Vulnerability Count
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="kw-list-foot">
+                        <div class="kw-list-foot-start">
+                          <h6>Result : 1,300건</h6>
+                        </div>
+                        <div class="kw-list-foot-center">
+                          <nav>
+                            <ul class="pagination">
+                              <li class="page-item page-item-first">
+                                <a class="page-link" href="#">처음</a>
+                              </li>
+                              <li class="page-item page-item-prev">
+                                <a class="page-link" href="#">이전</a>
+                              </li>
+                              <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                              </li>
+                              <li class="page-item page-item-next">
+                                <a class="page-link" href="#">다음</a>
+                              </li>
+                              <li class="page-item page-item-last">
+                                <a class="page-link" href="#">마지막</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="kw-list-foot-end">
+                          <div>
+                            <select class="form-select">
+                              <option selected>10개씩 보기</option>
+                              <option value="1">10개씩 보기</option>
+                              <option value="2">20개씩 보기</option>
+                              <option value="3">30개씩 보기</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+        Create New Project Group
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 576px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Create New Project Group</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-4">
+              <div class="col-12">
+                <label class="form-label">
+                  Group Name <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="입력해주세요"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label"> Description </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="입력해주세요"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

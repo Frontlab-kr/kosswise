@@ -6,11 +6,14 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
     <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- apexchart -->
+    <script src="../../assets/js/apexcharts.min.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="../../assets/scss/common.css" />
@@ -26,8 +29,8 @@
                 <li class="breadcrumb-item">
                   <a href="#"><i class="ico-home"></i></a>
                 </li>
-                <li class="breadcrumb-item"><a href="#"></a></li>
-                <li class="breadcrumb-item active">목록</li>
+                <li class="breadcrumb-item"><a href="#">정책 설정 관리</a></li>
+                <li class="breadcrumb-item active">라이선스 목록</li>
               </ol>
             </nav>
           </div>
@@ -35,12 +38,1442 @@
         <div class="kw-contents">
           <div class="kw-inner">
             <div class="kw-head">
-              <h1 class="me-auto">VulnerabilityHistory</h1>
+              <div>
+                <h1 class="me-auto">VulnerabilityHistory</h1>
+                <p class="m-0 mt-3 fw-bold text-gray-300">
+                  Showing 25 Component Versions from 2005.7.27 to 2023.4.12
+                </p>
+              </div>
+            </div>
+            <div class="row g-7">
+              <div class="col-4">
+                <div class="card h-100">
+                  <div class="card-body d-flex flex-column">
+                    <div class="px-6 border-bottom">
+                      <div class="row g-0 py-4">
+                        <div class="col-6">
+                          <dl class="m-0 pe-6 border-end">
+                            <dt class="m-0 mb-1 p-0">
+                              <span class="fs-12 fw-medium text-gray-300"
+                                >Logging-apache.org</span
+                              >
+                            </dt>
+                            <dd class="m-0 p-0">
+                              <span class="fs-12 fw-semibold"
+                                >Apache Log4j</span
+                              >
+                            </dd>
+                          </dl>
+                        </div>
+                        <div class="col-6">
+                          <dl class="m-0 px-6">
+                            <dt class="m-0 mb-1 p-0">
+                              <span class="fs-12 fw-medium text-gray-300"
+                                >Versions</span
+                              >
+                            </dt>
+                            <dd class="m-0 p-0">
+                              <div class="d-flex align-items-center gap-3">
+                                <span class="badge bg-low min">java</span>
+                                <strong
+                                  class="fs-12 fw-semibold text-secondary"
+                                >
+                                  210
+                                </strong>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="h-100 position-relative">
+                      <div
+                        class="p-6 overflow-auto position-absolute top-0 end-0 bottom-0 start-0 h-100"
+                      >
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Approval Status
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            Unreviewed
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Description
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No description
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Component Links
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >http://logging.apache.org/log4j/</a
+                            >
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Custom Fields
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No custom fields
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">Tags</div>
+                          <div class="">
+                            <div class="d-flex gap-2 flex-wrap">
+                              <span class="badge text-bg-primary"
+                                >analysis</span
+                              >
+                              <span class="badge text-bg-primary">apache</span>
+                              <span class="badge text-bg-primary">java</span>
+                              <span class="badge text-bg-primary">logi</span>
+                              <span class="badge text-bg-primary">log4j</span>
+                              <span class="badge text-bg-primary">logging</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Approval Status
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            Unreviewed
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Description
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No description
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Component Links
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >http://logging.apache.org/log4j/</a
+                            >
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Custom Fields
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No custom fields
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">Tags</div>
+                          <div class="">
+                            <div class="d-flex gap-2 flex-wrap">
+                              <span class="badge text-bg-primary"
+                                >analysis</span
+                              >
+                              <span class="badge text-bg-primary">apache</span>
+                              <span class="badge text-bg-primary">java</span>
+                              <span class="badge text-bg-primary">logi</span>
+                              <span class="badge text-bg-primary">log4j</span>
+                              <span class="badge text-bg-primary">logging</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Approval Status
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            Unreviewed
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Description
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No description
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Component Links
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >http://logging.apache.org/log4j/</a
+                            >
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Custom Fields
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No custom fields
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">Tags</div>
+                          <div class="">
+                            <div class="d-flex gap-2 flex-wrap">
+                              <span class="badge text-bg-primary"
+                                >analysis</span
+                              >
+                              <span class="badge text-bg-primary">apache</span>
+                              <span class="badge text-bg-primary">java</span>
+                              <span class="badge text-bg-primary">logi</span>
+                              <span class="badge text-bg-primary">log4j</span>
+                              <span class="badge text-bg-primary">logging</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Approval Status
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            Unreviewed
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Description
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No description
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Component Links
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >http://logging.apache.org/log4j/</a
+                            >
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Custom Fields
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No custom fields
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">Tags</div>
+                          <div class="">
+                            <div class="d-flex gap-2 flex-wrap">
+                              <span class="badge text-bg-primary"
+                                >analysis</span
+                              >
+                              <span class="badge text-bg-primary">apache</span>
+                              <span class="badge text-bg-primary">java</span>
+                              <span class="badge text-bg-primary">logi</span>
+                              <span class="badge text-bg-primary">log4j</span>
+                              <span class="badge text-bg-primary">logging</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Approval Status
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            Unreviewed
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Description
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No description
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Component Links
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >http://logging.apache.org/log4j/</a
+                            >
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">
+                            Custom Fields
+                          </div>
+                          <div class="fs-12 text-black fw-medium">
+                            No custom fields
+                          </div>
+                        </div>
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-12 text-gray-300">Tags</div>
+                          <div class="">
+                            <div class="d-flex gap-2 flex-wrap">
+                              <span class="badge text-bg-primary"
+                                >analysis</span
+                              >
+                              <span class="badge text-bg-primary">apache</span>
+                              <span class="badge text-bg-primary">java</span>
+                              <span class="badge text-bg-primary">logi</span>
+                              <span class="badge text-bg-primary">log4j</span>
+                              <span class="badge text-bg-primary">logging</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>vulnerability count</h5>
+                  </div>
+                  <div class="card-body p-4">
+                    <div id="chart"></div>
+
+                    <script>
+                      // Data for the chart
+                      const options = {
+                        chart: {
+                          type: 'line',
+                          height: 350,
+                        },
+                        series: [
+                          {
+                            name: 'Critical',
+                            data: [3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3],
+                          },
+                          {
+                            name: 'High',
+                            data: [4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4],
+                          },
+                          {
+                            name: 'Medium',
+                            data: [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+                          },
+                          {
+                            name: 'Low',
+                            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                          },
+                          {
+                            name: 'None',
+                            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                          },
+                        ],
+                        xaxis: {
+                          categories: [
+                            '1.2.12-rc1',
+                            '1.2.12-rc2',
+                            '1.2.12-rc3',
+                            '1.2.12-rc4',
+                            '1.2.12-rc5',
+                            '1.2.12-rc6',
+                            '1.2.12-rc7',
+                            '1.2.12-rc8',
+                            '1.2.12-rc9',
+                            '1.2.12-rc10',
+                            '1.2.12-rc11',
+                          ],
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2,
+                        },
+                        markers: {
+                          size: 5,
+                        },
+                        tooltip: {
+                          shared: true,
+                          intersect: false,
+                        },
+                        colors: [
+                          '#a93226',
+                          '#d35400',
+                          '#d98880',
+                          '#d5d8dc',
+                          '#f7f9f9',
+                        ],
+                        legend: {
+                          position: 'bottom',
+                          horizontalAlign: 'center',
+                        },
+                      };
+
+                      // Render the chart
+                      const chart = new ApexCharts(
+                        document.querySelector('#chart'),
+                        options
+                      );
+                      chart.render();
+                    </script>
+                  </div>
+                </div>
+                <div class="card mt-7">
+                  <div class="card-body p-6">
+                    <div class="row">
+                      <div class="col-10">
+                        <label class="form-label">검색</label>
+                        <div class="d-flex gap-3">
+                          <div class="kw-form-search w-100">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="검색어를 입력해주세요"
+                            />
+                            <button>검색</button>
+                          </div>
+                          <button type="button" class="btn btn-primary">
+                            필터 <i class="ico-filter"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kw-list p-0 mt-5">
+                      <div class="kw-list-table">
+                        <div class="kw-list-table-tooltip">
+                          <dl>
+                            <dt>가로 스크롤</dt>
+                            <dd>
+                              더 많은 정보를 보시려면 화면을 가로 스크롤
+                              해주세요!
+                            </dd>
+                          </dl>
+                        </div>
+                        <div class="kw-list-table-scroll">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Version
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Used count
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    License
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Released
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="kw-list-table-title">
+                                    Vulnerability Count
+                                    <div class="kw-align">
+                                      <button class="kw-align-start">
+                                        왼쪽
+                                      </button>
+                                      <div class="kw-align-layer">
+                                        <button class="kw-align-start">
+                                          왼쪽
+                                        </button>
+                                        <button class="kw-align-center">
+                                          가운데
+                                        </button>
+                                        <button class="kw-align-end">
+                                          오른쪽
+                                        </button>
+                                        <hr />
+                                        <button class="kw-align-asc">
+                                          오름차순
+                                        </button>
+                                        <button class="kw-align-desc">
+                                          내림차순
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1.2.12-rc1</td>
+                                <td>0</td>
+                                <td>Apache License 2.0</td>
+                                <td>Oct 15.2024</td>
+                                <td>
+                                  <div class="d-inline-flex gap-1">
+                                    <span class="badge bg-critical">1</span>
+                                    <span class="badge bg-medium">75</span>
+                                    <span class="badge bg-high">1</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="kw-list-foot">
+                        <div class="kw-list-foot-start">
+                          <h6>Result : 1,300건</h6>
+                        </div>
+                        <div class="kw-list-foot-center">
+                          <nav>
+                            <ul class="pagination">
+                              <li class="page-item page-item-first">
+                                <a class="page-link" href="#">처음</a>
+                              </li>
+                              <li class="page-item page-item-prev">
+                                <a class="page-link" href="#">이전</a>
+                              </li>
+                              <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                              </li>
+                              <li class="page-item page-item-next">
+                                <a class="page-link" href="#">다음</a>
+                              </li>
+                              <li class="page-item page-item-last">
+                                <a class="page-link" href="#">마지막</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="kw-list-foot-end">
+                          <div>
+                            <select class="form-select">
+                              <option selected>10개씩 보기</option>
+                              <option value="1">10개씩 보기</option>
+                              <option value="2">20개씩 보기</option>
+                              <option value="3">30개씩 보기</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+        사용된 프로젝트
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal02"
+      >
+        License
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">사용된 프로젝트</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-7">
+              <div class="col-12">
+                <div class="mb-7 px-4 py-2 border rounded">
+                  <div class="row g-0 py-4">
+                    <div class="col-6">
+                      <dl class="m-0 pe-6 border-end">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Logging-apache.org</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <span class="fs-16 fw-semibold">Apache Log4j</span>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="col-6">
+                      <dl class="m-0 px-6">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Versions</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-low min">java</span>
+                            <strong class="fs-16 fw-semibold text-secondary">
+                              210
+                            </strong>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card--line">
+                  <div class="card-header">
+                    <div class="d-flex align-items-center gap-3 mb-5">
+                      <i class="ico-warning"></i>
+                      <div class="fs-17 text-critical">8 Vulnerabilities</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-17 text-gray-300">Licenses</div>
+                          <div class="fs-17 text-black fw-medium">
+                            Apache License 2.0
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-17 text-gray-300">Notes</div>
+                          <div class="fs-17 text-black fw-medium">No Notes</div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-17 text-gray-300">Open Hub</div>
+                          <div class="fs-17 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >https://www.openhub.net/p/598518</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-4 border mb-3 rounded">
+                          <div class="mb-2 fs-17 text-gray-300">
+                            Component Links
+                          </div>
+                          <div class="fs-17 text-black fw-medium">
+                            <a href="" class="text-secondary"
+                              >http://logging.apache.org/log4j/</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-4 border rounded">
+                          <div class="mb-2 fs-17 text-gray-300">Tags</div>
+                          <div class="">
+                            <div class="d-flex gap-2 flex-wrap">
+                              <span class="badge text-bg-primary"
+                                >analysis</span
+                              >
+                              <span class="badge text-bg-primary">apache</span>
+                              <span class="badge text-bg-primary">java</span>
+                              <span class="badge text-bg-primary">logi</span>
+                              <span class="badge text-bg-primary">log4j</span>
+                              <span class="badge text-bg-primary">logging</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-7 mt-7">
+              <div class="card card--line w-100">
+                <div class="card-body px-4">
+                  <div class="row g-0 py-4 border-bottom">
+                    <div class="col-6">
+                      <dl class="m-0 pe-6 border-end">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Description</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <span class="fs-16 fw-semibold">No description</span>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="col-6">
+                      <dl class="m-0 px-6">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Released</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <span class="fs-16 fw-semibold">Oct 16, 2012</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="row g-0 py-4">
+                    <div class="col-12">
+                      <dl class="m-0 pe-6">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Activity</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <div class="d-flex align-items-start gap-1">
+                            <p class="m-0">
+                              Last 12 Months : 1.262 commits <br />
+                              Last commit : Jul 30, 2024
+                            </p>
+                            <p
+                              class="d-flex align-items-center gap-1 m-0 text-primary"
+                            >
+                              <i class="ico-arrow-up-primary"></i>
+                              increasing
+                            </p>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--line w-100">
+                <div class="card-body px-4">
+                  <div class="row g-0 py-4 border-bottom">
+                    <div class="col-4">
+                      <dl class="m-0 pe-6 border-end">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Newer Versions</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <span class="fs-16 fw-semibold">135</span>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="col-4">
+                      <dl class="m-0 px-6 border-end">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Approval Status</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <span class="fs-16 fw-semibold">Unreviewed</span>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="col-4">
+                      <dl class="m-0 px-6">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Update</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          <span class="fs-16 fw-semibold">-</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="row g-0 py-4">
+                    <div class="col-12">
+                      <dl class="m-0 pe-6">
+                        <dt class="m-0 mb-1 p-0">
+                          <span class="fs-15 fw-medium text-gray-300"
+                            >Community</span
+                          >
+                        </dt>
+                        <dd class="m-0 p-0">
+                          Last 12 Months : 34 contributors
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kw-list p-0 mt-7">
+              <div class="kw-list-table">
+                <div class="kw-list-table-tooltip">
+                  <dl>
+                    <dt>가로 스크롤</dt>
+                    <dd>
+                      더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                    </dd>
+                  </dl>
+                </div>
+                <div class="kw-list-table-scroll">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div class="kw-list-table-title">
+                            Project
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            Version
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            Released
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="kw-list-table-title">
+                            Phase
+                            <div class="kw-align">
+                              <button class="kw-align-start">왼쪽</button>
+                              <div class="kw-align-layer">
+                                <button class="kw-align-start">왼쪽</button>
+                                <button class="kw-align-center">가운데</button>
+                                <button class="kw-align-end">오른쪽</button>
+                                <hr />
+                                <button class="kw-align-asc">오름차순</button>
+                                <button class="kw-align-desc">내림차순</button>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                      <tr>
+                        <td>BJ_BDIO_Test</td>
+                        <td>Nexus3inspection</td>
+                        <td>-</td>
+                        <td>In Development</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kw-list-foot">
+                <div class="kw-list-foot-start">
+                  <h6>Result : 1,300건</h6>
+                </div>
+                <div class="kw-list-foot-center">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item-first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item-prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item-next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item-last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="kw-list-foot-end">
+                  <div>
+                    <select class="form-select">
+                      <option selected>10개씩 보기</option>
+                      <option value="1">10개씩 보기</option>
+                      <option value="2">20개씩 보기</option>
+                      <option value="3">30개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal02" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">License</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-6">
+              <div class="fs-16 fw-bold text-black">
+                Apache Log4j 1.2.12-rc1
+              </div>
+              <div class="mt-2 fs-15 fw-medium text-gray-300">
+                Apache License 2.0
+              </div>
+              <div class="mt-1 fs-17 fw-semibold text-black">
+                Family Permissive
+              </div>
+            </div>
+            <textarea class="form-control fs-12" style="height: 500px" readonly>
+              Apache License
+              Version 2.0, January 2004
+              =========================
+              
+              
+              http://www.apache.org/licenses/
+              
+              TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+              
+              1. Definitions.
+              
+              "License" shall mean the terms and conditions for use, reproduction, and
+              distribution as defined by Sections 1 through 9 of this document.
+              
+              "Licensor" shall mean the copyright owner or entity authorized by the copyright
+              owner that is granting the License.
+              
+              "Legal Entity" shall mean the union of the acting entity and all other entities
+              that control, are controlled by, or are under common control with that entity.
+              For the purposes of this definition, "control" means (i) the power, direct or
+              indirect, to cause the direction or management of such entity, whether by
+              contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+              
+              "You" (or "Your") shall mean an individual or Legal Entity exercising permissions
+              granted by this License.
+              
+              "Source" form shall mean the preferred form for making modifications, including
+              but not limited to software source code, documentation source, and configuration
+              files.
+              
+              "Object" form shall mean any form resulting from mechanical transformation or
+              translation of a Source form, including but not limited to compiled object code,
+              generated documentation, and conversions to other media types.
+              
+              "Work" shall mean the work of authorship, whether in Source or Object form, made
+              available under the License, as indicated by a copyright notice that is included
+              in or attached to the work (an example is provided in the Appendix below).
+              
+              "Derivative Works" shall mean any work, whether in Source or Object form, that is
+              based on (or derived from) the Work and for which the editorial revisions,
+              annotations, elaborations, or other modifications represent, as a whole, an
+              original work of authorship. For the purposes of this License, Derivative Works
+              shall not include works that remain separable from, or merely link (or bind by
+              name) to the interfaces of, the Work and Derivative Works thereof.
+              
+              "Contribution" shall mean any work of authorship, including the original version
+              of the Work and any modifications or additions to that Work or Derivative Works
+              thereof, that is intentionally submitted to Licensor for inclusion in the Work by
+              the copyright owner or by an individual or Legal Entity authorized to submit on
+              behalf of the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent to the
+              Licensor or its representatives, including but not limited to communication on
+              electronic mailing lists, source code control systems, and issue tracking systems
+              that are managed by, or on behalf of, the Licensor for the purpose of discussing
+              and improving the Work, but excluding communication that is conspicuously marked
+              or otherwise designated in writing by the copyright owner as "Not a
+              Contribution."
+              
+              "Contributor" shall mean Licensor and any individual or Legal Entity on behalf of
+              whom a Contribution has been received by Licensor and subsequently incorporated
+              within the Work.
+              
+              2. Grant of Copyright License. Subject to the terms and conditions of this
+              License, each Contributor hereby grants to You a perpetual, worldwide,
+              non-exclusive, no-charge, royalty-free, irrevocable copyright license to
+              reproduce, prepare Derivative Works of, publicly display, publicly perform,
+              sublicense, and distribute the Work and such Derivative Works in Source or Object
+              form.
+              
+              3. Grant of Patent License. Subject to the terms and conditions of this License,
+              each Contributor hereby grants to You a perpetual, worldwide, non-exclusive,
+              no-charge, royalty-free, irrevocable (except as stated in this section) patent
+              license to make, have made, use, offer to sell, sell, import, and otherwise
+              transfer the Work, where such license applies only to those patent claims
+              licensable by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s) with the Work to
+              which such Contribution(s) was submitted. If You institute patent litigation
+              against any entity (including a cross-claim or counterclaim in a lawsuit)
+              alleging that the Work or a Contribution incorporated within the Work constitutes
+              direct or contributory patent infringement, then any patent licenses granted to
+              You under this License for that Work shall terminate as of the date such
+              litigation is filed.
+              
+              4. Redistribution. You may reproduce and distribute copies of the Work or
+              Derivative Works thereof in any medium, with or without modifications, and in
+              Source or Object form, provided that You meet the following conditions:
+              
+                a. You must give any other recipients of the Work or Derivative Works a copy of
+                  this License; and
+              
+                b. You must cause any modified files to carry prominent notices stating that
+                  You changed the files; and
+              
+                c. You must retain, in the Source form of any Derivative Works that You
+                  distribute, all copyright, patent, trademark, and attribution notices from
+                  the Source form of the Work, excluding those notices that do not pertain to
+                  any part of the Derivative Works; and
+              
+                d. If the Work includes a "NOTICE" text file as part of its distribution, then
+                  any Derivative Works that You distribute must include a readable copy of the
+                  attribution notices contained within such NOTICE file, excluding those
+                  notices that do not pertain to any part of the Derivative Works, in at least
+                  one of the following places: within a NOTICE text file distributed as part of
+                  the Derivative Works; within the Source form or documentation, if provided
+                  along with the Derivative Works; or, within a display generated by the
+                  Derivative Works, if and wherever such third-party notices normally appear.
+                  The contents of the NOTICE file are for informational purposes only and do
+                  not modify the License. You may add Your own attribution notices within
+                  Derivative Works that You distribute, alongside or as an addendum to the
+                  NOTICE text from the Work, provided that such additional attribution notices
+                  cannot be construed as modifying the License.
+              
+              You may add Your own copyright statement to Your modifications and may provide
+              additional or different license terms and conditions for use, reproduction, or
+              distribution of Your modifications, or for any such Derivative Works as a whole,
+              provided Your use, reproduction, and distribution of the Work otherwise complies
+              with the conditions stated in this License.
+              
+              5. Submission of Contributions. Unless You explicitly state otherwise, any
+              Contribution intentionally submitted for inclusion in the Work by You to the
+              Licensor shall be under the terms and conditions of this License, without any
+              additional terms or conditions. Notwithstanding the above, nothing herein shall
+              supersede or modify the terms of any separate license agreement you may have
+              executed with Licensor regarding such Contributions.
+              
+              6. Trademarks. This License does not grant permission to use the trade names,
+              trademarks, service marks, or product names of the Licensor, except as required
+              for reasonable and customary use in describing the origin of the Work and
+              reproducing the content of the NOTICE file.
+              
+              7. Disclaimer of Warranty. Unless required by applicable law or agreed to in
+              writing, Licensor provides the Work (and each Contributor provides its
+              Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+              either express or implied, including, without limitation, any warranties or
+              conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any risks
+              associated with Your exercise of permissions under this License.
+              
+              8. Limitation of Liability. In no event and under no legal theory, whether in
+              tort (including negligence), contract, or otherwise, unless required by
+              applicable law (such as deliberate and grossly negligent acts) or agreed to in
+              writing, shall any Contributor be liable to You for damages, including any
+              direct, indirect, special, incidental, or consequential damages of any character
+              arising as a result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill, work stoppage,
+              computer failure or malfunction, or any and all other commercial damages or
+              losses), even if such Contributor has been advised of the possibility of such
+              damages.
+              
+              9. Accepting Warranty or Additional Liability. While redistributing the Work or
+              Derivative Works thereof, You may choose to offer, and charge a fee for,
+              acceptance of support, warranty, indemnity, or other liability obligations and/or
+              rights consistent with this License. However, in accepting such obligations, You
+              may act only on Your own behalf and on Your sole responsibility, not on behalf of
+              any other Contributor, and only if You agree to indemnify, defend, and hold each
+              Contributor harmless for any liability incurred by, or claims asserted against,
+              such Contributor by reason of your accepting any such warranty or additional
+              liability.
+              
+              END OF TERMS AND CONDITIONS
+              
+              APPENDIX: How to apply the Apache License to your work
+              
+              To apply the Apache License to your work, attach the following boilerplate
+              notice, with the fields enclosed by brackets "[]" replaced with your own
+              identifying information. (Don't include the brackets!) The text should be
+              enclosed in the appropriate comment syntax for the file format. We also recommend
+              that a file or class name and description of purpose be included on the same
+              "printed page" as the copyright notice for easier identification within
+              third-party archives.
+              
+                Copyright [yyyy] [name of copyright owner] Licensed under the Apache License,
+                Version 2.0 (the "License"); you may not use this file except in compliance
+                with the License. You may obtain a copy of the License at
+                http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law
+                or agreed to in writing, software distributed under the License is
+                distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+                KIND, either express or implied. See the License for the specific language
+                governing permissions and limitations under the License.                  
+                              </textarea
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

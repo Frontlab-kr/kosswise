@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -152,7 +152,7 @@
                 <div class="row g-0 py-4">
                   <div class="col-4">
                     <dl class="m-0 px-6 border-end">
-                      <dt class="mb-0 p-0 fs-15 fw-medium text-color-gray-400">
+                      <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                         스캔
                       </dt>
                       <dd class="mb-0 p-0 fs-17 fw-semibold">
@@ -162,7 +162,7 @@
                   </div>
                   <div class="col-4">
                     <dl class="m-0 px-6 border-end">
-                      <dt class="mb-0 p-0 fs-15 fw-medium text-color-gray-400">
+                      <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                         상태
                       </dt>
                       <dd class="mb-0 p-0 fs-17 fw-semibold">최신상태</dd>
@@ -170,7 +170,7 @@
                   </div>
                   <div class="col-4">
                     <dl class="m-0 px-6">
-                      <dt class="mb-0 p-0 fs-15 fw-medium text-color-gray-400">
+                      <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                         최근 업데이트
                       </dt>
                       <dd class="mb-0 p-0 fs-17 fw-semibold">
@@ -365,77 +365,224 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <th>정책</th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
+                                정책
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
                                 컴포넌트
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
                                 관련소스
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
-                            <th>식별 타입</th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
+                                식별 타입
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
                                 매칭률
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
-                            <th>사용유형</th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
+                                사용유형
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
                                 라이선스 종류
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
                                 보안 위험
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
                                 운영 위험
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
                             <th>
-                              <div
-                                class="d-inline-flex align-items-center gap-1"
-                              >
+                              <div class="kw-list-table-title">
                                 의견
-                                <button class="btn btn-icon small">
-                                  <i class="ico ico--sort"></i>
-                                </button>
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                             </th>
                           </tr>

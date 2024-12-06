@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -618,7 +618,7 @@
     >
       <button
         type="button"
-        class="btn btn-primary"
+        class="btn btn-sm btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#modal01"
       >
@@ -634,9 +634,7 @@
       >
         <div class="modal-content">
           <div class="modal-header modal-header--lg">
-            <div class="modal-title">
-              <h4>사용중인 프로젝트</h4>
-            </div>
+            <div class="modal-title">사용중인 프로젝트</div>
             <button
               type="button"
               class="btn-close"
@@ -645,33 +643,14 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="mb-4">
+            <div>
               <strong>ACE - Ajax.org Cloud9 Editor</strong>
+              <div class="mt-5 text-gray-300">프로젝트 명칭/버전</div>
             </div>
             <div class="kw-list p-0">
               <div class="kw-list-table">
                 <div class="kw-list-table-scroll">
                   <table class="table">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="kw-list-table-title">
-                            프로젝트 명칭/버전
-                            <div class="kw-align">
-                              <button class="kw-align-start">왼쪽</button>
-                              <div class="kw-align-layer">
-                                <button class="kw-align-start">왼쪽</button>
-                                <button class="kw-align-center">가운데</button>
-                                <button class="kw-align-end">오른쪽</button>
-                                <hr />
-                                <button class="kw-align-asc">오름차순</button>
-                                <button class="kw-align-desc">내림차순</button>
-                              </div>
-                            </div>
-                          </div>
-                        </th>
-                      </tr>
-                    </thead>
                     <tbody>
                       <tr>
                         <td>

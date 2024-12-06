@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -236,310 +236,562 @@
                   <div class="kw-list-head-end"></div>
                 </div>
                 <div class="kw-project">
-                  <div class="kw-project-grid">
-                    <div class="card card--line">
-                      <div class="card-body">
-                        <div class="kw-project-detail-breadcrumb">
-                          <ul>
-                            <li>001</li>
-                            <li>001</li>
-                          </ul>
-                        </div>
-                        <div class="kw-project-detail">
-                          <div class="row">
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">정책위반</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-critical">0</span>
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                  <div class="row g-7">
+                    <div class="col-6">
+                      <div class="card card--line">
+                        <div class="card-body">
+                          <div class="kw-project-detail-breadcrumb">
+                            <ul>
+                              <li>001</li>
+                              <li>001</li>
+                            </ul>
+                          </div>
+                          <div class="row g-0 py-4 border-bottom">
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  정책위반
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >보안 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  보안 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >라이선스 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  라이선스 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">운영위험</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  운영위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row g-0 py-4">
                             <div class="col-6">
-                              <label class="form-label">프로젝트 그룹</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  프로젝트 그룹
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
                             </div>
                             <div class="col-6">
-                              <label class="form-label">컴포넌트 갯수</label>
-                              <div class="kw-project-detail__text">65</div>
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  컴포넌트 갯수
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">65</dd>
+                              </dl>
                             </div>
                           </div>
-                          <div class="row border-0">
+                          <div class="row g-0 py-4">
                             <div class="col-6">
-                              <label class="form-label">최근 스캔</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <label class="form-label">라이센스</label>
-                              <div class="kw-project-detail__text">
-                                Unknown License
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card card--line">
-                      <div class="card-body">
-                        <div class="kw-project-detail-breadcrumb">
-                          <ul>
-                            <li>001</li>
-                            <li>001</li>
-                          </ul>
-                        </div>
-                        <div class="kw-project-detail">
-                          <div class="row">
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">정책위반</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-critical">0</span>
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
-                            </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >보안 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
-                            </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >라이선스 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
-                            </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">운영위험</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-6">
-                              <label class="form-label">프로젝트 그룹</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  최근 스캔
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
                             </div>
                             <div class="col-6">
-                              <label class="form-label">컴포넌트 갯수</label>
-                              <div class="kw-project-detail__text">65</div>
-                            </div>
-                          </div>
-                          <div class="row border-0">
-                            <div class="col-6">
-                              <label class="form-label">최근 스캔</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <label class="form-label">라이센스</label>
-                              <div class="kw-project-detail__text">
-                                Unknown License
-                              </div>
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  라이센스
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Unknown License
+                                </dd>
+                              </dl>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card card--line">
-                      <div class="card-body">
-                        <div class="kw-project-detail-breadcrumb">
-                          <ul>
-                            <li>001</li>
-                            <li>001</li>
-                          </ul>
-                        </div>
-                        <div class="kw-project-detail">
-                          <div class="row">
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">정책위반</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-critical">0</span>
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                    <div class="col-6">
+                      <div class="card card--line">
+                        <div class="card-body">
+                          <div class="kw-project-detail-breadcrumb">
+                            <ul>
+                              <li>001</li>
+                              <li>001</li>
+                            </ul>
+                          </div>
+                          <div class="row g-0 py-4 border-bottom">
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  정책위반
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >보안 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  보안 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >라이선스 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  라이선스 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">운영위험</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  운영위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row g-0 py-4">
                             <div class="col-6">
-                              <label class="form-label">프로젝트 그룹</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  프로젝트 그룹
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
                             </div>
                             <div class="col-6">
-                              <label class="form-label">컴포넌트 갯수</label>
-                              <div class="kw-project-detail__text">65</div>
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  컴포넌트 갯수
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">65</dd>
+                              </dl>
                             </div>
                           </div>
-                          <div class="row border-0">
+                          <div class="row g-0 py-4">
                             <div class="col-6">
-                              <label class="form-label">최근 스캔</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  최근 스캔
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
                             </div>
                             <div class="col-6">
-                              <label class="form-label">라이센스</label>
-                              <div class="kw-project-detail__text">
-                                Unknown License
-                              </div>
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  라이센스
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Unknown License
+                                </dd>
+                              </dl>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card card--line">
-                      <div class="card-body">
-                        <div class="kw-project-detail-breadcrumb">
-                          <ul>
-                            <li>001</li>
-                            <li>001</li>
-                          </ul>
+                    <div class="col-6">
+                      <div class="card card--line">
+                        <div class="card-body">
+                          <div class="kw-project-detail-breadcrumb">
+                            <ul>
+                              <li>001</li>
+                              <li>001</li>
+                            </ul>
+                          </div>
+                          <div class="row g-0 py-4 border-bottom">
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  정책위반
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  보안 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  라이선스 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  운영위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row g-0 py-4">
+                            <div class="col-6">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  프로젝트 그룹
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="col-6">
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  컴포넌트 갯수
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">65</dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row g-0 py-4">
+                            <div class="col-6">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  최근 스캔
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="col-6">
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  라이센스
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Unknown License
+                                </dd>
+                              </dl>
+                            </div>
+                          </div>
                         </div>
-                        <div class="kw-project-detail">
-                          <div class="row">
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">정책위반</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-critical">0</span>
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card card--line">
+                        <div class="card-body">
+                          <div class="kw-project-detail-breadcrumb">
+                            <ul>
+                              <li>001</li>
+                              <li>001</li>
+                            </ul>
+                          </div>
+                          <div class="row g-0 py-4 border-bottom">
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  정책위반
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >보안 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  보안 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block"
-                                >라이선스 위험</label
-                              >
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  라이선스 위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
-                            <div class="col-3 text-center">
-                              <label class="form-label d-block">운영위험</label>
-                              <div class="d-inline-flex gap-1">
-                                <span class="badge bg-high">0</span>
-                                <span class="badge bg-medium">0</span>
-                                <span class="badge bg-low">1</span>
-                              </div>
+                            <div class="col-3">
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-1 p-0 fs-15 fw-medium text-gray-400 text-center"
+                                >
+                                  운영위험
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  <div
+                                    class="d-inline-flex justify-content-center gap-1 flex-wrap"
+                                  >
+                                    <span class="badge bg-critical">0</span>
+                                    <span class="badge bg-high">0</span>
+                                    <span class="badge bg-medium">0</span>
+                                    <span class="badge bg-low">1</span>
+                                  </div>
+                                </dd>
+                              </dl>
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row g-0 py-4">
                             <div class="col-6">
-                              <label class="form-label">프로젝트 그룹</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  프로젝트 그룹
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
                             </div>
                             <div class="col-6">
-                              <label class="form-label">컴포넌트 갯수</label>
-                              <div class="kw-project-detail__text">65</div>
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  컴포넌트 갯수
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">65</dd>
+                              </dl>
                             </div>
                           </div>
-                          <div class="row border-0">
+                          <div class="row g-0 py-4">
                             <div class="col-6">
-                              <label class="form-label">최근 스캔</label>
-                              <div class="kw-project-detail__text">
-                                Black Duck Project Groups
-                              </div>
+                              <dl class="m-0 px-6 border-end">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  최근 스캔
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Black Duck Project Groups
+                                </dd>
+                              </dl>
                             </div>
                             <div class="col-6">
-                              <label class="form-label">라이센스</label>
-                              <div class="kw-project-detail__text">
-                                Unknown License
-                              </div>
+                              <dl class="m-0 px-6">
+                                <dt
+                                  class="mb-0 p-0 fs-15 fw-medium text-gray-400"
+                                >
+                                  라이센스
+                                </dt>
+                                <dd class="mb-0 p-0 fs-17 fw-semibold">
+                                  Unknown License
+                                </dd>
+                              </dl>
                             </div>
                           </div>
                         </div>

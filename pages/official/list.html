@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -147,7 +147,7 @@
                           <div class="col-3">
                             <label class="form-label"> 라이선스 위험</label>
                             <div
-                              class="d-flex align-items-center gap-3"
+                              class="d-flex align-items-center flex-wrap gap-3"
                               style="height: 42px"
                             >
                               <div class="form-check">
@@ -199,7 +199,7 @@
                           <div class="col-3">
                             <label class="form-label">보안 위험</label>
                             <div
-                              class="d-flex align-items-center gap-3"
+                              class="d-flex align-items-center flex-wrap gap-3"
                               style="height: 42px"
                             >
                               <div class="form-check">
@@ -265,7 +265,9 @@
                           </div>
                           <div class="col-6">
                             <label class="form-label">등록일</label>
-                            <div class="d-flex align-items-center gap-3">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-3"
+                            >
                               <div class="kw-daterange">
                                 <input type="date" class="form-control" />
                                 ~
@@ -383,12 +385,7 @@
                               </div>
                             </li>
                             <li class="hasbtn">
-                              <button
-                                class="btn btn-primary dropdown-toggle w-100"
-                                data-bs-toggle="dropdown"
-                              >
-                                OK
-                              </button>
+                              <button class="btn btn-primary w-100">OK</button>
                             </li>
                           </ul>
                         </div>

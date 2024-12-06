@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -169,7 +169,7 @@
                     <div class="kw-list">
                       <div class="kw-list-head align-items-start">
                         <div class="kw-list-head-start">
-                          <strong class="text-body"
+                          <strong class="text-gray-400"
                             >오픈소스 점검 정보 (Black Duck 분석 프로젝트
                             정보)</strong
                           >
@@ -358,12 +358,12 @@
                 <li class="nav-item">
                   <button
                     class="nav-link active"
-                    id="home-tab"
+                    id="tab01"
                     data-bs-toggle="tab"
-                    data-bs-target="#home-tab-pane"
+                    data-bs-target="#tab01-pane"
                     type="button"
                     role="tab"
-                    aria-controls="home-tab-pane"
+                    aria-controls="tab01-pane"
                     aria-selected="true"
                   >
                     부서
@@ -372,12 +372,12 @@
                 <li class="nav-item">
                   <button
                     class="nav-link"
-                    id="profile-tab"
+                    id="tab02"
                     data-bs-toggle="tab"
-                    data-bs-target="#profile-tab-pane"
+                    data-bs-target="#tab02-pane"
                     type="button"
                     role="tab"
-                    aria-controls="profile-tab-pane"
+                    aria-controls="tab02-pane"
                     aria-selected="false"
                   >
                     사람
@@ -388,9 +388,9 @@
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
-                id="home-tab-pane"
+                id="tab01-pane"
                 role="tabpanel"
-                aria-labelledby="home-tab"
+                aria-labelledby="tab01"
                 tabindex="0"
               >
                 <div class="kw-tree">
@@ -399,17 +399,15 @@
                       <div class="kw-tree-text">
                         <button class="kw-tree-collapse">열기</button>
                         <label>
-                          <input class="form-check-input" type="checkbox" />
                           <i class="ico-tree-folder"></i>
                           <strong>KMST</strong>
                         </label>
                       </div>
                       <ol>
                         <li>
-                          <div class="kw-tree-text active">
+                          <div class="kw-tree-text">
                             <button class="kw-tree-collapse">열기</button>
                             <label>
-                              <input class="form-check-input" type="checkbox" />
                               <i class="ico-tree-folder"></i>
                               <strong>정직원 그룹</strong>
                             </label>
@@ -419,10 +417,6 @@
                               <div class="kw-tree-text">
                                 <button class="kw-tree-collapse">열기</button>
                                 <label>
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                  />
                                   <i class="ico-tree-folder"></i>
                                   <strong>협력사 그룹</strong>
                                 </label>
@@ -434,10 +428,6 @@
                                       열기
                                     </button>
                                     <label>
-                                      <input
-                                        class="form-check-input"
-                                        type="checkbox"
-                                      />
                                       <i class="ico-tree-folder"></i>
                                       <strong>솔루션 사업팀</strong>
                                     </label>
@@ -449,10 +439,6 @@
                                           열기
                                         </button>
                                         <label>
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                          />
                                           <i class="ico-tree-folder"></i>
                                           <strong>개발팀</strong>
                                         </label>
@@ -460,14 +446,7 @@
                                       <ol>
                                         <li>
                                           <div class="kw-tree-text">
-                                            <button class="kw-tree-collapse">
-                                              열기
-                                            </button>
                                             <label>
-                                              <input
-                                                class="form-check-input"
-                                                type="checkbox"
-                                              />
                                               <i class="ico-tree-page"></i>
                                               <strong>FE</strong>
                                             </label>
@@ -475,14 +454,73 @@
                                         </li>
                                         <li>
                                           <div class="kw-tree-text">
-                                            <button class="kw-tree-collapse">
-                                              열기
-                                            </button>
                                             <label>
-                                              <input
-                                                class="form-check-input"
-                                                type="checkbox"
-                                              />
+                                              <i class="ico-tree-page"></i>
+                                              <strong>BE</strong>
+                                            </label>
+                                          </div>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <ol>
+                        <li>
+                          <div class="kw-tree-text">
+                            <button class="kw-tree-collapse">열기</button>
+                            <label>
+                              <i class="ico-tree-folder"></i>
+                              <strong>정직원 그룹</strong>
+                            </label>
+                          </div>
+                          <ol>
+                            <li>
+                              <div class="kw-tree-text">
+                                <button class="kw-tree-collapse">열기</button>
+                                <label>
+                                  <i class="ico-tree-folder"></i>
+                                  <strong>협력사 그룹</strong>
+                                </label>
+                              </div>
+                              <ol>
+                                <li>
+                                  <div class="kw-tree-text">
+                                    <button class="kw-tree-collapse">
+                                      열기
+                                    </button>
+                                    <label>
+                                      <i class="ico-tree-folder"></i>
+                                      <strong>솔루션 사업팀</strong>
+                                    </label>
+                                  </div>
+                                  <ol class="fold">
+                                    <li>
+                                      <div class="kw-tree-text">
+                                        <button class="kw-tree-collapse">
+                                          열기
+                                        </button>
+                                        <label>
+                                          <i class="ico-tree-folder"></i>
+                                          <strong>개발팀</strong>
+                                        </label>
+                                      </div>
+                                      <ol>
+                                        <li>
+                                          <div class="kw-tree-text">
+                                            <label>
+                                              <i class="ico-tree-page"></i>
+                                              <strong>FE</strong>
+                                            </label>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="kw-tree-text">
+                                            <label>
                                               <i class="ico-tree-page"></i>
                                               <strong>BE</strong>
                                             </label>
@@ -500,78 +538,63 @@
                     </li>
                   </ol>
                 </div>
+
                 <div class="kw-btn-filter mt-4">
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                 </div>
               </div>
               <div
                 class="tab-pane fade"
-                id="profile-tab-pane"
+                id="tab02-pane"
                 role="tabpanel"
-                aria-labelledby="profile-tab"
+                aria-labelledby="tab02"
                 tabindex="0"
               >
                 <form class="row">
@@ -849,77 +872,59 @@
                 </div>
                 <div class="kw-btn-filter mt-4">
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-primary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                   <button type="button" class="btn btn-sm btn-secondary">
-                    <span>창영</span
-                    ><span class="ico ico--x white small"></span>
+                    <span>창영</span><span class="ico-x"></span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer justify-content-between">
-            <div class="fs-15 fw-medium text-color-gray-300">
-              Result : 1,300건
-            </div>
+            <div class="fs-15 fw-medium text-gray-300">Result : 1,300건</div>
             <div class="d-flex gap-3">
               <button
                 type="button"

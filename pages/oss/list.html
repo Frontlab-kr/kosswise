@@ -6,7 +6,7 @@
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -39,10 +39,2702 @@
             <div class="kw-head">
               <h1 class="me-auto">OSS 서약 현황 관리</h1>
             </div>
+            <div class="card mb-7">
+              <div class="card-body">
+                <div class="kw-searchform kw-searchform--open">
+                  <div class="kw-searchform-inner">
+                    <form class="row g-7">
+                      <div class="col-8">
+                        <label class="form-label">프로젝트 명</label>
+                        <div class="d-flex gap-3">
+                          <div class="kw-form-search w-100">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="제목을 입력해주세요"
+                            />
+                            <button>검색</button>
+                          </div>
+                          <div class="kw-button">
+                            <button type="button" class="btn btn-secondary">
+                              Clear
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <button class="kw-searchform-toggle">닫기</button>
+                </div>
+                <div class="kw-searchform-tooltip">
+                  <dl>
+                    <dt>더보기</dt>
+                    <dd>
+                      다시 열어<br />
+                      검색하실 수 있습니다!
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="kw-list">
+                  <div class="kw-list-head">
+                    <div class="kw-list-head-start"></div>
+                    <div class="kw-list-head-center"></div>
+                    <div class="kw-list-head-end">
+                      <div class="kw-button">
+                        <button type="button" class="btn btn-primary">
+                          프로젝트 생성 <i class="ico-plus-white"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-tooltip">
+                      <dl>
+                        <dt>가로 스크롤</dt>
+                        <dd>
+                          더 많은 정보를 보시려면 화면을 가로 스크롤 해주세요!
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="kw-list-table-scroll">
+                      <table class="table">
+                        <colgroup>
+                          <col style="width: 450px" />
+                          <col style="width: 600px" />
+                          <col style="width: 250px" />
+                          <col style="width: 368px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="kw-list-table-title">
+                                프로젝트 명
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                대상자 수
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                서약 현황
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                등록일
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="">업체명</a>
+                            </td>
+                            <td>BJ_C-CPP_BusyBox</td>
+                            <td>1.2</td>
+                            <td>Jun 11, 2024</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+
+    <!-- Modal list -->
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+      >
+        OSS 서약 현황 관리
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal02"
+      >
+        대상 프로젝트 생성
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal03"
+      >
+        대상 프로젝트 생성
+      </button>
+      <br />
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal04"
+      >
+        대상자 검색
+      </button>
+    </div>
+    <!--// Modal list -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modal01" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">OSS 서약 현황 관리</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-5">
+                <label class="form-label"> 서명자 </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-2">
+                <label class="form-label"> 구분 </label>
+                <div
+                  class="d-flex align-items-center gap-7"
+                  style="height: 42px"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radio01"
+                      id="radio01-01"
+                    />
+                    <label class="form-check-label" for="radio01-01">
+                      내부
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radio01"
+                      id="radio01-02"
+                      checked
+                    />
+                    <label class="form-check-label" for="radio01-02">
+                      외부
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <label class="form-label"> 서명여부 </label>
+                <div
+                  class="d-flex align-items-center gap-7"
+                  style="height: 42px"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radio02"
+                      id="radio02-01"
+                    />
+                    <label class="form-check-label" for="radio02-01">
+                      완료
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radio02"
+                      id="radio02-02"
+                      checked
+                    />
+                    <label class="form-check-label" for="radio02-02">
+                      미완료
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="d-flex align-items-end h-100">
+                  <div class="kw-button">
+                    <button type="button" class="btn btn-secondary">
+                      Clear
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-5 border-top">
+              <div class="kw-list p-0">
+                <div class="kw-list-head mb-4">
+                  <div class="kw-list-head-start">
+                    <div class="kw-button">
+                      <button type="button" class="btn btn-secondary">
+                        선택 일괄 삭제
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        링크 일괄 발송
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kw-list-head-center"></div>
+                  <div class="kw-list-head-end">
+                    <div class="kw-button">
+                      <button type="button" class="btn btn-primary">
+                        Excel Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kw-list-table">
+                  <div class="kw-list-table-scroll">
+                    <table class="table">
+                      <colgroup>
+                        <col style="width: 50px" />
+                        <col style="width: 50px" />
+                        <col style="width: 85px" />
+                        <col style="width: 95px" />
+                        <col style="width: 110px" />
+                        <col style="width: 192px" />
+                        <col style="width: 86px" />
+                        <col style="width: 90px" />
+                        <col style="width: 120px" />
+                        <col style="width: 210px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkboxAll"
+                            />
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              구분
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              사번
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              서명자
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              부서/팀
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              이메일
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              서명 여부
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              전자문서
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              서명일
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              링크 발송
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-primary"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-disabled"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                                disabled
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-primary"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-disabled"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                                disabled
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-primary"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-disabled"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                                disabled
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-primary"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>전략기획팀</td>
+                          <td>user_email@eamil.com</td>
+                          <td class="text-center">
+                            <div class="d-inline-flex align-items-center h-100">
+                              <i class="ico-check-disabled"></i>
+                            </div>
+                          </td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-1 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                              >
+                                보기
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-download"></i>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Jun 11, 2024</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-md btn-primary"
+                                disabled
+                              >
+                                링크발송
+                              </button>
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kw-list-foot">
+                  <div class="kw-list-foot-start">
+                    <h6>Result : 1,300건</h6>
+                  </div>
+                  <div class="kw-list-foot-center">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item page-item-first">
+                          <a class="page-link" href="#">처음</a>
+                        </li>
+                        <li class="page-item page-item-prev">
+                          <a class="page-link" href="#">이전</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item page-item-next">
+                          <a class="page-link" href="#">다음</a>
+                        </li>
+                        <li class="page-item page-item-last">
+                          <a class="page-link" href="#">마지막</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="kw-list-foot-end">
+                    <div>
+                      <select class="form-select">
+                        <option selected>10개씩 보기</option>
+                        <option value="1">10개씩 보기</option>
+                        <option value="2">20개씩 보기</option>
+                        <option value="3">30개씩 보기</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal02" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">대상 프로젝트 생성</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-6">
+                <label class="form-label">
+                  프로젝트 명 <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-2">
+                <label class="form-label"> 서약 대상자 지정 </label>
+                <div class="kw-button">
+                  <button type="button" class="btn btn-primary">
+                    대상자 검색
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-5 border-top">
+              <div class="kw-list p-0">
+                <div class="kw-list-head mb-4">
+                  <div class="kw-list-head-start">
+                    <div class="kw-button">
+                      <button type="button" class="btn btn-secondary">
+                        체크 일괄 삭제
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kw-list-head-center"></div>
+                  <div class="kw-list-head-end"></div>
+                </div>
+                <div class="kw-list-table">
+                  <div class="kw-list-table-scroll">
+                    <table class="table">
+                      <colgroup>
+                        <col style="width: 50px" />
+                        <col style="width: 100px" />
+                        <col style="width: 100px" />
+                        <col style="width: 130px" />
+                        <col style="width: 230px" />
+                        <col style="width: 476px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkboxAll"
+                            />
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              구분
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              사번
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              서명자
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              이메일
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              부서/팀
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkbox01"
+                            />
+                          </td>
+                          <td>
+                            <a href="">외부</a>
+                          </td>
+                          <td>123456</td>
+                          <td>홍길동</td>
+                          <td>user_email@eamil.com</td>
+                          <td>
+                            <div
+                              class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
+                            >
+                              부서명
+                              <button class="btn btn-icon small">
+                                <i class="ico-x-secondary"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kw-list-foot">
+                  <div class="kw-list-foot-start">
+                    <h6>Result : 1,300건</h6>
+                  </div>
+                  <div class="kw-list-foot-center">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item page-item-first">
+                          <a class="page-link" href="#">처음</a>
+                        </li>
+                        <li class="page-item page-item-prev">
+                          <a class="page-link" href="#">이전</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item page-item-next">
+                          <a class="page-link" href="#">다음</a>
+                        </li>
+                        <li class="page-item page-item-last">
+                          <a class="page-link" href="#">마지막</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="kw-list-foot-end">
+                    <div>
+                      <select class="form-select">
+                        <option selected>10개씩 보기</option>
+                        <option value="1">10개씩 보기</option>
+                        <option value="2">20개씩 보기</option>
+                        <option value="3">30개씩 보기</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal03" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 1138px"
+      >
+        <div class="modal-content">
+          <div class="modal-header modal-header--lg">
+            <div class="modal-title">대상 프로젝트 생성</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-6">
+                <label class="form-label">
+                  프로젝트 명 <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-2">
+                <label class="form-label"> 서약 대상자 지정 </label>
+                <div class="kw-button">
+                  <button type="button" class="btn btn-primary">
+                    대상자 검색
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-5 border-top">
+              <div class="kw-list p-0">
+                <div class="kw-list-head mb-4">
+                  <div class="kw-list-head-start">
+                    <div class="kw-button">
+                      <button type="button" class="btn btn-secondary">
+                        체크 일괄 삭제
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kw-list-head-center"></div>
+                  <div class="kw-list-head-end"></div>
+                </div>
+                <div class="kw-list-table">
+                  <div class="kw-list-table-scroll">
+                    <table class="table">
+                      <colgroup>
+                        <col style="width: 50px" />
+                        <col style="width: 100px" />
+                        <col style="width: 100px" />
+                        <col style="width: 130px" />
+                        <col style="width: 230px" />
+                        <col style="width: 476px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="checkboxAll"
+                            />
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              구분
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              사번
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              서명자
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              이메일
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="kw-list-table-title">
+                              부서/팀
+                              <div class="kw-align">
+                                <button class="kw-align-start">왼쪽</button>
+                                <div class="kw-align-layer">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <button class="kw-align-center">
+                                    가운데
+                                  </button>
+                                  <button class="kw-align-end">오른쪽</button>
+                                  <hr />
+                                  <button class="kw-align-asc">오름차순</button>
+                                  <button class="kw-align-desc">
+                                    내림차순
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="6">
+                            <div class="kw-list-table__none">
+                              <p>등록된 데이터가 없습니다.</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kw-list-foot">
+                  <div class="kw-list-foot-start">
+                    <h6>Result : 1,300건</h6>
+                  </div>
+                  <div class="kw-list-foot-center">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item page-item-first">
+                          <a class="page-link" href="#">처음</a>
+                        </li>
+                        <li class="page-item page-item-prev">
+                          <a class="page-link" href="#">이전</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item page-item-next">
+                          <a class="page-link" href="#">다음</a>
+                        </li>
+                        <li class="page-item page-item-last">
+                          <a class="page-link" href="#">마지막</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="kw-list-foot-end">
+                    <div>
+                      <select class="form-select">
+                        <option selected>10개씩 보기</option>
+                        <option value="1">10개씩 보기</option>
+                        <option value="2">20개씩 보기</option>
+                        <option value="3">30개씩 보기</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal04" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        style="max-width: 788px"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">대상자 검색</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kw-tabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <button
+                    class="nav-link active"
+                    id="tab01"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab01-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab01-pane"
+                    aria-selected="true"
+                  >
+                    부서
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="tab02"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab02-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab02-pane"
+                    aria-selected="false"
+                  >
+                    유저
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="tab03"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab03-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab03-pane"
+                    aria-selected="false"
+                  >
+                    Excel Upload
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="tab01-pane"
+                role="tabpanel"
+                aria-labelledby="tab01"
+                tabindex="0"
+              >
+                <div class="kw-tree">
+                  <ol>
+                    <li>
+                      <div class="kw-tree-text">
+                        <button class="kw-tree-collapse">열기</button>
+                        <label>
+                          <i class="ico-tree-folder"></i>
+                          <strong>KMST</strong>
+                        </label>
+                      </div>
+                      <ol>
+                        <li>
+                          <div class="kw-tree-text">
+                            <button class="kw-tree-collapse">열기</button>
+                            <label>
+                              <i class="ico-tree-folder"></i>
+                              <strong>정직원 그룹</strong>
+                            </label>
+                          </div>
+                          <ol>
+                            <li>
+                              <div class="kw-tree-text">
+                                <button class="kw-tree-collapse">열기</button>
+                                <label>
+                                  <i class="ico-tree-folder"></i>
+                                  <strong>협력사 그룹</strong>
+                                </label>
+                              </div>
+                              <ol>
+                                <li>
+                                  <div class="kw-tree-text">
+                                    <button class="kw-tree-collapse">
+                                      열기
+                                    </button>
+                                    <label>
+                                      <i class="ico-tree-folder"></i>
+                                      <strong>솔루션 사업팀</strong>
+                                    </label>
+                                  </div>
+                                  <ol class="fold">
+                                    <li>
+                                      <div class="kw-tree-text">
+                                        <button class="kw-tree-collapse">
+                                          열기
+                                        </button>
+                                        <label>
+                                          <i class="ico-tree-folder"></i>
+                                          <strong>개발팀</strong>
+                                        </label>
+                                      </div>
+                                      <ol>
+                                        <li>
+                                          <div class="kw-tree-text">
+                                            <label>
+                                              <i class="ico-tree-page"></i>
+                                              <strong>FE</strong>
+                                            </label>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="kw-tree-text">
+                                            <label>
+                                              <i class="ico-tree-page"></i>
+                                              <strong>BE</strong>
+                                            </label>
+                                          </div>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <ol>
+                        <li>
+                          <div class="kw-tree-text">
+                            <button class="kw-tree-collapse">열기</button>
+                            <label>
+                              <i class="ico-tree-folder"></i>
+                              <strong>정직원 그룹</strong>
+                            </label>
+                          </div>
+                          <ol>
+                            <li>
+                              <div class="kw-tree-text">
+                                <button class="kw-tree-collapse">열기</button>
+                                <label>
+                                  <i class="ico-tree-folder"></i>
+                                  <strong>협력사 그룹</strong>
+                                </label>
+                              </div>
+                              <ol>
+                                <li>
+                                  <div class="kw-tree-text">
+                                    <button class="kw-tree-collapse">
+                                      열기
+                                    </button>
+                                    <label>
+                                      <i class="ico-tree-folder"></i>
+                                      <strong>솔루션 사업팀</strong>
+                                    </label>
+                                  </div>
+                                  <ol class="fold">
+                                    <li>
+                                      <div class="kw-tree-text">
+                                        <button class="kw-tree-collapse">
+                                          열기
+                                        </button>
+                                        <label>
+                                          <i class="ico-tree-folder"></i>
+                                          <strong>개발팀</strong>
+                                        </label>
+                                      </div>
+                                      <ol>
+                                        <li>
+                                          <div class="kw-tree-text">
+                                            <label>
+                                              <i class="ico-tree-page"></i>
+                                              <strong>FE</strong>
+                                            </label>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="kw-tree-text">
+                                            <label>
+                                              <i class="ico-tree-page"></i>
+                                              <strong>BE</strong>
+                                            </label>
+                                          </div>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+                <div class="kw-btn-filter mt-4">
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab02-pane"
+                role="tabpanel"
+                aria-labelledby="tab02"
+                tabindex="0"
+              >
+                <form class="row">
+                  <div class="col-12">
+                    <label class="form-label">이름</label>
+                    <div class="d-flex gap-3">
+                      <select class="form-select" style="width: 178px">
+                        <option selected>전체</option>
+                        <option value="1">전체</option>
+                        <option value="2">전체</option>
+                        <option value="3">전체</option>
+                      </select>
+                      <div class="kw-form-search w-100">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="입력"
+                        />
+                        <button>검색</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="kw-list p-0 mt-7">
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table">
+                        <colgroup>
+                          <col style="width: 40px" />
+                          <col style="width: 70px" />
+                          <col style="width: 90px" />
+                          <col style="width: 90px" />
+                          <col style="width: 220px" />
+                          <col style="width: 250px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                구분
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                사번
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                서명자
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                이메일
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                부서/팀
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kw-btn-filter mt-4">
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary">
+                    <span>창영</span><span class="ico-x"></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab03-pane"
+                role="tabpanel"
+                aria-labelledby="tab03"
+                tabindex="0"
+              >
+                <form class="row">
+                  <div class="col-12">
+                    <label class="form-label">엑셀 파일</label>
+                    <div class="d-flex gap-3">
+                      <input type="text" class="form-control" />
+                      <button type="button" class="btn btn-primary">
+                        파일 선택
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Upload 실행
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="kw-list p-0 mt-7">
+                  <div class="kw-list-table">
+                    <div class="kw-list-table-scroll">
+                      <table class="table">
+                        <colgroup>
+                          <col style="width: 40px" />
+                          <col style="width: 70px" />
+                          <col style="width: 90px" />
+                          <col style="width: 90px" />
+                          <col style="width: 220px" />
+                          <col style="width: 250px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                구분
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                사번
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                서명자
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                이메일
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="kw-list-table-title">
+                                부서/팀
+                                <div class="kw-align">
+                                  <button class="kw-align-start">왼쪽</button>
+                                  <div class="kw-align-layer">
+                                    <button class="kw-align-start">왼쪽</button>
+                                    <button class="kw-align-center">
+                                      가운데
+                                    </button>
+                                    <button class="kw-align-end">오른쪽</button>
+                                    <hr />
+                                    <button class="kw-align-asc">
+                                      오름차순
+                                    </button>
+                                    <button class="kw-align-desc">
+                                      내림차순
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" />
+                            </td>
+                            <td>외부</td>
+                            <td>123456</td>
+                            <td>홍길동</td>
+                            <td>kash4763@naver.com</td>
+                            <td>부서명</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kw-list-foot">
+                    <div class="kw-list-foot-start">
+                      <h6>Result : 1,300건</h6>
+                    </div>
+                    <div class="kw-list-foot-center">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item page-item-first">
+                            <a class="page-link" href="#">처음</a>
+                          </li>
+                          <li class="page-item page-item-prev">
+                            <a class="page-link" href="#">이전</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item page-item-next">
+                            <a class="page-link" href="#">다음</a>
+                          </li>
+                          <li class="page-item page-item-last">
+                            <a class="page-link" href="#">마지막</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="kw-list-foot-end">
+                      <div>
+                        <select class="form-select">
+                          <option selected>10개씩 보기</option>
+                          <option value="1">10개씩 보기</option>
+                          <option value="2">20개씩 보기</option>
+                          <option value="3">30개씩 보기</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <div class="d-flex gap-3">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

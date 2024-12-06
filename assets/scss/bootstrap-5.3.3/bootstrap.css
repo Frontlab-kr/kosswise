@@ -5897,8 +5897,8 @@ textarea.form-control-lg {
 }
 
 .btn-close {
-  --bs-btn-close-color: #000;
-  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  --bs-btn-close-color: #fff;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
   --bs-btn-close-opacity: 0.5;
   --bs-btn-close-hover-opacity: 0.75;
   --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(106, 156, 137, 0.25);
@@ -6307,10 +6307,10 @@ textarea.form-control-lg {
   --bs-tooltip-padding-y: 1px;
   --bs-tooltip-margin: ;
   --bs-tooltip-font-size: 0.9375rem;
-  --bs-tooltip-color: var(--bs-body-bg);
-  --bs-tooltip-bg: var(--bs-emphasis-color);
+  --bs-tooltip-color: #000;
+  --bs-tooltip-bg: white;
   --bs-tooltip-border-radius: var(--bs-border-radius);
-  --bs-tooltip-opacity: 0.9;
+  --bs-tooltip-opacity: 1;
   --bs-tooltip-arrow-width: 0.8rem;
   --bs-tooltip-arrow-height: 0.4rem;
   z-index: var(--bs-tooltip-zindex);
@@ -6400,6 +6400,25 @@ textarea.form-control-lg {
   text-align: center;
   background-color: var(--bs-tooltip-bg);
   border-radius: var(--bs-tooltip-border-radius);
+  padding: 16px;
+  border-radius: 4px;
+  background: var(--white, #fff);
+  /* 드롭다운 그림자 */
+  box-shadow: -4px 6px 13.2px 0px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  word-break: keep-all;
+}
+.tooltip-inner dl {
+  margin: 0;
+  padding: 0;
+}
+.tooltip-inner dl dt {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+.tooltip-inner dl dd {
+  margin: 0;
+  padding: 0;
 }
 
 .popover {
