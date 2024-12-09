@@ -16745,6 +16745,35 @@ html .btn-group-delete {
   background: none;
   border-radius: 4px;
 }
+.kw .popover,
+html .popover {
+  min-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  background: var(--White, #fff);
+  border: 0;
+  box-shadow: -4px 6px 13.2px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.kw .popover-header,
+html .popover-header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7ea;
+  color: var(--Gray-500, #383f45);
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 100% */
+}
+.kw .popover-body,
+html .popover-body {
+  padding: 20px 24px;
+}
 .kw .dropdown-menu,
 html .dropdown-menu {
   min-width: 100%;
@@ -18935,9 +18964,7 @@ html .form-switch .form-check-label {
 }
 .kw-list-table-scroll {
   position: relative;
-  max-height: 493px;
   overflow: auto;
-  border-bottom: 1px solid #e5e7ea;
 }
 .kw-list-table-scroll table {
   white-space: noWrap;
@@ -19127,19 +19154,11 @@ html .form-switch .form-check-label {
 .kw-list .table {
   position: relative;
   margin: 0;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-.kw-list .table thead {
-  position: sticky;
-  top: 0;
-  z-index: 50;
 }
 .kw-list .table thead th,
 .kw-list .table thead td {
   padding: 18px 12px;
-  border-top: 1px solid #e5e7ea;
-  border-left: 1px solid #e5e7ea;
+  border: 1px solid #e5e7ea;
   background: var(--BackGround, #f6f7f9);
   color: var(--Gray-400, #596066);
   font-family: Pretendard;

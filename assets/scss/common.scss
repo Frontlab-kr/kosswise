@@ -1169,9 +1169,9 @@ $pointColor: #ff7a00;
       position: relative;
       &-scroll {
         position: relative;
-        max-height: 493px;
+        //max-height: 493px;
         overflow: auto;
-        border-bottom: 1px solid #e5e7ea;
+        //border-bottom: 1px solid #e5e7ea;
         table {
           white-space: noWrap;
         }
@@ -1379,18 +1379,19 @@ $pointColor: #ff7a00;
     .table {
       position: relative;
       margin: 0;
-      border-collapse: separate;
-      border-spacing: 0;
+      //border-collapse: separate;
+      //border-spacing: 0;
 
       thead {
-        position: sticky;
-        top: 0;
-        z-index: 50;
+        // position: sticky;
+        // top: 0;
+        // z-index: 50;
         th,
         td {
           padding: 18px 12px;
-          border-top: 1px solid #e5e7ea;
-          border-left: 1px solid #e5e7ea;
+          // border-top: 1px solid #e5e7ea;
+          // border-left: 1px solid #e5e7ea;
+          border: 1px solid #e5e7ea;
           background: var(--BackGround, #f6f7f9);
           color: var(--Gray-400, #596066);
           font-family: Pretendard;
@@ -1984,6 +1985,8 @@ $pointColor: #ff7a00;
         font-size: 0;
       }
     }
+  }
+  &-popover {
   }
   //modal
   // &-modal {

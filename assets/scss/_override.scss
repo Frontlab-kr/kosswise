@@ -300,6 +300,32 @@ html {
       border-radius: 4px;
     }
   }
+  .popover {
+    min-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    background: var(--White, #fff);
+    border: 0;
+    box-shadow: -4px 6px 13.2px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    &-header {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding: 0 24px;
+      background: #fff;
+      border-bottom: 1px solid #e5e7ea;
+      color: var(--Gray-500, #383f45);
+      font-family: Pretendard;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+    }
+    &-body {
+      padding: 20px 24px;
+    }
+  }
   .dropdown-menu {
     min-width: 100%;
     margin: 0;

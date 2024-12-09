@@ -580,7 +580,9 @@
                                                 </p>
                                                 <div class="mt-8">
                                                   <div
-                                                    class="d-flex align-items-center gap-3"
+                                                    class="d-inline-flex align-items-center gap-3"
+                                                    id="popover01"
+                                                    data-bs-toggle="popover"
                                                   >
                                                     <strong
                                                       class="fs-16 text-gray-300"
@@ -595,6 +597,162 @@
                                                       ></i>
                                                     </button>
                                                   </div>
+                                                  <div hidden>
+                                                    <div
+                                                      class="kw-popover"
+                                                      data-name="popover01-content"
+                                                    >
+                                                      <div
+                                                        class="border rounded py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AV
+                                                          </div>
+                                                          Attack Vector
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AC
+                                                          </div>
+                                                          Attack Complexity
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            A
+                                                          </div>
+                                                          Availability Impact
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The impact to the
+                                                          availability of the
+                                                          impacted component
+                                                          resulting from a
+                                                          successfully exploited
+                                                          vulnerability.
+                                                          Possible values: High,
+                                                          Low, None
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            C
+                                                          </div>
+                                                          Confidentiality Impact
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AV
+                                                          </div>
+                                                          Integrity Impact
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <script>
+                                                    $(document).ready(
+                                                      function () {
+                                                        var options = {
+                                                          html: true,
+                                                          title:
+                                                            'CVSS v3.x Metrics',
+                                                          content: $(
+                                                            '[data-name="popover01-content"]'
+                                                          ),
+                                                        };
+                                                        var popoverEl =
+                                                          document.getElementById(
+                                                            'popover01'
+                                                          );
+                                                        var popover =
+                                                          new bootstrap.Popover(
+                                                            popoverEl,
+                                                            options
+                                                          );
+                                                      }
+                                                    );
+                                                  </script>
                                                   <div
                                                     class="row row-gap-5 mt-7"
                                                   >
@@ -875,7 +1033,9 @@
                                                 </p>
                                                 <div class="mt-8">
                                                   <div
-                                                    class="d-flex align-items-center gap-3"
+                                                    class="d-inline-flex align-items-center gap-3"
+                                                    id="popover02"
+                                                    data-bs-toggle="popover"
                                                   >
                                                     <strong
                                                       class="fs-16 text-gray-300"
@@ -890,12 +1050,172 @@
                                                       ></i>
                                                     </button>
                                                   </div>
+                                                  <div hidden>
+                                                    <div
+                                                      class="kw-popover"
+                                                      data-name="popover02-content"
+                                                    >
+                                                      <div
+                                                        class="border rounded py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AV
+                                                          </div>
+                                                          Attack Vector
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AC
+                                                          </div>
+                                                          Attack Complexity
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            A
+                                                          </div>
+                                                          Availability Impact
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The impact to the
+                                                          availability of the
+                                                          impacted component
+                                                          resulting from a
+                                                          successfully exploited
+                                                          vulnerability.
+                                                          Possible values: High,
+                                                          Low, None
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            C
+                                                          </div>
+                                                          Confidentiality Impact
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        class="border rounded mt-2 py-2 px-4"
+                                                      >
+                                                        <div
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black"
+                                                        >
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AV
+                                                          </div>
+                                                          Integrity Impact
+                                                        </div>
+                                                        <p
+                                                          class="m-0 mt-2 fs-15 fw-medium text-gray-400"
+                                                        >
+                                                          The context by which
+                                                          vulnerability
+                                                          exploitation is
+                                                          possible.Possible
+                                                          values: Network,
+                                                          Adjacent, Local,
+                                                          Physical
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <script>
+                                                    $(document).ready(
+                                                      function () {
+                                                        var options = {
+                                                          html: true,
+                                                          title:
+                                                            'CVSS v3.x Metrics',
+                                                          content: $(
+                                                            '[data-name="popover02-content"]'
+                                                          ),
+                                                        };
+                                                        var popoverEl =
+                                                          document.getElementById(
+                                                            'popover02'
+                                                          );
+                                                        var popover =
+                                                          new bootstrap.Popover(
+                                                            popoverEl,
+                                                            options
+                                                          );
+                                                      }
+                                                    );
+                                                  </script>
                                                   <div
                                                     class="row row-gap-5 mt-7"
                                                   >
                                                     <div class="col-4">
                                                       <div
-                                                        class="d-flex align-items-center gap-2 fw-semibold fs-16"
+                                                        class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black kw-tooltip"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-html="true"
+                                                        data-bs-title="<dl><dt>Attack Vector</dt><dd>The context by which vulnerability exploitation is
+                                                          possible.score Metric</dd></dl>"
                                                       >
                                                         <div
                                                           class="badge text-bg-dark"
@@ -907,7 +1227,11 @@
                                                     </div>
                                                     <div class="col-4">
                                                       <div
-                                                        class="d-flex align-items-center gap-2 fw-semibold fs-16"
+                                                        class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black kw-tooltip"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-html="true"
+                                                        data-bs-title="<dl><dt>Attack Vector</dt><dd>The context by which vulnerability exploitation is
+                                                        possible.score Metric</dd></dl>"
                                                       >
                                                         <div
                                                           class="badge text-bg-dark"
@@ -919,7 +1243,11 @@
                                                     </div>
                                                     <div class="col-4">
                                                       <div
-                                                        class="d-flex align-items-center gap-2 fw-semibold fs-16"
+                                                        class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black kw-tooltip"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-html="true"
+                                                        data-bs-title="<dl><dt>Attack Vector</dt><dd>The context by which vulnerability exploitation is
+                                                        possible.score Metric</dd></dl>"
                                                       >
                                                         <div
                                                           class="badge text-bg-dark"
@@ -931,26 +1259,42 @@
                                                     </div>
                                                     <div class="col-4">
                                                       <div
-                                                        class="d-flex align-items-center gap-2 fw-semibold fs-16"
+                                                        class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black kw-tooltip"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-html="true"
+                                                        data-bs-title="<dl><dt>Attack Vector</dt><dd>The context by which vulnerability exploitation is
+                                                        possible.score Metric</dd></dl>"
                                                       >
                                                         <div
-                                                          class="badge text-bg-dark"
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16"
                                                         >
-                                                          A
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            A
+                                                          </div>
+                                                          NONE
                                                         </div>
-                                                        NONE
                                                       </div>
                                                     </div>
                                                     <div class="col-4">
                                                       <div
-                                                        class="d-flex align-items-center gap-2 fw-semibold fs-16"
+                                                        class="d-inline-flex align-items-center gap-2 fw-semibold fs-16 text-black kw-tooltip"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-html="true"
+                                                        data-bs-title="<dl><dt>Attack Vector</dt><dd>The context by which vulnerability exploitation is
+                                                        possible.score Metric</dd></dl>"
                                                       >
                                                         <div
-                                                          class="badge text-bg-dark"
+                                                          class="d-inline-flex align-items-center gap-2 fw-semibold fs-16"
                                                         >
-                                                          AC
+                                                          <div
+                                                            class="badge text-bg-dark"
+                                                          >
+                                                            AC
+                                                          </div>
+                                                          LOW
                                                         </div>
-                                                        LOW
                                                       </div>
                                                     </div>
                                                   </div>

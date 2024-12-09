@@ -209,6 +209,29 @@
                                       },
                                     },
                                   },
+                                  tooltip: {
+                                    enabled: true,
+                                    custom: function ({
+                                      series,
+                                      seriesIndex,
+                                      dataPointIndex,
+                                      w,
+                                    }) {
+                                      const dataPoint =
+                                        w.config.series[seriesIndex].data[
+                                          dataPointIndex
+                                        ];
+                                      const backgroundColor =
+                                        dataPoint.fillColor; // 데이터의 색상 가져오기
+                                      const category = dataPoint.x; // X축 카테고리
+                                      const value = dataPoint.y; // 값
+
+                                      return `
+        <div style="background-color: ${backgroundColor}; color: #fff; padding: 10px; border-radius: 5px; text-align: center;">
+          <strong>${category}</strong>: ${value}건
+        </div>`;
+                                    },
+                                  },
                                   states: {
                                     hover: {
                                       filter: {
@@ -338,6 +361,29 @@
                                       },
                                     },
                                   },
+                                  tooltip: {
+                                    enabled: true,
+                                    custom: function ({
+                                      series,
+                                      seriesIndex,
+                                      dataPointIndex,
+                                      w,
+                                    }) {
+                                      const dataPoint =
+                                        w.config.series[seriesIndex].data[
+                                          dataPointIndex
+                                        ];
+                                      const backgroundColor =
+                                        dataPoint.fillColor; // 데이터의 색상 가져오기
+                                      const category = dataPoint.x; // X축 카테고리
+                                      const value = dataPoint.y; // 값
+
+                                      return `
+        <div style="background-color: ${backgroundColor}; color: #fff; padding: 10px; border-radius: 5px; text-align: center;">
+          <strong>${category}</strong>: ${value}건
+        </div>`;
+                                    },
+                                  },
                                   states: {
                                     hover: {
                                       filter: {
@@ -451,34 +497,62 @@
                           <dt class="mb-0 p-0 fs-15 fw-medium text-gray-400">
                             사용된 제품 목록
                           </dt>
-                          <dd class="fs-17"><a href="">배포형태(1)</a></dd>
+                          <dd class="fs-17">
+                            <a
+                              href="javascript:void(0)"
+                              id="popover01"
+                              data-bs-toggle="popover"
+                              >배포형태(1)</a
+                            >
+                            <div hidden>
+                              <div
+                                class="kw-popover"
+                                data-name="popover01-content"
+                              >
+                                <div class="kw-list-table-scroll">
+                                  <table class="table table-sm">
+                                    <colgroup>
+                                      <col />
+                                      <col style="width: 150px" />
+                                      <col style="width: 150px" />
+                                      <col style="width: 100px" />
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th>제품명</th>
+                                        <th>요청자</th>
+                                        <th>서비스</th>
+                                        <th>배포형태</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>똑독 모바일 01</td>
+                                        <td>관리자</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <script>
+                              $(document).ready(function () {
+                                var options = {
+                                  html: true,
 
-                          <div class="hide" style="display: none">
-                            <table class="table table-sm" style="width: 650px">
-                              <colgroup>
-                                <col />
-                                <col style="width: 150px" />
-                                <col style="width: 150px" />
-                                <col style="width: 100px" />
-                              </colgroup>
-                              <thead>
-                                <tr>
-                                  <th>제품명</th>
-                                  <th>요청자</th>
-                                  <th>서비스</th>
-                                  <th>배포형태</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>똑독 모바일 01</td>
-                                  <td>관리자</td>
-                                  <td></td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
+                                  content: $('[data-name="popover01-content"]'),
+                                };
+                                var popoverEl =
+                                  document.getElementById('popover01');
+                                var popover = new bootstrap.Popover(
+                                  popoverEl,
+                                  options
+                                );
+                              });
+                            </script>
+                          </dd>
                         </dl>
                       </div>
                       <div class="col-3">
@@ -872,7 +946,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -942,7 +1016,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -1012,7 +1086,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -1082,7 +1156,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -1152,7 +1226,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -1222,7 +1296,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -1292,7 +1366,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
@@ -1362,7 +1436,7 @@
                             </td>
                             <td>
                               <div
-                                class="d-inline-flex align-items-center justify-content-between w-100"
+                                class="d-inline-flex align-items-center justify-content-between gap-3 w-100"
                               >
                                 <div class="d-flex gap-1 align-items-center">
                                   <button
