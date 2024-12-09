@@ -1221,9 +1221,9 @@ $pointColor: #ff7a00;
         &-contents {
           position: relative;
           background: var(--Green-Green200, #e2efea);
-          max-height: 0;
+          //max-height: 0;
           overflow: hidden;
-          transition: all 0 linear;
+          //transition: all 0.4s;
           &__button {
             position: absolute;
             right: 30px;
@@ -1248,8 +1248,8 @@ $pointColor: #ff7a00;
                 border-bottom: 1px solid #e5e7ea;
               }
               .kw-list-table-faq-contents {
-                max-height: 500px;
-                transition: all 0.8s linear;
+                //max-height: 500px;
+                //transition: all 0.8s linear;
               }
             }
           }

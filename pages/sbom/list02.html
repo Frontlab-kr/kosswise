@@ -470,835 +470,829 @@
                 </div>
                 <div class="card mt-7">
                   <div class="card-body p-6">
-                    <div class="kw-searchform p-0">
-                      <div class="tab-content pt-0">
+                    <div class="tab-content pt-0">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab01"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
                         <div
-                          class="tab-pane fade show active"
-                          id="tab01"
-                          role="tabpanel"
-                          tabindex="0"
+                          class="d-flex align-items-center justify-content-between gap-3"
                         >
-                          <div
-                            class="d-flex align-items-center justify-content-between gap-3"
-                          >
-                            <div class="d-flex align-items-center gap-3">
-                              <div class="kw-form-search">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  placeholder="입력해주세요"
-                                />
-                                <button>검색</button>
-                              </div>
-                              <button type="button" class="btn btn-primary">
-                                필터 <i class="ico-filter"></i>
-                              </button>
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="kw-form-search">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="입력해주세요"
+                              />
+                              <button>검색</button>
                             </div>
-                            <div class="d-flex align-items-center gap-3">
-                              <button type="button" class="btn btn-primary">
-                                Edit
-                              </button>
-                              <button type="button" class="btn btn-primary">
-                                Reset Adjustments
-                              </button>
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-primary dropdown-toggle"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  Snippet Adjustments
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Snippet Adjustments
-                                    </button>
-                                  </li>
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Snippet Adjustments
-                                    </button>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
+                            <button type="button" class="btn btn-primary">
+                              필터 <i class="ico-filter"></i>
+                            </button>
                           </div>
-                          <div
-                            class="d-flex align-items-center gap-7 mt-4 pt-4 border-top"
-                          >
-                            <div class="d-flex align-items-center gap-3">
-                              <p class="m-0 fs-15 fw-medium text-gray-300">
-                                Match Type
-                              </p>
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-md btn-primary dropdown-toggle"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  Snippet
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Snippet
-                                    </button>
-                                  </li>
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Snippet
-                                    </button>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="d-flex align-items-center gap-3">
-                              <p class="m-0 fs-15 fw-medium text-gray-300">
-                                Snippet Match Status
-                              </p>
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-md btn-primary dropdown-toggle"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  Unconfirmed
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Unconfirmed
-                                    </button>
-                                  </li>
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Unconfirmed
-                                    </button>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="d-flex align-items-center gap-3">
-                              <p class="m-0 fs-15 fw-medium text-gray-300">
-                                Match lgnore
-                              </p>
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-md btn-primary dropdown-toggle"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  Not lgnored
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Not lgnored
-                                    </button>
-                                  </li>
-                                  <li>
-                                    <button class="btn btn-text">
-                                      Not lgnored
-                                    </button>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="kw-list p-0 mt-5">
-                            <div class="kw-list-table">
-                              <div class="kw-list-table-tooltip">
-                                <dl>
-                                  <dt>가로 스크롤</dt>
-                                  <dd>
-                                    더 많은 정보를 보시려면 화면을 가로 스크롤
-                                    해주세요!
-                                  </dd>
-                                </dl>
-                              </div>
-                              <div class="kw-list-table-scroll">
-                                <table class="table">
-                                  <colgroup>
-                                    <col style="width: 170px" />
-                                    <col style="width: 144px" />
-                                    <col style="width: 136px" />
-                                    <col style="width: 242px" />
-                                    <col style="width: 126px" />
-                                    <col style="width: 278px" />
-                                  </colgroup>
-                                  <thead>
-                                    <tr>
-                                      <th>
-                                        <div class="kw-list-table-title">
-                                          <div class="form-check">
-                                            <input
-                                              class="form-check-input"
-                                              type="checkbox"
-                                              value=""
-                                              id="checkboxAll"
-                                            />
-                                            <label
-                                              class="form-check-label"
-                                              for="checkboxAll"
-                                            >
-                                              Name
-                                            </label>
-                                          </div>
-                                          <div class="kw-align">
-                                            <button class="kw-align-start">
-                                              왼쪽
-                                            </button>
-                                            <div class="kw-align-layer">
-                                              <button class="kw-align-start">
-                                                왼쪽
-                                              </button>
-                                              <button class="kw-align-center">
-                                                가운데
-                                              </button>
-                                              <button class="kw-align-end">
-                                                오른쪽
-                                              </button>
-                                              <hr />
-                                              <button class="kw-align-asc">
-                                                오름차순
-                                              </button>
-                                              <button class="kw-align-desc">
-                                                내림차순
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </th>
-                                      <th>
-                                        <div class="kw-list-table-title">
-                                          Component
-                                          <div class="kw-align">
-                                            <button class="kw-align-start">
-                                              왼쪽
-                                            </button>
-                                            <div class="kw-align-layer">
-                                              <button class="kw-align-start">
-                                                왼쪽
-                                              </button>
-                                              <button class="kw-align-center">
-                                                가운데
-                                              </button>
-                                              <button class="kw-align-end">
-                                                오른쪽
-                                              </button>
-                                              <hr />
-                                              <button class="kw-align-asc">
-                                                오름차순
-                                              </button>
-                                              <button class="kw-align-desc">
-                                                내림차순
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </th>
-                                      <th>
-                                        <div class="kw-list-table-title">
-                                          Match Type
-                                          <div class="kw-align">
-                                            <button class="kw-align-start">
-                                              왼쪽
-                                            </button>
-                                            <div class="kw-align-layer">
-                                              <button class="kw-align-start">
-                                                왼쪽
-                                              </button>
-                                              <button class="kw-align-center">
-                                                가운데
-                                              </button>
-                                              <button class="kw-align-end">
-                                                오른쪽
-                                              </button>
-                                              <hr />
-                                              <button class="kw-align-asc">
-                                                오름차순
-                                              </button>
-                                              <button class="kw-align-desc">
-                                                내림차순
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </th>
-                                      <th>
-                                        <div class="kw-list-table-title">
-                                          License
-                                          <div class="kw-align">
-                                            <button class="kw-align-start">
-                                              왼쪽
-                                            </button>
-                                            <div class="kw-align-layer">
-                                              <button class="kw-align-start">
-                                                왼쪽
-                                              </button>
-                                              <button class="kw-align-center">
-                                                가운데
-                                              </button>
-                                              <button class="kw-align-end">
-                                                오른쪽
-                                              </button>
-                                              <hr />
-                                              <button class="kw-align-asc">
-                                                오름차순
-                                              </button>
-                                              <button class="kw-align-desc">
-                                                내림차순
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </th>
-                                      <th>
-                                        <div class="kw-list-table-title">
-                                          Usage
-                                          <div class="kw-align">
-                                            <button class="kw-align-start">
-                                              왼쪽
-                                            </button>
-                                            <div class="kw-align-layer">
-                                              <button class="kw-align-start">
-                                                왼쪽
-                                              </button>
-                                              <button class="kw-align-center">
-                                                가운데
-                                              </button>
-                                              <button class="kw-align-end">
-                                                오른쪽
-                                              </button>
-                                              <hr />
-                                              <button class="kw-align-asc">
-                                                오름차순
-                                              </button>
-                                              <button class="kw-align-desc">
-                                                내림차순
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </th>
-                                      <th>
-                                        <div class="kw-list-table-title">
-                                          Discover Types
-                                          <div class="kw-align">
-                                            <button class="kw-align-start">
-                                              왼쪽
-                                            </button>
-                                            <div class="kw-align-layer">
-                                              <button class="kw-align-start">
-                                                왼쪽
-                                              </button>
-                                              <button class="kw-align-center">
-                                                가운데
-                                              </button>
-                                              <button class="kw-align-end">
-                                                오른쪽
-                                              </button>
-                                              <hr />
-                                              <button class="kw-align-asc">
-                                                오름차순
-                                              </button>
-                                              <button class="kw-align-desc">
-                                                내림차순
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <div class="form-check">
-                                          <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="checkbox01"
-                                          />
-                                          <label
-                                            class="form-check-label text-black"
-                                            for="checkbox01"
-                                          >
-                                            License.exrces
-                                          </label>
-                                        </div>
-                                      </td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>
-                                        <div
-                                          class="d-flex align-items-center justify-content-between gap-4"
-                                        >
-                                          <div
-                                            class="text-black text-medium"
-                                          ></div>
-                                          <div class="dropdown">
-                                            <button
-                                              type="button"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                              class="dropdown-toggle dropdown-toggle-ico-hide"
-                                            >
-                                              <i class="ico-more"></i>
-                                            </button>
-                                            <ul
-                                              class="dropdown-menu"
-                                              data-popper-placement="bottom-end"
-                                            >
-                                              <li>
-                                                <button
-                                                  class="btn btn-text w-100"
-                                                >
-                                                  Ignore
-                                                </button>
-                                              </li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                            <div class="kw-list-foot">
-                              <div class="kw-list-foot-start">
-                                <h6>Result : 1,300건</h6>
-                              </div>
-                              <div class="kw-list-foot-center">
-                                <nav>
-                                  <ul class="pagination">
-                                    <li class="page-item page-item-first">
-                                      <a class="page-link" href="#">처음</a>
-                                    </li>
-                                    <li class="page-item page-item-prev">
-                                      <a class="page-link" href="#">이전</a>
-                                    </li>
-                                    <li class="page-item active">
-                                      <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                      <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                      <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                      <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item">
-                                      <a class="page-link" href="#">5</a>
-                                    </li>
-                                    <li class="page-item page-item-next">
-                                      <a class="page-link" href="#">다음</a>
-                                    </li>
-                                    <li class="page-item page-item-last">
-                                      <a class="page-link" href="#">마지막</a>
-                                    </li>
-                                  </ul>
-                                </nav>
-                              </div>
-                              <div class="kw-list-foot-end">
-                                <div>
-                                  <select class="form-select">
-                                    <option selected>10개씩 보기</option>
-                                    <option value="1">10개씩 보기</option>
-                                    <option value="2">20개씩 보기</option>
-                                    <option value="3">30개씩 보기</option>
-                                  </select>
-                                </div>
-                              </div>
+                          <div class="d-flex align-items-center gap-3">
+                            <button type="button" class="btn btn-primary">
+                              Edit
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Reset Adjustments
+                            </button>
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-primary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Snippet Adjustments
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <button class="btn btn-text">
+                                    Snippet Adjustments
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="btn btn-text">
+                                    Snippet Adjustments
+                                  </button>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                         <div
-                          class="tab-pane fade"
-                          id="tab02"
-                          role="tabpanel"
-                          tabindex="0"
+                          class="d-flex align-items-center gap-7 mt-4 pt-4 border-top"
                         >
-                          2
+                          <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 fs-15 fw-medium text-gray-300">
+                              Match Type
+                            </p>
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-md btn-primary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Snippet
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <button class="btn btn-text">Snippet</button>
+                                </li>
+                                <li>
+                                  <button class="btn btn-text">Snippet</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 fs-15 fw-medium text-gray-300">
+                              Snippet Match Status
+                            </p>
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-md btn-primary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Unconfirmed
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <button class="btn btn-text">
+                                    Unconfirmed
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="btn btn-text">
+                                    Unconfirmed
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 fs-15 fw-medium text-gray-300">
+                              Match lgnore
+                            </p>
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-md btn-primary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Not lgnored
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <button class="btn btn-text">
+                                    Not lgnored
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="btn btn-text">
+                                    Not lgnored
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
+                        <div class="kw-list p-0 mt-5">
+                          <div class="kw-list-table">
+                            <div class="kw-list-table-tooltip">
+                              <dl>
+                                <dt>가로 스크롤</dt>
+                                <dd>
+                                  더 많은 정보를 보시려면 화면을 가로 스크롤
+                                  해주세요!
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="kw-list-table-scroll">
+                              <table class="table">
+                                <colgroup>
+                                  <col style="width: 170px" />
+                                  <col style="width: 144px" />
+                                  <col style="width: 136px" />
+                                  <col style="width: 242px" />
+                                  <col style="width: 126px" />
+                                  <col style="width: 278px" />
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        <div class="form-check">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="checkboxAll"
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="checkboxAll"
+                                          >
+                                            Name
+                                          </label>
+                                        </div>
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">
+                                            왼쪽
+                                          </button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">
+                                              왼쪽
+                                            </button>
+                                            <button class="kw-align-center">
+                                              가운데
+                                            </button>
+                                            <button class="kw-align-end">
+                                              오른쪽
+                                            </button>
+                                            <hr />
+                                            <button class="kw-align-asc">
+                                              오름차순
+                                            </button>
+                                            <button class="kw-align-desc">
+                                              내림차순
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        Component
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">
+                                            왼쪽
+                                          </button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">
+                                              왼쪽
+                                            </button>
+                                            <button class="kw-align-center">
+                                              가운데
+                                            </button>
+                                            <button class="kw-align-end">
+                                              오른쪽
+                                            </button>
+                                            <hr />
+                                            <button class="kw-align-asc">
+                                              오름차순
+                                            </button>
+                                            <button class="kw-align-desc">
+                                              내림차순
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        Match Type
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">
+                                            왼쪽
+                                          </button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">
+                                              왼쪽
+                                            </button>
+                                            <button class="kw-align-center">
+                                              가운데
+                                            </button>
+                                            <button class="kw-align-end">
+                                              오른쪽
+                                            </button>
+                                            <hr />
+                                            <button class="kw-align-asc">
+                                              오름차순
+                                            </button>
+                                            <button class="kw-align-desc">
+                                              내림차순
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        License
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">
+                                            왼쪽
+                                          </button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">
+                                              왼쪽
+                                            </button>
+                                            <button class="kw-align-center">
+                                              가운데
+                                            </button>
+                                            <button class="kw-align-end">
+                                              오른쪽
+                                            </button>
+                                            <hr />
+                                            <button class="kw-align-asc">
+                                              오름차순
+                                            </button>
+                                            <button class="kw-align-desc">
+                                              내림차순
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        Usage
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">
+                                            왼쪽
+                                          </button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">
+                                              왼쪽
+                                            </button>
+                                            <button class="kw-align-center">
+                                              가운데
+                                            </button>
+                                            <button class="kw-align-end">
+                                              오른쪽
+                                            </button>
+                                            <hr />
+                                            <button class="kw-align-asc">
+                                              오름차순
+                                            </button>
+                                            <button class="kw-align-desc">
+                                              내림차순
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                    <th>
+                                      <div class="kw-list-table-title">
+                                        Discover Types
+                                        <div class="kw-align">
+                                          <button class="kw-align-start">
+                                            왼쪽
+                                          </button>
+                                          <div class="kw-align-layer">
+                                            <button class="kw-align-start">
+                                              왼쪽
+                                            </button>
+                                            <button class="kw-align-center">
+                                              가운데
+                                            </button>
+                                            <button class="kw-align-end">
+                                              오른쪽
+                                            </button>
+                                            <hr />
+                                            <button class="kw-align-asc">
+                                              오름차순
+                                            </button>
+                                            <button class="kw-align-desc">
+                                              내림차순
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="checkbox01"
+                                        />
+                                        <label
+                                          class="form-check-label text-black"
+                                          for="checkbox01"
+                                        >
+                                          License.exrces
+                                        </label>
+                                      </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center justify-content-between gap-4"
+                                      >
+                                        <div
+                                          class="text-black text-medium"
+                                        ></div>
+                                        <div class="dropdown">
+                                          <button
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            class="dropdown-toggle dropdown-toggle-ico-hide"
+                                          >
+                                            <i class="ico-more"></i>
+                                          </button>
+                                          <ul
+                                            class="dropdown-menu"
+                                            data-popper-placement="bottom-end"
+                                          >
+                                            <li>
+                                              <button
+                                                class="btn btn-text w-100"
+                                              >
+                                                Ignore
+                                              </button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="kw-list-foot">
+                            <div class="kw-list-foot-start">
+                              <h6>Result : 1,300건</h6>
+                            </div>
+                            <div class="kw-list-foot-center">
+                              <nav>
+                                <ul class="pagination">
+                                  <li class="page-item page-item-first">
+                                    <a class="page-link" href="#">처음</a>
+                                  </li>
+                                  <li class="page-item page-item-prev">
+                                    <a class="page-link" href="#">이전</a>
+                                  </li>
+                                  <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">4</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">5</a>
+                                  </li>
+                                  <li class="page-item page-item-next">
+                                    <a class="page-link" href="#">다음</a>
+                                  </li>
+                                  <li class="page-item page-item-last">
+                                    <a class="page-link" href="#">마지막</a>
+                                  </li>
+                                </ul>
+                              </nav>
+                            </div>
+                            <div class="kw-list-foot-end">
+                              <div>
+                                <select class="form-select">
+                                  <option selected>10개씩 보기</option>
+                                  <option value="1">10개씩 보기</option>
+                                  <option value="2">20개씩 보기</option>
+                                  <option value="3">30개씩 보기</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab02"
+                        role="tabpanel"
+                        tabindex="0"
+                      >
+                        2
                       </div>
                     </div>
                   </div>

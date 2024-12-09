@@ -142,7 +142,7 @@
                                   ],
                                   chart: {
                                     type: 'bar',
-                                    height: 350,
+                                    height: 300,
                                     stacked: false,
                                     toolbar: {
                                       show: false,
@@ -270,6 +270,11 @@
                                     {
                                       data: [
                                         {
+                                          x: 'Critical',
+                                          y: 2,
+                                          fillColor: '#91524B',
+                                        },
+                                        {
                                           x: 'High',
                                           y: 2,
                                           fillColor: '#C16A59',
@@ -286,7 +291,7 @@
                                         },
                                         {
                                           x: 'None',
-                                          y: 89,
+                                          y: 76,
                                           fillColor: '#E6E6E6',
                                         },
                                       ],
@@ -294,7 +299,7 @@
                                   ],
                                   chart: {
                                     type: 'bar',
-                                    height: 350,
+                                    height: 300,
                                     stacked: false,
                                     toolbar: {
                                       show: false,
@@ -325,6 +330,7 @@
                                   },
                                   xaxis: {
                                     categories: [
+                                      'Critical',
                                       'High',
                                       'Medium',
                                       'Low',
@@ -502,6 +508,7 @@
                               href="javascript:void(0)"
                               id="popover01"
                               data-bs-toggle="popover"
+                              data-bs-trigger="focus"
                               >배포형태(1)</a
                             >
                             <div hidden>
@@ -509,32 +516,30 @@
                                 class="kw-popover"
                                 data-name="popover01-content"
                               >
-                                <div class="kw-list-table-scroll">
-                                  <table class="table table-sm">
-                                    <colgroup>
-                                      <col />
-                                      <col style="width: 150px" />
-                                      <col style="width: 150px" />
-                                      <col style="width: 100px" />
-                                    </colgroup>
-                                    <thead>
-                                      <tr>
-                                        <th>제품명</th>
-                                        <th>요청자</th>
-                                        <th>서비스</th>
-                                        <th>배포형태</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>똑독 모바일 01</td>
-                                        <td>관리자</td>
-                                        <td></td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                                <table class="table table-sm text-nowrap">
+                                  <colgroup>
+                                    <col />
+                                    <col style="width: 150px" />
+                                    <col style="width: 150px" />
+                                    <col style="width: 100px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th>제품명</th>
+                                      <th>요청자</th>
+                                      <th>서비스</th>
+                                      <th>배포형태</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>똑독 모바일 01</td>
+                                      <td>관리자</td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </div>
                             </div>
                             <script>
@@ -916,7 +921,12 @@
                         <tbody>
                           <tr>
                             <td class="text-center">
-                              <i class="ico-complete"></i>
+                              <i
+                                class="ico-forbidden"
+                                data-bs-toggle="tooltip"
+                                data-bs-html="true"
+                                data-bs-title="<dl><dt>Policy Violations</dt><dd>This component violates 'License Risk High'.</dd></dl>"
+                              ></i>
                             </td>
                             <td>
                               <a href=""

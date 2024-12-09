@@ -16472,7 +16472,7 @@ textarea.form-control-lg {
 
 html,
 body {
-  min-width: 1500px;
+  min-width: 1280px;
 }
 
 .kw small, .kw .small,
@@ -16647,6 +16647,30 @@ html .modal .form-check-input {
   width: 20px;
   height: 20px;
   border-color: #9ca1ad;
+}
+.kw .modal.fade:not(.show).left .modal-dialog,
+html .modal.fade:not(.show).left .modal-dialog {
+  transform: translate3d(-100%, 0, 0);
+}
+.kw .modal.left .modal-dialog,
+html .modal.left .modal-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.kw .modal.left .modal-dialog,
+html .modal.left .modal-dialog {
+  width: 572px;
+  max-width: 572px;
+}
+.kw .modal.left .modal-content,
+.kw .modal .modal.right .modal-content,
+html .modal.left .modal-content,
+html .modal .modal.right .modal-content {
+  min-height: 100vh;
+  border-radius: 0;
+  border: 0;
 }
 .kw .table-sm,
 html .table-sm {
@@ -17164,6 +17188,17 @@ html .form-switch .form-check-label {
   font-weight: 500;
   line-height: 21px; /* 140% */
 }
+.kw .spinner-border,
+html .spinner-border {
+  width: 136px;
+  height: 136px;
+  border: 10px solid transparent;
+  border-radius: 136px;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #6a9c89 0%, rgba(106, 156, 137, 0.2) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  --bs-spinner-animation-speed: 1s;
+}
 
 .was-validated .form-control:valid,
 .form-control.is-valid {
@@ -17182,6 +17217,7 @@ html .form-switch .form-check-label {
   min-width: 19px;
   height: 19px;
   background: url(../images/icon/Logout.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-home {
@@ -17189,6 +17225,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/Home.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-plus-white {
@@ -17196,6 +17233,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/plus-white.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-arrow-up {
@@ -17203,6 +17241,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/arrow-up.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-arrow-down {
@@ -17210,6 +17249,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/arrow-down.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-tree-folder {
@@ -17217,6 +17257,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/tree-folder.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-tree-page {
@@ -17224,6 +17265,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/tree-page.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-more {
@@ -17231,6 +17273,7 @@ html .form-switch .form-check-label {
   min-width: 26px;
   height: 26px;
   background: url(../images/icon/more.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-no {
@@ -17238,6 +17281,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/no.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-pages {
@@ -17245,6 +17289,7 @@ html .form-switch .form-check-label {
   min-width: 22px;
   height: 28px;
   background: url(../images/icon/pages.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-new-windows {
@@ -17252,6 +17297,7 @@ html .form-switch .form-check-label {
   min-width: 22px;
   height: 22px;
   background: url(../images/icon/new-windows.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-logout-menu {
@@ -17259,6 +17305,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico-logout-menu.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-doc-plus {
@@ -17266,6 +17313,7 @@ html .form-switch .form-check-label {
   min-width: 150px;
   height: 150px;
   background: url(../images/icon/ico_doc_plus.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-trash-circle {
@@ -17273,6 +17321,7 @@ html .form-switch .form-check-label {
   min-width: 150px;
   height: 150px;
   background: url(../images/icon/ico_trash_circle.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-trash {
@@ -17280,6 +17329,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/ico_trash.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-logout {
@@ -17287,6 +17337,7 @@ html .form-switch .form-check-label {
   min-width: 150px;
   height: 150px;
   background: url(../images/icon/ico-logout.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-exclamation-circle {
@@ -17294,6 +17345,7 @@ html .form-switch .form-check-label {
   min-width: 150px;
   height: 150px;
   background: url(../images/icon/ico_exclamation_circle.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-exclamation-danger {
@@ -17301,6 +17353,7 @@ html .form-switch .form-check-label {
   min-width: 236px;
   height: 235px;
   background: url(../images/icon/ico_exclamation_danger.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-delete {
@@ -17308,6 +17361,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico-delete.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-certification {
@@ -17315,6 +17369,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico-certification.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-enter {
@@ -17322,6 +17377,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico-enter.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-filter {
@@ -17329,6 +17385,7 @@ html .form-switch .form-check-label {
   min-width: 18px;
   height: 18px;
   background: url(../images/icon/ico-filter.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-play-circle {
@@ -17336,6 +17393,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 16px;
   background: url(../images/icon/ico_play_circle.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-pause {
@@ -17343,6 +17401,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 16px;
   background: url(../images/icon/ico_pause.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-play {
@@ -17350,6 +17409,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_play.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-write {
@@ -17357,6 +17417,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 21px;
   background: url(../images/icon/ico_write.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-check-circle {
@@ -17364,6 +17425,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 17px;
   background: url(../images/icon/ico_check_circle.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-check-circle-disabled {
@@ -17371,6 +17433,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 17px;
   background: url(../images/icon/ico_check_circle_disabled.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-warning {
@@ -17378,6 +17441,7 @@ html .form-switch .form-check-label {
   min-width: 38px;
   height: 38px;
   background: url(../images/icon/ico_warning.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-warning-white {
@@ -17385,6 +17449,7 @@ html .form-switch .form-check-label {
   min-width: 38px;
   height: 38px;
   background: url(../images/icon/ico_warning_white.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-arrow-up-primary {
@@ -17392,6 +17457,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_arrow_up_primary.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-move {
@@ -17399,6 +17465,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_move.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-star {
@@ -17406,6 +17473,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_star.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-check-primary {
@@ -17413,6 +17481,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_check_primary.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-check-disabled {
@@ -17420,6 +17489,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_check_disabled.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-forbidden {
@@ -17427,6 +17497,7 @@ html .form-switch .form-check-label {
   min-width: 22px;
   height: 23px;
   background: url(../images/icon/ico_forbidden.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-question {
@@ -17434,6 +17505,7 @@ html .form-switch .form-check-label {
   min-width: 18px;
   height: 18px;
   background: url(../images/icon/ico_question.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-shield {
@@ -17441,6 +17513,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_shield.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-mail {
@@ -17448,6 +17521,7 @@ html .form-switch .form-check-label {
   min-width: 24px;
   height: 24px;
   background: url(../images/icon/ico_mail.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-fail {
@@ -17455,6 +17529,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 16px;
   background: url(../images/icon/ico_fail.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-complete {
@@ -17462,6 +17537,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 16px;
   background: url(../images/icon/ico_complete.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-plus {
@@ -17469,6 +17545,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_plus.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-x-secondary {
@@ -17476,6 +17553,7 @@ html .form-switch .form-check-label {
   min-width: 21px;
   height: 21px;
   background: url(../images/icon/ico_x_secondary.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-person {
@@ -17483,6 +17561,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 16px;
   background: url(../images/icon/ico_person.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-chat {
@@ -17490,6 +17569,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_chat.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-exclamation {
@@ -17497,6 +17577,7 @@ html .form-switch .form-check-label {
   min-width: 16px;
   height: 17px;
   background: url(../images/icon/ico_exclamation.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-share {
@@ -17504,6 +17585,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 21px;
   background: url(../images/icon/ico_share.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-sort {
@@ -17511,6 +17593,7 @@ html .form-switch .form-check-label {
   min-width: 21px;
   height: 20px;
   background: url(../images/icon/ico_sort.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-dots {
@@ -17518,6 +17601,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 20px;
   background: url(../images/icon/ico_dots.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-x {
@@ -17525,6 +17609,7 @@ html .form-switch .form-check-label {
   min-width: 17px;
   height: 18px;
   background: url(../images/icon/ico_x.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-x-danger {
@@ -17532,6 +17617,7 @@ html .form-switch .form-check-label {
   min-width: 17px;
   height: 18px;
   background: url(../images/icon/ico_x_danger.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-inquiry {
@@ -17539,6 +17625,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 21px;
   background: url(../images/icon/ico_inquiry.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-download {
@@ -17546,6 +17633,7 @@ html .form-switch .form-check-label {
   min-width: 20px;
   height: 21px;
   background: url(../images/icon/ico_download.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .ico-white-circle {
@@ -17553,6 +17641,15 @@ html .form-switch .form-check-label {
   min-width: 150px;
   height: 150px;
   background: url(../images/icon/ico_write_circle.svg) no-repeat 50% 50%;
+  font-style: normal;
+}
+
+.ico-bell {
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  background: url(../images/icon/icon_bell.svg) no-repeat 50% 50%;
+  font-style: normal;
 }
 
 .modal-title .kw-align {
@@ -19020,9 +19117,7 @@ html .form-switch .form-check-label {
 .kw-list-table-faq-contents {
   position: relative;
   background: var(--Green-Green200, #e2efea);
-  max-height: 0;
   overflow: hidden;
-  transition: all 0 linear;
 }
 .kw-list-table-faq-contents__button {
   position: absolute;
@@ -19043,10 +19138,6 @@ html .form-switch .form-check-label {
 .kw-list-table-faq-contents__tr.active td {
   border-left: 1px solid #e5e7ea;
   border-bottom: 1px solid #e5e7ea;
-}
-.kw-list-table-faq-contents__tr.active .kw-list-table-faq-contents {
-  max-height: 500px;
-  transition: all 0.8s linear;
 }
 .kw-list-table-faq-contents__inner {
   padding: 30px 200px 30px 56px;
