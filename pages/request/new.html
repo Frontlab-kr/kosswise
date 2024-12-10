@@ -7,6 +7,9 @@
 
     <!-- 퍼블임시js -->
     <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.min.js"></script>
+    <script src="../../assets/js/jquery.dragtable.js"></script>
+    <script src="../../assets/js/jquery.resizableColumns.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -948,18 +951,21 @@
         <div class="modal-content">
           <div class="modal-header modal-header--lg">
             <div class="modal-title">
-              오픈소스 점검 정보 (Black Duck 분석 프로젝트) 추가
-              <div class="kw-align">
-                <button></button>
-                <div class="kw-align-layer">
-                  <p class="text-danger mb-0">
-                    ※ Kosswise에서 제품명으로 만들어진 통합 프로젝트는 선택이
-                    불가능 합니다.<br /><br />
-                    ※ Black Duck에서 새로 스캔한 데이터는 약 1~5분 후
-                    반영됩니다.<br />
-                    조회 되지 않을 시 잠시 후 다시 확인해 주세요.
-                  </p>
-                </div>
+              <div class="d-inline-flex align-items-center gap-3">
+                오픈소스 점검 정보 (Black Duck 분석 프로젝트) 추가
+                <i
+                  class="ico-exclamation-black"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-html="true"
+                  data-bs-title="<p class='text-danger m-0 text-start fs-15' >
+                ※ Kosswise에서 제품명으로 만들어진 통합 프로젝트는 선택이
+                불가능 합니다.<br /><br />
+                ※ Black Duck에서 새로 스캔한 데이터는 약 1~5분 후
+                반영됩니다.<br />
+                조회 되지 않을 시 잠시 후 다시 확인해 주세요.
+              </p>"
+                ></i>
               </div>
             </div>
             <button

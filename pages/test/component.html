@@ -7,6 +7,9 @@
 
     <!-- 퍼블임시js -->
     <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.min.js"></script>
+    <script src="../../assets/js/jquery.dragtable.js"></script>
+    <script src="../../assets/js/jquery.resizableColumns.min.js"></script>
     <script src="../../assets/js/common.js"></script>
 
     <!-- bootstrap -->
@@ -205,7 +208,9 @@
                             <tr>
                               <th>
                                 <div class="kw-list-table-title">
-                                  제목
+                                  <span class="kw-list-table-title__title">
+                                    제목
+                                  </span>
                                   <div class="kw-align">
                                     <button class="kw-align-start">왼쪽</button>
                                     <div class="kw-align-layer">
@@ -231,7 +236,9 @@
                               </th>
                               <th>
                                 <div class="kw-list-table-title">
-                                  제출차수
+                                  <span class="kw-list-table-title__title">
+                                    제출차수
+                                  </span>
                                   <div class="kw-align">
                                     <button class="kw-align-start">왼쪽</button>
                                     <div class="kw-align-layer">
@@ -257,7 +264,9 @@
                               </th>
                               <th>
                                 <div class="kw-list-table-title">
-                                  신청자
+                                  <span class="kw-list-table-title__title">
+                                    신청자
+                                  </span>
                                   <div class="kw-align">
                                     <button class="kw-align-start">왼쪽</button>
                                     <div class="kw-align-layer">
@@ -283,7 +292,9 @@
                               </th>
                               <th>
                                 <div class="kw-list-table-title">
-                                  승인 담당자
+                                  <span class="kw-list-table-title__title">
+                                    승인 담당자
+                                  </span>
                                   <div class="kw-align">
                                     <button class="kw-align-start">왼쪽</button>
                                     <div class="kw-align-layer">
@@ -309,7 +320,9 @@
                               </th>
                               <th>
                                 <div class="kw-list-table-title">
-                                  신청일
+                                  <span class="kw-list-table-title__title">
+                                    신청일
+                                  </span>
                                   <div class="kw-align">
                                     <button class="kw-align-start">왼쪽</button>
                                     <div class="kw-align-layer">
@@ -335,7 +348,9 @@
                               </th>
                               <th>
                                 <div class="kw-list-table-title">
-                                  상태
+                                  <span class="kw-list-table-title__title">
+                                    상태
+                                  </span>
                                   <div class="kw-align">
                                     <button class="kw-align-start">왼쪽</button>
                                     <div class="kw-align-layer">
@@ -606,10 +621,12 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="pt-8 pb-8 text-center">
-              <div>
-                <div class="spinner-border text-primary" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
+              <div class="kw-load">
+                <hr />
+                <hr />
+                <hr />
+                <hr />
+                <hr />
               </div>
               <p class="m-0 mt-6 mb-3 fs-16">
                 <strong> 변환 보고서 생성을 시작합니다 </strong>

@@ -162,4 +162,13 @@ $(document).ready(function () {
       .parent('ol')
       .toggleClass('fold');
   });
+
+  //table drag
+  $('.kw-list-table table').resizableColumns({
+    store: window.store,
+  });
+
+  $('.kw-list-table table').dragtable({
+    dragHandle: '.kw-list-table-title__title',
+  });
 });

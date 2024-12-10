@@ -2,14 +2,13 @@
 
 @import './swiper-bundle.min.css';
 @import './apexcharts.min.css';
+@import './jquery.resizableColumns.css';
 
 @import './bootstrap-5.3.3/bootstrap.scss';
+@import './variables';
 @import './override';
 @import './icons';
 @import './style';
-
-//
-$pointColor: #ff7a00;
 
 @mixin text-clamp($lines: 2, $line-height: false) {
   display: -webkit-box;
@@ -124,12 +123,12 @@ $pointColor: #ff7a00;
         }
         &:hover {
           > a {
-            color: $pointColor;
+            color: $activeColor;
           }
         }
         &.active {
           > a {
-            color: $pointColor;
+            color: $activeColor;
             &:after {
               content: '';
               display: block;
@@ -138,7 +137,7 @@ $pointColor: #ff7a00;
               right: 0;
               left: 0;
               height: 5px;
-              background: $pointColor;
+              background: $activeColor;
             }
           }
         }
@@ -148,7 +147,6 @@ $pointColor: #ff7a00;
           min-width: 232px;
           padding: 4px;
           border-radius: 0px 0px 4px 4px;
-          //border: 1px solid $pointColor;
           background: #fff;
           transform: translateY(100%);
           opacity: 0;
@@ -259,7 +257,6 @@ $pointColor: #ff7a00;
           min-width: 230px;
           padding: 4px;
           border-radius: 0px 0px 4px 4px;
-          //border: 1px solid $pointColor;
           background: var(--White, #fff);
           box-shadow: -7px 5px 14.7px 0px rgba(165, 165, 165, 0.2);
         }
@@ -1070,6 +1067,7 @@ $pointColor: #ff7a00;
       background: #fff;
       box-shadow: -4px 6px 13.2px 0px rgba(0, 0, 0, 0.2);
       opacity: 0;
+      visibility: hidden;
       transition: all 0.2s linear;
       hr {
         width: 1px;
@@ -1087,6 +1085,64 @@ $pointColor: #ff7a00;
     &--open & {
       &-layer {
         opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &-load {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    hr {
+      border: 0;
+      margin: 0;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border-radius: 50%;
+      animation: spin 2.5s ease infinite;
+      opacity: 1;
+      &:nth-child(1) {
+        background: #676e76;
+        animation-delay: -2s;
+      }
+      &:nth-child(2) {
+        background: #676e76;
+        animation-delay: -1.5s;
+      }
+      &:nth-child(3) {
+        background: #676e76;
+        animation-delay: -1s;
+      }
+      &:nth-child(4) {
+        background: #9ca1ad;
+        animation-delay: -0.5s;
+      }
+      &:nth-child(5) {
+        background: #6a9c89;
+      }
+    }
+
+    @keyframes spin {
+      0%,
+      100% {
+        transform: translate(0px, -34px);
+      }
+      20% {
+        transform: translate(30px, -12px);
+      }
+      40% {
+        transform: translate(16px, 20px);
+      }
+      60% {
+        transform: translate(-16px, 20px);
+      }
+      80% {
+        transform: translate(-30px, -12px);
       }
     }
   }
@@ -1285,6 +1341,9 @@ $pointColor: #ff7a00;
         align-items: center;
         justify-content: space-between;
         gap: 0;
+        &__title {
+          cursor: move;
+        }
       }
       &__none {
         padding: 30px;

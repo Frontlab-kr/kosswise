@@ -2,6 +2,7 @@
 @import url("./pretendard.min.css");
 @import './swiper-bundle.min.css';
 @import './apexcharts.min.css';
+@import './jquery.resizableColumns.css';
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -16475,6 +16476,59 @@ body {
   min-width: 1280px;
 }
 
+/* 
+ * dragtable
+ *
+ * @Version 2.0.0
+ *
+ * default css
+ *
+ */
+/*##### the dragtable stuff #####*/
+.dragtable-sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+}
+
+.dragtable-sortable li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-size: 1em;
+  background: white;
+}
+
+.dragtable-sortable th,
+.dragtable-sortable td {
+  border-left: 0px;
+}
+
+.dragtable-sortable li:first-child th,
+.dragtable-sortable li:first-child td {
+  border-left: 1px solid #ccc;
+}
+
+.ui-sortable-helper {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.ui-sortable-placeholder {
+  box-shadow: 4px 5px 4px #c6c6c6 inset;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  visibility: visible !important;
+  background: #efefef !important;
+  visibility: visible !important;
+}
+
+.ui-sortable-placeholder * {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .kw small, .kw .small,
 html small,
 html .small {
@@ -16941,7 +16995,7 @@ html .btn-md {
 html .btn-sm,
 html .btn-group-sm > .btn {
   min-width: 70px;
-  height: 28px;
+  height: 24px;
   color: #fff;
   font-family: Pretendard;
   font-size: 12px;
@@ -16949,8 +17003,38 @@ html .btn-group-sm > .btn {
   font-weight: 500;
   line-height: 16px; /* 133.333% */
 }
+.kw .btn-primary,
+html .btn-primary {
+  background-color: #6a9c89;
+  border-color: #6a9c89;
+}
 .kw .btn-primary:hover,
 html .btn-primary:hover {
+  background-color: #507d6e;
+  border-color: #507d6e;
+  color: #fff;
+}
+.kw .btn-primary:focus,
+html .btn-primary:focus {
+  background-color: #3c5e52;
+  border-color: #3c5e52;
+  color: #fff;
+}
+.kw .btn-secondary,
+html .btn-secondary {
+  background-color: #385752;
+  border-color: #385752;
+}
+.kw .btn-secondary:hover,
+html .btn-secondary:hover {
+  background-color: #2a4642;
+  border-color: #2a4642;
+  color: #fff;
+}
+.kw .btn-secondary:focus,
+html .btn-secondary:focus {
+  background-color: #203431;
+  border-color: #203431;
   color: #fff;
 }
 .kw .btn-text,
@@ -17356,6 +17440,14 @@ html .spinner-border {
   font-style: normal;
 }
 
+.ico-exclamation-black {
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  background: url(../images/icon/ico_exclamation_black.svg) no-repeat 50% 50%;
+  font-style: normal;
+}
+
 .ico-delete {
   display: inline-block;
   min-width: 20px;
@@ -17650,52 +17742,6 @@ html .spinner-border {
   height: 40px;
   background: url(../images/icon/icon_bell.svg) no-repeat 50% 50%;
   font-style: normal;
-}
-
-.modal-title .kw-align {
-  display: inline-block;
-  height: auto;
-  margin-left: 12px;
-  vertical-align: -2px;
-}
-.modal-title .kw-align > button {
-  width: 24px;
-  height: 24px;
-  background-color: #383f45;
-  border-radius: 50%;
-  position: relative;
-}
-.modal-title .kw-align > button:before, .modal-title .kw-align > button:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 4px;
-  transform: translateX(-50%);
-  width: 3px;
-  height: 9px;
-  background-color: #fff;
-  border-radius: 2px;
-}
-.modal-title .kw-align > button:after {
-  height: 3px;
-  top: auto;
-  bottom: 5px;
-}
-.modal-title .kw-align-layer {
-  position: absolute;
-  left: calc(100% + 8px);
-  top: calc(100% + 5px);
-  bottom: auto;
-  right: auto;
-  transform: translateY(-50%);
-  width: auto;
-  height: auto;
-  padding: 14px 20px;
-  font-size: 15px;
-  font-weight: 500;
-  white-space: nowrap;
-  border-radius: 8px;
-  z-index: 10;
 }
 
 .license-accordion {
@@ -18973,6 +19019,7 @@ html .spinner-border {
   background: #fff;
   box-shadow: -4px 6px 13.2px 0px rgba(0, 0, 0, 0.2);
   opacity: 0;
+  visibility: hidden;
   transition: all 0.2s linear;
 }
 .kw-align-layer hr {
@@ -18987,6 +19034,62 @@ html .spinner-border {
 }
 .kw-align--open .kw-align-layer {
   opacity: 1;
+  visibility: visible;
+}
+.kw-load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+.kw-load hr {
+  border: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2.5s ease infinite;
+  opacity: 1;
+}
+.kw-load hr:nth-child(1) {
+  background: #676e76;
+  animation-delay: -2s;
+}
+.kw-load hr:nth-child(2) {
+  background: #676e76;
+  animation-delay: -1.5s;
+}
+.kw-load hr:nth-child(3) {
+  background: #676e76;
+  animation-delay: -1s;
+}
+.kw-load hr:nth-child(4) {
+  background: #9ca1ad;
+  animation-delay: -0.5s;
+}
+.kw-load hr:nth-child(5) {
+  background: #6a9c89;
+}
+@keyframes spin {
+  0%, 100% {
+    transform: translate(0px, -34px);
+  }
+  20% {
+    transform: translate(30px, -12px);
+  }
+  40% {
+    transform: translate(16px, 20px);
+  }
+  60% {
+    transform: translate(-16px, 20px);
+  }
+  80% {
+    transform: translate(-30px, -12px);
+  }
 }
 .kw-tooltip {
   display: inline-block;
@@ -19156,6 +19259,9 @@ html .spinner-border {
   align-items: center;
   justify-content: space-between;
   gap: 0;
+}
+.kw-list-table-title__title {
+  cursor: move;
 }
 .kw-list-table__none {
   padding: 30px;
