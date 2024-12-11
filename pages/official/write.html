@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <title>KOSSWISE</title>
+
+    <!-- 퍼블임시js -->
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.min.js"></script>
+    <script src="../../assets/js/jquery.dragtable.js"></script>
+    <script src="../../assets/js/jquery.resizableColumns.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kw">
+      <div id="header"></div>
+      <div class="kw-page">
+        <div class="kw-breadcrumb">
+          <div class="kw-inner">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="ico-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">부가기능</a></li>
+                <li class="breadcrumb-item active">버전 생성</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="kw-contents">
+          <div class="kw-inner">
+            <div class="kw-head justify-content-start">
+              <h1>버전 생성</h1>
+            </div>
+            <div class="card kw-card-row px-6 pb-6">
+              <div class="row g-0">
+                <div class="col-6">
+                  <div class="card card--line border-0">
+                    <div class="card-body mt-6 pe-6 border-end">
+                      <form class="row g-7">
+                        <div class="col-12">
+                          <label class="form-label"> 프로젝트 명칭 </label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="BJ_SG_Test"
+                            readonly
+                          />
+                        </div>
+                        <div class="col-12">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-1"
+                          >
+                            <label class="form-label m-0">
+                              배포 범위 <span class="text-danger">*</span>
+                            </label>
+                            <i
+                              class="ico-bell-gray"
+                              data-bs-toggle="tooltip"
+                              data-bs-title="이미 존재하는 버전인 경우
+                              기존 데이터와 통합됩니다"
+                            ></i>
+                          </div>
+                          <select class="form-select">
+                            <option selected>EXTERNAL</option>
+                            <option value="1">EXTERNAL</option>
+                            <option value="2">EXTERNAL</option>
+                            <option value="3">EXTERNAL</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="card card--line border-0">
+                    <div class="card-body mt-6 ps-6">
+                      <form class="row g-7">
+                        <div class="col-12">
+                          <label class="form-label"
+                            >버전 명칭 <span class="text-danger">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="버전 명칭"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label"> 스캔 타입 </label>
+                          <select class="form-select">
+                            <option selected>스캔 미사용</option>
+                            <option value="1">스캔 미사용</option>
+                            <option value="2">스캔 미사용</option>
+                            <option value="3">스캔 미사용</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kw-list-foot mt-3">
+                <div class="kw-list-foot-start"></div>
+                <div class="kw-list-foot-center"></div>
+                <div class="kw-d-foot-end">
+                  <div class="kw-button">
+                    <button type="button" class="btn btn-secondary">
+                      목록
+                    </button>
+                    <button type="button" class="btn btn-primary">저장</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

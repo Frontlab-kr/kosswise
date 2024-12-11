@@ -16761,6 +16761,10 @@ html .table-sm tbody tr td {
   line-height: normal;
   vertical-align: middle;
 }
+.kw .card,
+html .card {
+  background-color: #fff;
+}
 .kw .card-header,
 html .card-header {
   line-height: 1em;
@@ -17035,6 +17039,23 @@ html .btn-secondary:hover {
 html .btn-secondary:focus {
   background-color: #203431;
   border-color: #203431;
+  color: #fff;
+}
+.kw .btn-danger,
+html .btn-danger {
+  background-color: #91524b;
+  border-color: #91524b;
+}
+.kw .btn-danger:hover,
+html .btn-danger:hover {
+  background-color: #74423c;
+  border-color: #74423c;
+  color: #fff;
+}
+.kw .btn-danger:focus,
+html .btn-danger:focus {
+  background-color: #74423c;
+  border-color: #74423c;
   color: #fff;
 }
 .kw .btn-text,
@@ -17744,6 +17765,14 @@ html .spinner-border {
   font-style: normal;
 }
 
+.ico-bell-gray {
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  background: url(../images/icon/icon_bell_gray.svg) no-repeat 50% 50%;
+  font-style: normal;
+}
+
 .license-accordion {
   height: 100%;
 }
@@ -18044,7 +18073,7 @@ html .spinner-border {
 
 .kw {
   min-height: 100vh;
-  background: var(--BackGround, #f6f7f9);
+  background: #f6f7f9;
 }
 .kw-inner {
   padding: 0 5%;

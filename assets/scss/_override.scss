@@ -318,10 +318,11 @@ html {
     }
   }
   .card {
+    background-color: $cardBackgroundColor;
     &-header {
       line-height: 1em;
       padding: 12px 24px;
-      background-color: #fff;
+      background-color: $cardBackgroundColor;
       border-radius: 8px 8px 0 0;
       border-bottom: 1px solid var(--Gray-100, #e5e7ea);
       h5 {
@@ -563,6 +564,20 @@ html {
       &:focus {
         background-color: $btnSecondaryFocus;
         border-color: $btnSecondaryFocus;
+        color: #fff;
+      }
+    }
+    &-danger {
+      background-color: $btnDanger;
+      border-color: $btnDanger;
+      &:hover {
+        background-color: $btnDangerHover;
+        border-color: $btnDangerHover;
+        color: #fff;
+      }
+      &:focus {
+        background-color: $btnDangerFocus;
+        border-color: $btnDangerFocus;
         color: #fff;
       }
     }

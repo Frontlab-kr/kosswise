@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
     <title>KOSSWISE</title>
 
     <!-- 퍼블임시js -->
@@ -41,85 +42,98 @@
               <h1 class="me-auto">프로젝트 비교</h1>
             </div>
 
-            <div class="card mb-7">
-              <div class="card-body pt-10 px-5 pb-4">
-                <div class="row g-7">
-                  <div class="col-6">
-                    <div class="card card--line">
-                      <div class="card-header">
-                        <h5>변경사항</h5>
+            <div class="card kw-card-row mb-7">
+              <div class="kw-searchform kw-searchform--open py-0">
+                <div class="kw-searchform-inner">
+                  <div class="row g-0">
+                    <div class="col-6">
+                      <div class="card card--line border-0">
+                        <div class="card-header ps-0 mb-7">
+                          <h5>변경사항</h5>
+                        </div>
+                        <div class="card-body p-0 pe-6 border-end">
+                          <form class="row g-7">
+                            <div class="col-12">
+                              <label class="form-label">
+                                프로젝트 <span class="text-danger">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="프로젝트 명칭 검색"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label">
+                                버전 <span class="text-danger">*</span>
+                              </label>
+                              <select class="form-select">
+                                <option selected>버전 선택</option>
+                                <option value="1">버전 선택</option>
+                                <option value="2">버전 선택</option>
+                                <option value="3">버전 선택</option>
+                              </select>
+                            </div>
+                          </form>
+                        </div>
                       </div>
-                      <div class="card-body p-6">
-                        <div class="row g-7">
-                          <div class="col-12">
-                            <label class="form-label">
-                              프로젝트<span class="text-danger">*</span>
-                            </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="프로젝트 명칭 검색"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <label class="form-label">
-                              버전<span class="text-danger">*</span>
-                            </label>
-                            <select class="form-select">
-                              <option selected>버전 선택</option>
-                              <option value="1">버전 선택</option>
-                              <option value="2">버전 선택</option>
-                              <option value="3">버전 선택</option>
-                            </select>
-                          </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="card card--line border-0">
+                        <div class="card-header ps-6 mb-7">
+                          <h5>기준 프로젝트</h5>
+                        </div>
+                        <div class="card-body p-0 ps-6">
+                          <form class="row g-7">
+                            <div class="col-12">
+                              <label class="form-label">
+                                프로젝트 <span class="text-danger">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="프로젝트 명칭 검색"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label">
+                                버전 <span class="text-danger">*</span>
+                              </label>
+                              <select class="form-select">
+                                <option selected>버전 선택</option>
+                                <option value="1">버전 선택</option>
+                                <option value="2">버전 선택</option>
+                                <option value="3">버전 선택</option>
+                              </select>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="card card--line">
-                      <div class="card-header">
-                        <h5>기준 프로젝트</h5>
-                      </div>
-                      <div class="card-body p-6">
-                        <div class="row g-7">
-                          <div class="col-12">
-                            <label class="form-label">
-                              프로젝트<span class="text-danger">*</span>
-                            </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="프로젝트 명칭 검색"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <label class="form-label">
-                              버전<span class="text-danger">*</span>
-                            </label>
-                            <select class="form-select">
-                              <option selected>버전 선택</option>
-                              <option value="1">버전 선택</option>
-                              <option value="2">버전 선택</option>
-                              <option value="3">버전 선택</option>
-                            </select>
-                          </div>
-                        </div>
+                  <div class="kw-list-foot mt-4 mb-6">
+                    <div class="kw-list-foot-start"></div>
+                    <div class="kw-list-foot-center"></div>
+                    <div class="kw-d-foot-end">
+                      <div class="kw-button">
+                        <button type="button" class="btn btn-primary">
+                          비교하기
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="kw-list-foot mt-5">
-                  <div class="kw-list-foot-start"></div>
-                  <div class="kw-list-foot-center"></div>
-                  <div class="kw-d-foot-end">
-                    <div class="kw-button">
-                      <button type="button" class="btn btn-primary">
-                        비교하기
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <button class="kw-searchform-toggle">닫기</button>
+              </div>
+              <div class="kw-searchform-tooltip">
+                <dl>
+                  <dt>더보기</dt>
+                  <dd>
+                    다시 열어<br />
+                    검색하실 수 있습니다!
+                  </dd>
+                </dl>
               </div>
             </div>
 

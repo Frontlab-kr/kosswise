@@ -50,7 +50,7 @@
 
 .kw {
   min-height: 100vh;
-  background: var(--BackGround, #f6f7f9);
+  background: $bodyBackgroundColor;
   &-inner {
     padding: 0 5%;
     @media screen and (max-width: 1600px) {
