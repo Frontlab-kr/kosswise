@@ -1,9 +1,6 @@
 $(document).ready(function () {
   $('#header').load('./../../assets/header.html');
   $('#footer').load('./../../assets/footer.html');
-
-  // $('#header').load('/kosswise/assets/header.html'); // 절대 경로
-  // $('#footer').load('/kosswise/assets/footer.html'); // 절대 경로
 });
 
 $(document).ready(function () {
@@ -74,16 +71,6 @@ $(document).ready(function () {
     function () {}
   );
 
-  $('.kw-tooltip__button').on('click', function () {
-    $('.kw-tooltip').removeClass('active');
-    $(this).parents('.kw-tooltip').toggleClass('active');
-  });
-  $(document).on('click', function (e) {
-    if (!$(e.target).closest('.kw-tooltip').length) {
-      $('.kw-tooltip').removeClass('active');
-    }
-  });
-
   $(function () {
     $('[data-bs-toggle="tooltip"]').tooltip();
   });
@@ -92,15 +79,6 @@ $(document).ready(function () {
   });
 
   //faq
-  // $('.kw-list-table-faq-title').on('click', function () {
-  //   $(this)
-  //     .parents('tr')
-  //     .toggleClass('active')
-  //     .next('.kw-list-table-faq-contents__tr')
-  //     .toggleClass('active');
-
-  //   //return false;
-  // });
   $(document).ready(function () {
     // 초기 상태: 높이 기억 및 숨기기
     $('.kw-list-table-faq-contents').each(function () {
